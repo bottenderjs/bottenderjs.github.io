@@ -1,3 +1,3 @@
-import React from 'react';
+import redirect from '../lib/redirect';
 
-export default () => <div>Hello World.</div>;
+export default redirect('/docs');
