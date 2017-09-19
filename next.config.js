@@ -1,6 +1,13 @@
 const glob = require('glob-promise');
 
 module.exports = {
+  webpack: config => {
+    config.module.rules.push({
+      test: /\.md$/,
+      use: 'raw-loader',
+    });
+    return config;
+  },
   exportPathMap: async () => {
     const paths = await glob('pages/**');
     const pages = paths.map(path => {
