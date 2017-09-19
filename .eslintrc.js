@@ -1,13 +1,18 @@
 module.exports = {
-  extends: ['yoctol-base', 'prettier'],
+  parser: 'babel-eslint',
+  extends: ['yoctol', 'prettier'],
   env: {
+    browser: true,
     node: true,
     jest: true,
     jasmine: true,
   },
-  plugins: ['import', 'prettier'],
+  plugins: ['prettier'],
   rules: {
-    'import/no-extraneous-dependencies': 'off',
+    'class-methods-use-this': 'off',
+    'consistent-return': 'off',
+    'no-param-reassign': 'off',
+    'no-return-assign': 'off',
     'prettier/prettier': [
       'error',
       {
@@ -15,5 +20,9 @@ module.exports = {
         singleQuote: true,
       },
     ],
+    'react/forbid-prop-types': 'off',
+    'react/jsx-wrap-multilines': 'off',
+    'react/jsx-indent': 'off',
+    'jsx-a11y/href-no-hash': 'off',
   },
 };

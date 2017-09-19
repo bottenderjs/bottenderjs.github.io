@@ -5,3 +5,4 @@ yarn-error.log
 coverage
 jest-report
 package-lock.json
+.next
