@@ -2,10 +2,6 @@ const glob = require('glob-promise');
 
 module.exports = {
   webpack: config => {
-    config.module.rules.push({
-      test: /\.md$/,
-      use: 'raw-loader',
-    });
     config.externals = config.externals || {};
     config.externals.fs = 'fs';
     return config;
