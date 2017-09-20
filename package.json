@@ -4,12 +4,14 @@
   "description": "The bottender docs",
   "private": true,
   "scripts": {
-    "dev": "next",
+    "build:doc": "node build-pages.js",
+    "dev": "npm run build:doc && next",
     "test": "echo \"Error: no test specified\" && exit 1",
     "precommit": "lint-staged"
   },
   "license": "ISC",
   "dependencies": {
+    "chalk": "^2.1.0",
     "cross-env": "^5.0.5",
     "decamelize": "^1.2.0",
     "fs-extra": "^4.0.2",
@@ -19,9 +21,7 @@
     "query-string": "^5.0.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "react-markdown": "^2.5.0",
-    "rimraf": "^2.6.2",
-    "showdown": "^1.7.4"
+    "react-markdown": "^2.5.0"
   },
   "devDependencies": {
     "babel-eslint": "^8.0.0",
@@ -34,8 +34,7 @@
     "eslint-plugin-prettier": "^2.3.1",
     "eslint-plugin-react": "^7.3.0",
     "lint-staged": "^4.2.1",
-    "prettier": "^1.7.0",
-    "raw-loader": "^0.5.1"
+    "prettier": "^1.7.0"
   },
   "lint-staged": {
     "*.js": "eslint --fix"

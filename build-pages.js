@@ -3,34 +3,64 @@ const path = require('path');
 const fse = require('fs-extra');
 const glob = require('glob-promise');
 const decamelize = require('decamelize');
+const chalk = require('chalk');
 
 const logger = console;
 
-async function main() {
-  const removeFiles = await glob('pages/docs/**', {
+async function removeFiles() {
+  const files = await glob('pages/docs/**', {
     ignore: ['pages/docs', '**/index.js'],
   });
   await Promise.all(
-    removeFiles.map(async file => {
+    files.map(async file => {
       await fse.remove(file);
-      logger.log(`remove ${file} done`);
+      logger.log(chalk.red('remove'), `${file}`);
     })
   );
+}
 
-  const copyFiles = await glob('docs/**', { ignore: ['docs'] });
+async function copyFiles() {
+  const files = await glob('docs/**', { ignore: ['docs'] });
   await Promise.all(
-    copyFiles.map(async file => {
+    files.map(async file => {
       const result = file.match(/(.*)\/(.*)-(.*).md/);
 
       const category = decamelize(result[2], '-');
       const topic = decamelize(result[3], '-');
-      await fse.copy(
+      const destination = `pages/docs/${category}/${topic}.md`;
+
+      await fse.copy(file, path.resolve(__dirname, destination));
+      logger.log(
+        chalk.yellow('copy  '),
         file,
-        path.resolve(__dirname, `pages/docs/${category}/${topic}.md`)
+        chalk.bold.yellow('==>'),
+        destination
       );
-      logger.log(`copy ${file} successfully`);
+
+      await fse.writeFile(
+        path.resolve(__dirname, `pages/docs/${category}/${topic}.js`),
+        `import React from 'react';
+import ReactMarkdown from 'react-markdown';
+
+import withDoc from '../../../lib/with-doc';
+
+import markdown from './${topic}.md';
+
+// prettier-ignore
+export default withDoc({
+  title: '${result[3]}',
+  author: 'Yoctol',
+})(<ReactMarkdown source={markdown} />);
+`
+      );
+      logger.log(chalk.green('create'), `pages/docs/${category}/${topic}.js`);
     })
   );
+}
+
+async function main() {
+  await removeFiles();
+  await copyFiles();
 }
 
 main();
