@@ -6,6 +6,8 @@ module.exports = {
       test: /\.md$/,
       use: 'raw-loader',
     });
+    config.externals = config.externals || {};
+    config.externals.fs = 'fs';
     return config;
   },
   exportPathMap: async () => {

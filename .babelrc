@@ -1,0 +1,15 @@
+{
+  "plugins": [
+    [
+      "babel-plugin-inline-import",
+      {
+        "extensions": [
+          ".md"
+        ]
+      }
+    ]
+  ],
+  "presets": [
+    "next/babel"
+  ]
+}
