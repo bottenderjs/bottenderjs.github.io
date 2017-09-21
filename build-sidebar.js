@@ -4,6 +4,7 @@ const fs = require('fs');
 const glob = require('glob-promise');
 const decamelize = require('decamelize');
 const stringifyObject = require('stringify-object');
+const chalk = require('chalk');
 
 const logger = console;
 
@@ -41,7 +42,7 @@ async function main() {
     })};\n`
   );
 
-  logger.log('overwrite lib/data/docs.js successfully');
+  logger.log(chalk.magenta('overwrite'), 'lib/data/docs.js');
 }
 
 main();

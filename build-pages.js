@@ -31,7 +31,7 @@ async function copyFiles() {
 
       await fse.copy(file, path.resolve(__dirname, destination));
       logger.log(
-        chalk.yellow('copy  '),
+        chalk.yellow('copy'),
         file,
         chalk.bold.yellow('==>'),
         destination
