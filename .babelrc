@@ -1,15 +1,10 @@
 {
-  "plugins": [
-    [
-      "babel-plugin-inline-import",
-      {
-        "extensions": [
-          ".md"
-        ]
-      }
-    ]
-  ],
   "presets": [
-    "next/babel"
+    "react",
+    "es2015",
+    "stage-1"
+  ],
+  "plugins": [
+    "add-module-exports"
   ]
 }
