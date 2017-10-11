@@ -1,5 +1,4 @@
 module.exports = {
-  parser: 'babel-eslint',
   extends: ['yoctol', 'prettier'],
   env: {
     browser: true,

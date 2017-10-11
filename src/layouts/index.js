@@ -1,33 +1,35 @@
 import React from 'react';
-import g from 'glamorous';
-import { css } from 'glamor';
 import Link from 'gatsby-link';
+import styled from 'styled-components';
 
 import { rhythm } from '../utils/typography';
 
-const linkStyle = css({ float: `right` });
+const Wrapper = styled.div`
+  margin: 0 auto;
+  max-width: 700px;
+  padding: ${rhythm(2)};
+  padding-top: ${rhythm(1.5)};
+`;
 
-export default ({ children, data }) =>
-  <g.Div
-    margin={`0 auto`}
-    maxWidth={700}
-    padding={rhythm(2)}
-    paddingTop={rhythm(1.5)}
-  >
+const Title = styled.h3`
+  margin-bottom: ${rhythm(2)};
+  display: inline-block;
+  font-style: normal;
+`;
+
+const NavLink = styled(Link)`
+  float: right;
+`;
+
+export default ({ children, data }) => (
+  <Wrapper>
     <Link to={`/`}>
-      <g.H3
-        marginBottom={rhythm(2)}
-        display={`inline-block`}
-        fontStyle={`normal`}
-      >
-        {data.site.siteMetadata.title}
-      </g.H3>
+      <Title>{data.site.siteMetadata.title}</Title>
     </Link>
-    <Link className={linkStyle} to={`/about/`}>
-      About
-    </Link>
+    <NavLink to={`/about/`}>About</NavLink>
     {children()}
-  </g.Div>;
+  </Wrapper>
+);
 
 export const query = graphql`
   query LayoutQuery {
