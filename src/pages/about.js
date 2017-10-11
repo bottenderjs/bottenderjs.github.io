@@ -1,12 +1,11 @@
 import React from 'react';
 
-export default ({ data }) =>
+export default ({ data }) => (
   <div>
-    <h1>
-      About {data.site.siteMetadata.title}
-    </h1>
+    <h1>About {data.site.siteMetadata.title}</h1>
     <p>Powered By Yoctol Info Inc.</p>
-  </div>;
+  </div>
+);
 
 export const query = graphql`
   query AboutQuery {
