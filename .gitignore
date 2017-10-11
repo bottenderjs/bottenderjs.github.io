@@ -1,8 +1,7 @@
+node_modules/
+public
+.gatsby-context.js
 .DS_Store
-node_modules
-npm-debug.log
-yarn-error.log
-coverage
-jest-report
-package-lock.json
-.next
+.intermediate-representation/
+.cache/
+yarn.lock

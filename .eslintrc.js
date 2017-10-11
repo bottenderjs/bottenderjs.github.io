@@ -26,5 +26,9 @@ module.exports = {
     'react/jsx-indent': 'off',
     'react/no-multi-comp': 'off',
     'jsx-a11y/href-no-hash': 'off',
+    'array-callback-return': 'off',
+  },
+  globals: {
+    graphql: true,
   },
 };

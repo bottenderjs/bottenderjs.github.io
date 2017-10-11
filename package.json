@@ -1,45 +1,21 @@
 {
   "name": "bottender-docs",
-  "version": "0.0.1",
-  "description": "The bottender docs",
-  "private": true,
+  "description": "The Bottender docs",
+  "license": "MIT",
   "scripts": {
-    "build:pages": "node build-pages.js",
-    "build:sidebar": "node build-sidebar.js",
-    "dev": "npm-run-all build:* && next",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "precommit": "lint-staged"
+    "dev": "gatsby develop",
+    "develop": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve"
   },
-  "license": "ISC",
   "dependencies": {
-    "chalk": "^2.1.0",
-    "cross-env": "^5.0.5",
-    "decamelize": "^1.2.0",
-    "fs-extra": "^4.0.2",
-    "glob-promise": "^3.1.0",
-    "next": "^3.2.2",
-    "npm-run-all": "^4.1.1",
-    "prop-types": "^15.5.10",
-    "query-string": "^5.0.0",
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
-    "react-markdown": "^2.5.0",
-    "stringify-object": "^3.2.0"
-  },
-  "devDependencies": {
-    "babel-eslint": "^8.0.0",
-    "babel-plugin-inline-import": "^2.0.6",
-    "eslint": "^4.7.1",
-    "eslint-config-prettier": "^2.5.0",
-    "eslint-config-yoctol": "^0.14.0",
-    "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-jsx-a11y": "^6.0.2",
-    "eslint-plugin-prettier": "^2.3.1",
-    "eslint-plugin-react": "^7.3.0",
-    "lint-staged": "^4.2.1",
-    "prettier": "^1.7.0"
-  },
-  "lint-staged": {
-    "*.js": "eslint --fix"
+    "gatsby": "^1.9.45",
+    "gatsby-link": "^1.6.17",
+    "gatsby-plugin-glamor": "^1.6.8",
+    "gatsby-plugin-typography": "^1.7.10",
+    "gatsby-source-filesystem": "^1.5.2",
+    "gatsby-transformer-remark": "^1.7.15",
+    "glamorous": "^4.9.7",
+    "typography-theme-kirkham": "^0.16.3"
   }
 }
