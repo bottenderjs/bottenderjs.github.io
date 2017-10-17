@@ -1,12 +1,38 @@
-- title: Quick Start
+- title: ' '
   items:
     - id: GettingStarted
       title: Getting Started
+- title: Guides
+  items:
+    # platform
+    - id: Guides-Messenger
+      title: Messenger
+    - id: Guides-LINE
+      title: LINE
+    - id: Guides-Slack
+      title: Slack
+    - id: Guides-Telegram
+      title: Telegram
+    # other
     - id: Guides-Commands
       title: Commands
+    - id: Guides-Deployment
+      title: Deployment
+    - id: Guides-ErrorHandling
+      title: Error Handling
+    - id: Guides-Intents
+      title: Intents
+    - id: Guides-Middleware
+      title: Middleware
+    - id: Guides-Server
+      title: Server
+    - id: Guides-Session
+      title: Session
+    - id: Guides-Testing
+      title: Testing
 - title: API Reference
   items:
-    - id: APIReference-ConsoleContext
-      title: Console Context
-    - id: APIReference-ConsoleEvent
-      title: Console Event
+    - id: APIReference-Context
+      title: Context
+    - id: APIReference-Event
+      title: Event
