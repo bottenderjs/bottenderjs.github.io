@@ -1,0 +1,12 @@
+- title: Quick Start
+  items:
+    - id: GettingStarted
+      title: Getting Started
+    - id: Guides-Commands
+      title: Commands
+- title: API Reference
+  items:
+    - id: APIReference-ConsoleContext
+      title: Console Context
+    - id: APIReference-ConsoleEvent
+      title: Console Event
