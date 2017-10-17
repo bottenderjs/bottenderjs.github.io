@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-date: "2017-10-11"
+date: "2017-10-17"
 ---
 
 # Getting Started
@@ -24,7 +24,6 @@ or
 ```sh
 yarn global add toolbot-core-experiment
 ```
-
 
 ## Initialize
 
@@ -52,8 +51,7 @@ We can skip over this file and directly see the result of the execution:
 npm run dev
 ```
 
-(show terminal gif)
-
+![](https://user-images.githubusercontent.com/3382565/31601791-abf0746a-b220-11e7-893a-fba68923920e.png)
 
 ## Teach Bot to Echo
 
@@ -71,11 +69,10 @@ bot.handle(async context => {
 
 And then the server will be restarted automatically.
 
-(show terminal gif)
+![](https://user-images.githubusercontent.com/3382565/31601795-ac3f1f02-b220-11e7-99d0-513accf40460.png)
 
-It works like a charm!
-
+That's it!
 
 ## Next Steps
 
-You just created your first bot with bottender! To dive deeper into bot development, you may want to determine the intents behind the user saying. For more information on intent understanding, [check out its documentation](./Guides-Intents.md).
+You just created your first bot with Bottender! To dive deeper into bot development, you may want to determine the intents behind the user saying. For more information on intent understanding, [check out its documentation](./Guides-Intents.md).

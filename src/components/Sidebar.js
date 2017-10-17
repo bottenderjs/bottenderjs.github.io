@@ -13,12 +13,8 @@ const Wrapper = styled.div`
 
 class Sidebar extends Component {
   render() {
-    console.log({ DocsList });
     return (
-      <Wrapper>
-        <h1>Sidebar</h1>
-        {DocsList.map(list => <ListSection list={list} />)}
-      </Wrapper>
+      <Wrapper>{DocsList.map(list => <ListSection list={list} />)}</Wrapper>
     );
   }
 }

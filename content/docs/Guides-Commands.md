@@ -1,6 +1,9 @@
-# CLI
+---
+title: Commands
+date: "2017-10-17"
+---
 
-## Introduction
+# Commands
 
 The command-line interface included with bottender provides a number of helpful commands that can help you while you build your bot.
 
