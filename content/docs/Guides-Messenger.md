@@ -24,7 +24,7 @@ Before leave this section, make sure you have the following requirements:
 - A Page Access Token
 - An App Secret
 
-We will use it to develop our messenger bot later.
+We will use them to develop our messenger bot later.
 
 ## Build your first Messenger bot
 
