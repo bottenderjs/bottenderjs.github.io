@@ -31,14 +31,17 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
       }
     `).then(result => {
       result.data.allMarkdownRemark.edges.map(({ node }) => {
-        createPage({
-          path: node.fields.slug,
-          component: path.resolve(`./src/templates/blog-post.js`),
-          context: {
-            // Data passed to context is available in page queries as GraphQL variables.
-            slug: node.fields.slug,
-          },
-        });
+        if (!node.fields.slug.match(/^\/README/)) {
+          createPage({
+            path: `/docs${node.fields.slug}`,
+            component: path.resolve(`./src/templates/docs.js`),
+            layout: `doc-layout`,
+            context: {
+              // Data passed to context is available in page queries as GraphQL variables.
+              slug: node.fields.slug,
+            },
+          });
+        }
       });
       resolve();
     });

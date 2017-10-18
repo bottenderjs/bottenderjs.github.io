@@ -1,38 +1,38 @@
 - title: ' '
   items:
-    - id: GettingStarted
+    - id: docs/GettingStarted
       title: Getting Started
 - title: Guides
   items:
     # platform
-    - id: Guides-Messenger
+    - id: docs/Guides-Messenger
       title: Messenger
-    - id: Guides-LINE
+    - id: docs/Guides-LINE
       title: LINE
-    - id: Guides-Slack
+    - id: docs/Guides-Slack
       title: Slack
-    - id: Guides-Telegram
+    - id: docs/Guides-Telegram
       title: Telegram
     # other
-    - id: Guides-Commands
+    - id: docs/Guides-Commands
       title: Commands
-    - id: Guides-Deployment
+    - id: docs/Guides-Deployment
       title: Deployment
-    - id: Guides-ErrorHandling
+    - id: docs/Guides-ErrorHandling
       title: Error Handling
-    - id: Guides-Intents
+    - id: docs/Guides-Intents
       title: Intents
-    - id: Guides-Middleware
+    - id: docs/Guides-Middleware
       title: Middleware
-    - id: Guides-Server
+    - id: docs/Guides-Server
       title: Server
-    - id: Guides-Session
+    - id: docs/Guides-Session
       title: Session
-    - id: Guides-Testing
+    - id: docs/Guides-Testing
       title: Testing
 - title: API Reference
   items:
-    - id: APIReference-Context
+    - id: docs/APIReference-Context
       title: Context
-    - id: APIReference-Event
+    - id: docs/APIReference-Event
       title: Event
