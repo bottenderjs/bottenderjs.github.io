@@ -27,6 +27,7 @@
     "glamorous": "^4.9.7",
     "react": "^16.0.0",
     "styled-components": "^2.2.1",
+    "styled-normalize": "^2.2.1",
     "typography": "^0.16.6",
     "typography-theme-kirkham": "^0.16.3"
   },
