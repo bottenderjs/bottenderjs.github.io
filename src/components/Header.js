@@ -10,8 +10,8 @@ const Wrapper = styled.div`
 `;
 
 const Title = styled.h3`
-  margin-bottom: ${rhythm(2)};
   display: inline-block;
+  margin-bottom: ${rhythm(2)};
   font-style: normal;
 `;
 

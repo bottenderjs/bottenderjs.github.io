@@ -7,8 +7,8 @@ import ListSection from './ListSection';
 
 const Wrapper = styled.div`
   display: flex;
-  flex-direction: column;
   width: 20%;
+  flex-direction: column;
 `;
 
 class Sidebar extends Component {

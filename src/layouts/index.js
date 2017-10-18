@@ -6,9 +6,9 @@ import Header from '../components/Header';
 import { rhythm } from '../utils/typography';
 
 const Wrapper = styled.div`
-  margin: 0 auto;
   padding: ${rhythm(2)};
   padding-top: ${rhythm(1.5)};
+  margin: 0 auto;
 `;
 
 const Container = styled.div`

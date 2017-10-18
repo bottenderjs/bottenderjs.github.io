@@ -17,8 +17,8 @@ const PostDate = styled.span`
 `;
 
 const StyledLink = styled(Link)`
-  text-decoration: none;
   color: inherit;
+  text-decoration: none;
 `;
 
 export default ({ data }) => (

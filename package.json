@@ -10,8 +10,9 @@
     "develop": "gatsby develop",
     "lint": "eslint src",
     "lint:fix": "npm run lint -- --fix",
+    "lint:css": "stylelint src/**/*.js",
     "lint:staged": "lint-staged",
-    "precommit": "lint-staged",
+    "precommit": "lint:css && lint-staged",
     "serve": "gatsby serve"
   },
   "dependencies": {
@@ -37,7 +38,12 @@
     "eslint-plugin-prettier": "^2.3.1",
     "eslint-plugin-react": "^7.4.0",
     "lint-staged": "^4.2.3",
-    "prettier": "^1.7.4"
+    "prettier": "^1.7.4",
+    "stylelint": "^8.2.0",
+    "stylelint-config-standard": "^17.0.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-config-yoctol": "^0.6.0",
+    "stylelint-processor-styled-components": "^1.0.0"
   },
   "lint-staged": {
     "*.js": "eslint --fix"
