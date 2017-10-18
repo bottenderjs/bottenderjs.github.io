@@ -29,4 +29,8 @@ export default () => injectGlobal`
   p {
     font-family: Roboto;
   }
+
+  a {
+    text-decoration: none;
+  }
 `;

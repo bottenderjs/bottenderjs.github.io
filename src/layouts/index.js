@@ -4,11 +4,9 @@ import styled from 'styled-components';
 import baseStyles from '../css';
 import Sidebar from '../components/Sidebar';
 import Header from '../components/Header';
-import { rhythm } from '../utils/typography';
+import Footer from '../components/Footer';
 
 const Wrapper = styled.div`
-  padding: ${rhythm(2)};
-  padding-top: ${rhythm(1.5)};
   margin: 0 auto;
 `;
 
@@ -26,6 +24,7 @@ export default ({ children, data }) => {
         <Sidebar />
         {children()}
       </Container>
+      <Footer />
     </Wrapper>
   );
 };
