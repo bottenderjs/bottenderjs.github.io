@@ -5,10 +5,11 @@ import Link from 'gatsby-link';
 import { rhythm } from '../utils/typography';
 
 const Item = styled.div`
-  padding-left: ${rhythm(1.75)};
+  padding-left: ${rhythm(2.5)};
   color: #2d2d2d;
   font-family: Karla;
   font-size: 18px;
+  font-weight: bold;
   letter-spacing: 1px;
   text-transform: uppercase;
 `;

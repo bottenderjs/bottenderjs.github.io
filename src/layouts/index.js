@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import baseStyles from '../css';
 import Sidebar from '../components/Sidebar';
 import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 const Wrapper = styled.div`
   margin: 0 auto;
@@ -23,6 +24,7 @@ export default ({ children, data }) => {
         <Sidebar />
         {children()}
       </Container>
+      <Footer />
     </Wrapper>
   );
 };

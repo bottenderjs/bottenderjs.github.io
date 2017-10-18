@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import Link from 'gatsby-link';
 
-import logo from '../bottender.svg';
+import logo from '../images/bottender.svg';
 import { rhythm } from '../utils/typography';
 import Nav from '../components/Nav';
 
@@ -16,6 +16,7 @@ const Wrapper = styled.div`
 const Container = styled.div`
   display: flex;
   width: calc(1026px + ${rhythm(0.5)});
+  height: 100%;
   margin: 0 ${rhythm(0.5)};
   justify-content: space-between;
   align-items: center;
@@ -26,14 +27,18 @@ const Logo = styled.img`
   margin: 0;
 `;
 
+const LogoLink = styled(Link)`
+  width: 229px;
+`;
+
 class Header extends Component {
   render() {
     return (
       <Wrapper>
         <Container>
-          <Link to={'/'}>
+          <LogoLink to={'/'}>
             <Logo src={logo} alt={this.props.title} />
-          </Link>
+          </LogoLink>
           <Nav />
         </Container>
       </Wrapper>
