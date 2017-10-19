@@ -2,10 +2,8 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import Link from 'gatsby-link';
 
-import { rhythm } from '../utils/typography';
-
 const Item = styled.div`
-  padding-left: ${rhythm(2.5)};
+  padding-left: 50px;
   color: #2d2d2d;
   font-family: Karla;
   font-size: 18px;
