@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 import { rhythm } from '../utils/typography';
 import github from '../images/github.svg';
+import media from '../css/media';
 
 const Wrapper = styled.div`
   display: flex;
@@ -18,6 +19,10 @@ const Container = styled.div`
   margin: 0 ${rhythm(0.5)};
   justify-content: space-between;
   align-items: center;
+
+  @media (${media.tablet}) {
+    justify-content: center;
+  }
 `;
 
 const Copyright = styled.div`
@@ -26,6 +31,23 @@ const Copyright = styled.div`
   font-family: Karla;
   font-size: 16px;
   letter-spacing: 1.6px;
+
+  @media (${media.tablet}) {
+    display: none;
+  }
+`;
+
+const MobileCopyright = styled.div`
+  display: none;
+
+  @media (${media.tablet}) {
+    display: flex;
+    color: #fff;
+    font-family: Karla;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 1.6px;
+  }
 `;
 
 const Link = styled.a`
@@ -35,6 +57,10 @@ const Link = styled.a`
 const GitHubLogo = styled.img`
   display: block;
   margin: 0;
+
+  @media (${media.tablet}) {
+    display: none;
+  }
 `;
 
 class Footer extends Component {
@@ -45,6 +71,9 @@ class Footer extends Component {
           <Copyright>
             © 2017 - PRESENT YOCTOL INFO INC. ALL RIGHTS RESERVED
           </Copyright>
+          <MobileCopyright>
+            © 2017 - PRESENT YOCTOL INFO INC. <br />ALL RIGHTS RESERVED
+          </MobileCopyright>
           <Link href="https://github.com/Yoctol/bottender-docs" target="_blank">
             <GitHubLogo src={github} alt="Bottender github link" />
           </Link>
