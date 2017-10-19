@@ -68,7 +68,7 @@ server.listen(5000, () => {
 ## Events
 
 Bottender supports several types of events. You are able to access them via `context.event`.
-For more information, check [Messenger Event Reference](./APIReference-MessengerEvent.md) and [General Event Reference](./APIReference-GeneralEvent.md)
+For more information, check [Event Reference](./APIReference-Event)
 
 ### Messenger event properties
 
@@ -82,7 +82,7 @@ For more information, check [Messenger Event Reference](./APIReference-Messenger
 - payload
 - ...
 
-more on [Messenger Event Reference](./APIReference-MessengerEvent.md).
+more on [Event Reference](./APIReference-Event).
 
 For example:
 
@@ -110,7 +110,7 @@ After recevie the request from Messenger, you can send API by using context send
 - sendQuickReplies
 - ...
 
-more on [Messenger Context Reference](./APIReference-MessengerContext.md).
+more on [Context Reference](./APIReference-Context).
 
 For example:
 

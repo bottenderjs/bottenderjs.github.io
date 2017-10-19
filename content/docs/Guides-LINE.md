@@ -43,7 +43,7 @@ Then run your server and try it out by talking to your LINE@ account!
 
 ## Event Types
 
-There are 7 types of events your bot may receive from LINE. In Bottender, you can access them via `context.event`. For more information, check [LINE Event Reference](./APIReference-LineEvent.md) and [Official Document](https://developers.line.me/en/docs/messaging-api/reference/#webhook-event-objects).
+There are 7 types of events your bot may receive from LINE. In Bottender, you can access them via `context.event`. For more information, check [Event Reference](./APIReference-Event) and [Official Document](https://developers.line.me/en/docs/messaging-api/reference/#webhook-event-objects).
 
 - Message event
   + Text
@@ -76,7 +76,7 @@ bot.onEvent(async context => {
 
 ## Message Types
 
-There are 8 types of messages you can send from your bot. In Bottender, you can use functions like `context.sendText()`, `context.sendButtonTemplate()` to send messages. For more information, check [LINE Context Reference](./APIReference-LineContext.md) and [Official Document](https://developers.line.me/en/docs/messaging-api/message-types/).
+There are 8 types of messages you can send from your bot. In Bottender, you can use functions like `context.sendText()`, `context.sendButtonTemplate()` to send messages. For more information, check [Context Reference](./APIReference-Context) and [Official Document](https://developers.line.me/en/docs/messaging-api/message-types/).
 
 - Text
 - Sticker

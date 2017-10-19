@@ -66,7 +66,7 @@ server.listen(5000, () => {
 ## Events
 
 Bottender supplies several types of event. You are able to access them via `context.event`.  
-For more information, check [Telegram Event Reference](./APIReference-TelegramEvent.md) and [General Event Reference](./APIReference-GeneralEvent.md).
+For more information, check [Event Reference](./APIReference-Event).
 
 ### Telegram-specific context event
 
@@ -78,7 +78,7 @@ For more information, check [Telegram Event Reference](./APIReference-TelegramEv
 - callbackQuery
 - ...
 
-more on [Telegram Event Reference](./APIReference-TelegramEvent.md).
+more on [Event Reference](./APIReference-Event).
 
 Example:
 ```js
@@ -107,7 +107,7 @@ After your bot receives the request from Telegram, you can use context send APIs
 - sendContact
 - ...
 
-more on [Telegram Context Reference](./APIReference-MessengerContext.md).
+more on [Context Reference](./APIReference-Context).
 
 Example:
 ```js
