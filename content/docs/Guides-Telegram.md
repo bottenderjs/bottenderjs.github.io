@@ -25,7 +25,7 @@ Your bot receives updates via an outgoing webhook which is a specific `URL`. Whe
 
 ## Build your first Telegram bot
 
-After setting up the webhook `URL` and getting the authorization token, you should fill them in [telegram-hello-world](https://github.com/Yoctol/toolbot-core-experiment/tree/master/examples/telegram-hello-world/index.js). The following is part of sample code.
+After setting up the webhook `URL` and getting the authorization token, you should fill them in [telegram-hello-world](https://github.com/Yoctol/bottender/tree/master/examples/telegram-hello-world/index.js). The following is part of sample code.
 
 ```js
 const url = '__FILL_URL_HERE__';
@@ -39,11 +39,11 @@ Run your server and talk to the Telegram bot. It works!
 
 ### Full example
 
-Here is the complete code for [telegram-hello-world](https://github.com/Yoctol/toolbot-core-experiment/tree/master/examples/telegram-hello-world/index.js)
+Here is the complete code for [telegram-hello-world](https://github.com/Yoctol/bottender/tree/master/examples/telegram-hello-world/index.js)
 
 ```js
-const { TelegramBot } = require('toolbot-core-experiment');
-const { createServer } = require('toolbot-core-experiment/express');
+const { TelegramBot } = require('bottender');
+const { createServer } = require('bottender/express');
 
 const url = '__FILL_URL_HERE__';
 

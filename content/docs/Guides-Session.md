@@ -35,7 +35,7 @@ bot.onEvent(async context => {
 })
 ```
 
-See more details at [example](https://github.com/Yoctol/toolbot-core-experiment/tree/master/examples/with-memory-session)
+See more details at [example](https://github.com/Yoctol/bottender/tree/master/examples/with-memory-session)
 
 ## Session Expiration
 
@@ -45,7 +45,7 @@ The expiration should be sent as a **Number of seconds** when you are initializi
 Here is an example for creating a `MongoSessionStore` object with expired time:
 ```js
 // Session will expire after 10 seconds
-const { ConsoleBot, MongoSessionStore } = require('toolbot-core-experiment');
+const { ConsoleBot, MongoSessionStore } = require('bottender');
 
 const bot = new ConsoleBot({
   sessionStore: new MongoSessionStore(
@@ -64,13 +64,13 @@ Session store is a place where session data is being stored on server.
 
 We implement following kinds of session store. All kinds of bots will use memory session store as default.
 
-- **memory** - sessions are stored in memory with [LRU cache](https://github.com/isaacs/node-lru-cache) and will not be persisted. See [example](https://github.com/Yoctol/toolbot-core-experiment/tree/master/examples/with-memory-session)
+- **memory** - sessions are stored in memory with [LRU cache](https://github.com/isaacs/node-lru-cache) and will not be persisted. See [example](https://github.com/Yoctol/bottender/tree/master/examples/with-memory-session)
 - **file** - sessions are stored in `.sessions` by default. See
-  [example](https://github.com/Yoctol/toolbot-core-experiment/tree/master/examples/with-file-session)
+  [example](https://github.com/Yoctol/bottender/tree/master/examples/with-file-session)
 - **mongo** - sessions are stored in a mongo database. See
-  [example](https://github.com/Yoctol/toolbot-core-experiment/tree/master/examples/with-mongo-session)
+  [example](https://github.com/Yoctol/bottender/tree/master/examples/with-mongo-session)
 - **redis** - sessions are stored in redis based stores. See
-  [example](https://github.com/Yoctol/toolbot-core-experiment/tree/master/examples/with-redis-session)
+  [example](https://github.com/Yoctol/bottender/tree/master/examples/with-redis-session)
 
 
 ## Adding Custom Session Drivers

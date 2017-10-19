@@ -21,7 +21,7 @@ bot.onEvent(async context => {
 })
 ```
 
-See more details at [example](https://github.com/Yoctol/toolbot-core-experiment/tree/master/examples/event)
+See more details at [example](https://github.com/Yoctol/bottender/tree/master/examples/event)
 
 ## Methods
 

@@ -26,10 +26,10 @@ First, create an app on [Slack API](https://api.slack.com/apps?new_app=1) site. 
 
 ## Build your first Slack bot
 
-Check out your app's **access token** [Slack API](https://api.slack.com/apps/) then fill them in [slack-hello-world](https://github.com/Yoctol/toolbot-core-experiment/blob/master/examples/slack-hello-world/index.js) example:
+Check out your app's **access token** [Slack API](https://api.slack.com/apps/) then fill them in [slack-hello-world](https://github.com/Yoctol/bottender/blob/master/examples/slack-hello-world/index.js) example:
 
 ```js
-const { SlackBot } = require('toolbot-core-experiment');
+const { SlackBot } = require('bottender');
 
 const bot = new SlackBot({
   accessToken: '__FILL_YOUR_TOKEN_HERE__',
@@ -94,4 +94,4 @@ function getNameFromId(id, session) {
 
 - [Official Document](https://api.slack.com/): Official document of Slack API.
 - [messaging-api-slack](https://github.com/Yoctol/messaging-apis/tree/master/packages/messaging-api-slack)
-- [slack-hello-world](https://github.com/Yoctol/toolbot-core-experiment/blob/master/examples/slack-hello-world/index.js) example.
+- [slack-hello-world](https://github.com/Yoctol/bottender/blob/master/examples/slack-hello-world/index.js) example.

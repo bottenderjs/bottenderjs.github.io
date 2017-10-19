@@ -13,16 +13,16 @@ Bottender highly depends on [async function](https://developer.mozilla.org/en-US
 
 ## Installing Bottender
 
-Install `toolbot-core-experiment` package from the registry:
+Install `bottender` package from the registry:
 
 ```sh
-npm install -g toolbot-core-experiment
+npm install -g bottender
 ```
 
 or
 
 ```sh
-yarn global add toolbot-core-experiment
+yarn global add bottender
 ```
 
 ## Initialize
@@ -34,7 +34,7 @@ bottender init
 This command will create a folder with a `bot.js` file within:
 
 ```js
-const { ConsoleBot } = require('toolbot-core-experiment');
+const { ConsoleBot } = require('bottender');
 
 const bot = new ConsoleBot();
 
