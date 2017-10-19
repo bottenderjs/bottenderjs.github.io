@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import Helmet from 'react-helmet';
 
+import media from '../css/media';
+
 const Wrapper = styled.div`
   display: flex;
   width: 100%;
@@ -17,6 +19,10 @@ const Wrapper = styled.div`
     font-size: 60px;
     font-weight: bold;
     letter-spacing: -1px;
+
+    @media (${media.tablet}) {
+      font-size: ${60 * 0.8}px;
+    }
   }
 
   h2 {
@@ -26,6 +32,10 @@ const Wrapper = styled.div`
     font-size: 37px;
     font-weight: bold;
     letter-spacing: -1px;
+
+    @media (${media.tablet}) {
+      font-size: ${37 * 0.8}px;
+    }
   }
 
   h3 {
@@ -35,6 +45,10 @@ const Wrapper = styled.div`
     font-size: 30px;
     font-weight: bold;
     letter-spacing: -0.9px;
+
+    @media (${media.tablet}) {
+      font-size: ${30 * 0.8}px;
+    }
   }
 
   h4 {
@@ -44,6 +58,10 @@ const Wrapper = styled.div`
     font-size: 26px;
     font-weight: bold;
     letter-spacing: -1px;
+
+    @media (${media.tablet}) {
+      font-size: ${26 * 0.8}px;
+    }
   }
 
   p {
