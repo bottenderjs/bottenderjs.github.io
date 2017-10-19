@@ -7,6 +7,7 @@ import baseStyles from '../css';
 import Sidebar from '../components/Sidebar';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import EditThisPage from '../components/EditThisPage';
 import { rhythm } from '../utils/typography';
 
 const Wrapper = styled.div`
@@ -33,6 +34,7 @@ const Left = styled.div`
   display: flex;
   width: 66.6%;
   padding: 32px 40px 100px 0;
+  flex-direction: column;
 `;
 
 const Right = styled.div`
@@ -43,8 +45,9 @@ const Right = styled.div`
   background-color: #fafafa;
 `;
 
-export default ({ children, data }) => {
+export default ({ children, data, location }) => {
   baseStyles();
+  const { pathname } = location;
   const title = `${data.site.siteMetadata
     .title} | Make Bots in Your Way, Fast and Flexibly`;
   return (
@@ -61,7 +64,10 @@ export default ({ children, data }) => {
       <Header title={data.site.siteMetadata.title} />
       <Main>
         <Container>
-          <Left>{children()}</Left>
+          <Left>
+            {children()}
+            <EditThisPage pathname={pathname} />
+          </Left>
           <Right>
             <Sidebar />
           </Right>
