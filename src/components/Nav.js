@@ -11,7 +11,7 @@ class Nav extends Component {
   render() {
     return (
       <Container>
-        <NavItem title="docs" to="/docs" />
+        <NavItem title="docs" to="/docs/GettingStarted" />
         <NavItem title="blog" to="/blog" />
         <NavItem title="github" to="https://github.com/Yoctol/bottender-docs" />
       </Container>
