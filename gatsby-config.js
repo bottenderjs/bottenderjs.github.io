@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Bottender Docs',
+    title: 'Bottender',
   },
   plugins: [
     'gatsby-plugin-react-next',
@@ -45,5 +45,6 @@ module.exports = {
         ],
       },
     },
+    `gatsby-plugin-react-helmet`,
   ],
 };
