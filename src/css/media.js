@@ -1,6 +1,6 @@
 // https://github.com/styled-components/styled-components/blob/master/docs/tips-and-tricks.md#media-templates
 
-const sizes = {
+export const sizes = {
   desktop: 1024,
   tablet: 768,
   phone: 376,

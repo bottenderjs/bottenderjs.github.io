@@ -4,7 +4,7 @@ import Helmet from 'react-helmet';
 import 'prismjs/themes/prism.css'; // eslint-disable-line
 
 import baseStyles from '../css';
-import media from '../css/media';
+import media, { sizes } from '../css/media';
 import Sidebar from '../components/Sidebar';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -23,6 +23,10 @@ const Main = styled.div`
   background-repeat: no-repeat;
   background-size: 33.4% 100%;
 
+  @media (${media.desktop}) {
+    background-size: 25% 100%;
+  }
+
   @media (${media.tablet}) {
     background: #fff;
   }
@@ -33,6 +37,10 @@ const Container = styled.div`
   width: calc(1024px + ${rhythm(0.5)});
   margin: 0 ${rhythm(0.5)};
   justify-content: space-between;
+
+  @media (${media.desktop}) {
+    width: calc(${sizes.tablet}px + ${rhythm(0.5)});
+  }
 
   @media (${media.tablet}) {
     width: calc(100% - ${rhythm(0.5)});
@@ -46,6 +54,10 @@ const Left = styled.div`
   padding: 32px 40px 100px 0;
   flex-direction: column;
 
+  @media (${media.desktop}) {
+    width: 75%;
+  }
+
   @media (${media.tablet}) {
     width: calc(100% - ${rhythm(0.5)});
     padding: 16px 0 32px;
@@ -58,6 +70,10 @@ const Right = styled.div`
   padding-top: 32px;
   padding-left: 40px;
   background-color: #fafafa;
+
+  @media (${media.desktop}) {
+    width: 25%;
+  }
 
   @media (${media.tablet}) {
     display: none;
