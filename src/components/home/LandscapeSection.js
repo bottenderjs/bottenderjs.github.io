@@ -1,38 +1,54 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
+import logo from '../../assets/logo.svg';
+import landscape from '../../assets/landscape.svg';
 import { rhythm } from '../../utils/typography';
 
 import GetStartedLink from './GetStartedLink';
 
 const Wrapper = styled.section`
   display: flex;
-  height: 570px;
+  height: 40vw;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #f3f9fc;
+  background-image: url(${landscape});
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #000;
 `;
 
 const Title = styled.h1`
-  margin: ${rhythm(1)} ${rhythm(0.5)};
-  font-size: 37px;
+  margin: 0;
+  color: #fff;
+  font-family: BebasNeue;
+  font-size: 81px;
   text-align: center;
-  font-weight: bold;
-  letter-spacing: -1px;
+  letter-spacing: 8.2px;
+`;
+
+const Slogan = styled.h2`
+  margin: 0 ${rhythm(0.5)} ${rhythm(1.5)};
+  color: #fff;
+  font-family: SFUIDisplay;
+  font-size: 22px;
+  text-align: center;
+  font-weight: 300;
+  letter-spacing: 3.5px;
 `;
 
 class LandscapeSection extends Component {
   render() {
     return (
       <Wrapper>
-        <Title>
-          Make Bots in Your Way,<br />
-          Fast and Flexibly
-        </Title>
-        <GetStartedLink color="#101010" to="/docs/GettingStarted">
-          Get Started!
-        </GetStartedLink>
+        <img src={logo} alt="logo" />
+        <Title>BOTTENDER</Title>
+        <Slogan>
+          MAKE BOTS IN YOUR WAY,<br />FAST AND FLEXIBLY
+        </Slogan>
+        <GetStartedLink to="/docs/GettingStarted">Get Started!</GetStartedLink>
       </Wrapper>
     );
   }

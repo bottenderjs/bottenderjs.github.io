@@ -2,6 +2,8 @@ import styledNormalize from 'styled-normalize';
 import { injectGlobal } from 'styled-components';
 import WebFont from 'webfontloader';
 
+import '../../static/fonts/style.css';
+
 WebFont.load({
   google: {
     families: ['Karla', 'Roboto'],

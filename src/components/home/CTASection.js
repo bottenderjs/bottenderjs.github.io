@@ -28,9 +28,7 @@ class CTASection extends Component {
     return (
       <Wrapper>
         <Title>Build Your Bot Today!</Title>
-        <GetStartedLink color="#fff" to="/docs/GettingStarted">
-          Get Started!
-        </GetStartedLink>
+        <GetStartedLink to="/docs/GettingStarted">Get Started!</GetStartedLink>
       </Wrapper>
     );
   }

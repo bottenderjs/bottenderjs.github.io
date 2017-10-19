@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 import { rhythm } from '../utils/typography';
-import github from '../images/github.svg';
+import github from '../assets/github.svg';
 import media from '../css/media';
 
 const Wrapper = styled.div`

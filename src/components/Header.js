@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import Link from 'gatsby-link';
 
-import logo from '../images/bottender.svg';
+import logo from '../assets/bottender.svg';
 import { rhythm } from '../utils/typography';
 import Nav from '../components/Nav';
 
