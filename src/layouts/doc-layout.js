@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import 'prismjs/themes/prism.css'; // eslint-disable-line
 
 import baseStyles from '../css';
 import Sidebar from '../components/Sidebar';
@@ -30,8 +31,7 @@ const Container = styled.div`
 const Left = styled.div`
   display: flex;
   width: 66.6%;
-  padding-top: 32px;
-  padding-right: 40px;
+  padding: 32px 40px 100px 0;
 `;
 
 const Right = styled.div`
