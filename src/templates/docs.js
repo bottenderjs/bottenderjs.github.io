@@ -56,6 +56,17 @@ const Wrapper = styled.div`
     color: #009ace;
     text-decoration: underline;
   }
+
+  table {
+    display: block;
+    overflow: auto;
+
+    td,
+    th {
+      padding: 0.6em;
+      border: 1px solid hsla(0, 0%, 0%, 0.12);
+    }
+  }
 `;
 
 export default ({ data }) => {
