@@ -28,10 +28,10 @@ After setting up LINE@ accounts to use Messaging API, further setup such as **we
 
 ## Build your first LINE bot
 
-Check out your channel's **access token** and **channel secret** at [LINE developers](https://developers.line.me) then fill them in [line-hello-world](https://github.com/Yoctol/toolbot-core-experiment/blob/master/examples/line-hello-world/index.js) example:
+Check out your channel's **access token** and **channel secret** at [LINE developers](https://developers.line.me) then fill them in [line-hello-world](https://github.com/Yoctol/bottender/blob/master/examples/line-hello-world/index.js) example:
 
 ```js
-const { LineBot } = require('toolbot-core-experiment');
+const { LineBot } = require('bottender');
 
 const bot = new LineBot({
   channelSecret: '__FILL_YOUR_SECRET_HERE__',
@@ -115,4 +115,4 @@ To ensure that the request is sent from the LINE Platform, you should provide yo
 - [LINE@ MANAGER](https://admin-official.line.me/)
 - [LINE developers](https://developers.line.me)
 - [messaging-api-line](https://github.com/Yoctol/messaging-apis/tree/master/packages/messaging-api-line)
-- [line-hello-world](https://github.com/Yoctol/toolbot-core-experiment/blob/master/examples/line-hello-world/index.js) example.
+- [line-hello-world](https://github.com/Yoctol/bottender/blob/master/examples/line-hello-world/index.js) example.

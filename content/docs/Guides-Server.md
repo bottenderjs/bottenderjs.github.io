@@ -25,7 +25,7 @@ All you need to do is to use the right `createServer` function according to plat
 For example:
 
 ```js
-const { createServer } = require('toolbot-core-experiment/express');
+const { createServer } = require('bottender/express');
 
 const bot = require('./bot'); // implement your bot logic
 
@@ -43,7 +43,7 @@ If you are developing a Messenger bot and you want to use your own verify token,
 For example:
 
 ```js
-const { createServer } = require('toolbot-core-experiment/express');
+const { createServer } = require('bottender/express');
 
 const bot = require('./bot'); // implement your Messenger bot logic
 
@@ -66,7 +66,7 @@ https://github.com/expressjs/express
 Example:
 
 ```js
-const { createServer } = require('toolbot-core-experiment/express');
+const { createServer } = require('bottender/express');
 
 const bot = require('./bot'); // implement your bot logic
 
@@ -77,7 +77,7 @@ server.listen(5000, () => {
 });
 ```
 
-The full `Express` server example is [here](https://github.com/Yoctol/toolbot-core-experiment/tree/master/examples/with-express).
+The full `Express` server example is [here](https://github.com/Yoctol/bottender/tree/master/examples/with-express).
 
 ### Koa
 
@@ -87,7 +87,7 @@ https://github.com/koajs/koa
 Example:
 
 ```js
-const { createServer } = require('toolbot-core-experiment/koa');
+const { createServer } = require('bottender/koa');
 
 const bot = require('./bot'); // implement your bot logic
 
@@ -98,7 +98,7 @@ server.listen(5000, () => {
 });
 ```
 
-The full `Koa` server example is [here](https://github.com/Yoctol/toolbot-core-experiment/tree/master/examples/with-koa).
+The full `Koa` server example is [here](https://github.com/Yoctol/bottender/tree/master/examples/with-koa).
 
 ### Micro
 
@@ -108,14 +108,14 @@ https://github.com/zeit/micro
 Example:
 
 ```js
-const { createRequestHandler } = require('toolbot-core-experiment/micro');
+const { createRequestHandler } = require('bottender/micro');
 
 const bot = require('./bot'); // implement your bot logic
 
 module.exports = createRequestHandler(bot);
 ```
 
-The full `Micro` server example is [here](https://github.com/Yoctol/toolbot-core-experiment/tree/master/examples/with-micro).
+The full `Micro` server example is [here](https://github.com/Yoctol/bottender/tree/master/examples/with-micro).
 
 ### Restify
 
@@ -123,7 +123,7 @@ The full `Micro` server example is [here](https://github.com/Yoctol/toolbot-core
 https://github.com/restify/node-restify
 
 ```js
-const { createServer } = require('toolbot-core-experiment/restify');
+const { createServer } = require('bottender/restify');
 
 const bot = require('./bot'); // implement your bot logic
 
@@ -134,4 +134,4 @@ server.listen(5000, () => {
 });
 ```
 
-The full `Restify` server example is [here](https://github.com/Yoctol/toolbot-core-experiment/tree/master/examples/with-restify).
+The full `Restify` server example is [here](https://github.com/Yoctol/bottender/tree/master/examples/with-restify).

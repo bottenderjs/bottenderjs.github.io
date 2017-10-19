@@ -14,8 +14,8 @@ A Bottender Context encapsulates many helpful methods into a single object like 
 | client | Messenger: [MessengerClient](https://github.com/Yoctol/messaging-apis/tree/master/packages/messaging-api-messenger)<br> LINE: [LineClient](https://github.com/Yoctol/messaging-apis/tree/master/packages/messaging-api-line)<br> Slack: [SlackClient](https://github.com/Yoctol/messaging-apis/tree/master/packages/messaging-api-slack)<br> Telegram: [TelegramClient](https://github.com/Yoctol/messaging-apis/tree/master/packages/messaging-api-telegram)<br> Console: ConsoleClient  | The client instance.<br> Return value depends on your platform. |
 | event | Messenger: MessengerEvent<br> LINE: LineEvent<br> Slack: SlackEvent<br> Telegram: TelegramEvent<br> Console: ConsoleEvent | The event instance.<br> Return value depends on your platform. |
 | session | Object | The session state of the context. |
-| [typing](https://github.com/Yoctol/toolbot-core-experiment/blob/docs-context/docs/APIReference-Context.md#typingmilliseconds) | Promise | Delay and show indicators for milliseconds. |
-| [sendText](https://github.com/Yoctol/toolbot-core-experiment/blob/docs-context/docs/APIReference-Context.md#sendtexttext-options) | Promise | Send text to the owner of the session. |
+| [typing](https://github.com/Yoctol/bottender/blob/docs-context/docs/APIReference-Context.md#typingmilliseconds) | Promise | Delay and show indicators for milliseconds. |
+| [sendText](https://github.com/Yoctol/bottender/blob/docs-context/docs/APIReference-Context.md#sendtexttext-options) | Promise | Send text to the owner of the session. |
 
 ## Messenger
  These are other methods on Messenger. See more details at [messaging-api-messenger](https://github.com/Yoctol/messaging-apis/tree/master/packages/messaging-api-messenger).
@@ -115,7 +115,7 @@ Description:
 
 ## Example
 
-Let's use [example](https://github.com/Yoctol/toolbot-core-experiment/blob/master/examples/messenger-hello-world/index.js) with Messenger platform.
+Let's use [example](https://github.com/Yoctol/bottender/blob/master/examples/messenger-hello-world/index.js) with Messenger platform.
 
 ```js
 bot.onEvent(async context => {

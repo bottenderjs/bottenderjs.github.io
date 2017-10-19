@@ -67,10 +67,10 @@ After call the async handler, we can write some assertions to make sure that eve
 
 ### Test Utils
 
-We provide some test utils in the package for convenience purpose. It's worth mentioning `ContextSimulator` here, and you can import it from `toolbot-core-experiment/test-utils`:
+We provide some test utils in the package for convenience purpose. It's worth mentioning `ContextSimulator` here, and you can import it from `bottender/test-utils`:
 
 ```js
-const { ContextSimulator } = require('toolbot-core-experiment/test-utils');
+const { ContextSimulator } = require('bottender/test-utils');
 ```
 
 After simulator instantiated with specific platform, you can create mocking context with serveral helper methods:
@@ -87,7 +87,7 @@ And we can use created context the same as the above example:
 
 ```js
 // __tests__/handler.spec.js
-const { ContextSimulator } = require('toolbot-core-experiment/test-utils');
+const { ContextSimulator } = require('bottender/test-utils');
 
 const handler = require('../handler');
 

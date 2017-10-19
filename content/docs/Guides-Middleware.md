@@ -27,7 +27,7 @@ function handler(context, next) { /* ... */ }
 ## Example
 
 ```js
-const { middleware } = require('toolbot-core-experiment');
+const { middleware } = require('bottender');
 
 ...
 
@@ -46,4 +46,4 @@ Each event came from bot will be handled by function handler1.
 
 Call `next()` in function handler1 and it will go to function handler2.
 
-more [example](https://github.com/Yoctol/toolbot-core-experiment/tree/master/examples/middleware) for middleware.
+more [example](https://github.com/Yoctol/bottender/tree/master/examples/middleware) for middleware.

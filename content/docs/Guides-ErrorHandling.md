@@ -36,7 +36,7 @@ For example:
 
 ```js
 // you can choose other supported handler accroding to the platform
-const { MessengerHandler } = require('toolbot-core-experiment');
+const { MessengerHandler } = require('bottender');
 
 const handler = new MessengerHandler()
   .onEvent(async context => {
@@ -50,4 +50,4 @@ const handler = new MessengerHandler()
 bot.onEvent(handler);
 ```
 
-[Here](https://github.com/Yoctol/toolbot-core-experiment/tree/master/examples/messenger-builder) is the full example of Messenger builder.
+[Here](https://github.com/Yoctol/bottender/tree/master/examples/messenger-builder) is the full example of Messenger builder.

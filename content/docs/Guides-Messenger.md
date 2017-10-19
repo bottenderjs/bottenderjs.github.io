@@ -28,10 +28,10 @@ We will use them to develop our messenger bot later.
 
 ## Build your first Messenger bot
 
-The following is a partial sample code, the full example is [here](https://github.com/Yoctol/toolbot-core-experiment/tree/master/examples/messenger-hello-world).
+The following is a partial sample code, the full example is [here](https://github.com/Yoctol/bottender/tree/master/examples/messenger-hello-world).
 
 ```js
-const { MessengerBot } = require('toolbot-core-experiment');
+const { MessengerBot } = require('bottender');
 
 const bot = new MessengerBot({
   accessToken: '__FILL_YOUR_TOKEN_HERE__',
@@ -43,11 +43,11 @@ After you fill the `accessToken` and `appSecret`, run your server and try it out
 
 ### Full example
 
-Here is the complete code for [messenger-hello-world](https://github.com/Yoctol/toolbot-core-experiment/tree/master/examples/messenger-hello-world)
+Here is the complete code for [messenger-hello-world](https://github.com/Yoctol/bottender/tree/master/examples/messenger-hello-world)
 
 ```js
-const { MessengerBot } = require('toolbot-core-experiment');
-const { createServer } = require('toolbot-core-experiment/express');
+const { MessengerBot } = require('bottender');
+const { createServer } = require('bottender/express');
 
 const bot = new MessengerBot({
   accessToken: '__FILL_YOUR_TOKEN_HERE__',
