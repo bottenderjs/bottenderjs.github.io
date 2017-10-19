@@ -3,13 +3,20 @@ import styled from 'styled-components';
 import Link from 'gatsby-link';
 
 const Item = styled.div`
-  padding-left: 50px;
+  padding-top: 5px;
+  border-top: 5px transparent solid;
+  margin-left: 50px;
   color: #2d2d2d;
   font-family: Karla;
   font-size: 18px;
   font-weight: bold;
   letter-spacing: 1px;
   text-transform: uppercase;
+  transition: border-top 0.3s;
+
+  &:hover {
+    border-color: #2b9ac8;
+  }
 `;
 
 class NavItem extends Component {
