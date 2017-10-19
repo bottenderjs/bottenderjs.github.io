@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Helmet from 'react-helmet';
 
 const Wrapper = styled.div`
   display: flex;
@@ -73,6 +74,9 @@ export default ({ data }) => {
   const post = data.markdownRemark;
   return (
     <Wrapper>
+      <Helmet
+        title={`${post.frontmatter.title} | ${data.site.siteMetadata.title}`}
+      />
       <div dangerouslySetInnerHTML={{ __html: post.html }} />
     </Wrapper>
   );
@@ -83,6 +87,11 @@ export const query = graphql`
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       frontmatter {
+        title
+      }
+    }
+    site {
+      siteMetadata {
         title
       }
     }
