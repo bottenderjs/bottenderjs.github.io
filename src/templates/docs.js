@@ -1,11 +1,21 @@
 import React from 'react';
+import styled from 'styled-components';
+
+const Wrapper = styled.div`
+  display: flex;
+  width: 100%;
+
+  div {
+    width: 100%;
+  }
+`;
 
 export default ({ data }) => {
   const post = data.markdownRemark;
   return (
-    <div>
+    <Wrapper>
       <div dangerouslySetInnerHTML={{ __html: post.html }} />
-    </div>
+    </Wrapper>
   );
 };
 

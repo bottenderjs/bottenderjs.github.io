@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-import { rhythm } from '../utils/typography';
-
 import ListItem from './ListItem';
 
 const Wrapper = styled.div`
@@ -12,7 +10,13 @@ const Wrapper = styled.div`
 
 const SectionTitle = styled.h2`
   display: flex;
-  margin-top: ${rhythm(1)};
+  margin-top: 32px;
+  margin-bottom: 12px;
+  color: #2b9ac8;
+  font-family: Karla;
+  font-size: 21px;
+  letter-spacing: 1px;
+  opacity: 0.6;
 `;
 
 class ListSection extends Component {
