@@ -16,10 +16,10 @@ const Input = styled.input`
   height: 40px;
   padding-left: 30px;
   border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
   background: #fff;
   font-family: Karla;
   font-size: 21px;
-  border-radius: 4px;
   transition: border-color ease-in-out 0.15s;
 
   &:focus {

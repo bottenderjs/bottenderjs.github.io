@@ -9,9 +9,9 @@ const Wrapper = styled(Link)`
 
 const ListTitle = styled.div`
   display: flex;
+  margin-bottom: 12px;
   padding-bottom: 2px;
   border-bottom: 2px solid transparent;
-  margin-bottom: 12px;
   color: #24779b;
   font-family: Karla;
   font-size: 21px;

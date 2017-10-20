@@ -8642,9 +8642,9 @@ stylelint-config-styled-components@^0.1.1:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/stylelint-config-styled-components/-/stylelint-config-styled-components-0.1.1.tgz#b408388d7c687833ab4be4c4e6522d97d2827ede"
 
-stylelint-config-yoctol@^0.6.0:
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/stylelint-config-yoctol/-/stylelint-config-yoctol-0.6.0.tgz#f5675a63f0d68c776145e018b6670cc343ce7d16"
+stylelint-config-yoctol@^0.7.0:
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/stylelint-config-yoctol/-/stylelint-config-yoctol-0.7.0.tgz#f04a0c4495f77be13921eb795f03c51169774e63"
   dependencies:
     stylelint-config-standard "^17.0.0"
     stylelint-order "^0.7.0"
