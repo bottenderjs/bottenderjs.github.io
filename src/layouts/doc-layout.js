@@ -67,12 +67,15 @@ const Left = styled.div`
 const Right = styled.div`
   display: flex;
   width: 33.4%;
-  padding-top: 32px;
+
+  /* add half of H1 font-size for alignment */
+  padding-top: calc(32px + 30px);
   padding-left: 40px;
   background-color: #fafafa;
 
   @media (${media.desktop}) {
     width: 25%;
+    padding-left: 25px;
   }
 
   @media (${media.tablet}) {
