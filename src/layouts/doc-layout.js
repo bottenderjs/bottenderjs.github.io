@@ -127,7 +127,7 @@ export default ({ children, data, location }) => {
             <EditThisPage pathname={pathname} />
           </Left>
           <Right>
-            <Sidebar />
+            <Sidebar pathname={pathname} />
           </Right>
         </Container>
       </Main>

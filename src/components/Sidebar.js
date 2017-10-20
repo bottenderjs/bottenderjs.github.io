@@ -16,7 +16,9 @@ class Sidebar extends Component {
     return (
       <Wrapper>
         <SearchBar />
-        {DocsList.map(list => <ListSection key={list.title} list={list} />)}
+        {DocsList.map(list => (
+          <ListSection key={list.title} list={list} {...this.props} />
+        ))}
       </Wrapper>
     );
   }
