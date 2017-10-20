@@ -25,7 +25,7 @@ class ListSection extends Component {
     return (
       <Wrapper>
         <SectionTitle>{list.title}</SectionTitle>
-        {list.items.map(item => <ListItem item={item} />)}
+        {list.items.map(item => <ListItem key={item.title} item={item} />)}
       </Wrapper>
     );
   }
