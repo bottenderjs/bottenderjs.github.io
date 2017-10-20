@@ -106,15 +106,15 @@ export default ({ children, data, location }) => {
           {
             rel: 'icon',
             sizes: '192x192',
-            href: '/favicon-192x192.png',
+            href: `${__PATH_PREFIX__}/favicon-192x192.png`,
           },
           {
-            href: '/favicon-32x32.png',
+            href: `${__PATH_PREFIX__}/favicon-32x32.png`,
             rel: 'shortcut icon',
             type: 'image/x-icon',
           },
           {
-            href: '/apple-touch-icon.png',
+            href: `${__PATH_PREFIX__}/apple-touch-icon.png`,
             rel: 'apple-touch-icon',
           },
         ]}
