@@ -3,17 +3,6 @@ import { injectGlobal } from 'styled-components';
 
 import '../../static/fonts/style.css';
 
-let WebFont;
-
-if (typeof window !== 'undefined') {
-  WebFont = require('webfontloader'); // eslint-disable-line global-require
-  WebFont.load({
-    google: {
-      families: ['Karla', 'Roboto'],
-    },
-  });
-}
-
 export default () => injectGlobal`
   ${styledNormalize}
 
