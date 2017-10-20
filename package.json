@@ -50,7 +50,7 @@
     "prettier": "^1.7.4",
     "stylelint": "^8.2.0",
     "stylelint-config-styled-components": "^0.1.1",
-    "stylelint-config-yoctol": "^0.6.0",
+    "stylelint-config-yoctol": "^0.7.0",
     "stylelint-processor-styled-components": "^1.0.0"
   },
   "lint-staged": {

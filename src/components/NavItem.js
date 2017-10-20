@@ -3,9 +3,9 @@ import styled from 'styled-components';
 import Link from 'gatsby-link';
 
 const Item = styled.div`
+  margin-left: 50px;
   padding-top: 5px;
   border-top: 5px transparent solid;
-  margin-left: 50px;
   color: #2d2d2d;
   font-family: Karla;
   font-size: 18px;
