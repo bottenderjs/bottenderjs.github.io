@@ -5,7 +5,7 @@ date: "2017-10-12"
 
 # Messenger
 
-This guide will give you some basic concepts about developing a Messenger bot. For more detail, check [the official docs](https://developers.facebook.com/docs/messenger-platform).
+This guide will give you some basic concepts about developing a Messenger bot. For more detail, check [official docs](https://developers.facebook.com/docs/messenger-platform).
 
 ## Requirements
 
