@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: '/bottender-docs',
   siteMetadata: {
     title: 'Bottender',
   },
