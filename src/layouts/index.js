@@ -27,6 +27,26 @@ export default ({ children, data }) => {
             name: 'description',
             content: title,
           },
+          {
+            name: 'apple-mobile-web-app-title',
+            content: 'Bottender',
+          },
+        ]}
+        link={[
+          {
+            rel: 'icon',
+            sizes: '192x192',
+            href: '/favicon-192x192.png',
+          },
+          {
+            href: '/favicon-32x32.png',
+            rel: 'shortcut icon',
+            type: 'image/x-icon',
+          },
+          {
+            href: '/apple-touch-icon.png',
+            rel: 'apple-touch-icon',
+          },
         ]}
       />
       <Header title={data.site.siteMetadata.title} />
