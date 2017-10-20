@@ -76,34 +76,34 @@ class ExhibitionSection extends Component {
           </SubTitle>
           <Row>
             <ExhibitionItem
-              url="http://via.placeholder.com/320x180"
+              url="https://via.placeholder.com/320x180"
               title="Bot Name"
               subTitle="by Developers Name"
             />
             <ExhibitionItem
-              url="http://via.placeholder.com/320x180"
+              url="https://via.placeholder.com/320x180"
               title="Bot Name"
               subTitle="by Developers Name"
             />
             <ExhibitionItem
-              url="http://via.placeholder.com/320x180"
+              url="https://via.placeholder.com/320x180"
               title="Bot Name"
               subTitle="by Developers Name"
             />
           </Row>
           <Row>
             <ExhibitionItem
-              url="http://via.placeholder.com/320x180"
+              url="https://via.placeholder.com/320x180"
               title="Bot Name"
               subTitle="by Developers Name"
             />
             <ExhibitionItem
-              url="http://via.placeholder.com/320x180"
+              url="https://via.placeholder.com/320x180"
               title="Bot Name"
               subTitle="by Developers Name"
             />
             <ExhibitionItem
-              url="http://via.placeholder.com/320x180"
+              url="https://via.placeholder.com/320x180"
               title="Bot Name"
               subTitle="by Developers Name"
             />
