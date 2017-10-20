@@ -3,7 +3,8 @@ import styled from 'styled-components';
 
 import logo from '../../assets/logo.svg';
 import landscape from '../../assets/landscape.svg';
-import { rhythm } from '../../utils/typography';
+import landscapeMobile from '../../assets/landscape-mobile.svg';
+import media from '../../css/media';
 
 import GetStartedLink from './GetStartedLink';
 
@@ -18,6 +19,11 @@ const Wrapper = styled.section`
   background-repeat: no-repeat;
   background-position: center;
   background-color: #000;
+
+  @media (${media.tablet}) {
+    height: 155vw;
+    background-image: url(${landscapeMobile});
+  }
 `;
 
 const Title = styled.h1`
@@ -27,16 +33,38 @@ const Title = styled.h1`
   font-size: 81px;
   text-align: center;
   letter-spacing: 8.2px;
+
+  @media (${media.giant}) {
+    font-size: ${81 * 0.8}px;
+  }
+
+  @media (${media.desktop}) {
+    font-size: ${81 * 0.6}px;
+  }
+  @media (${media.tablet}) {
+    font-size: 12vw;
+  }
 `;
 
 const Slogan = styled.h2`
-  margin: 0 ${rhythm(0.5)} ${rhythm(1.5)};
+  margin: 0 1vw 4vw;
   color: #fff;
   font-family: SFUIDisplay;
   font-size: 22px;
   text-align: center;
   font-weight: 300;
   letter-spacing: 3.5px;
+
+  @media (${media.giant}) {
+    font-size: ${22 * 0.8}px;
+  }
+
+  @media (${media.desktop}) {
+    font-size: ${22 * 0.6}px;
+  }
+  @media (${media.tablet}) {
+    font-size: 3vw;
+  }
 `;
 
 class LandscapeSection extends Component {

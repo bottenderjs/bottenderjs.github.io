@@ -2,18 +2,25 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 import { rhythm } from '../../utils/typography';
+import media from '../../css/media';
 
 import IntroductionItem from './IntroductionItem';
 
 const Wrapper = styled.section`
   display: flex;
-  height: 650px;
+  height: auto;
+  padding: 50px 0;
   justify-content: center;
+
+  @media (${media.tablet}) {
+    padding: 20px 0;
+  }
 `;
 
 const Container = styled.div`
   display: flex;
   width: calc(1024px + ${rhythm(0.5)});
+  margin: 0 ${rhythm(0.5)};
   height: 100%;
   flex-wrap: wrap;
   align-content: center;
@@ -24,6 +31,11 @@ const Row = styled.div`
   display: flex;
   width: 100%;
   margin: ${rhythm(0.5)} 0;
+
+  @media (${media.tablet}) {
+    margin: 0;
+    flex-wrap: wrap;
+  }
 `;
 
 class TitleSection extends Component {

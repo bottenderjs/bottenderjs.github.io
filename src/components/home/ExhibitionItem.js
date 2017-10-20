@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import Link from 'gatsby-link';
 
+import media from '../../css/media';
 import { rhythm } from '../../utils/typography';
 
 const Wrapper = styled.div`
@@ -9,10 +10,20 @@ const Wrapper = styled.div`
   margin: 0 32px;
   flex-basis: 30%;
   flex-direction: column;
+
+  @media (${media.tablet}) {
+    margin: 10px 0;
+    flex-basis: 100%;
+  }
 `;
 
 const ShowcaseImage = styled.img`
   margin-bottom: ${rhythm(0.25)};
+
+  @media (${media.tablet}) {
+    width: 100%;
+    margin: 0;
+  }
 `;
 
 const Title = styled.h2`

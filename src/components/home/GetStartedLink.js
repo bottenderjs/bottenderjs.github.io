@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 import Link from 'gatsby-link';
 
-import { rhythm } from '../../utils/typography';
+import media from '../../css/media';
 
 const GetStartedLink = styled(Link)`
   max-width: 320px;
-  padding: ${rhythm(0.75)} ${rhythm(3.5)};
+  padding: 1em 3em;
   border: solid 2px #fff;
   color: #fff;
   text-align: center;
@@ -18,6 +18,19 @@ const GetStartedLink = styled(Link)`
   &:hover {
     color: #000;
     background-color: #fff;
+  }
+
+  @media (${media.giant}) {
+    font-size: 14px;
+  }
+
+  @media (${media.desktop}) {
+    font-size: 10px;
+  }
+
+  @media (${media.tablet}) {
+    padding: 2vw 5vw;
+    font-size: 5vw;
   }
 `;
 

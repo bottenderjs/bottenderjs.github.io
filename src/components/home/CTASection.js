@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 import { rhythm } from '../../utils/typography';
+import media from '../../css/media';
 
 import GetStartedLink from './GetStartedLink';
 
@@ -12,6 +13,10 @@ const Wrapper = styled.section`
   justify-content: center;
   align-items: center;
   background-color: #101010;
+
+  @media (${media.tablet}) {
+    height: 400px;
+  }
 `;
 
 const Title = styled.h1`
@@ -21,6 +26,10 @@ const Title = styled.h1`
   text-align: center;
   font-weight: bold;
   letter-spacing: -1px;
+
+  @media (${media.tablet}) {
+    font-size: 26px;
+  }
 `;
 
 class CTASection extends Component {
