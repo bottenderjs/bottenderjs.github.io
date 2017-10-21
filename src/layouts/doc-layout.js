@@ -4,7 +4,7 @@ import Helmet from 'react-helmet';
 import 'prismjs/themes/prism.css'; // eslint-disable-line
 
 import baseStyles from '../css';
-import media, { sizes } from '../css/media';
+import media from '../css/media';
 import Sidebar from '../components/Sidebar';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -34,16 +34,12 @@ const Main = styled.div`
 
 const Container = styled.div`
   display: flex;
-  width: calc(1024px + ${rhythm(0.5)});
+  max-width: calc(1024px + ${rhythm(0.5)});
   margin: 0 ${rhythm(0.5)};
   justify-content: space-between;
 
-  @media (${media.desktop}) {
-    width: calc(${sizes.tablet}px + ${rhythm(0.5)});
-  }
-
-  @media (${media.tablet}) {
-    width: calc(100% - ${rhythm(0.5)});
+  @media (${media.giant}) {
+    width: calc(100% - ${rhythm(1)});
     justify-content: center;
   }
 `;
