@@ -19,7 +19,6 @@ module.exports = {
         path: `${__dirname}/content/docs`,
       },
     },
-    'gatsby-transformer-remark',
     'gatsby-plugin-styled-components',
     {
       resolve: 'gatsby-plugin-typography',
@@ -43,6 +42,7 @@ module.exports = {
               classPrefix: 'language-',
             },
           },
+          'gatsby-remark-autolink-headers',
         ],
       },
     },
