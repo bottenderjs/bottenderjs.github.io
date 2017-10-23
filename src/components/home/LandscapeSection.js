@@ -15,10 +15,10 @@ const Wrapper = styled.section`
   justify-content: center;
   align-items: center;
   background-image: url(${landscape});
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
   background-color: #000;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 
   @media (${media.tablet}) {
     height: 155vw;
@@ -41,6 +41,7 @@ const Title = styled.h1`
   @media (${media.desktop}) {
     font-size: ${81 * 0.6}px;
   }
+
   @media (${media.tablet}) {
     font-size: 12vw;
   }
@@ -62,6 +63,7 @@ const Slogan = styled.h2`
   @media (${media.desktop}) {
     font-size: ${22 * 0.6}px;
   }
+
   @media (${media.tablet}) {
     font-size: 3vw;
   }

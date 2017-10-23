@@ -8,8 +8,8 @@ import { rhythm } from '../../utils/typography';
 const Wrapper = styled.div`
   display: flex;
   margin: 0 32px;
-  flex-basis: 30%;
   flex-direction: column;
+  flex-basis: 30%;
 
   @media (${media.tablet}) {
     margin: 10px 0;
@@ -30,8 +30,8 @@ const Title = styled.h2`
   margin-bottom: 0;
   color: #2d2d2d;
   font-size: 21px;
-  font-weight: 500
   line-height: 1.14;
+  font-weight: 500;
 `;
 
 const SubTitle = styled.p`
