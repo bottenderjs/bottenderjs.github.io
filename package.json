@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public -m 'Auto-generated commit [ci skip]'",
     "dev": "gatsby develop",
     "develop": "gatsby develop",
     "lint": "eslint src",
