@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import styled from 'styled-components';
 import Helmet from 'react-helmet';
 import 'prismjs/themes/prism.css'; // eslint-disable-line
@@ -80,58 +80,75 @@ const Right = styled.div`
   }
 `;
 
-export default ({ children, data, location }) => {
-  baseStyles();
-  const { pathname } = location;
-  const title = `${data.site.siteMetadata
-    .title} | Make Bots in Your Way, Fast and Flexibly`;
-  return (
-    <Wrapper>
-      <Helmet
-        title={title}
-        meta={[
-          {
-            name: 'description',
-            content: title,
-          },
-          {
-            name: 'apple-mobile-web-app-title',
-            content: 'Bottender',
-          },
-        ]}
-        link={[
-          {
-            rel: 'icon',
-            sizes: '192x192',
-            href: `${__PATH_PREFIX__}/favicon-192x192.png`,
-          },
-          {
-            href: `${__PATH_PREFIX__}/favicon-32x32.png`,
-            rel: 'shortcut icon',
-            type: 'image/x-icon',
-          },
-          {
-            href: `${__PATH_PREFIX__}/apple-touch-icon.png`,
-            rel: 'apple-touch-icon',
-          },
-        ]}
-      />
-      <Header title={data.site.siteMetadata.title} pathname={pathname} />
-      <Main>
-        <Container>
-          <Left>
-            {children()}
-            <EditThisPage pathname={pathname} />
-          </Left>
-          <Right>
-            <Sidebar pathname={pathname} />
-          </Right>
-        </Container>
-      </Main>
-      <Footer />
-    </Wrapper>
-  );
-};
+function addTargetBlank() {
+  // https://stackoverflow.com/questions/4425198/can-i-create-links-with-target-blank-in-markdown
+  const { links } = document;
+  for (let i = 0; i < links.length; i++) {
+    if (links[i].hostname !== window.location.hostname) {
+      links[i].target = '_blank';
+    }
+  }
+}
+
+export default class DocLayout extends Component {
+  componentDidMount() {
+    addTargetBlank();
+  }
+
+  render() {
+    const { children, data, location } = this.props;
+    baseStyles();
+    const { pathname } = location;
+    const title = `${data.site.siteMetadata
+      .title} | Make Bots in Your Way, Fast and Flexibly`;
+    return (
+      <Wrapper>
+        <Helmet
+          title={title}
+          meta={[
+            {
+              name: 'description',
+              content: title,
+            },
+            {
+              name: 'apple-mobile-web-app-title',
+              content: 'Bottender',
+            },
+          ]}
+          link={[
+            {
+              rel: 'icon',
+              sizes: '192x192',
+              href: `${__PATH_PREFIX__}/favicon-192x192.png`,
+            },
+            {
+              href: `${__PATH_PREFIX__}/favicon-32x32.png`,
+              rel: 'shortcut icon',
+              type: 'image/x-icon',
+            },
+            {
+              href: `${__PATH_PREFIX__}/apple-touch-icon.png`,
+              rel: 'apple-touch-icon',
+            },
+          ]}
+        />
+        <Header title={data.site.siteMetadata.title} pathname={pathname} />
+        <Main>
+          <Container>
+            <Left>
+              {children()}
+              <EditThisPage pathname={pathname} />
+            </Left>
+            <Right>
+              <Sidebar pathname={pathname} />
+            </Right>
+          </Container>
+        </Main>
+        <Footer />
+      </Wrapper>
+    );
+  }
+}
 
 export const query = graphql`
   query DocLayoutQuery {
