@@ -2,6 +2,7 @@ module.exports = {
   pathPrefix: '/bottender-docs',
   siteMetadata: {
     title: 'Bottender',
+    siteUrl: 'https://yoctol.github.io/bottender-docs/',
   },
   plugins: [
     'gatsby-plugin-react-next',
@@ -47,5 +48,8 @@ module.exports = {
       },
     },
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-sitemap`,
+    },
   ],
 };
