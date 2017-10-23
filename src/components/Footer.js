@@ -74,7 +74,7 @@ class Footer extends Component {
           <MobileCopyright>
             © 2017 - PRESENT YOCTOL INFO INC. <br />ALL RIGHTS RESERVED
           </MobileCopyright>
-          <Link href="https://github.com/Yoctol/bottender-docs" target="_blank">
+          <Link href="https://github.com/Yoctol/bottender" target="_blank">
             <GitHubLogo src={github} alt="Bottender github link" />
           </Link>
         </Container>

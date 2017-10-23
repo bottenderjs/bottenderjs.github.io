@@ -35,10 +35,7 @@ class Nav extends Component {
         <DesktopMenu>
           <NavItem title="docs" to="/docs/GettingStarted" />
           <NavItem title="blog" to="/blog" />
-          <NavItem
-            title="github"
-            to="https://github.com/Yoctol/bottender-docs"
-          />
+          <NavItem title="github" to="https://github.com/Yoctol/bottender" />
         </DesktopMenu>
         <MobileMenu src={MobileMenuIcon} />
       </Container>
