@@ -8,6 +8,7 @@ import Footer from '../components/Footer';
 
 const Wrapper = styled.div`
   margin: 0 auto;
+  padding-top: 80px;
 `;
 
 const Container = styled.div`

@@ -1,16 +1,21 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import Link from 'gatsby-link';
 
 import logo from '../assets/bottender.svg';
 import { rhythm } from '../utils/typography';
 import Nav from '../components/Nav';
 
 const Wrapper = styled.div`
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
   display: flex;
+  width: 100%;
   height: 80px;
   border-bottom: 1px solid #d2d2d2;
   justify-content: center;
+  background-color: #fff;
 `;
 
 const Container = styled.div`
@@ -27,7 +32,7 @@ const Logo = styled.img`
   margin: 0;
 `;
 
-const LogoLink = styled(Link)`
+const LogoLink = styled.a`
   width: 229px;
 `;
 
@@ -36,7 +41,7 @@ class Header extends Component {
     return (
       <Wrapper>
         <Container>
-          <LogoLink to={'/'}>
+          <LogoLink href={`${__PATH_PREFIX__}/`}>
             <Logo src={logo} alt={this.props.title} />
           </LogoLink>
           <Nav pathname={this.props.pathname} />
