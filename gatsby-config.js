@@ -2,7 +2,7 @@ module.exports = {
   pathPrefix: '/bottender-docs',
   siteMetadata: {
     title: 'Bottender',
-    siteUrl: 'https://yoctol.github.io/bottender-docs/',
+    siteUrl: 'https://yoctol.github.io/bottender-docs',
   },
   plugins: [
     'gatsby-plugin-react-next',
