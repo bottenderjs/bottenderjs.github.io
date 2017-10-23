@@ -16,13 +16,13 @@ const Wrapper = styled.section`
 
 const Container = styled.div`
   display: flex;
-  margin: 0 ${rhythm(0.5)};
-  padding: ${rhythm(2)} 0;
   width: calc(1024px + ${rhythm(0.5)});
   height: 100%;
+  margin: 0 ${rhythm(0.5)};
+  padding: ${rhythm(2)} 0;
   flex-wrap: wrap;
-  align-content: center;
   justify-content: center;
+  align-content: center;
 `;
 
 const Title = styled.h2`
@@ -36,10 +36,10 @@ const Title = styled.h2`
 `;
 
 const SubTitle = styled.p`
-  text-align: center;
+  color: #767676;
   font-size: 24px;
   line-height: 1.5;
-  color: #767676;
+  text-align: center;
 
   @media (${media.tablet}) {
     font-size: 16px;

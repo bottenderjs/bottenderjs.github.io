@@ -8,12 +8,12 @@ const GetStartedLink = styled(Link)`
   padding: 1em 3em;
   border: solid 2px #fff;
   color: #fff;
+  font-size: 20px;
   text-align: center;
   background-color: transparent;
-  font-size: 20px;
   font-weight: bold;
-  word-spacing: -1px;
   transition: color 0.3s ease, background-color 0.3s ease;
+  word-spacing: -1px;
 
   &:hover {
     color: #000;

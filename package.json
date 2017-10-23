@@ -11,7 +11,7 @@
     "develop": "gatsby develop",
     "lint": "eslint src",
     "lint:fix": "npm run lint -- --fix",
-    "lint:css": "stylelint src/**/*.js",
+    "lint:css": "stylelint 'src/**/*.js'",
     "lint:staged": "lint-staged",
     "precommit": "npm run lint:css && lint-staged",
     "serve": "gatsby serve",

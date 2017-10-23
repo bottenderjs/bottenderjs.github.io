@@ -6,8 +6,8 @@ import media from '../../css/media';
 const Wrapper = styled.div`
   display: flex;
   padding-right: 2em;
-  flex-basis: 50%;
   flex-direction: column;
+  flex-basis: 50%;
 
   @media (${media.tablet}) {
     padding-right: 0;
