@@ -13,6 +13,7 @@ import { rhythm } from '../utils/typography';
 
 const Wrapper = styled.div`
   margin: 0 auto;
+  padding-top: 80px;
 `;
 
 const Main = styled.div`
