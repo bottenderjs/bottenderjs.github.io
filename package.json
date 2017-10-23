@@ -14,7 +14,8 @@
     "lint:css": "stylelint src/**/*.js",
     "lint:staged": "lint-staged",
     "precommit": "npm run lint:css && lint-staged",
-    "serve": "gatsby serve"
+    "serve": "gatsby serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
     "gatsby": "^1.9.45",

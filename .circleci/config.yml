@@ -1,0 +1,45 @@
+version: 2
+
+jobs:
+  deploy:
+    working_directory: /tmp/app
+    docker:
+      - image: node:8
+    environment:
+      TZ: "/usr/share/zoneinfo/Asia/Taipei"
+
+    steps:
+      - checkout
+
+      # Download and cache dependencies
+      - restore_cache:
+          keys:
+          - v1-dependencies-{{ checksum "package.json" }}
+          # fallback to using the latest cache if no exact match is found
+          - v1-dependencies-
+
+      - run: yarn install
+
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "package.json" }}
+
+      - run:
+          name: Set git config
+          command: |
+            git config --global user.email "$GH_EMAIL" > /dev/null 2>&1
+            git config --global user.name "$GH_NAME" > /dev/null 2>&1
+
+      - run: yarn run deploy
+
+workflows:
+  version: 2
+  deploy-to-gh-pages:
+    jobs:
+      - deploy:
+          filters:
+            branches:
+              only:
+                - master
+
