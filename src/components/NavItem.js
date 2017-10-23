@@ -34,18 +34,18 @@ const Item = styled.div`
 
 class NavItem extends Component {
   render() {
-    const { to: link, title, onClick } = this.props;
+    const { to: link, title, onClick, hasHover } = this.props;
     const isOutsideLink = link.indexOf('http') > -1;
     if (isOutsideLink) {
       return (
         <a href={link} target="_blank">
-          <Item>{title}</Item>
+          <Item hasHover={hasHover}>{title}</Item>
         </a>
       );
     }
     return (
       <Link to={link} onClick={onClick}>
-        <Item>{title}</Item>
+        <Item hasHover={hasHover}>{title}</Item>
       </Link>
     );
   }
