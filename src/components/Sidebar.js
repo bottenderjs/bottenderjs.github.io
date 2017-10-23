@@ -9,6 +9,7 @@ import SearchBar from './SearchBar';
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
+  flex: 1;
 `;
 
 class Sidebar extends Component {

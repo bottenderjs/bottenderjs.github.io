@@ -29,14 +29,18 @@ const ListTitle = styled.div`
 
 class ListItem extends Component {
   render() {
-    const { item, pathname } = this.props;
+    const { item, pathname, toggleMenu } = this.props;
     const selectedTitle = pathname.replace(
-      /\/docs\/(Guides|APIReference)-/i,
+      /\/docs\/((Guides|APIReference)-)?/i,
       ''
     );
+
     return (
       <Wrapper to={`/${item.id}`}>
-        <ListTitle selected={selectedTitle === item.title.replace(/ /g, '')}>
+        <ListTitle
+          selected={selectedTitle === item.title.replace(/ /g, '')}
+          onClick={toggleMenu}
+        >
           {item.title}
         </ListTitle>
       </Wrapper>

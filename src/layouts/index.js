@@ -14,10 +14,12 @@ const Container = styled.div`
   display: flex;
 `;
 
-export default ({ children, data }) => {
+export default ({ children, data, location }) => {
   baseStyles();
   const title = `${data.site.siteMetadata
     .title} | Make Bots in Your Way, Fast and Flexibly`;
+  const { pathname } = location;
+
   return (
     <Wrapper>
       <Helmet
@@ -49,7 +51,7 @@ export default ({ children, data }) => {
           },
         ]}
       />
-      <Header title={data.site.siteMetadata.title} />
+      <Header title={data.site.siteMetadata.title} pathname={pathname} />
       <Container>{children()}</Container>
       <Footer />
     </Wrapper>

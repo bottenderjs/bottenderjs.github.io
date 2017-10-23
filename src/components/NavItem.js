@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import Link from 'gatsby-link';
 
+import media from '../css/media';
+
 const Item = styled.div`
   margin-left: 50px;
   padding-top: 5px;
@@ -14,25 +16,36 @@ const Item = styled.div`
   text-transform: uppercase;
   transition: border-top 0.3s;
 
-  &:hover {
-    border-color: #2b9ac8;
+  @media (${media.tablet}) {
+    margin-bottom: 20px;
+    margin-left: 0;
+    padding-top: 0;
   }
+
+  /* stylelint-disable */
+  ${prop =>
+    prop.hasHover
+      ? `&:hover {
+    border-color: #2b9ac8;
+  }`
+      : ''};
+  /* stylelint-enable */
 `;
 
 class NavItem extends Component {
   render() {
-    const link = this.props.to;
+    const { to: link, title, onClick } = this.props;
     const isOutsideLink = link.indexOf('http') > -1;
     if (isOutsideLink) {
       return (
-        <a href={this.props.to} target="_blank">
-          <Item>{this.props.title}</Item>
+        <a href={link} target="_blank">
+          <Item>{title}</Item>
         </a>
       );
     }
     return (
-      <Link to={this.props.to}>
-        <Item>{this.props.title}</Item>
+      <Link to={link} onClick={onClick}>
+        <Item>{title}</Item>
       </Link>
     );
   }

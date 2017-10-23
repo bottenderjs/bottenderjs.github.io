@@ -115,7 +115,7 @@ export default ({ children, data, location }) => {
           },
         ]}
       />
-      <Header title={data.site.siteMetadata.title} />
+      <Header title={data.site.siteMetadata.title} pathname={pathname} />
       <Main>
         <Container>
           <Left>

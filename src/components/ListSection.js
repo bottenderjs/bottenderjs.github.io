@@ -21,12 +21,17 @@ const SectionTitle = styled.h2`
 
 class ListSection extends Component {
   render() {
-    const { list, pathname } = this.props;
+    const { list, pathname, toggleMenu } = this.props;
     return (
       <Wrapper>
         <SectionTitle>{list.title}</SectionTitle>
         {list.items.map(item => (
-          <ListItem key={item.title} item={item} pathname={pathname} />
+          <ListItem
+            key={item.title}
+            item={item}
+            pathname={pathname}
+            toggleMenu={toggleMenu}
+          />
         ))}
       </Wrapper>
     );

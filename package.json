@@ -33,6 +33,7 @@
     "gatsby-transformer-remark": "^1.7.15",
     "glamorous": "^4.9.7",
     "react": "^16.0.0",
+    "react-burger-menu": "^2.1.9",
     "react-helmet": "^5.2.0",
     "styled-components": "^2.2.1",
     "styled-normalize": "^2.2.1",

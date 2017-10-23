@@ -39,7 +39,7 @@ class Header extends Component {
           <LogoLink to={'/'}>
             <Logo src={logo} alt={this.props.title} />
           </LogoLink>
-          <Nav />
+          <Nav pathname={this.props.pathname} />
         </Container>
       </Wrapper>
     );

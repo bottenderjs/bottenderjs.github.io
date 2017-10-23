@@ -33,7 +33,8 @@ const Input = styled.input`
   }
 
   @media (${media.tablet}) {
-    padding-left: 0;
+    max-width: 100%;
+    margin: 20px 0;
   }
 `;
 
@@ -41,6 +42,10 @@ const SearchIcon = styled.img`
   position: absolute;
   top: 10px;
   left: 7px;
+
+  @media (${media.tablet}) {
+    top: 30px;
+  }
 `;
 
 class SearchBar extends Component {
