@@ -42,7 +42,8 @@ class NavItem extends Component {
   render() {
     const { to: link, title, onClick, hasHover, pathname } = this.props;
     const isOutsideLink = link.indexOf('http') > -1;
-    const selected = pathname.indexOf(title.toLowerCase()) > -1;
+    const selected = pathname.indexOf(`/${title.toLowerCase()}/`) > -1;
+
     if (isOutsideLink) {
       return (
         <a href={link} target="_blank">
