@@ -53,7 +53,9 @@ export default ({ children, data, location }) => {
             rel: 'apple-touch-icon',
           },
         ]}
-      />
+      >
+        <html lang="en" dir="ltr" />
+      </Helmet>
       <Header title={data.site.siteMetadata.title} pathname={pathname} />
       <Container id="content">{children()}</Container>
       <Footer />
