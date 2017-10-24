@@ -49,6 +49,7 @@ const menuStyle = {
     height: 'auto',
     maxHeight: '100%',
     overflowY: 'scroll',
+    WebkitOverflowScrolling: 'touch',
   },
   bmItemList: {
     display: 'flex',
@@ -67,13 +68,6 @@ class MobileMenu extends Component {
   }
 
   toggleMenu() {
-    document.documentElement.style.overflow = this.state.isOpen
-      ? 'auto'
-      : 'hidden';
-    document.documentElement.style.height = this.state.isOpen ? 'auto' : '100%';
-    document.body.style.overflow = document.documentElement.style.overflow;
-    document.body.style.height = document.documentElement.style.height;
-
     this.setState(state => ({
       isOpen: !state.isOpen,
     }));
