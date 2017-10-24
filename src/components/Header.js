@@ -5,7 +5,7 @@ import logo from '../assets/bottender.svg';
 import { rhythm } from '../utils/typography';
 import Nav from '../components/Nav';
 
-const Wrapper = styled.div`
+const Wrapper = styled.header`
   position: fixed;
   z-index: 1;
   top: 0;

@@ -26,7 +26,7 @@ const ShowcaseImage = styled.img`
   }
 `;
 
-const Title = styled.h2`
+const Title = styled.h4`
   margin-bottom: 0;
   color: #2d2d2d;
   font-size: 21px;
@@ -34,7 +34,7 @@ const Title = styled.h2`
   font-weight: 500;
 `;
 
-const SubTitle = styled.p`
+const SubTitle = styled.h5`
   color: #767676;
   font-size: 18px;
   line-height: 1.33;

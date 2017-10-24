@@ -19,7 +19,7 @@ const Wrapper = styled.section`
   }
 `;
 
-const Title = styled.h1`
+const Title = styled.h2`
   margin: ${rhythm(1)} ${rhythm(0.5)};
   color: #fff;
   font-size: 37px;
