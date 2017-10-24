@@ -31,7 +31,7 @@ class Nav extends Component {
             hasHover
             pathname={pathname}
           />
-          <NavItem title="blog" to="/blog" hasHover pathname={pathname} />
+          <NavItem title="blog" to="/blog/" hasHover pathname={pathname} />
           <NavItem
             title="github"
             to="https://github.com/Yoctol/bottender"

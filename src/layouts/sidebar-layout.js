@@ -37,7 +37,7 @@ const Main = styled.div`
 
 const Container = styled.div`
   display: flex;
-  max-width: calc(1024px + ${rhythm(0.5)});
+  width: calc(1024px + ${rhythm(0.5)});
   margin: 0 ${rhythm(0.5)};
   justify-content: space-between;
 
