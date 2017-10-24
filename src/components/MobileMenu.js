@@ -81,6 +81,7 @@ class MobileMenu extends Component {
 
   render() {
     const { isOpen } = this.state;
+    const { pathname } = this.props;
     return (
       <Container>
         <MobileMenuButton
@@ -94,12 +95,20 @@ class MobileMenu extends Component {
               to="/docs/GettingStarted"
               onClick={this.toggleMenu}
               hasHover={false}
+              pathname={pathname}
             />
-            <NavItem title="blog" to="/blog" hasHover={false} />
+
+            <NavItem
+              title="blog"
+              to="/blog"
+              hasHover={false}
+              pathname={pathname}
+            />
             <NavItem
               title="github"
               to="https://github.com/Yoctol/bottender"
               hasHover={false}
+              pathname={pathname}
             />
           </NavItemWrapper>
           <Sidebar {...this.props} toggleMenu={this.toggleMenu} />

@@ -24,7 +24,12 @@ const Item = styled.div`
 
   /* stylelint-disable */
   ${prop =>
-    prop.hasHover
+    prop.selected
+      ? `
+    border-color: #2b9ac8;`
+      : ''};
+  ${prop =>
+    prop.hasHover && !prop.selected
       ? `&:hover {
     border-color: #2b9ac8;
   }`
@@ -34,18 +39,23 @@ const Item = styled.div`
 
 class NavItem extends Component {
   render() {
-    const { to: link, title, onClick, hasHover } = this.props;
+    const { to: link, title, onClick, hasHover, pathname } = this.props;
     const isOutsideLink = link.indexOf('http') > -1;
+    const selected = pathname.indexOf(title.toLowerCase()) > -1;
     if (isOutsideLink) {
       return (
         <a href={link} target="_blank">
-          <Item hasHover={hasHover}>{title}</Item>
+          <Item hasHover={hasHover} selected={selected}>
+            {title}
+          </Item>
         </a>
       );
     }
     return (
       <Link to={link} onClick={onClick}>
-        <Item hasHover={hasHover}>{title}</Item>
+        <Item hasHover={hasHover} selected={selected}>
+          {title}
+        </Item>
       </Link>
     );
   }
