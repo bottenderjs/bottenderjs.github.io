@@ -133,7 +133,9 @@ export default class DocLayout extends Component {
               rel: 'apple-touch-icon',
             },
           ]}
-        />
+        >
+          <html lang="en" dir="ltr" />
+        </Helmet>
         <Header title={data.site.siteMetadata.title} pathname={pathname} />
         <Main id="content">
           <Container>
