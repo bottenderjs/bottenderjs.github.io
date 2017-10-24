@@ -11,7 +11,7 @@ const Wrapper = styled.div`
   padding-top: 80px;
 `;
 
-const Container = styled.div`
+const Container = styled.main`
   display: flex;
   opacity: 1;
   transition: opacity 0.5s;

@@ -35,11 +35,12 @@ const Title = styled.h2`
   }
 `;
 
-const SubTitle = styled.p`
+const SubTitle = styled.h3`
   color: #767676;
   font-size: 24px;
   line-height: 1.5;
   text-align: center;
+  font-weight: 500;
 
   @media (${media.tablet}) {
     font-size: 16px;

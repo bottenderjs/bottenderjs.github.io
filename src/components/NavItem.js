@@ -20,6 +20,7 @@ const Item = styled.div`
     margin-bottom: 20px;
     margin-left: 0;
     padding-top: 0;
+    border-color: transparent;
   }
 
   /* stylelint-disable */

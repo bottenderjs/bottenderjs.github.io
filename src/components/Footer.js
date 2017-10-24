@@ -5,7 +5,7 @@ import { rhythm } from '../utils/typography';
 import github from '../assets/github.svg';
 import media from '../css/media';
 
-const Wrapper = styled.div`
+const Wrapper = styled.footer`
   display: flex;
   height: 129px;
   justify-content: center;
@@ -27,8 +27,8 @@ const Container = styled.div`
   }
 `;
 
-const Copyright = styled.div`
-  display: flex;
+const Copyright = styled.h4`
+  margin: 0;
   color: #fff;
   font-family: Karla;
   font-size: 16px;
@@ -39,11 +39,12 @@ const Copyright = styled.div`
   }
 `;
 
-const MobileCopyright = styled.div`
+const MobileCopyright = styled.h4`
   display: none;
 
   @media (${media.tablet}) {
-    display: flex;
+    display: block;
+    margin: 0;
     color: #fff;
     font-family: Karla;
     font-size: 16px;

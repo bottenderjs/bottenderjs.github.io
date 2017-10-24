@@ -47,7 +47,7 @@ const Container = styled.div`
   }
 `;
 
-const Left = styled.div`
+const Left = styled.main`
   display: flex;
   width: 66.6%;
   padding: 32px 40px 100px 0;
@@ -63,7 +63,7 @@ const Left = styled.div`
   }
 `;
 
-const Right = styled.div`
+const Right = styled.aside`
   display: flex;
   width: 33.4%;
 
