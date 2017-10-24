@@ -7,15 +7,14 @@
   "scripts": {
     "build": "gatsby build",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public -m 'Auto-generated commit [ci skip]'",
-    "dev": "gatsby develop",
-    "develop": "gatsby develop",
+    "dev": "gatsby develop -H 0.0.0.0",
+    "develop": "npm run dev",
     "lint": "eslint src",
     "lint:fix": "npm run lint -- --fix",
     "lint:css": "stylelint 'src/**/*.js'",
     "lint:staged": "lint-staged",
     "precommit": "npm run lint:css && lint-staged",
-    "serve": "gatsby serve",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "gatsby serve"
   },
   "dependencies": {
     "gatsby": "^1.9.45",
