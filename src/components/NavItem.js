@@ -4,8 +4,8 @@ import Link from 'gatsby-link';
 
 import media from '../css/media';
 
-const Item = styled.div`
-  margin-left: 50px;
+const Item = styled.p`
+  margin: 0 0 0 50px;
   padding-top: 5px;
   border-top: 5px transparent solid;
   color: #2d2d2d;
@@ -17,8 +17,7 @@ const Item = styled.div`
   transition: border-top 0.3s;
 
   @media (${media.tablet}) {
-    margin-bottom: 20px;
-    margin-left: 0;
+    margin: 0 0 20px;
     padding-top: 0;
     border-color: transparent;
   }

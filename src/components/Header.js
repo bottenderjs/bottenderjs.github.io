@@ -39,7 +39,7 @@ const LogoLink = styled.a`
 class Header extends Component {
   render() {
     return (
-      <Wrapper>
+      <Wrapper role="banner">
         <Container>
           <LogoLink href={`${__PATH_PREFIX__}/`}>
             <Logo src={logo} alt={this.props.title} />

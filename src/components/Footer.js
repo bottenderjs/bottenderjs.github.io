@@ -69,7 +69,7 @@ const GitHubLogo = styled.img`
 class Footer extends Component {
   render() {
     return (
-      <Wrapper id="footer">
+      <Wrapper id="footer" role="contentinfo">
         <Container>
           <Copyright>
             © 2017 - PRESENT YOCTOL INFO INC. ALL RIGHTS RESERVED

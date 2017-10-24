@@ -139,7 +139,7 @@ export default class DocLayout extends Component {
         <Header title={data.site.siteMetadata.title} pathname={pathname} />
         <Main id="content">
           <Container>
-            <Left>
+            <Left role="main">
               {children()}
               <EditThisPage pathname={pathname} />
             </Left>

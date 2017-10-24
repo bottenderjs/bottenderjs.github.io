@@ -57,7 +57,9 @@ export default ({ children, data, location }) => {
         <html lang="en" dir="ltr" />
       </Helmet>
       <Header title={data.site.siteMetadata.title} pathname={pathname} />
-      <Container id="content">{children()}</Container>
+      <Container id="content" role="main">
+        {children()}
+      </Container>
       <Footer />
     </Wrapper>
   );

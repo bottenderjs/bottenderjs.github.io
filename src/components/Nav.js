@@ -6,7 +6,7 @@ import media from '../css/media';
 import NavItem from './NavItem';
 import MobileMenu from './MobileMenu';
 
-const Container = styled.div`
+const Container = styled.nav`
   display: flex;
   align-items: center;
 `;
@@ -23,7 +23,7 @@ class Nav extends Component {
   render() {
     const { pathname } = this.props;
     return (
-      <Container>
+      <Container role="navigation">
         <DesktopMenu>
           <NavItem
             title="docs"
