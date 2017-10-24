@@ -23,6 +23,8 @@ const Main = styled.div`
   background-position-x: right;
   background-repeat: no-repeat;
   background-size: 33.4% 100%;
+  opacity: 1;
+  transition: opacity 0.5s;
 
   @media (${media.desktop}) {
     background-size: 25% 100%;
@@ -133,7 +135,7 @@ export default class DocLayout extends Component {
           ]}
         />
         <Header title={data.site.siteMetadata.title} pathname={pathname} />
-        <Main>
+        <Main id="content">
           <Container>
             <Left>
               {children()}

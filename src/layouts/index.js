@@ -13,6 +13,8 @@ const Wrapper = styled.div`
 
 const Container = styled.div`
   display: flex;
+  opacity: 1;
+  transition: opacity 0.5s;
 `;
 
 export default ({ children, data, location }) => {
@@ -53,7 +55,7 @@ export default ({ children, data, location }) => {
         ]}
       />
       <Header title={data.site.siteMetadata.title} pathname={pathname} />
-      <Container>{children()}</Container>
+      <Container id="content">{children()}</Container>
       <Footer />
     </Wrapper>
   );

@@ -15,7 +15,6 @@ const Container = styled.div`
   @media (${media.tablet}) {
     display: flex;
     margin: 0;
-    cursor: pointer;
   }
 `;
 
@@ -47,7 +46,7 @@ const menuStyle = {
     top: 80,
     width: '100%',
     height: 'auto',
-    maxHeight: '100%',
+    maxHeight: 'calc(100% - 80px)',
     overflowY: 'scroll',
     WebkitOverflowScrolling: 'touch',
   },
@@ -68,6 +67,13 @@ class MobileMenu extends Component {
   }
 
   toggleMenu() {
+    document.getElementById('content').style.opacity = this.state.isOpen
+      ? 1
+      : 0;
+    document.getElementById('footer').style.opacity = this.state.isOpen ? 1 : 0;
+    document.body.style.backgroundColor = this.state.isOpen
+      ? '#fff'
+      : '#fafafa';
     this.setState(state => ({
       isOpen: !state.isOpen,
     }));

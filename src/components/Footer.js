@@ -10,6 +10,8 @@ const Wrapper = styled.div`
   height: 129px;
   justify-content: center;
   background: #101010;
+  opacity: 1;
+  transition: opacity 0.5s;
 `;
 
 const Container = styled.div`
@@ -66,7 +68,7 @@ const GitHubLogo = styled.img`
 class Footer extends Component {
   render() {
     return (
-      <Wrapper>
+      <Wrapper id="footer">
         <Container>
           <Copyright>
             © 2017 - PRESENT YOCTOL INFO INC. ALL RIGHTS RESERVED
