@@ -15,7 +15,7 @@ const Wrapper = styled.section`
   background-color: #101010;
 
   @media (${media.tablet}) {
-    height: 400px;
+    height: calc(100vh - 209px);
   }
 `;
 
