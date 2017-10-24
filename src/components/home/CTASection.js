@@ -8,15 +8,11 @@ import GetStartedLink from './GetStartedLink';
 
 const Wrapper = styled.section`
   display: flex;
-  height: 570px;
+  height: calc(100vh - 209px);
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #101010;
-
-  @media (${media.tablet}) {
-    height: calc(100vh - 209px);
-  }
 `;
 
 const Title = styled.h2`
