@@ -99,6 +99,10 @@ export default class DocLayout extends Component {
     addTargetBlank();
   }
 
+  componentDidUpdate() {
+    addTargetBlank();
+  }
+
   render() {
     const { children, data, location } = this.props;
     baseStyles();
