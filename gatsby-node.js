@@ -107,4 +107,10 @@ exports.createPages = async ({ graphql, boundActionCreators }) => {
     redirectInBrowser: true,
     toPath: newestBlogNode.fields.slug,
   });
+
+  createRedirect({
+    fromPath: '/blog',
+    redirectInBrowser: true,
+    toPath: newestBlogNode.fields.slug,
+  });
 };

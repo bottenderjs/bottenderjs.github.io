@@ -16,7 +16,7 @@ const Wrapper = styled.div`
 class Sidebar extends Component {
   render() {
     const { pathname } = this.props;
-    const List = pathname.includes('/blog/') ? BlogList : DocsList;
+    const List = pathname.includes('/blog') ? BlogList : DocsList;
     return (
       <Wrapper>
         <SearchBar />
