@@ -45,7 +45,7 @@ const menuStyle = {
   bmMenuWrap: {
     top: 80,
     width: '100%',
-    height: 'calc(100% - 80px)',
+    height: 'auto',
     maxHeight: 'calc(100% - 80px)',
     overflowY: 'scroll',
     WebkitOverflowScrolling: 'touch',
@@ -100,7 +100,7 @@ class MobileMenu extends Component {
 
             <NavItem
               title="blog"
-              to="/blog"
+              to="/blog/"
               hasHover={false}
               pathname={pathname}
             />
