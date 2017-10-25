@@ -1,4 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=Karla|Roboto');
+@font-face {
+  font-family: 'Roboto';
+  src: url('./Roboto-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Karla';
+  src: url('./Karla-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
 
 @font-face {
   font-family: 'BebasNeue';
