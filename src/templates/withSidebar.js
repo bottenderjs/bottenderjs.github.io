@@ -24,8 +24,8 @@ const Wrapper = styled.div`
   }
 
   h1 {
-    margin-top: 0.5em;
-    margin-bottom: 1em;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
     color: #2d2d2d;
     font-size: 60px;
     font-weight: bold;
@@ -37,8 +37,8 @@ const Wrapper = styled.div`
   }
 
   h2 {
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
     color: #3c3c3c;
     font-size: 37px;
     font-weight: bold;
@@ -50,8 +50,8 @@ const Wrapper = styled.div`
   }
 
   h3 {
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
     color: #3c3c3c;
     font-size: 30px;
     font-weight: bold;
@@ -63,8 +63,8 @@ const Wrapper = styled.div`
   }
 
   h4 {
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
     color: #505050;
     font-size: 26px;
     font-weight: bold;
