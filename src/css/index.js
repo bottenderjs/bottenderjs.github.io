@@ -10,6 +10,18 @@ export default () => injectGlobal`
     font-family: Karla, Roboto, sans-serif;
   }
 
+  h1::before,
+  h2::before,
+  h3::before,
+  h4::before,
+  h5::before,
+  h6::before {
+    display: block;
+    height: 90px;
+    margin: -90px 0 0;
+    content: "";
+  }
+
   h1,
   h2,
   h3,
