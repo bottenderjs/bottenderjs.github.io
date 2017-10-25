@@ -40,13 +40,14 @@ const menuStyle = {
     display: 'none',
   },
   bmMenu: {
+    minHeight: 'calc(100vh - 80px)',
     background: '#fafafa',
   },
   bmMenuWrap: {
     top: 80,
     width: '100%',
     height: 'auto',
-    maxHeight: 'calc(100% - 80px)',
+    maxHeight: 'calc(100vh - 80px)',
     overflowY: 'scroll',
     WebkitOverflowScrolling: 'touch',
   },
