@@ -11,6 +11,8 @@ import Footer from '../components/Footer';
 import EditThisPage from '../components/EditThisPage';
 import { rhythm } from '../utils/typography';
 
+import { link, meta } from './head';
+
 const Wrapper = styled.div`
   margin: 0 auto;
   padding-top: 80px;
@@ -112,27 +114,9 @@ export default class DocLayout extends Component {
               name: 'description',
               content: title,
             },
-            {
-              name: 'apple-mobile-web-app-title',
-              content: 'Bottender',
-            },
+            ...meta,
           ]}
-          link={[
-            {
-              rel: 'icon',
-              sizes: '192x192',
-              href: `${__PATH_PREFIX__}/favicon-192x192.png`,
-            },
-            {
-              href: `${__PATH_PREFIX__}/favicon-32x32.png`,
-              rel: 'shortcut icon',
-              type: 'image/x-icon',
-            },
-            {
-              href: `${__PATH_PREFIX__}/apple-touch-icon.png`,
-              rel: 'apple-touch-icon',
-            },
-          ]}
+          link={link}
         >
           <html lang="en" dir="ltr" />
         </Helmet>
