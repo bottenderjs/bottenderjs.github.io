@@ -45,7 +45,7 @@ const menuStyle = {
   bmMenuWrap: {
     top: 80,
     width: '100%',
-    height: 'auto',
+    height: 'calc(100% - 80px)',
     maxHeight: 'calc(100% - 80px)',
     overflowY: 'scroll',
     WebkitOverflowScrolling: 'touch',
