@@ -31,7 +31,7 @@ export const meta = [
   },
   {
     property: 'og:image',
-    content: `${__PATH_PREFIX__}/fb-og.png`,
+    content: 'https://yoctol.github.io/bottender-docs/fb-og.png',
   },
   {
     property: 'og:description',
