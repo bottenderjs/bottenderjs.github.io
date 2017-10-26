@@ -66,7 +66,7 @@ For example:
 bot.onEvent(async context => {
   if (context.event.isFollow) {
     await context.sendText('Hello, welcome to this bot!');
-  } else if (context.event.isText && context.event.message.text === 'How are you?') {
+  } else if (context.event.isText && context.event.text === 'How are you?') {
     await context.sendText('I am fine.');
   } else {
     await context.sentText('I do not understand.');

@@ -22,7 +22,7 @@ Here's an example handler which only handle specific commands:
 ```js
 bot.onEvent(async context => {
   if (context.event.isText) {
-    switch (context.event.message.text) {
+    switch (context.event.text) {
       case '/start':
         await context.sendText('Running....');
         break;
@@ -33,7 +33,7 @@ bot.onEvent(async context => {
         `);
         break;
       default:
-        await context.sendText(`${context.event.message.text} is not a valid command.`);
+        await context.sendText(`${context.event.text} is not a valid command.`);
     }
   }
 })

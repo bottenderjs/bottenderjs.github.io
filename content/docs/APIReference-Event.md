@@ -37,6 +37,7 @@ See more details at [example](https://github.com/Yoctol/bottender/tree/master/ex
 | isMessage | ✅ | ✅ | ✅ | ✅ | ✅ | boolean | Determine if the event is a **message** event. |
 | message | ✅ | ✅ | ✅ | ✅ | ✅ | Message | The **message** object from raw event. |
 | isText | ✅ | ✅ | ✅ | ✅ | ✅ | boolean | Determine if the event is a message event which includes **text**. |
+| text | ✅ | ✅ | ✅ | ✅ | ✅ | string | The **text string** from message. |
 | isAudio | ✅ | ✅ |  | ✅ |  | boolean | Determine if the event is a message event which includes **audio** attachment. |
 | isVideo | ✅ | ✅ |  | ✅ |  | boolean | Determine if the event is a message event which includes **video** attachment. |
 | isLocation | ✅ | ✅ |  | ✅ |  | boolean | Determine if the event is a message event which includes **location** attachment. |
