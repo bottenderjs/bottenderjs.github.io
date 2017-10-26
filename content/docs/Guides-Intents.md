@@ -21,8 +21,8 @@ Here's an example handler which only handle specific commands:
 
 ```js
 bot.onEvent(async context => {
-  if (context.event.isTextMessage) {
-    switch (context.event.message.text) {
+  if (context.event.isText) {
+    switch (context.event.text) {
       case '/start':
         await context.sendText('Running....');
         break;
@@ -33,7 +33,7 @@ bot.onEvent(async context => {
         `);
         break;
       default:
-        await context.sendText(`${context.event.message.text} is not a valid command.`);
+        await context.sendText(`${context.event.text} is not a valid command.`);
     }
   }
 })
@@ -45,7 +45,7 @@ Exactly matching looks a little rigid. Consider using some equality operators to
 
 ```js
 bot.onEvent(async context => {
-  if (context.event.isTextMessage) {
+  if (context.event.isText) {
     const { text } = context.event.message;
     if (text === 'hello' || text === 'hi') {
       // ...
@@ -60,7 +60,7 @@ We can use [regular expressions](https://developer.mozilla.org/en-US/docs/Web/Ja
 
 ```js
 bot.onEvent(async context => {
-  if (context.event.isTextMessage) {
+  if (context.event.isText) {
     if (/^h(ello|i)/i) {
       // ...
     }
