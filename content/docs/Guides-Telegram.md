@@ -70,11 +70,11 @@ For more information, check [Event Reference](./APIReference-Event).
 
 ### Telegram-specific context event
 
-- isTextMessage
-- isPhotoMessage
-- isAudioMessage
-- isVoiceMessage
-- isVideoMessage
+- isText
+- isPhoto
+- isAudio
+- isVoice
+- isVideo
 - callbackQuery
 - ...
 
@@ -83,7 +83,7 @@ more on [Event Reference](./APIReference-Event).
 Example:
 ```js
 bot.onEvent(async context => {
-  if (context.event.isPhotoMessage) {
+  if (context.event.isPhoto) {
     await context.sendMessage('I know this is a photo.');
   } else if (
     context.event.callbackQuery === 'A_DEVELOPER_DEFINED_CALLBACK_QUERY'

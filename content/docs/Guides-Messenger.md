@@ -72,8 +72,8 @@ For more information, check [Event Reference](./APIReference-Event)
 
 ### Messenger event properties
 
-- isTextMessage
-- isImageMessage
+- isText
+- isImage
 - isQuickReply
 - isPostback
 - isEcho

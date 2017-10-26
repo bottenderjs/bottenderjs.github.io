@@ -13,7 +13,7 @@ A Bottender Event can help you determine what kind of message is sent from user.
 
 ```js
 bot.onEvent(async context => {
-  if (context.event.isTextMessage) {
+  if (context.event.isText) {
     await context.sendText('I know you sent text message.');
   } else {
     await context.sendText("I know you didn't send text message.");
@@ -36,25 +36,25 @@ See more details at [example](https://github.com/Yoctol/bottender/tree/master/ex
 | rawEvent | ✅ | ✅ | ✅ | ✅ | ✅ | M: MessengerRawEvent<br>L: LineRawEvent<br>S: SlackRawEvent<br>T: TelegramRawEvent<br>C: ConsoleRawEvent | Underlying raw event.<br> **Return value depends on your platform**. |
 | isMessage | ✅ | ✅ | ✅ | ✅ | ✅ | boolean | Determine if the event is a **message** event. |
 | message | ✅ | ✅ | ✅ | ✅ | ✅ | Message | The **message** object from raw event. |
-| isTextMessage | ✅ | ✅ | ✅ | ✅ | ✅ | boolean | Determine if the event is a message event which includes **text**. |
-| isAudioMessage | ✅ | ✅ |  | ✅ |  | boolean | Determine if the event is a message event which includes **audio** attachment. |
-| isVideoMessage | ✅ | ✅ |  | ✅ |  | boolean | Determine if the event is a message event which includes **video** attachment. |
-| isLocationMessage | ✅ | ✅ |  | ✅ |  | boolean | Determine if the event is a message event which includes **location** attachment. |
-| isStickerMessage | ✅ | ✅ |  | ✅ |  | boolean | Determine if the event is a message event which includes **sticker**. |
-| isImageMessage | ✅ | ✅ |  |  |  | boolean | Determine if the event is a message event which includes **image** attachment. |
-| isFileMessage | ✅ |  |  |  |  | boolean | Determine if the event is a message event which includes **file** attachment. |
-| isFallbackMessage | ✅ |  |  |  |  | boolean | Determine if the event is a message event which includes **fallback** attachment. |
+| isText | ✅ | ✅ | ✅ | ✅ | ✅ | boolean | Determine if the event is a message event which includes **text**. |
+| isAudio | ✅ | ✅ |  | ✅ |  | boolean | Determine if the event is a message event which includes **audio** attachment. |
+| isVideo | ✅ | ✅ |  | ✅ |  | boolean | Determine if the event is a message event which includes **video** attachment. |
+| isLocation | ✅ | ✅ |  | ✅ |  | boolean | Determine if the event is a message event which includes **location** attachment. |
+| isSticker | ✅ | ✅ |  | ✅ |  | boolean | Determine if the event is a message event which includes **sticker**. |
+| isImage | ✅ | ✅ |  |  |  | boolean | Determine if the event is a message event which includes **image** attachment. |
+| isFile | ✅ |  |  |  |  | boolean | Determine if the event is a message event which includes **file** attachment. |
+| isFallback | ✅ |  |  |  |  | boolean | Determine if the event is a message event which includes **fallback** attachment. |
 | isChannelsMessage |  |  | ✅ |  |  | boolean | Determine if the event is a message event sent from **channels**. |
 | isGroupsMessage |  |  | ✅ |  |  | boolean | Determine if the event is a message event sent from **groups**. |
 | isImMessage |  |  | ✅ |  |  | boolean | Determine if the event is a message event sent from **instant messaging**. |
 | isMpimMessage |  |  | ✅ |  |  | boolean | Determine if the event is a message event sent from **multiple people instant messaging**. |
-| isDocumentMessage |  |  |  | ✅ |  | boolean | Determine if the event is a message event which includes **document**. |
-| isGameMessage |  |  |  | ✅ |  | boolean | Determine if the event is a message event which includes **game**. |
-| isPhotoMessage |  |  |  | ✅ |  | boolean | Determine if the event is a message event which includes **photo**. |
-| isVoiceMessage |  |  |  | ✅ |  | boolean | Determine if the event is a message event which includes **voice**. |
-| isVideoNoteMessage |  |  |  | ✅ |  | boolean | Determine if the event is a message event which includes **video note**. |
-| isContactMessage |  |  |  | ✅ |  | boolean | Determine if the event is a message event which includes **contact**. |
-| isVenueMessage |  |  |  | ✅ |  | boolean | Determine if the event is a message event which includes **venue**. |
+| isDocument |  |  |  | ✅ |  | boolean | Determine if the event is a message event which includes **document**. |
+| isGame |  |  |  | ✅ |  | boolean | Determine if the event is a message event which includes **game**. |
+| isPhoto |  |  |  | ✅ |  | boolean | Determine if the event is a message event which includes **photo**. |
+| isVoice |  |  |  | ✅ |  | boolean | Determine if the event is a message event which includes **voice**. |
+| isVideoNote |  |  |  | ✅ |  | boolean | Determine if the event is a message event which includes **video note**. |
+| isContact |  |  |  | ✅ |  | boolean | Determine if the event is a message event which includes **contact**. |
+| isVenue |  |  |  | ✅ |  | boolean | Determine if the event is a message event which includes **venue**. |
 | isPostback | ✅ | ✅ |  |  |  | boolean | Determine if the event is a **postback** event. |
 | postback | ✅ | ✅ |  |  |  | Postback | The **postback** object from raw event. |
 | hasAttachment | ✅ |  |  |  |  | boolean | Determine if the event has any **attachments**. |

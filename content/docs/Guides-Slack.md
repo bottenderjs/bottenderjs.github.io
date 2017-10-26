@@ -49,7 +49,7 @@ For the **message** related events, Bottender support some helpers:
 - isGroupsMessage
 - isImMessage
 - isMpimMessage
-- isTextMessage
+- isText
 - message
 
 For example:
@@ -60,7 +60,7 @@ bot.onEvent(async context => {
     await context.sendText('Hello, this is a channels message!');
   } else if (context.event.isGroupsMessage) {
     await context.sendText('Hello, this is a groups message!');
-  } else if (context.event.isTextMessage && context.event.message.text === 'How are you?') {
+  } else if (context.event.isText && context.event.message.text === 'How are you?') {
     await context.sendText('I am fine.');
   } else {
     await context.sentText('I do not understand.');

@@ -61,7 +61,7 @@ Open the file and edit the follow lines of code:
 bot.handle(async context => {
 - await context.sendText('Hello World');
 + const { event } = context;
-+ if (event.isTextMessage) {
++ if (event.isText) {
 +   await context.sendText(event.message.text);
 + }
 });
