@@ -36,3 +36,5 @@
       title: Context
     - id: docs/APIReference-Event
       title: Event
+    - id: docs/APIReference-Handler
+      title: Handler
