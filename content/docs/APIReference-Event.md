@@ -75,6 +75,9 @@ See more details at [example](https://github.com/Yoctol/bottender/tree/master/ex
 | isAppRoles | ✅ |  |  |  |  | boolean | Determine if the event is an **app roles** event. |
 | appRoles | ✅ |  |  |  |  | AppRoles | The **app roles** object from Messenger raw event. |
 | isStandby | ✅ |  |  |  |  | boolean | Determine if the event is a **standby** event. |
+| isOptin | ✅ |  |  |  |  | boolean | Determine if the event is an **opt-in** event. |
+| isCheckoutUpdate | ✅ |  |  |  |  | boolean | Determine if the event is a **checkout update** event. |
+| isPreCheckout | ✅ |  |  |  |  | boolean | Determine if the event is a **pre-checkout** event. |
 | isPassThreadControl | ✅ |  |  |  |  | boolean | Determine if the event is a **pass thread control** event. |
 | passThreadControl | ✅ |  |  |  |  | PassThreadControl | The **pass thread control** object from Messenger raw event. |
 | isTakeThreadControl | ✅ |  |  |  |  | boolean | Determine if the event is a **take thread control** event. |
