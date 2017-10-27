@@ -119,7 +119,7 @@ MessengerBot > yee.
 User > yooooooo~
 MessengerBot > Hi there!
 User > yeeeeeee~
-MessengerBot > I don't know what do you say.
+MessengerBot > I do not know what do you say.
 ```
 
 ```js
@@ -131,7 +131,7 @@ const handler = new MessengerHandler()
     await context.sendText('Hi there!');
   })
   .onText(async context => {
-    await context.sendText("I dont know what do you say.");
+    await context.sendText('I do not know what do you say.');
   });
 ```
 
