@@ -5,7 +5,7 @@ date: "2017-10-17"
 
 # Commands
 
-The command-line interface included with bottender provides a number of helpful commands that can help you while you build your bot.
+The command-line interface included within bottender provides a number of helpful commands.
 
 ```sh
 bottender
@@ -17,13 +17,13 @@ Or using `btd` shorthand:
 btd
 ```
 
-To see all of available commands, just use the `--help` option:
+To see all of the available commands, simply use the `--help` option:
 
 ```sh
 bottender --help
 ```
 
-Every command also includes a "help" screen which displays and describes the command's available arguments and options. To view a help screen, simply precede the name of the command with `--help`:
+Every command has a "help" screen which displays and describes the command's available arguments and options. To view them, simply precede the name of the command with `--help`:
 
 ```sh
 bottender init --help

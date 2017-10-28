@@ -55,7 +55,7 @@ npm run dev
 
 ## Teach Bot to Echo
 
-Open the file and edit the follow lines of code:
+Open the file and edit the following lines of code:
 
 ```diff
 bot.handle(async context => {
@@ -66,7 +66,7 @@ bot.handle(async context => {
 });
 ```
 
-And then the server will be restarted automatically.
+And the server will be restarted automatically.
 
 ![](https://user-images.githubusercontent.com/3382565/31601795-ac3f1f02-b220-11e7-99d0-513accf40460.png)
 

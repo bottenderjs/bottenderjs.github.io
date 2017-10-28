@@ -5,7 +5,7 @@ date: "2017-10-12"
 
 # Messenger
 
-This guide will give you some basic concepts about developing a Messenger bot. For more detail, check [official docs](https://developers.facebook.com/docs/messenger-platform).
+This guide will give you some basic concepts of developing a Messenger bot. For more detail, see [official docs](https://developers.facebook.com/docs/messenger-platform).
 
 ## Requirements
 
@@ -18,9 +18,9 @@ In order to get Page Access Token and App secret, you need:
 - [A Facebook App](https://developers.facebook.com/)
 
 After you get a Facebook Page and a Facebook App, you can get the `Page Access Token`. Check the [official docs](https://developers.facebook.com/docs/messenger-platform/getting-started/app-setup).  
-Also remember to copy the `App Secret` on app dashboard. Click `Show` button on dashboard and type your password to get the App Secret.
+Also remember to copy the `App Secret` on app dashboard. Click `Show` button on the dashboard and type your password to get the App Secret.
 
-Before leave this section, make sure you have the following requirements:
+Before leaving this section, make sure you have the following requirements:
 - A Page Access Token
 - An App Secret
 
@@ -28,7 +28,7 @@ We will use them to develop our messenger bot later.
 
 ## Build your first Messenger bot
 
-The following is a partial sample code, the full example is [here](https://github.com/Yoctol/bottender/tree/master/examples/messenger-hello-world).
+The following is a partial sample code, see the full example [here](https://github.com/Yoctol/bottender/tree/master/examples/messenger-hello-world).
 
 ```js
 const { MessengerBot } = require('bottender');
@@ -43,7 +43,7 @@ After you fill the `accessToken` and `appSecret`, run your server and try it out
 
 ### Full example
 
-Here is the complete code for [messenger-hello-world](https://github.com/Yoctol/bottender/tree/master/examples/messenger-hello-world)
+Here is the complete example for [messenger-hello-world](https://github.com/Yoctol/bottender/tree/master/examples/messenger-hello-world)
 
 ```js
 const { MessengerBot } = require('bottender');
@@ -100,7 +100,7 @@ bot.onEvent(async context => {
 
 ## Send APIs
 
-After recevie the request from Messenger, you can send API by using context send API.
+After receiving the request from Messenger, you can send API by using context send API.
 
 ### Messenger-specific context send API
 

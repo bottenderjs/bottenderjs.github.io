@@ -5,14 +5,14 @@ date: "2017-10-26"
 
 # Handler
 
-A Bottender Handler includes many helpful methods and let you easily handle different kinds of event from platform.
-When a event comes in, handler will choose the first method matched the condition to handle event.
+A Bottender Handler includes many helpful methods and lets you easily handle different kinds of event from platform.
+When an event comes in, the handler will choose the first method matched the condition to handle event.
 
 ## API Reference
 
 All methods return handler itself.
 
-See more details about [event](./APIReference-Event.md) and [context](./APIReference-Context.md)
+See more details about [event](./APIReference-Event.md) and [context](./APIReference-Context.md).
 
 ### `onXXX(handler)`
 
@@ -32,7 +32,7 @@ It will trigger handler function if `event.isXXX` is true and predicate function
 
 | Param    | Type            | Description |
 | :-------: | :---------------: | :-----------: |
-| predicate | `function` | This is a callback function. It will trigger handler function if return true. | 
+| predicate | `function` | This is a callback function. It will trigger handler function if return true. |
 | handler | `function` | This is a callback function and will get [context](./APIReference-Context.md) as first parameter. <br> `function handler(context) { /* ...*/ }` |
 
 - Notices: `onText`, `onPayload` also support first parameter to be **string** type or **RegExp**. See more details from [example](./APIReference-Handler.md#ontext) below.
@@ -70,37 +70,37 @@ It will trigger handler function if any Error is thrown.
 | onMessage | ✅ | ✅ | ✅ | ✅ | it will trigger function from parameter if **context.event.isMessage** is true and function from first parameter return true. |
 | onText | ✅ | ✅ | ✅ | ✅ | it will trigger function from parameter if **context.event.isText** is true and function from first parameter return true. |
 | onUnhandled | ✅ | ✅ | ✅ | ✅ | it will trigger function from parameter if event is not handled. |
-| onError | ✅ | ✅ | ✅ | ✅ | it will trigger function from parameter if some error happens. |
-| onPostback | ✅ | ✅ |  |  | it will trigger function from parameter if **context.event.isPostback** is true and function from fist parameter return true. |
+| onError | ✅ | ✅ | ✅ | ✅ | it will trigger function from parameter if error happens. |
+| onPostback | ✅ | ✅ |  |  | it will trigger function from parameter if **context.event.isPostback** is true and function from first parameter return true. |
 | onPayload | ✅ | ✅ |  | ✅ | it will trigger function from parameter if **context.event.isPostback** or **context.event.isQuickReply** is true and function from first parameter return true. |
-| onLocation | ✅ |  |  | ✅ | it will trigger function from parameter if **context.event.isLocation** is true and function from fist parameter return true. |
-| onAudio | ✅ |  |  | ✅ | it will trigger function from parameter if **context.event.isAudio** is true and function from fist parameter return true. |
-| onVideo | ✅ |  |  | ✅ | it will trigger function from parameter if **context.event.isVideo** is true and function from fist parameter return true. |
-| onPayment | ✅ |  |  |  | it will trigger function from parameter if **context.event.isPayment** is true and function from fist parameter return true. |
-| onOptin | ✅ |  |  |  | it will trigger function from parameter if **context.event.isOptin** is true and function from fist parameter return true. |
-| onCheckoutUpdate | ✅ |  |  |  | it will trigger function from parameter if **context.event.isCheckoutUpdate** is true and function from fist parameter return true. |
-| onPreCheckout | ✅ |  |  |  | it will trigger function from parameter if **context.event.isPreCheckout** is true and function from fist parameter return true. |
-| onQuickReply | ✅ |  |  |  | it will trigger function from parameter if **context.event.isQuickReply** is true and function from fist parameter return true. |
-| onEcho | ✅ |  |  |  | it will trigger function from parameter if **context.event.isEcho** is true and function from fist parameter return true. |
-| onRead | ✅ |  |  |  | it will trigger function from parameter if **context.event.isRead** is true and function from fist parameter return true. |
-| onDelivery | ✅ |  |  |  | it will trigger function from parameter if **context.event.isDelivery** is true and function from fist parameter return true. |
-| onImage | ✅ |  |  |  | it will trigger function from parameter if **context.event.isImage** is true and function from fist parameter return true. |
-| onFile | ✅ |  |  |  | it will trigger function from parameter if **context.event.isFile** is true and function from fist parameter return true. |
-| onFallback | ✅ |  |  |  | it will trigger function from parameter if **context.event.isFallback** is true and function from fist parameter return true. |
-| onFollow |  | ✅ |  |  | it will trigger function from parameter if **context.event.isFollow** is true and function from fist parameter return true. |
-| onUnfollow |  | ✅ |  |  | it will trigger function from parameter if **context.event.isUnfollow** is true and function from fist parameter return true. |
-| onJoin |  | ✅ |  |  | it will trigger function from parameter if **context.event.isJoin** is true and function from fist parameter return true. |
-| onLeave |  | ✅ |  |  | it will trigger function from parameter if **context.event.isLeave** is true and function from fist parameter return true. |
-| onBeacon |  | ✅ |  |  | it will trigger function from parameter if **context.event.isBeacon** is true and function from fist parameter return true. |
-| onCallbackQuery |  |  |  | ✅ | it will trigger function from parameter if **context.event.isCallbackQuery** is true and function from fist parameter return true. |
-| onPhoto |  |  |  | ✅ | it will trigger function from parameter if **context.event.isPhoto** is true and function from fist parameter return true. |
-| onDocument |  |  |  | ✅ | it will trigger function from parameter if **context.event.isDocument** is true and function from fist parameter return true. |
-| onGame |  |  |  | ✅ | it will trigger function from parameter if **context.event.isGame** is true and function from fist parameter return true. |
-| onSticker |  |  |  | ✅ | it will trigger function from parameter if **context.event.isSticker** is true and function from fist parameter return true. |
-| onVoice |  |  |  | ✅ | it will trigger function from parameter if **context.event.isVoice** is true and function from fist parameter return true. |
-| onVideoNote |  |  |  | ✅ | it will trigger function from parameter if **context.event.isVideoNote** is true and function from fist parameter return true. |
-| onContact |  |  |  | ✅ | it will trigger function from parameter if **context.event.isContact** is true and function from fist parameter return true. |
-| onVenue |  |  |  | ✅ | it will trigger function from parameter if **context.event.isVenue** is true and function from fist parameter return true. |
+| onLocation | ✅ |  |  | ✅ | it will trigger function from parameter if **context.event.isLocation** is true and function from first parameter return true. |
+| onAudio | ✅ |  |  | ✅ | it will trigger function from parameter if **context.event.isAudio** is true and function from first parameter return true. |
+| onVideo | ✅ |  |  | ✅ | it will trigger function from parameter if **context.event.isVideo** is true and function from first parameter return true. |
+| onPayment | ✅ |  |  |  | it will trigger function from parameter if **context.event.isPayment** is true and function from first parameter return true. |
+| onOptin | ✅ |  |  |  | it will trigger function from parameter if **context.event.isOptin** is true and function from first parameter return true. |
+| onCheckoutUpdate | ✅ |  |  |  | it will trigger function from parameter if **context.event.isCheckoutUpdate** is true and function from first parameter return true. |
+| onPreCheckout | ✅ |  |  |  | it will trigger function from parameter if **context.event.isPreCheckout** is true and function from first parameter return true. |
+| onQuickReply | ✅ |  |  |  | it will trigger function from parameter if **context.event.isQuickReply** is true and function from first parameter return true. |
+| onEcho | ✅ |  |  |  | it will trigger function from parameter if **context.event.isEcho** is true and function from first parameter return true. |
+| onRead | ✅ |  |  |  | it will trigger function from parameter if **context.event.isRead** is true and function from first parameter return true. |
+| onDelivery | ✅ |  |  |  | it will trigger function from parameter if **context.event.isDelivery** is true and function from first parameter return true. |
+| onImage | ✅ |  |  |  | it will trigger function from parameter if **context.event.isImage** is true and function from first parameter return true. |
+| onFile | ✅ |  |  |  | it will trigger function from parameter if **context.event.isFile** is true and function from first parameter return true. |
+| onFallback | ✅ |  |  |  | it will trigger function from parameter if **context.event.isFallback** is true and function from first parameter return true. |
+| onFollow |  | ✅ |  |  | it will trigger function from parameter if **context.event.isFollow** is true and function from first parameter return true. |
+| onUnfollow |  | ✅ |  |  | it will trigger function from parameter if **context.event.isUnfollow** is true and function from first parameter return true. |
+| onJoin |  | ✅ |  |  | it will trigger function from parameter if **context.event.isJoin** is true and function from first parameter return true. |
+| onLeave |  | ✅ |  |  | it will trigger function from parameter if **context.event.isLeave** is true and function from first parameter return true. |
+| onBeacon |  | ✅ |  |  | it will trigger function from parameter if **context.event.isBeacon** is true and function from first parameter return true. |
+| onCallbackQuery |  |  |  | ✅ | it will trigger function from parameter if **context.event.isCallbackQuery** is true and function from first parameter return true. |
+| onPhoto |  |  |  | ✅ | it will trigger function from parameter if **context.event.isPhoto** is true and function from first parameter return true. |
+| onDocument |  |  |  | ✅ | it will trigger function from parameter if **context.event.isDocument** is true and function from first parameter return true. |
+| onGame |  |  |  | ✅ | it will trigger function from parameter if **context.event.isGame** is true and function from first parameter return true. |
+| onSticker |  |  |  | ✅ | it will trigger function from parameter if **context.event.isSticker** is true and function from first parameter return true. |
+| onVoice |  |  |  | ✅ | it will trigger function from parameter if **context.event.isVoice** is true and function from first parameter return true. |
+| onVideoNote |  |  |  | ✅ | it will trigger function from parameter if **context.event.isVideoNote** is true and function from first parameter return true. |
+| onContact |  |  |  | ✅ | it will trigger function from parameter if **context.event.isContact** is true and function from first parameter return true. |
+| onVenue |  |  |  | ✅ | it will trigger function from parameter if **context.event.isVenue** is true and function from first parameter return true. |
 
 ## Example
 
@@ -109,7 +109,7 @@ It will trigger handler function if any Error is thrown.
 - [SlackHandler](https://github.com/Yoctol/toolbot-core-experiment/tree/master/examples/slack-builder/index.js)
 - [TelegramHandler](https://github.com/Yoctol/toolbot-core-experiment/tree/master/examples/telegram-builder/index.js)
 
-Let's use MessengerHandler for example.
+Let's use MessengerHandler as an example.
 
 ### `onText`
 
@@ -119,7 +119,7 @@ MessengerBot > yee.
 User > yooooooo~
 MessengerBot > Hi there!
 User > yeeeeeee~
-MessengerBot > I do not know what do you say.
+MessengerBot > I do not know what you said.
 ```
 
 ```js
@@ -131,7 +131,7 @@ const handler = new MessengerHandler()
     await context.sendText('Hi there!');
   })
   .onText(async context => {
-    await context.sendText('I do not know what do you say.');
+    await context.sendText('I do not know what you said.');
   });
 ```
 

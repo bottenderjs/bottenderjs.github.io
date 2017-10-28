@@ -14,13 +14,13 @@ Bottender supports the following HTTP servers. You can choose one of them to dev
 
 ## Parameters
 
-The `createServer` function accept two parameters:
+The `createServer` function accepts two parameters:
 - [Bot instance](#bot-instance) (required)
 - [Options](#options)
 
 ### Bot instance
 
-All you need to do is to use the right `createServer` function according to platform and pass the bot instance to get the server.
+All you need to do is to use the right `createServer` function according to the platform and pass the bot instance to get the server.
 
 For example:
 
