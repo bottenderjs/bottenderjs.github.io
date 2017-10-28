@@ -39,7 +39,7 @@ Run your server and talk to the Telegram bot. It works!
 
 ### Full example
 
-Here is the complete script for [telegram-hello-world](https://github.com/Yoctol/bottender/tree/master/examples/telegram-hello-world/index.js)
+Here is the complete example for [telegram-hello-world](https://github.com/Yoctol/bottender/tree/master/examples/telegram-hello-world/index.js)
 
 ```js
 const { TelegramBot } = require('bottender');
