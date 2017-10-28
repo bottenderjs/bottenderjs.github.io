@@ -43,7 +43,7 @@ After you fill the `accessToken` and `appSecret`, run your server and try it out
 
 ### Full example
 
-Here is the complete scripts for [messenger-hello-world](https://github.com/Yoctol/bottender/tree/master/examples/messenger-hello-world)
+Here is the complete example for [messenger-hello-world](https://github.com/Yoctol/bottender/tree/master/examples/messenger-hello-world)
 
 ```js
 const { MessengerBot } = require('bottender');
