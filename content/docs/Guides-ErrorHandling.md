@@ -5,7 +5,7 @@ date: "2017-10-13"
 
 # Error Handling
 
-When you develop a bot by Bottender, you can use the following approaches to handle error:
+When you develop a bot using Bottender, you can use the following approaches for error handling:
 - [Try Catch](#try-catch)
 - [onError](#onerror)
 
@@ -30,7 +30,7 @@ bot.onEvent(async context => {
 
 ## onError
 
-Bottender also supports builder approaches to handle error. Use `builder.onError` and pass the error handler function. You can get the error at the second parameter in the handler function.
+Bottender also supports builder approaches to handle error. Use `builder.onError` and pass the error handler function. You will get the error at the second parameter in the handler function.
 
 For example:
 
@@ -45,7 +45,7 @@ const handler = new MessengerHandler()
   .onError(async (context, err) => {
     // handle errors here...
     await context.sendText(err.message);
-  }); 
+  });
 
 bot.onEvent(handler);
 ```

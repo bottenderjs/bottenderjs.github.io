@@ -9,11 +9,11 @@ In this section, two fast and simple ways of deployment are introduced. You can 
 - [Now](https://zeit.co/now)
 - [Heroku](https://www.heroku.com/home)
 
-Note that these services have limited free dynos. If your bots need to be up 24/7, you should use upgrade plans or other services.
+Note that these services have limited free dynos. If your bots need to be up 24/7, you should consider paid plans or other services.
 
 ## Now
 
-You can set vars in bottender.config as enviroment vars and secrets.
+You can set vars in bottender.config as environment vars and secrets.
 
 ### Secrets
 
@@ -29,7 +29,7 @@ $ now secret rm my_verify_token
 
 ### Enviroment Variables
 
-Using `@var` to set the enviroment variable with your now secrets.
+Use `@var` to set the enviroment variable with your now secrets.
 ```sh
 $ now -e VERIFY_TOKEN=1qaz2wsx
 $ now -e VERIFY_TOKEN=@verify_token
@@ -49,7 +49,7 @@ $ now ls
 
 ### Alias
 
-Make alias to set your customize domain.
+Make alias to set your customized domain.
 ```sh
 $ now alias zeit-suslhdzwiy.now.sh workshop // workshop.now.sh
 $ now alias zeit-suslhdzwiy.now.sh bottender.com // upgrade plan
@@ -72,7 +72,7 @@ $ heroku git:remote -a your-app-name // for existing repositories, simply add he
 
 ### Setting Node version
 
-You should make sure the Node version on Heroku is higher than 7.6.0. These lines can be added in `package.json` to specify the Node version.
+Make sure your Node version on Heroku is higher than 7.6.0. These lines can be added in `package.json` to specify the Node version.
 ```json
 "engines": {
   "node": ">= 7.6.0"

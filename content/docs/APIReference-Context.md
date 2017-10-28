@@ -5,7 +5,7 @@ date: "2017-10-17"
 
 # Context
 
-A Bottender Context encapsulates many helpful methods into a single object like session, client from [messaging-apis](https://github.com/Yoctol/messaging-apis), event, etc. which makes you easiler to develop a chatbot system on different platform.
+A Bottender Context encapsulates many helpful methods into a single object like session, client from [messaging-apis](https://github.com/Yoctol/messaging-apis), event, etc., which makes you easier to develop a chatbot system on different platform.
 
 ## General Methods
 | Property | Return | Description |
@@ -24,7 +24,7 @@ A Bottender Context encapsulates many helpful methods into a single object like 
 - sendAudio
 - sendVideo
 - sendFile
-- sendQuckReplies
+- sendQuickReplies
 - sendGenericTemplate
 - sendButtonTemplate
 - sendListTemplate
@@ -35,7 +35,7 @@ A Bottender Context encapsulates many helpful methods into a single object like 
 - sendAirlineFlightUpdateTemplate
 
 Description:
-- Each of these functions is similar to method in [messaging-api-messenger](https://github.com/Yoctol/messaging-apis/tree/master/packages/messaging-api-messenger), but we handle **first parameters (userId)** for you.
+- Each of these functions is similar to methods in [messaging-api-messenger](https://github.com/Yoctol/messaging-apis/tree/master/packages/messaging-api-messenger), but we handle **first parameters (userId)** for you.
 
 ## LINE
 These are other methods on LINE. See more details at [messaging-api-line](https://github.com/Yoctol/messaging-apis/tree/master/packages/messaging-api-line)
@@ -83,7 +83,7 @@ These are other methods on LINE. See more details at [messaging-api-line](https:
 - sendImageCarouselTemplate
 
 Description:
-- Each of these functions is similar to method in [messaging-api-line](https://github.com/Yoctol/messaging-apis/tree/master/packages/messaging-api-line), but we handle **first parameters (userId or replyToken)** for you.
+- Each of these functions is similar to methods in [messaging-api-line](https://github.com/Yoctol/messaging-apis/tree/master/packages/messaging-api-line), but we handle **first parameters (userId or replyToken)** for you.
 
 - **Notice: sendXXX will use exact same API as pushXXX**
 
@@ -93,7 +93,7 @@ These are other methods on Slack. See more details at [messaging-api-slack](http
 - postMessage
 
 Description:
-- Each of these functions is similar to method in [messaging-api-slack](https://github.com/Yoctol/messaging-apis/tree/master/packages/messaging-api-slack), but we handle **first parameters (channelId)** for you.
+- Each of these functions is similar to methods in [messaging-api-slack](https://github.com/Yoctol/messaging-apis/tree/master/packages/messaging-api-slack), but we handle **first parameters (channelId)** for you.
 
 ## Telegram
 These are other methods on Telegram. See more details at [messaging-api-telegram](https://github.com/Yoctol/messaging-apis/tree/master/packages/messaging-api-telegram)
@@ -111,7 +111,7 @@ These are other methods on Telegram. See more details at [messaging-api-telegram
 - sendChatAction
 
 Description:
-- Each of these functions is similar to method in [messaging-api-telegram](https://github.com/Yoctol/messaging-apis/tree/master/packages/messaging-api-telegram), but we handle **first parameters (chatId)** for you.
+- Each of these functions is similar to methods in [messaging-api-telegram](https://github.com/Yoctol/messaging-apis/tree/master/packages/messaging-api-telegram), but we handle **first parameters (chatId)** for you.
 
 ## Example
 

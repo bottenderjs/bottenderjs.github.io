@@ -14,13 +14,13 @@ This guide will give you some basic concepts of LINE bots. For more information,
   + access token
   + channel secret
 
-You need a [LINE@](http://at.line.me/) account and a **channel** connect to that account to develop a LINE bot. You need the channel's **access token** and **channel secret** when you start.
+You need a [LINE@](http://at.line.me/) account and a **channel** connected to that account to develop a LINE bot. You need the channel's **access token** and **channel secret** when you start.
 
 ### LINE@
 
 You need an [LINE@](http://at.line.me/) account for your bot to connect to. You can register a **standard account** or an **approved account** [here](https://entry-at.line.me/).
 
-After that, you can manage your LINE@ accounts at [LINE@ MANAGER](https://admin-official.line.me/) and setup them to use **Messaging API** for bots to connect to.
+After that, you can manage your LINE@ accounts at [LINE@ MANAGER](https://admin-official.line.me/) and set them up to use **Messaging API** for bots to connect to.
 
 ### LINE developers
 

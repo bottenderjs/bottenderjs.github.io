@@ -5,7 +5,7 @@ date: "2017-10-16"
 
 # Slack
 
-This guide will give you some basic concepts about developing a Slack bot. For more detail, check [official docs](https://api.slack.com/).
+This guide will give you some basic concepts of developing a Slack bot. For more detail, check [official docs](https://api.slack.com/).
 
 ## Requirements
 
@@ -42,7 +42,7 @@ Then run your server and try it out by invite the **Bot User** to a channel and 
 
 There are many types of events your bot may receive from Slack, but it's up to you whether to subscibe each of them. In Bottender, you can access them via `context.event`. For more information, check [Event Reference](./APIReference-Event) and [official docs](https://api.slack.com/events).
 
-For the **message** related events, Bottender support some helpers:
+For the **message** related events, Bottender supports some helpers:
 
 - isMessage
 - isChannelsMessage

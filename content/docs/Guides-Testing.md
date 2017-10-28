@@ -37,7 +37,7 @@ Then, we can start to test it with mock context.
 
 Handlers are just async functions that accept a single context argument. Now, we can use fake ones in the unit tests.
 
-Here is an example test wrote with [Jest](https://facebook.github.io/jest/):
+Here is an example test written with [Jest](https://facebook.github.io/jest/):
 
 ```js
 // __tests__/handler.spec.js
@@ -62,7 +62,7 @@ it('should work', async () => {
 });
 ```
 
-After call the async handler, we can write some assertions to make sure that everything works as expected.
+After calling the async handler, we can write some assertions to make sure that everything works as expected.
 
 > Note: We use `jest.fn` in the example but feel free to use [Sinon](http://sinonjs.org/) or any other mocking libraries.
 
@@ -74,7 +74,7 @@ We provide some test utils in the package for convenience purpose. It's worth me
 const { ContextSimulator } = require('bottender/test-utils');
 ```
 
-After simulator instantiated with specific platform, you can create mocking context with serveral helper methods:
+After simulator instantiated with specific platform, you can create mocking context with several helper methods:
 
 ```js
 const simulator = new ContextSimulator({
@@ -84,7 +84,7 @@ const simulator = new ContextSimulator({
 const context = simulator.createTextContext('Awesome');  
 ```
 
-And we can use created context the same as the above example:
+And we can use created context same way as the above example:
 
 ```js
 // __tests__/handler.spec.js
@@ -107,4 +107,4 @@ it('should work', async () => {
 
 ## E2E Test
 
-Comming Soon. We are working on a brand-new end-to-end testing library for bots and planning to release it in the near future.
+Coming Soon. We are working on a brand-new end-to-end testing library for bots. We will release it in the near future.

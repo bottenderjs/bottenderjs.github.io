@@ -5,12 +5,12 @@ date: "2017-10-12"
 
 # Telegram
 
-Telegram is an instant messaging system, multi-platform, focused on the security and privacy of the users. Furthermore, being a flexible platform, Telegram allows developers to create bots. Telegram launches lots of [bot APIs](https://core.telegram.org/bots/api) for third-party developers to build Telegram bots to serve their own needs in no time.  
+Telegram is a multi-platform instant messaging system. It treasures the security and privacy of the users. Furthermore, as a flexible platform, Telegram allows developers to create bots. Telegram launches lots of [bot APIs](https://core.telegram.org/bots/api) for third-party developers to build Telegram bots to serve their own needs in no time.  
 This guide will focus on major concept of building a Telegram bot by Bottender. For more detail about Telegram bot, please check [Official Telegram Bot Introduction](https://core.telegram.org/bots).
 
 ## Requirements
 
-To begin to build a Telegram Bot, there are two requirements you need to satisfy.
+To start building a Telegram Bot, there are two requirements you need to satisfy.
 - Token
 - Webhook URL
 
@@ -21,7 +21,7 @@ Check [Official Telegram Bot Introduction](https://core.telegram.org/bots#6-botf
 
 ### Webhook URL
 
-Your bot receives updates via an outgoing webhook which is a specific `URL`. When there has any updates for the bot, Telegram will send an HTTPS request to the webhook `URL`.
+Your bot receives updates via an outgoing webhook which is a specific `URL`. When there are any updates for the bot, Telegram will send an HTTPS request to the webhook `URL`.
 
 ## Build your first Telegram bot
 
@@ -39,7 +39,7 @@ Run your server and talk to the Telegram bot. It works!
 
 ### Full example
 
-Here is the complete code for [telegram-hello-world](https://github.com/Yoctol/bottender/tree/master/examples/telegram-hello-world/index.js)
+Here is the complete script for [telegram-hello-world](https://github.com/Yoctol/bottender/tree/master/examples/telegram-hello-world/index.js)
 
 ```js
 const { TelegramBot } = require('bottender');

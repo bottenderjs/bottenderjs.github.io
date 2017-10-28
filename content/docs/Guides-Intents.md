@@ -11,13 +11,13 @@ date: "2017-10-13"
 // explain event
 // event list links ...Message, Postback
 
-When every time handler be called with incoming request, parsed event instance will be attached to context, so that you can access it via `context.event`.
+Every time the handler is called with an incoming request, parsed event instance will be attached to context so that you can access it via `context.event`.
 
 ## Pattern Matching
 
 ### String Comparison
 
-Here's an example handler which only handle specific commands:
+Here's an example handler which only handles specific commands:
 
 ```js
 bot.onEvent(async context => {
@@ -54,9 +54,9 @@ bot.onEvent(async context => {
 });
 ```
 
-It only match `hello` and `hi`, but not works for either `Hello` or `hi~` in above example.
+It only matches `hello` and `hi`. Neither `Hello` nor `hi~` would work in the above example.
 
-We can use [regular expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp) for more general pattern matching. It could be helpful when building rule-based logic.
+We can use [regular expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp) for more general pattern matching. It will be helpful when building rule-based logic.
 
 ```js
 bot.onEvent(async context => {
