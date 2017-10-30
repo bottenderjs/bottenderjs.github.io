@@ -5,6 +5,26 @@ date: "2017-10-17"
 
 # Commands
 
+The following introduction shows the Bottender command-line interface usage.
+
+## Setup
+
+To use Bottender CLI tools, you need to install `bottender` globally:
+
+```sh
+npm install -g bottender
+```
+
+Or use [`npx`](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b)(already installed in `npm@5.2.0` or greater) to get local `bottender` installation:
+
+```sh
+npx bottender 
+```
+
+Some commands will need a `bottender.config.js` file to be properly configured.
+
+## Usage
+
 The command-line interface included within bottender provides a number of helpful commands.
 
 ```sh
@@ -29,25 +49,9 @@ Every command has a "help" screen which displays and describes the command's ava
 bottender init --help
 ```
 
-## Setup
-
-To use Bottender cli tools, you need to install `bottender` globally:
-
-```sh
-npm install -g bottender
-```
-
-Or use [`npx`](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b)(already installed in `npm@5.2.0` or greater) to get local `bottender` installation:
-
-```sh
-npx bottender 
-```
-
-Some commands will need a `bottender.config.js` file to be properly configured.
-
 ## Create Bot
 
-You can use interactive cli to create your bots:
+You can use interactive CLI to create your bots:
 
 ```sh
 bottender init
