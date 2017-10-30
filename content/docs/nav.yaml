@@ -2,18 +2,18 @@
   items:
     - id: docs/GettingStarted
       title: Getting Started
+- title: Platforms
+  items:
+    - id: docs/Platforms-Messenger
+      title: Messenger
+    - id: docs/Platforms-LINE
+      title: LINE
+    - id: docs/Platforms-Slack
+      title: Slack
+    - id: docs/Platforms-Telegram
+      title: Telegram
 - title: Guides
   items:
-    # platform
-    - id: docs/Guides-Messenger
-      title: Messenger
-    - id: docs/Guides-LINE
-      title: LINE
-    - id: docs/Guides-Slack
-      title: Slack
-    - id: docs/Guides-Telegram
-      title: Telegram
-    # other
     - id: docs/Guides-Commands
       title: Commands
     - id: docs/Guides-Deployment
