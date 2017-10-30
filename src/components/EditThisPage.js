@@ -19,9 +19,19 @@ const Btn = styled.a`
 `;
 
 class EditThisPage extends Component {
+  getPathname() {
+    let { pathname } = this.props;
+    if (pathname[0] !== '/') {
+      pathname = `/${pathname}`;
+    }
+    if (pathname.indexOf('.md') < 0) {
+      pathname = `${pathname}.md`;
+    }
+    return pathname;
+  }
+
   render() {
-    const href = `https://github.com/Yoctol/bottender-docs/blob/master/content${this
-      .props.pathname}.md`;
+    const href = `https://github.com/Yoctol/bottender-docs/blob/master/content${this.getPathname()}`;
     return (
       <Wrapper>
         <Btn href={href}>Edit This Page</Btn>
