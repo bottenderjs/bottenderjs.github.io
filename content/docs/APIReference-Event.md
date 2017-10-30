@@ -11,17 +11,17 @@ A Bottender Event helps you determine what kind of message is sent from user.
 
 ### context.event
 
+You can access `context.event` object within your handlers as the following example shows.
+
 ```js
 bot.onEvent(async context => {
   if (context.event.isText) {
     await context.sendText('I know you sent text message.');
   } else {
-    await context.sendText("I know you didn't send text message.");
+    await context.sendText('I know you did not send text message.');
   }
 })
 ```
-
-See more details at [example](https://github.com/Yoctol/bottender/tree/master/examples/event)
 
 ## Methods
 
