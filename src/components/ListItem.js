@@ -28,7 +28,7 @@ class ListItem extends Component {
   render() {
     const { item, pathname, toggleMenu } = this.props;
     const selectedTitle = pathname.replace(
-      /(\/bottender-docs)?\/docs\/((Guides|APIReference)-)?/i,
+      /(\/bottender-docs)?\/docs\/((Guides|APIReference|Platforms)-)?/i,
       ''
     );
 

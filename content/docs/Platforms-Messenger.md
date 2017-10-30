@@ -43,7 +43,7 @@ After you fill the `accessToken` and `appSecret`, run your server and try it out
 
 ### Full example
 
-Here is the complete example for [messenger-hello-world](https://github.com/Yoctol/bottender/tree/master/examples/messenger-hello-world)
+Here is the complete example for [messenger-hello-world](https://github.com/Yoctol/bottender/tree/master/examples/messenger-hello-world).
 
 ```js
 const { MessengerBot } = require('bottender');
@@ -68,7 +68,7 @@ server.listen(5000, () => {
 ## Events
 
 Bottender supports several types of events. You are able to access them via `context.event`.
-For more information, check [Event Reference](./APIReference-Event)
+For more information, check [Event Reference](./APIReference-Event).
 
 ### Messenger event properties
 
