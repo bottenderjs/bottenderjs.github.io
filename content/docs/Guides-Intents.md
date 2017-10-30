@@ -7,11 +7,10 @@ date: "2017-10-13"
 
 ## Events
 
-// Todo:  
-// explain event
-// event list links ...Message, Postback
+Every time when there is an incoming request, the [handler](./APIReference-Handler) will be called and parse out events from the request. Afterwards, the Event instance is attached to [context](./APIReference-Context) so that you can access it via `context.event`.  
+Bottender help you recognize what kind of the message or the payload sent from users. In this way, you are able to handle intents more easily.
 
-Every time the handler is called with an incoming request, parsed event instance will be attached to context so that you can access it via `context.event`.
+Check [Event Reference](./APIReference-Event) to get more information about event.
 
 ## Pattern Matching
 
