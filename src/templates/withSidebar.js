@@ -162,7 +162,7 @@ export default ({ data, location }) => {
       <Container>
         <Left role="main">
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
-          <EditThisPage pathname={post.fields.path || pathname} />
+          <EditThisPage pathname={post.fields.path} />
         </Left>
         <Right>
           <Sidebar pathname={pathname} />

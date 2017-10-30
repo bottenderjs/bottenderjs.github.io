@@ -9,29 +9,19 @@ const Wrapper = styled.div`
 `;
 
 const Btn = styled.a`
-  color: rgb(109, 109, 109);
+  color: rgb(109, 109, 109) !important;
   font-size: 16px;
   text-decoration: underline;
 
   &:hover {
-    color: #000;
+    color: #000 !important;
   }
 `;
 
 class EditThisPage extends Component {
-  getPathname() {
-    let { pathname } = this.props;
-    if (pathname[0] !== '/') {
-      pathname = `/${pathname}`;
-    }
-    if (pathname.indexOf('.md') < 0) {
-      pathname = `${pathname}.md`;
-    }
-    return pathname;
-  }
-
   render() {
-    const href = `https://github.com/Yoctol/bottender-docs/blob/master/content${this.getPathname()}`;
+    const { pathname } = this.props;
+    const href = `https://github.com/Yoctol/bottender-docs/blob/master/content/${pathname}`;
     return (
       <Wrapper>
         <Btn href={href}>Edit This Page</Btn>

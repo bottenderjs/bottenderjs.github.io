@@ -42,6 +42,11 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
       const slug = createFilePath({ node, getNode });
       createNodeField({
         node,
+        name: 'path',
+        value: relativePath,
+      });
+      createNodeField({
+        node,
         name: 'slug',
         value: slug,
       });
