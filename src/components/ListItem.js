@@ -11,18 +11,15 @@ const ListTitle = styled.div`
   display: flex;
   margin-bottom: 12px;
   padding-bottom: 2px;
-  border-bottom: 2px solid transparent;
-  color: #24779b;
-  font-family: Karla;
-  font-size: 21px;
-  font-weight: bold;
-  opacity: 0.6;
+  border-bottom: 3px solid transparent;
+  color: #000;
+  font-size: 18px;
   /* stylelint-disable */
   ${props =>
     props.selected === true
-      ? 'border-color: rgba(36, 119, 155, 0.6);'
+      ? 'border-color: #2b9ac8;'
       : `&:hover {
-    border-color: rgba(36, 119, 155, 0.6);
+    border-color: #2b9ac8;
   }`};
   /* stylelint-enable */
 `;

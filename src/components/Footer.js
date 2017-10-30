@@ -30,9 +30,9 @@ const Container = styled.div`
 const Copyright = styled.h4`
   margin: 0;
   color: #fff;
-  font-family: Karla;
   font-size: 16px;
-  letter-spacing: 1.6px;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: 1px;
 
   @media (${media.tablet}) {
     display: none;
@@ -46,10 +46,10 @@ const MobileCopyright = styled.h4`
     display: block;
     margin: 0;
     color: #fff;
-    font-family: Karla;
     font-size: 16px;
     text-align: center;
-    letter-spacing: 1.6px;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: 1px;
   }
 `;
 

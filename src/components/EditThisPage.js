@@ -9,15 +9,12 @@ const Wrapper = styled.div`
 `;
 
 const Btn = styled.a`
-  color: #56dbe0;
-  font-family: Karla;
+  color: rgb(109, 109, 109);
   font-size: 16px;
-  font-weight: bold;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+  text-decoration: underline;
 
   &:hover {
-    text-decoration: underline;
+    color: #000;
   }
 `;
 

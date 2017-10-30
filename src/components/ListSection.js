@@ -13,10 +13,9 @@ const SectionTitle = styled.h2`
   margin-top: 32px;
   margin-bottom: 12px;
   color: #2b9ac8;
-  font-family: Karla;
+  font-family: Karla, sans-serif;
   font-size: 21px;
   letter-spacing: 1px;
-  opacity: 0.6;
 `;
 
 class ListSection extends Component {
