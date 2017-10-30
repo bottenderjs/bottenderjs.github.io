@@ -5,7 +5,6 @@ import DocsList from '../../content/docs/nav.yaml';
 import BlogList from '../../content/blog/nav.yaml';
 
 import ListSection from './ListSection';
-import SearchBar from './SearchBar';
 
 const Wrapper = styled.div`
   display: flex;
@@ -19,7 +18,6 @@ class Sidebar extends Component {
     const List = pathname.includes('/blog') ? BlogList : DocsList;
     return (
       <Wrapper>
-        <SearchBar />
         {List.map(list => (
           <ListSection key={list.title} list={list} {...this.props} />
         ))}
