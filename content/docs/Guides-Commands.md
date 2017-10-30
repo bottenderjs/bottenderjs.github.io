@@ -29,80 +29,46 @@ Every command has a "help" screen which displays and describes the command's ava
 bottender init --help
 ```
 
+## Setup
+
+To use Bottender cli tools, you need to install `bottender` globally:
+
+```sh
+npm install -g bottender
+```
+
+Or using `npx` to get local `bottender` installation:
+
+```sh
+npx bottender 
+```
+
+Some commands will need a `bottender.config.js` to be properly configured.
+
 ## Create Bot
+
+You can use interactive cli to create your bots:
 
 ```sh
 bottender init
 ```
 
-## Messenger
+After answer a few questions, a new bot will be ready for you. 
 
-### Persistent Menu
+## Platform Specific Commands
 
-```sh
-bottender persistent-menu:get
-```
+To use platfrom specific commands, just type name of platform behind the `bottender` command.
 
-```sh
-bottender persistent-menu:set
-```
+For example, to set messenger profile for your bots:
 
 ```sh
-bottender persistent-menu:delete
+bottender messenger profile set
 ```
 
-### Get Started
+Or to get telegram webhook information:
 
 ```sh
-bottender get-started:get
+bottender telegram webhook get
 ```
 
-```sh
-bottender get-started:set
-```
-
-```sh
-bottender get-started:delete
-```
-
-### Greeting Text
-
-```sh
-bottender greeting-text:get
-```
-
-```sh
-bottender greeting-text:set
-```
-
-```sh
-bottender greeting-text:delete
-```
-
-### Domain Whitelist
-
-```sh
-bottender domain-whitelist:get
-```
-
-```sh
-bottender domain-whitelist:set
-```
-
-```sh
-bottender domain-whitelist:delete
-```
-
-### Set Webhook
-
-```sh
-bottender set-webhook
-```
-
-## Telegram
-
-### Set Webhook
-
-```sh
-bottender set-telegram-webhook
-```
+Provide `--help` to see the details.
