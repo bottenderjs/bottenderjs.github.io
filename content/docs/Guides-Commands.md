@@ -11,7 +11,7 @@ The command-line interface included within bottender provides a number of helpfu
 bottender
 ```
 
-Or using `btd` shorthand:
+Or use `btd` shorthand:
 
 ```sh
 btd
@@ -37,13 +37,13 @@ To use Bottender cli tools, you need to install `bottender` globally:
 npm install -g bottender
 ```
 
-Or using `npx` to get local `bottender` installation:
+Or use [`npx`](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b)(already installed in `npm@5.2.0` or greater) to get local `bottender` installation:
 
 ```sh
 npx bottender 
 ```
 
-Some commands will need a `bottender.config.js` to be properly configured.
+Some commands will need a `bottender.config.js` file to be properly configured.
 
 ## Create Bot
 
@@ -59,13 +59,13 @@ After answer a few questions, a new bot will be ready for you.
 
 To use platfrom specific commands, just type name of platform behind the `bottender` command.
 
-For example, to set messenger profile for your bots:
+For example, to set Messenger profile for your bots:
 
 ```sh
 bottender messenger profile set
 ```
 
-Or to get telegram webhook information:
+Or to get Telegram webhook information:
 
 ```sh
 bottender telegram webhook get
