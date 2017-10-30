@@ -12,17 +12,6 @@ const Wrapper = styled.div`
     width: 100%;
   }
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  a,
-  button {
-    font-family: Karla, sans-serif;
-  }
-
   h1 {
     margin-top: 1em;
     margin-bottom: 0.5em;
@@ -76,14 +65,13 @@ const Wrapper = styled.div`
   }
 
   p {
-    color: #767676;
-    font-family: Roboto, sans-serif;
-    font-size: 20.5px;
-    line-height: 1.71;
+    color: #000;
+    font-size: 20px;
+    line-height: 1.7;
   }
 
   a {
-    color: #009ace;
+    color: #2b9ac8;
     text-decoration: underline;
   }
 

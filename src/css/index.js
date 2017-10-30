@@ -7,7 +7,9 @@ export default () => injectGlobal`
   ${styledNormalize}
 
   body {
-    font-family: Karla, Roboto, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-feature-settings: unset;
+    text-rendering: unset;
   }
 
   h1::before,
@@ -27,14 +29,26 @@ export default () => injectGlobal`
   h3,
   h4,
   h5,
-  h6,
-  a,
-  button {
-    font-family: Karla;
+  h6 {
+    color: #2d2d2d;
+    font-family: Karla, sans-serif;
   }
 
   p {
-    font-family: Roboto;
+    letter-spacing: 0.3px;
+    text-size-adjust: 100%;
+  }
+
+  p code {
+    background-color: #f5f2f0;
+  }
+
+  .token.operator,
+  .token.entity,
+  .token.url,
+  .language-css .token.string,
+  .style .token.string {
+    background: none;
   }
 
   a {
