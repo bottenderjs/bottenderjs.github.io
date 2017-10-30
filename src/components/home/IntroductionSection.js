@@ -50,13 +50,13 @@ class TitleSection extends Component {
             />
             <IntroductionItem
               title="Modern"
-              subTitle="Bottender is written with ES6/ES7 up syntax and full async await support. Now we can deal with complex async logic without lost the readability and maintainability of code."
+              subTitle="Bottender is written with ES6/ES7 up syntax and it fully supports async await function. We can deal with complex async logic without losing the readability and maintainability of code."
             />
           </Row>
           <Row>
             <IntroductionItem
               title="Modular"
-              subTitle="There are a set of interface that define the core modules provided by the Bottender. You can use your own implement of session store, your http server framework or even connect your bot to any platform."
+              subTitle="There is a set of interface that define the core modules provided by the Bottender. You can use your own implement of session store, your HTTP server framework or even connect your bot to any platform."
             />
             <IntroductionItem
               title="Learn Once, Write Anywhere"
