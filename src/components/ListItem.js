@@ -27,10 +27,12 @@ const ListTitle = styled.div`
 class ListItem extends Component {
   render() {
     const { item, pathname, toggleMenu } = this.props;
-    const selectedTitle = pathname.replace(
-      /(\/bottender-docs)?\/docs\/((Guides|APIReference|Platforms)-)?/i,
-      ''
-    );
+    const selectedTitle = pathname
+      .replace(
+        /(\/bottender-docs)?\/docs\/((Guides|APIReference|Platforms)-)?/i,
+        ''
+      )
+      .replace('/', '');
 
     return (
       <Wrapper to={`/${item.id}`}>
