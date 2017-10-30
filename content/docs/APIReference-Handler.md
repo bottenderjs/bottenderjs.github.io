@@ -104,10 +104,10 @@ It will trigger handler function if any Error is thrown.
 
 ## Example
 
-- [MessengerHandler](https://github.com/Yoctol/toolbot-core-experiment/tree/master/examples/messenger-builder/index.js)
-- [LineHandler](https://github.com/Yoctol/toolbot-core-experiment/tree/master/examples/line-builder/index.js)
-- [SlackHandler](https://github.com/Yoctol/toolbot-core-experiment/tree/master/examples/slack-builder/index.js)
-- [TelegramHandler](https://github.com/Yoctol/toolbot-core-experiment/tree/master/examples/telegram-builder/index.js)
+- [MessengerHandler](https://github.com/Yoctol/bottender/tree/master/examples/messenger-builder/index.js)
+- [LineHandler](https://github.com/Yoctol/bottender/tree/master/examples/line-builder/index.js)
+- [SlackHandler](https://github.com/Yoctol/bottender/tree/master/examples/slack-builder/index.js)
+- [TelegramHandler](https://github.com/Yoctol/bottender/tree/master/examples/telegram-builder/index.js)
 
 Let's use MessengerHandler as an example.
 
