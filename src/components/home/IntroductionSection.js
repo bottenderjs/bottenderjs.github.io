@@ -60,7 +60,7 @@ class TitleSection extends Component {
             />
             <IntroductionItem
               title="Learn Once, Write Anywhere"
-              subTitle="We don’t make assumptions about the rest of your technology stack, so you can develop new features in Bottender without rewriting existing code."
+              subTitle="Handle multiple platforms with unified development experience. You can develop Bots for different platforms including Messenger, LINE, Slack and Telegram comfortably with similar mindset."
             />
           </Row>
         </Container>
