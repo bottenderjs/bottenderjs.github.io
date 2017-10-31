@@ -1,9 +1,8 @@
 ---
-title: "first post"
+title: "First post"
 date: "2017-10-24"
+author: [yoctol]
 ---
-
-# First post
 
 We're excited to announce the release of Bottender v0.x!
 

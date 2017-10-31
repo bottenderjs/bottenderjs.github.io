@@ -3,8 +3,6 @@ title: Commands
 date: "2017-10-17"
 ---
 
-# Commands
-
 The following introduction shows the Bottender command-line interface usage.
 
 ## Setup

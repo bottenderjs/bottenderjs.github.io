@@ -3,8 +3,6 @@ title: LINE
 date: "2017-10-09"
 ---
 
-# LINE
-
 This guide will give you some basic concepts of LINE bots. For more information, check [official docs](https://developers.line.me/en/docs/messaging-api/building-bot/).
 
 ## Requirements

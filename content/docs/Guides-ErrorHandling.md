@@ -3,8 +3,6 @@ title: Error Handling
 date: "2017-10-13"
 ---
 
-# Error Handling
-
 When you develop a bot using Bottender, you can use the following approaches for error handling:
 - [Try Catch](#try-catch)
 - [onError](#onerror)

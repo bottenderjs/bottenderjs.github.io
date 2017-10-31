@@ -3,8 +3,6 @@ title: Context
 date: "2017-10-17"
 ---
 
-# Context
-
 A Bottender Context encapsulates many helpful methods into a single object like session, client from [messaging-apis](https://github.com/Yoctol/messaging-apis), event, etc., which makes you easier to develop a chatbot system on different platform.
 
 ## General Methods
