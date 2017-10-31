@@ -44,6 +44,12 @@ module.exports = {
             },
           },
           'gatsby-remark-autolink-headers',
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 720,
+            },
+          },
         ],
       },
     },
