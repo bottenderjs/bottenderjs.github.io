@@ -3,8 +3,6 @@ title: Deployment
 date: "2017-10-15"
 ---
 
-# Deployment
-
 In this section, two fast and simple ways of deployment are introduced. You can deploy on
 - [Now](https://zeit.co/now)
 - [Heroku](https://www.heroku.com/home)

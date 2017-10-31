@@ -3,8 +3,6 @@ title: Event
 date: "2017-10-17"
 ---
 
-# Event
-
 A Bottender Event helps you determine what kind of message is sent from user.
 
 ## Usage

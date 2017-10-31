@@ -3,8 +3,6 @@ title: Testing
 date: "2017-10-15"
 ---
 
-# Testing
-
 Bottender is built with testing in mind. Your tests could be run with any JavaScript test runners, such as [Jest](https://facebook.github.io/jest/), [Mocha](https://mochajs.org/), [AVA](https://github.com/avajs/ava), and so on.
 
 ## Unit Test

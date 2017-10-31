@@ -3,8 +3,6 @@ title: Messenger
 date: "2017-10-12"
 ---
 
-# Messenger
-
 This guide will give you some basic concepts of developing a Messenger bot. For more detail, see [official docs](https://developers.facebook.com/docs/messenger-platform).
 
 ## Requirements

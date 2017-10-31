@@ -3,8 +3,6 @@ title: Middleware
 date: "2017-10-11"
 ---
 
-# Middleware
-
 Compose handlers.
 Sometimes you may want to use multiple handlers to handle one event so you can reuse each of them on different situation. We provide `middleware` method which enables you to compose multiple handlers in a functional style.
 > Middleware are simple functions which return a MiddlewareFunction with signature (ctx, next). When the middleware is run, it must manually invoke next() to run the "downstream" middleware.

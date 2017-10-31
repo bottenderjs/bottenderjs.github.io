@@ -3,8 +3,6 @@ title: HTTP server
 date: "2017-10-13"
 ---
 
-# HTTP Server
-
 Bottender supports the following HTTP servers. You can choose one of them to develop your own bots.
 
 - [Express](#express)

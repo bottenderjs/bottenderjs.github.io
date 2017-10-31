@@ -3,8 +3,6 @@ title: Slack
 date: "2017-10-16"
 ---
 
-# Slack
-
 This guide will give you some basic concepts of developing a Slack bot. For more detail, check [official docs](https://api.slack.com/).
 
 ## Requirements

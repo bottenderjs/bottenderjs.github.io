@@ -3,8 +3,6 @@ title: Conversation Session
 date: "2017-10-11"
 ---
 
-# Conversation Session
-
 A session is a place to store data that you want to access to across requests. Each user that talks to your bot has a unique session. You can use sessions to store and access user data as they talk to your bot.
 
 ## Usage

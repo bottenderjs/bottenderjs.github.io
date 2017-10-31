@@ -1,16 +1,19 @@
 import React from 'react';
 import styled from 'styled-components';
 import Helmet from 'react-helmet';
+import get from 'lodash/get';
 
 import { rhythm } from '../utils/typography';
+import toCommaSeparatedList from '../utils/toCommaSeparatedList';
 import media from '../css/media';
 import EditThisPage from '../components/EditThisPage';
 import Sidebar from '../components/Sidebar';
+import authors from '../../content/authors.yaml';
 
 const globalStyle = `
   h1 {
     margin-top: 1em;
-    margin-bottom: 0.5em;
+    margin-bottom: 0;
     color: #2d2d2d;
     font-size: 60px;
     font-weight: bold;
@@ -151,16 +154,46 @@ const Right = styled.aside`
   }
 `;
 
+const Title = styled.h1`
+  margin-bottom: 0;
+`;
+
+const Meta = styled.span`
+  margin-top: 1em;
+  margin-bottom: 2.5em;
+  color: rgb(109, 109, 109);
+`;
+
+const renderAuthor = author => {
+  const meta = get(authors, author);
+  const url = get(meta, 'url');
+  const name = get(meta, 'name');
+  if (url) {
+    return (
+      <a href={url} target="_blank" key={name}>
+        {name}
+      </a>
+    );
+  }
+  return <span>{name}</span>;
+};
+
 export default ({ data, location }) => {
   const post = data.markdownRemark;
+  const { title, author, date } = post.frontmatter;
   const { pathname } = location;
   return (
     <Main id="content">
-      <Helmet
-        title={`${post.frontmatter.title} | ${data.site.siteMetadata.title}`}
-      />
+      <Helmet title={`${title} | ${data.site.siteMetadata.title}`} />
       <Container>
         <Left role="main">
+          <Title>{title}</Title>
+          {author && (
+            <Meta>
+              {`${date} by `}
+              {toCommaSeparatedList(author, renderAuthor)}
+            </Meta>
+          )}
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
           <EditThisPage pathname={post.fields.path} />
         </Left>
@@ -178,6 +211,8 @@ export const query = graphql`
       html
       frontmatter {
         title
+        date(formatString: "MMMM DD, YYYY")
+        author
       }
       fields {
         path

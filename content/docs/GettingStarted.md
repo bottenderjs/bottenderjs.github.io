@@ -3,8 +3,6 @@ title: Getting Started
 date: "2017-10-17"
 ---
 
-# Getting Started
-
 ## Requirements
 
 Bottender highly depends on [async function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function), so you must make sure your runtime meets the following requirements:

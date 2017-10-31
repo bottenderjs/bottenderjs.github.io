@@ -3,8 +3,6 @@ title: Intents
 date: "2017-10-13"
 ---
 
-# Intents
-
 ## Events
 
 Every time when there is an incoming request, the [handler](./APIReference-Handler) will be called and parse out events from the request. Afterwards, the Event instance is attached to [context](./APIReference-Context) so that you can access it via `context.event`.  

@@ -3,8 +3,6 @@ title: Handler
 date: "2017-10-26"
 ---
 
-# Handler
-
 A Bottender Handler includes many helpful methods and lets you easily handle different kinds of events from platforms.
 When an event comes in, the handler will choose the first method matched the condition to handle event.
 
