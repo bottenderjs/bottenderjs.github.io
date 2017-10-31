@@ -29,15 +29,19 @@ class ListItem extends Component {
     const { item, pathname, toggleMenu } = this.props;
     const selectedTitle = pathname
       .replace(
-        /(\/bottender-docs)?\/docs\/((Guides|APIReference|Platforms)-)?/i,
+        /(\/bottender-docs)?\/(docs|blog)\/.*?((Guides|APIReference|Platforms)-)?/i,
         ''
       )
-      .replace('/', '');
+      .replace(/\/?[0-9]*/g, '')
+      .replace('-', '');
 
     return (
       <Wrapper to={`/${item.id}`}>
         <ListTitle
-          selected={selectedTitle === item.title.replace(/ /g, '')}
+          selected={
+            selectedTitle.toLowerCase() ===
+            item.title.replace(/ /g, '').toLowerCase()
+          }
           onClick={toggleMenu}
         >
           {item.title}
