@@ -18,8 +18,8 @@ This repo contains the source code and documentation for [Bottender](https://git
 
 ### Create a branch
 
-1. `git checkout master` in your local repo
-2. `git pull origin master` to ensure you have the latest main code
+1. `git checkout source` in your local repo
+2. `git pull origin source` to ensure you have the latest main code
 3. `git checkout -b the-name-of-my-branch` to create a branch (remember to replace `the-name-of-my-branch` with a suitable name)
 
 ### Make the change
