@@ -92,7 +92,7 @@ const Main = styled.div`
   background-image: linear-gradient(0deg, #fafafa, #fafafa);
   background-position-x: right;
   background-repeat: no-repeat;
-  background-size: 33.4% 100%;
+  background-size: 25% 100%;
   opacity: 1;
   transition: opacity 0.5s;
 
@@ -119,7 +119,7 @@ const Container = styled.div`
 
 const Left = styled.main`
   display: flex;
-  width: 66.6%;
+  width: 75%;
   padding: 32px 40px 100px 0;
   flex-direction: column;
 
@@ -137,7 +137,7 @@ const Left = styled.main`
 
 const Right = styled.aside`
   display: flex;
-  width: 33.4%;
+  width: 25%;
 
   /* add half of H1 font-size for alignment */
   padding-top: calc(32px + 30px);
