@@ -60,7 +60,7 @@ class TitleSection extends Component {
             />
             <IntroductionItem
               title="Learn Once, Write Anywhere"
-              subTitle="Handle multiple platforms with unified development experience. You can develop Bots for different platforms including Messenger, LINE, Slack and Telegram comfortably with similar mindset."
+              subTitle="Handle multiple platforms with consistent development experience. You can develop Bots for different platforms including Messenger, LINE, Slack and Telegram comfortably with similar mindset."
             />
           </Row>
         </Container>
