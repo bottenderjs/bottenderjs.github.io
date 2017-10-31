@@ -56,11 +56,11 @@ class TitleSection extends Component {
           <Row>
             <IntroductionItem
               title="Modular"
-              subTitle="There is a set of interface that define the core modules provided by the Bottender. You can use your own implement of session store, your HTTP server framework or even connect your bot to any platform."
+              subTitle="There is a set of interface that defines the core modules provided by Bottender. You can use your own implement of session store, your HTTP server framework or even connect your bot to any platform."
             />
             <IntroductionItem
               title="Learn Once, Write Anywhere"
-              subTitle="Handle multiple platforms with consistent development experience. You can develop Bots for different platforms including Messenger, LINE, Slack and Telegram comfortably with similar mindset."
+              subTitle="Handle multiple platforms with consistent development experience. You can develop bots for different platforms including Messenger, LINE, Slack and Telegram comfortably, with similar mindset."
             />
           </Row>
         </Container>
