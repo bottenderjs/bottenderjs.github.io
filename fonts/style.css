@@ -5,10 +5,9 @@
   font-style: normal;
 }
 
-
 @font-face {
-  font-family: 'Karla';
-  src: url('./Karla-Regular.ttf');
+  font-family: 'Lato';
+  src: url('./Lato-Regular.ttf');
   font-weight: normal;
   font-style: normal;
 }
