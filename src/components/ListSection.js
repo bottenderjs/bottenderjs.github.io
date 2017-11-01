@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import get from 'lodash/get';
 
+import arrow from '../assets/iconArrow.svg';
+
 import ListItem from './ListItem';
 
 const Wrapper = styled.section`
@@ -28,10 +30,17 @@ const Accordion = styled.div`
 `;
 
 const Arrow = styled.span`
+  height: 21px;
   margin-left: 7px;
   ${props => (props.show === true ? '' : 'display: none')};
   transform: rotateX(${props => (props.expended === true ? '180' : '0')}deg);
   transition: transform 0.2s ease;
+`;
+
+const ArrowImage = styled.img`
+  width: 21px;
+  height: 21px;
+  margin: 2px 0 0;
 `;
 
 class ListSection extends Component {
@@ -72,7 +81,7 @@ class ListSection extends Component {
         <SectionTitle onClick={this.toggleAccordion}>
           {list.title}
           <Arrow show={list.title !== ' '} expended={isExpended}>
-            ∨
+            <ArrowImage src={arrow} alt="arrow" />
           </Arrow>
         </SectionTitle>
         <Accordion expended={isExpended}>
