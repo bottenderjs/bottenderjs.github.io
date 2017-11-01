@@ -57,8 +57,8 @@
       "path---docs-api-reference-handler-7a841f1f303fc21143b4.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-1ea66ba41521231485a6.js",
-      "component---src-layouts-index-js-1ea66ba41521231485a6.js.map"
+      "component---src-layouts-index-js-60792d93e97bc192644a.js",
+      "component---src-layouts-index-js-60792d93e97bc192644a.js.map"
     ],
     "path---docs-guides-server": [
       "path---docs-guides-server-0c51d27c1b3f5eb37820.js",
@@ -73,8 +73,8 @@
       "path---docs-guides-error-handling-efb1455c28d0d35957bd.js.map"
     ],
     "component---src-layouts-sidebar-layout-js": [
-      "component---src-layouts-sidebar-layout-js-481c2795d5b644abddf8.js",
-      "component---src-layouts-sidebar-layout-js-481c2795d5b644abddf8.js.map"
+      "component---src-layouts-sidebar-layout-js-f89e6b30f3843dd5bc61.js",
+      "component---src-layouts-sidebar-layout-js-f89e6b30f3843dd5bc61.js.map"
     ],
     "commons": [
       "commons-86e5a681b72391257e15.js",
@@ -101,9 +101,9 @@
       "path---docs-api-reference-event-01a1294c12d82da0620c.js.map"
     ],
     "app": [
-      "app-63c390779a34f1ac18ed.js",
+      "app-d557919ec239a547ef87.js",
       "build-js-styles.css",
-      "app-63c390779a34f1ac18ed.js.map",
+      "app-d557919ec239a547ef87.js.map",
       "build-js-styles.css.map"
     ],
     "path---docs-guides-middleware": [
