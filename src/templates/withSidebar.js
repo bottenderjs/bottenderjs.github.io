@@ -17,7 +17,6 @@ const globalStyle = `
     color: #2d2d2d;
     font-size: 60px;
     font-weight: bold;
-    letter-spacing: -1px;
 
     @media (${media.tablet}) {
       font-size: ${60 * 0.8}px;
@@ -30,7 +29,6 @@ const globalStyle = `
     color: #3c3c3c;
     font-size: 37px;
     font-weight: bold;
-    letter-spacing: -1px;
 
     @media (${media.tablet}) {
       font-size: ${37 * 0.8}px;
@@ -47,7 +45,6 @@ const globalStyle = `
     color: #3c3c3c;
     font-size: 30px;
     font-weight: bold;
-    letter-spacing: -0.9px;
 
     @media (${media.tablet}) {
       font-size: ${30 * 0.8}px;
@@ -60,7 +57,6 @@ const globalStyle = `
     color: #505050;
     font-size: 26px;
     font-weight: bold;
-    letter-spacing: -1px;
 
     @media (${media.tablet}) {
       font-size: ${26 * 0.8}px;

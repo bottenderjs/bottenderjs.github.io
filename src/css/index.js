@@ -32,7 +32,6 @@ export default () => injectGlobal`
   h5,
   h6 {
     color: #2d2d2d;
-    font-family: Karla, sans-serif;
   }
 
   p {

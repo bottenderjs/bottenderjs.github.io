@@ -18,7 +18,6 @@ const Input = styled.input`
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   background: #fff;
-  font-family: Karla;
   font-size: 21px;
   transition: border-color ease-in-out 0.15s;
 
