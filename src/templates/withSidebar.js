@@ -37,6 +37,10 @@ const globalStyle = `
     }
   }
 
+  h2:first-child {
+    margin-top: 0;
+  }
+
   h3 {
     margin-top: 1.5em;
     margin-bottom: 0.5em;
@@ -158,9 +162,12 @@ const Title = styled.h1`
   margin-bottom: 0;
 `;
 
-const Meta = styled.span`
-  margin-top: 1em;
+const TitleSection = styled.section`
   margin-bottom: 2.5em;
+`;
+
+const Meta = styled.div`
+  margin-top: 0.5em;
   color: rgb(109, 109, 109);
 `;
 
@@ -187,13 +194,15 @@ export default ({ data, location }) => {
       <Helmet title={`${title} | ${data.site.siteMetadata.title}`} />
       <Container>
         <Left role="main">
-          <Title>{title}</Title>
-          {author && (
-            <Meta>
-              {`${date} by `}
-              {toCommaSeparatedList(author, renderAuthor)}
-            </Meta>
-          )}
+          <TitleSection>
+            <Title>{title}</Title>
+            {author && (
+              <Meta>
+                {`${date} by `}
+                {toCommaSeparatedList(author, renderAuthor)}
+              </Meta>
+            )}
+          </TitleSection>
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
           <EditThisPage pathname={post.fields.path} />
         </Left>
