@@ -66,8 +66,8 @@ workflows:
             - dependencies
       - deploy:
           requires:
-            - dependencies
+            - lint
           filters:
             branches:
               only:
-                - master
+                - source
