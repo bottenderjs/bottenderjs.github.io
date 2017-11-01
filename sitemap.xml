@@ -10,10 +10,10 @@
 <url> <loc>https://yoctol.github.io/bottender-docs/docs/Guides-Deployment/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://yoctol.github.io/bottender-docs/docs/Guides-ErrorHandling/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://yoctol.github.io/bottender-docs/docs/Guides-Intents/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://yoctol.github.io/bottender-docs/docs/Guides-Middleware/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://yoctol.github.io/bottender-docs/docs/Guides-Server/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://yoctol.github.io/bottender-docs/docs/Guides-Session/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://yoctol.github.io/bottender-docs/docs/Guides-Middleware/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://yoctol.github.io/bottender-docs/docs/Guides-Testing/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://yoctol.github.io/bottender-docs/docs/Guides-Session/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://yoctol.github.io/bottender-docs/docs/Platforms-LINE/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://yoctol.github.io/bottender-docs/docs/Platforms-Messenger/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://yoctol.github.io/bottender-docs/docs/Platforms-Slack/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
