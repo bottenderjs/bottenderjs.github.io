@@ -29,7 +29,7 @@ After installed, we can start to create new bot with `bottender init` command:
 
 ![](https://user-images.githubusercontent.com/3382565/32279006-6a537d14-bee5-11e7-9b23-48289bd29641.png)
 
-This will create a folder with a `bot.js` file within:
+This will create a folder with a `bottender.config.js` file within:
 
 ```js
 const { ConsoleBot } = require('bottender');
