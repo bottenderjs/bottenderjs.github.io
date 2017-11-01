@@ -17,7 +17,7 @@ const ListTitle = styled.div`
   /* stylelint-disable */
   ${props =>
     props.selected === true
-      ? 'border-color: #2b9ac8;'
+      ? 'border-color: #2b9ac8; font-weight: bold;'
       : `&:hover {
     border-color: #2b9ac8;
   }`};
@@ -26,24 +26,11 @@ const ListTitle = styled.div`
 
 class ListItem extends Component {
   render() {
-    const { item, pathname, toggleMenu } = this.props;
-    const selectedTitle = pathname
-      .replace(
-        /(\/bottender-docs)?\/(docs|blog)\/.*?((Guides|APIReference|Platforms)-)?/i,
-        ''
-      )
-      .replace(/\/?[0-9]*/g, '')
-      .replace('-', '');
+    const { item, selected, toggleMenu } = this.props;
 
     return (
       <Wrapper to={`/${item.id}`}>
-        <ListTitle
-          selected={
-            selectedTitle.toLowerCase() ===
-            item.title.replace(/ /g, '').toLowerCase()
-          }
-          onClick={toggleMenu}
-        >
+        <ListTitle selected={selected} onClick={toggleMenu}>
           {item.title}
         </ListTitle>
       </Wrapper>
