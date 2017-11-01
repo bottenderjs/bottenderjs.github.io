@@ -3,8 +3,8 @@ import kirkhamTheme from 'typography-theme-kirkham';
 
 const typography = new Typography(
   Object.assign(kirkhamTheme, {
-    headerFontFamily: ['Karla', 'sans-serif'],
-    bodyFontFamily: ['Karla', 'Roboto', 'sans-serif'],
+    headerFontFamily: ['Helvetica', 'Lato', 'sans-serif'],
+    bodyFontFamily: ['Roboto', 'sans-serif'],
   })
 );
 
