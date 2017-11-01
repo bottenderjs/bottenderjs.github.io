@@ -10,7 +10,7 @@ When an event comes in, the handler will choose the first method matched the con
 
 All methods return handler itself.
 
-See more details about [event](./APIReference-Event.md) and [context](./APIReference-Context.md).
+See more details about [event](./APIReference-Event) and [context](./APIReference-Context).
 
 ### `onXXX(handler)`
 
@@ -20,7 +20,7 @@ It will always trigger handler function if `event.isXXX` is true and **just have
 
 | Param    | Type            | Description |
 | :-------: | :---------------: | :-----------: |
-| handler | `function` | This is a callback function receiving [context](./APIReference-Context.md) as first parameter. |
+| handler | `function` | This is a callback function receiving [context](./APIReference-Context) as first parameter. |
 
 ### `onXXX(predicate, handler)`
 
@@ -31,9 +31,9 @@ It will trigger handler function if `event.isXXX` is true and predicate function
 | Param    | Type            | Description |
 | :-------: | :---------------: | :-----------: |
 | predicate | `function` | This is a callback function receiving two parameters. Handler function will be triggered if it **returns true**. <br> `function predicate(XXX, context) { /* ... */ }` |
-| handler | `function` | This is a callback function receiving [context](./APIReference-Context.md) as first parameter. <br> `function handler(context) { /* ...*/ }` |
+| handler | `function` | This is a callback function receiving [context](./APIReference-Context) as first parameter. <br> `function handler(context) { /* ...*/ }` |
 
-- Notices: `onText`, `onPayload` also support first parameter to be **string** type or **RegExp**. See more details from [example](./APIReference-Handler.md#ontext) below.
+- Notices: `onText`, `onPayload` also support first parameter to be **string** type or **RegExp**. See more details from [example](#ontext) below.
 
 ### `onEvent(handler)`
 
@@ -41,7 +41,7 @@ It will trigger handler function from **any event**.
 
 | Param    | Type            | Description |
 | :-------:  | :---------------: | :-----------: |
-| handler | `function` | This is a callback function receiving [context](./APIReference-Context.md) as first parameter. <br> `function handler(context) { /* ...*/ }` |
+| handler | `function` | This is a callback function receiving [context](./APIReference-Context) as first parameter. <br> `function handler(context) { /* ...*/ }` |
 
 ### `onUnhandled(handler)`
 
@@ -49,7 +49,7 @@ It will trigger handler function if any `onXXX` function don't send any things b
 
 | Param    | Type            | Description |
 | :-------:  | :---------------: | :-----------: |
-| handler | `function` | This is a callback function receiving [context](./APIReference-Context.md) as first parameter. <br> `function handler(context) { /* ...*/ }` |
+| handler | `function` | This is a callback function receiving [context](./APIReference-Context) as first parameter. <br> `function handler(context) { /* ...*/ }` |
 
 ### `onError(handler)`
 
@@ -57,7 +57,7 @@ It will trigger handler function if any Error is thrown.
 
 | Param    | Type            | Description |
 | :-------:  | :---------------: | :-----------: |
-| handler | `function` | This is a callback function receiving [context](./APIReference-Context.md) as first parameter and **error as second parameter**. <br> `function handler(context, error) { /* ... */ }` |
+| handler | `function` | This is a callback function receiving [context](./APIReference-Context) as first parameter and **error as second parameter**. <br> `function handler(context, error) { /* ... */ }` |
 
 ### Methods table
 
