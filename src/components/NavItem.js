@@ -9,7 +9,7 @@ const Item = styled.p`
   padding-top: 5px;
   border-top: 5px transparent solid;
   color: #2d2d2d;
-  font-family: Karla;
+  font-family: Lato, sans-serif;
   font-size: 18px;
   font-weight: bold;
   letter-spacing: 1px;

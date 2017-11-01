@@ -18,9 +18,30 @@ class Sidebar extends Component {
     const List = pathname.includes('/blog') ? BlogList : DocsList;
     return (
       <Wrapper>
-        {List.map(list => (
-          <ListSection key={list.title} list={list} {...this.props} />
-        ))}
+        {List.map(list => {
+          const selectedTitle = pathname
+            .replace(
+              /(\/bottender-docs)?\/(docs|blog)\/.*?((Guides|APIReference|Platforms)-)?/i,
+              ''
+            )
+            .replace(/\/?[0-9]*/g, '')
+            .replace('-', '');
+
+          const selectedItem = list.items.find(
+            item =>
+              selectedTitle.toLowerCase() ===
+              item.title.replace(/ /g, '').toLowerCase()
+          );
+
+          return (
+            <ListSection
+              key={list.title}
+              list={list}
+              selectedItem={selectedItem}
+              {...this.props}
+            />
+          );
+        })}
       </Wrapper>
     );
   }

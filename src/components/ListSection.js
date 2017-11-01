@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import get from 'lodash/get';
 
 import ListItem from './ListItem';
 
@@ -13,25 +14,77 @@ const SectionTitle = styled.h2`
   margin-top: 32px;
   margin-bottom: 12px;
   color: #2b9ac8;
-  font-family: Karla, sans-serif;
+  font-family: Lato, sans-serif;
   font-size: 21px;
+  cursor: pointer;
   letter-spacing: 1px;
 `;
 
+const Accordion = styled.div`
+  display: flex;
+  overflow: hidden;
+  max-height: ${props => (props.expended === true ? 'auto' : 0)};
+  flex-direction: column;
+`;
+
+const Arrow = styled.span`
+  margin-left: 7px;
+  ${props => (props.show === true ? '' : 'display: none')};
+  transform: rotateX(${props => (props.expended === true ? '180' : '0')}deg);
+  transition: transform 0.2s ease;
+`;
+
 class ListSection extends Component {
+  constructor() {
+    super();
+    this.state = {
+      isExpended: false,
+    };
+    this.toggleAccordion = this.toggleAccordion.bind(this);
+  }
+
+  componentWillMount() {
+    this.setState(() => ({
+      isExpended:
+        this.props.selectedItem !== undefined || this.props.list.title === ' ',
+    }));
+  }
+
+  componentWillReceiveProps() {
+    this.setState(() => ({
+      isExpended:
+        this.props.selectedItem !== undefined || this.props.list.title === ' ',
+    }));
+  }
+
+  toggleAccordion() {
+    this.setState(state => ({
+      isExpended: !state.isExpended || this.props.list.title === ' ',
+    }));
+  }
+
   render() {
-    const { list, pathname, toggleMenu } = this.props;
+    const { list, toggleMenu, selectedItem } = this.props;
+    const { isExpended } = this.state;
+
     return (
       <Wrapper>
-        <SectionTitle>{list.title}</SectionTitle>
-        {list.items.map(item => (
-          <ListItem
-            key={item.title}
-            item={item}
-            pathname={pathname}
-            toggleMenu={toggleMenu}
-          />
-        ))}
+        <SectionTitle onClick={this.toggleAccordion}>
+          {list.title}
+          <Arrow show={list.title !== ' '} expended={isExpended}>
+            ∨
+          </Arrow>
+        </SectionTitle>
+        <Accordion expended={isExpended}>
+          {list.items.map(item => (
+            <ListItem
+              key={item.title}
+              item={item}
+              selected={get(selectedItem, 'title') === item.title}
+              toggleMenu={toggleMenu}
+            />
+          ))}
+        </Accordion>
       </Wrapper>
     );
   }
