@@ -24,14 +24,14 @@ export const meta = [
     property: 'og:type',
     content: 'website',
   },
-  { property: 'og:url', content: 'https://yoctol.github.io/bottender-docs/' },
+  { property: 'og:url', content: 'https://bottender.js.org/' },
   {
     property: 'og:title',
     content: 'Bottender | Make Bots in Your Way, Fast and Flexibly',
   },
   {
     property: 'og:image',
-    content: 'https://yoctol.github.io/bottender-docs/fb-og.png',
+    content: 'https://bottender.js.org/fb-og.png',
   },
   {
     property: 'og:description',
