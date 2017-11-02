@@ -21,7 +21,7 @@ const Btn = styled.a`
 class EditThisPage extends Component {
   render() {
     const { pathname } = this.props;
-    const href = `https://github.com/Yoctol/bottender-docs/blob/master/content/${pathname}`;
+    const href = `https://github.com/bottenderjs/bottenderjs.github.io/blob/master/content/${pathname}`;
     return (
       <Wrapper>
         <Btn href={href}>Edit This Page</Btn>
