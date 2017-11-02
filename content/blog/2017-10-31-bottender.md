@@ -8,7 +8,7 @@ We're very proud to open-source [Bottender](https://github.com/yoctol/bottender)
 
 ![bottender logo](../images/blog/logo-600x600.png)
 
-To start using it, install `bottender` globally from the npm registry:
+To begin with, install `bottender` globally from the npm registry:
 
 ```sh
 npm install -g bottender
@@ -28,11 +28,13 @@ After answering a few questions, a new bot will be created for you.
 
 ## Motivation
 
-JavaScript's event-based mechanism is good at developing dialogue system, but the callback-based development approach is a disaster for asynchronous state maintenance and error handling. However, the JavaScript ecosystem has been improved a lot. Thanks to Babel, Node.js and V8 engine, we have modern and async friendly way to handle all the stuff.
+We are eager to envision a future of modern and friendly bot development, because we believe bots are the next big thing in terms of impact, scale and complexity.
 
-In recent years, many messaging platforms have emerged. Each platform has its own characteristics and features, but some of them are not friendly for developers. Therefore, we decide to create a consistent development experience in a transparent, extensible and fully controlled way.
+Bot development should benefit from the latest improvements in JavaScript. Thanks to Babel, Node.js and the V8 engine, modern developers have escaped from call-back hell, but still have full access to the power of asynchronous error handling and state maintenance.
 
-Here comes Bottender.
+Also, bot development should be friendly. That is, developing bots on multiple messaging platforms should imply a consistent development experience without losing any of the characteristics or features of each platform.
+
+Here comes Bottender, our proposal of modern and friendly bot development.
 
 <br />
 
