@@ -7,9 +7,23 @@ A session is a place to store data that you want to access to across requests. E
 
 ## Usage
 
-### context.session
+### bot.setInitialState(Object)
 
-To store or access session data, simply use the request property `context.session`, which is (generally) serialized as JSON by the store, so nested objects are typically fine. For example, we can put user's nickname in session and call it later:
+To set the initial state of coversation.
+
+### context.state
+
+To get session data.
+
+### context.setState(Object)
+
+To store data into session which is (generally) serialized as JSON by the store, so nested objects are typically fine.
+
+### context.resetState()
+
+To reset all data in session to initial state.
+
+For example, we can put user's nickname in session and call it later:
 
 ```
 User > Hi
@@ -21,19 +35,24 @@ Bot  > Hello Tim
 ```js
 
 // Bot will use memory session store as default if you don't assign sessionStore.
+bot.setInitialState({
+  asking: false,
+  nickname: null,
+});
+
 bot.onEvent(async context => {
-  if (context.session.asking) {
-    context.session.nickname = context.event.text;
-    context.session.asking = false;
-    await context.sendText(`Hello ${context.session.nickname}`);
+  if (context.state.asking) {
+    context.setState({ nickname: context.event.text, asking: false });
+    await context.sendText(`Hello ${context.state.nickname}`);
   } else {
-    context.session.asking = true;
+    context.resetState();
+    context.setState({ asking: true });
     await context.sendText("Hi, what's your nickname?");
   }
 })
 ```
 
-See more details at [example](https://github.com/Yoctol/bottender/tree/master/examples/with-memory-session)
+See more details at [example](https://github.com/Yoctol/bottender/tree/master/examples/with-state)
 
 ## Session Expiration
 
