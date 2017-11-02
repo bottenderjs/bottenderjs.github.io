@@ -5,19 +5,19 @@ date: "2017-10-17"
 
 ## Requirements
 
-Bottender highly depends on [async function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function), so you must make sure your runtime meets the following requirements:
+Bottender highly depends on [async function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function) syntax, so you must make sure your runtime meets the following requirements:
 
 - node >= 7.6
 
 ## Installing Bottender
 
-Install `bottender` package from the registry:
+To start using it, install `bottender` globally from the npm registry:
 
 ```sh
 npm install -g bottender
 ```
 
-or
+or install by yarn:
 
 ```sh
 yarn global add bottender
@@ -25,11 +25,11 @@ yarn global add bottender
 
 ## Initialize
 
-```
-bottender init
-```
+After installed, we can start to create new bot with `bottender init` command:
 
-This command will create a folder with a `bot.js` file within:
+![](https://user-images.githubusercontent.com/3382565/32279006-6a537d14-bee5-11e7-9b23-48289bd29641.png)
+
+This will create a folder with a `bottender.config.js` file within:
 
 ```js
 const { ConsoleBot } = require('bottender');
@@ -43,13 +43,15 @@ bot.handle(async context => {
 bot.createRuntime();
 ```
 
-We can skip over this file and directly see the result of the execution:
+We can skip over this file and jump to see the result of the execution:
 
 ```sh
 npm run dev
 ```
 
 ![](https://user-images.githubusercontent.com/3382565/31601791-abf0746a-b220-11e7-893a-fba68923920e.png)
+
+As you can see, we just got a bot that always reply "Hello World" in the console.
 
 ## Teach Bot to Echo
 
