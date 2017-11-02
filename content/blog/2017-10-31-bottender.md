@@ -133,5 +133,5 @@ const createServer = require('bottender/micro');
 const createServer = require('bottender/restify');
 ```
 
-Since Bottender works as a Node.js HTTP server, you can easily deploy your bots to PaaS like [Heroku](https://www.heroku.com/) or [Now](https://zeit.co/now). For more details, check out the [Deployment](./docs/Guides-Deployment) guide.
+Since Bottender works as a Node.js HTTP server, you can easily deploy your bots to PaaS like [Heroku](https://www.heroku.com/) or [Now](https://zeit.co/now). For more details, check out the [Deployment](https://bottender.js.org/docs/Guides-Deployment) guide.
 
