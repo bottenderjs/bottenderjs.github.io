@@ -4,19 +4,19 @@
 <url> <loc>https://bottender.js.org/blog/2017/10/31/bottender</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://bottender.js.org/docs/APIReference-Context</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://bottender.js.org/docs/APIReference-Event</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://bottender.js.org/docs/APIReference-Handler</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://bottender.js.org/docs/GettingStarted</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://bottender.js.org/docs/APIReference-Handler</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://bottender.js.org/docs/Guides-Commands</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://bottender.js.org/docs/Guides-Deployment</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://bottender.js.org/docs/Guides-ErrorHandling</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://bottender.js.org/docs/Guides-Intents</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://bottender.js.org/docs/Guides-Middleware</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://bottender.js.org/docs/Guides-Server</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://bottender.js.org/docs/Guides-Session</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://bottender.js.org/docs/Guides-Testing</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://bottender.js.org/docs/Guides-Session</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://bottender.js.org/docs/Platforms-LINE</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://bottender.js.org/docs/Platforms-Messenger</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://bottender.js.org/docs/Platforms-Slack</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://bottender.js.org/docs/Platforms-Telegram</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://bottender.js.org/docs/Platforms-Slack</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://bottender.js.org/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>

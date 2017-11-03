@@ -25,8 +25,8 @@
       "path----e412b4eaf219cfba0f0a.js.map"
     ],
     "path---docs-platforms-messenger": [
-      "path---docs-platforms-messenger-3f973eaf3e50684451eb.js",
-      "path---docs-platforms-messenger-3f973eaf3e50684451eb.js.map"
+      "path---docs-platforms-messenger-0a0d45dfb73845bcb2c5.js",
+      "path---docs-platforms-messenger-0a0d45dfb73845bcb2c5.js.map"
     ],
     "path---docs-getting-started": [
       "path---docs-getting-started-3eb3a006faa8025f8cd3.js",
@@ -101,9 +101,9 @@
       "path---docs-api-reference-event-01a1294c12d82da0620c.js.map"
     ],
     "app": [
-      "app-8810995c2320e50f322a.js",
+      "app-cce04b3dbc314691a518.js",
       "build-js-styles.css",
-      "app-8810995c2320e50f322a.js.map",
+      "app-cce04b3dbc314691a518.js.map",
       "build-js-styles.css.map"
     ],
     "path---docs-guides-middleware": [
