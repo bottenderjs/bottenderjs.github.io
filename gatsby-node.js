@@ -77,8 +77,9 @@ exports.createPages = async ({ graphql, boundActionCreators }) => {
 
   allMarkdown.data.allMarkdownRemark.edges.map(({ node }) => {
     const { slug } = node.fields;
+    const slugWithoutSlash = slug.replace(/\/$/, ``);
     createPage({
-      path: slug,
+      path: slugWithoutSlash,
       component: path.resolve('./src/templates/withSidebar.js'),
       layout: 'sidebar-layout',
       context: {
@@ -86,6 +87,14 @@ exports.createPages = async ({ graphql, boundActionCreators }) => {
         slug,
       },
     });
+    // Only redirect on doc pages to ensure the relative paths working
+    if (!slug.includes('blog')) {
+      createRedirect({
+        fromPath: slug,
+        redirectInBrowser: true,
+        toPath: slugWithoutSlash,
+      });
+    }
   });
 
   const newestBlogEntry = await graphql(`
