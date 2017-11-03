@@ -63,6 +63,20 @@ server.listen(5000, () => {
 });
 ```
 
+### Options
+
+If you want to use your own verify token, you can pass options object into `createServer()` with `verifyToken` key.
+
+For example:
+
+```js
+const server = createServer(bot, {
+  verifyToken: '__FILL_YOUR_VERIFY_TOKEN_HERE__'
+});
+```
+
+more on [Guides Server](./Guides-Server#options).
+
 ## Events
 
 Bottender supports several types of events. You are able to access them via `context.event`.
