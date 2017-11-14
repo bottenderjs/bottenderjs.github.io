@@ -1,6 +1,6 @@
 ---
 title: Messenger
-date: "2017-10-12"
+date: "2017-11-14"
 ---
 
 This guide will give you some basic concepts of developing a Messenger bot. For more detail, see [official docs](https://developers.facebook.com/docs/messenger-platform).
@@ -113,6 +113,12 @@ bot.onEvent(async context => {
 ## Send APIs
 
 After receiving the request from Messenger, you can send API by using context send API.
+
+### `messaging_type`
+
+Messenger introduced a `messaging_type` field in Messenger Platform 2.2 and it will be required starting from May 7, 2018.
+
+When using Bottender, we automatically set `messaging_type` to `RESPONSE` when using send APIs in context so you don't need to worry about it. You can still pass other `messaging_types` in the `options` argument.
 
 ### Messenger-specific context send API
 

@@ -1,6 +1,6 @@
 ---
 title: Context
-date: "2017-10-17"
+date: "2017-11-14"
 ---
 
 A Bottender Context encapsulates many helpful methods into a single object like session, client from [messaging-apis](https://github.com/Yoctol/messaging-apis), event, etc., which makes you easier to develop a chatbot system on different platform.
@@ -17,20 +17,30 @@ A Bottender Context encapsulates many helpful methods into a single object like 
 
 ## Messenger
  These are other methods on Messenger. See more details at [messaging-api-messenger](https://github.com/Yoctol/messaging-apis/tree/master/packages/messaging-api-messenger).
+- sendMessage
 - sendAttachment
 - sendImage
 - sendAudio
 - sendVideo
 - sendFile
 - sendQuickReplies
+- sendTemplate
 - sendGenericTemplate
 - sendButtonTemplate
 - sendListTemplate
 - sendReceiptTemplate
+- sendOpenGraphTemplate
+- sendMediaTemplate
 - sendAirlineBoardingPassTemplate
 - sendAirlineCheckinTemplate
 - sendAirlineItineraryTemplate
 - sendAirlineFlightUpdateTemplate
+- associateLabel(labelId)
+- dissociateLabel(labelId)
+- getAssociatedLabels
+- passThreadControl(targetAppId, metadata)
+- passThreadControlToPageInbox
+- takeThreadControl
 
 Description:
 - Each of these functions is similar to methods in [messaging-api-messenger](https://github.com/Yoctol/messaging-apis/tree/master/packages/messaging-api-messenger), but we handle **first parameters (userId)** for you.
