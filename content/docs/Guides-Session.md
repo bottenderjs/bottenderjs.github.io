@@ -1,6 +1,6 @@
 ---
 title: Conversation Session
-date: "2017-10-11"
+date: "2017-11-22"
 ---
 
 A session is a place to store data that you want to access to across requests. Each user that talks to your bot has a unique session. You can use sessions to store and access user data as they talk to your bot.
@@ -81,13 +81,13 @@ Session store is a place where session data is being stored on server.
 
 We implement following kinds of session store. All kinds of bots will use memory session store as default.
 
-- **memory** - sessions are stored in memory with [LRU cache](https://github.com/isaacs/node-lru-cache) and will not be persisted. See [example](https://github.com/Yoctol/bottender/tree/master/examples/with-memory-session)
+- **memory** - sessions are stored in memory with [LRU cache](https://github.com/isaacs/node-lru-cache) and will not be persisted. See [example](https://github.com/Yoctol/bottender/tree/master/examples/session-memory)
 - **file** - sessions are stored in `.sessions` by default. See
-  [example](https://github.com/Yoctol/bottender/tree/master/examples/with-file-session)
+  [example](https://github.com/Yoctol/bottender/tree/master/examples/session-file)
 - **mongo** - sessions are stored in a mongo database. See
-  [example](https://github.com/Yoctol/bottender/tree/master/examples/with-mongo-session)
+  [example](https://github.com/Yoctol/bottender/tree/master/examples/session-mongo)
 - **redis** - sessions are stored in redis based stores. See
-  [example](https://github.com/Yoctol/bottender/tree/master/examples/with-redis-session)
+  [example](https://github.com/Yoctol/bottender/tree/master/examples/session-redis)
 
 
 ## Adding Custom Session Drivers

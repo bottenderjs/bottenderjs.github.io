@@ -1,6 +1,6 @@
 ---
 title: HTTP server
-date: "2017-10-13"
+date: "2017-11-22"
 ---
 
 Bottender supports the following HTTP servers. You can choose one of them to develop your own bots.
@@ -75,7 +75,7 @@ server.listen(5000, () => {
 });
 ```
 
-The full `Express` server example is [here](https://github.com/Yoctol/bottender/tree/master/examples/with-express).
+The full `Express` server example is [here](https://github.com/Yoctol/bottender/tree/master/examples/server-express).
 
 ### Koa
 
@@ -96,7 +96,7 @@ server.listen(5000, () => {
 });
 ```
 
-The full `Koa` server example is [here](https://github.com/Yoctol/bottender/tree/master/examples/with-koa).
+The full `Koa` server example is [here](https://github.com/Yoctol/bottender/tree/master/examples/server-koa).
 
 ### Micro
 
@@ -113,7 +113,7 @@ const bot = require('./bot'); // implement your bot logic
 module.exports = createRequestHandler(bot);
 ```
 
-The full `Micro` server example is [here](https://github.com/Yoctol/bottender/tree/master/examples/with-micro).
+The full `Micro` server example is [here](https://github.com/Yoctol/bottender/tree/master/examples/server-micro).
 
 ### Restify
 
@@ -132,4 +132,4 @@ server.listen(5000, () => {
 });
 ```
 
-The full `Restify` server example is [here](https://github.com/Yoctol/bottender/tree/master/examples/with-restify).
+The full `Restify` server example is [here](https://github.com/Yoctol/bottender/tree/master/examples/server-restify).
