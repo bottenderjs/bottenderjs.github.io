@@ -58,7 +58,8 @@ We can use [regular expressions](https://developer.mozilla.org/en-US/docs/Web/Ja
 ```js
 bot.onEvent(async context => {
   if (context.event.isText) {
-    if (/^h(ello|i)/i) {
+    const { text } = context.event.message;
+    if (/^h(ello|i)/i.test(text)) {
       // ...
     }
   }
