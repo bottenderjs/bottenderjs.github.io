@@ -23,7 +23,6 @@ A Bottender Context encapsulates many helpful methods into a single object like 
 - sendAudio
 - sendVideo
 - sendFile
-- sendQuickReplies
 - sendTemplate
 - sendGenericTemplate
 - sendButtonTemplate
