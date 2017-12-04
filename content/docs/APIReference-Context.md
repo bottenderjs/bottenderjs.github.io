@@ -47,8 +47,12 @@ Description:
 
 ## LINE
 These are other methods on LINE. See more details at [messaging-api-line](https://github.com/Yoctol/messaging-apis/tree/master/packages/messaging-api-line)
+- reply
+- push
+<br><br>
 - replyText
 - pushText
+- sendText
 <br><br>
 - replyImage
 - pushImage
@@ -89,6 +93,10 @@ These are other methods on LINE. See more details at [messaging-api-line](https:
 - replyImageCarouselTemplate
 - pushImageCarouselTemplate
 - sendImageCarouselTemplate
+<br><br>
+- context.getLinkedRichMenu()
+- context.linkRichMenu(richMenuId)
+- context.unlinkRichMenu()
 
 Description:
 - Each of these functions is similar to methods in [messaging-api-line](https://github.com/Yoctol/messaging-apis/tree/master/packages/messaging-api-line), but we handle **first parameters (userId or replyToken)** for you.
