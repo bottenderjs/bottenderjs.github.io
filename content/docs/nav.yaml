@@ -12,6 +12,8 @@
       title: Slack
     - id: docs/Platforms-Telegram
       title: Telegram
+    - id: docs/Platforms-Viber
+      title: Viber
 - title: Guides
   items:
     - id: docs/Guides-Commands
