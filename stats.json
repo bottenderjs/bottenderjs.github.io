@@ -28,6 +28,10 @@
       "path---docs-platforms-messenger-6c0e9a6c07c1d70a731c.js",
       "path---docs-platforms-messenger-6c0e9a6c07c1d70a731c.js.map"
     ],
+    "path---docs-platforms-viber": [
+      "path---docs-platforms-viber-960e2a453102329a9512.js",
+      "path---docs-platforms-viber-960e2a453102329a9512.js.map"
+    ],
     "path---docs-getting-started": [
       "path---docs-getting-started-3eb3a006faa8025f8cd3.js",
       "path---docs-getting-started-3eb3a006faa8025f8cd3.js.map"
@@ -57,8 +61,8 @@
       "path---docs-api-reference-handler-813a2eff0ce66eebe2b2.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-857620f2bcf2ececc85a.js",
-      "component---src-layouts-index-js-857620f2bcf2ececc85a.js.map"
+      "component---src-layouts-index-js-1db52d8a1c265d2c25db.js",
+      "component---src-layouts-index-js-1db52d8a1c265d2c25db.js.map"
     ],
     "path---docs-guides-server": [
       "path---docs-guides-server-5cd765017cb0f98c7f80.js",
@@ -73,16 +77,16 @@
       "path---docs-guides-error-handling-efb1455c28d0d35957bd.js.map"
     ],
     "component---src-layouts-sidebar-layout-js": [
-      "component---src-layouts-sidebar-layout-js-fadb3b9d7208033b3bf0.js",
-      "component---src-layouts-sidebar-layout-js-fadb3b9d7208033b3bf0.js.map"
+      "component---src-layouts-sidebar-layout-js-c97b1cbbb08a197926fc.js",
+      "component---src-layouts-sidebar-layout-js-c97b1cbbb08a197926fc.js.map"
     ],
     "commons": [
       "commons-86e5a681b72391257e15.js",
       "commons-86e5a681b72391257e15.js.map"
     ],
     "component---src-templates-with-sidebar-js": [
-      "component---src-templates-with-sidebar-js-20054066e9709cafc71b.js",
-      "component---src-templates-with-sidebar-js-20054066e9709cafc71b.js.map"
+      "component---src-templates-with-sidebar-js-e42e5b05283c6c5f7d4f.js",
+      "component---src-templates-with-sidebar-js-e42e5b05283c6c5f7d4f.js.map"
     ],
     "path---docs-guides-deployment": [
       "path---docs-guides-deployment-2a1eff6fefcef3e3f71a.js",
@@ -101,9 +105,9 @@
       "path---docs-api-reference-event-01a1294c12d82da0620c.js.map"
     ],
     "app": [
-      "app-e9a5ae7846f5e81f83e2.js",
+      "app-36ea3d5525ab833239c7.js",
       "build-js-styles.css",
-      "app-e9a5ae7846f5e81f83e2.js.map",
+      "app-36ea3d5525ab833239c7.js.map",
       "build-js-styles.css.map"
     ],
     "path---docs-guides-middleware": [
