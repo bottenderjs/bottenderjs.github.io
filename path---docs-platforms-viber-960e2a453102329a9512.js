@@ -1,2 +1,0 @@
-webpackJsonp([80867851804039],{652:function(t,e){t.exports={data:{markdownRemark:{html:"<p>Coming Soon!</p>",frontmatter:{title:"Viber",date:"December 12, 2017",author:null},fields:{path:"docs/Platforms-Viber.md"}},site:{siteMetadata:{title:"Bottender"}}},pathContext:{slug:"/docs/Platforms-Viber/",_PARENT:"SOURCE"}}}});
-//# sourceMappingURL=path---docs-platforms-viber-960e2a453102329a9512.js.map

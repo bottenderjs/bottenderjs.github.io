@@ -29,8 +29,8 @@
       "path---docs-platforms-messenger-6c0e9a6c07c1d70a731c.js.map"
     ],
     "path---docs-platforms-viber": [
-      "path---docs-platforms-viber-960e2a453102329a9512.js",
-      "path---docs-platforms-viber-960e2a453102329a9512.js.map"
+      "path---docs-platforms-viber-7bd81917b8844e9929b2.js",
+      "path---docs-platforms-viber-7bd81917b8844e9929b2.js.map"
     ],
     "path---docs-getting-started": [
       "path---docs-getting-started-3eb3a006faa8025f8cd3.js",
@@ -105,9 +105,9 @@
       "path---docs-api-reference-event-01a1294c12d82da0620c.js.map"
     ],
     "app": [
-      "app-36ea3d5525ab833239c7.js",
+      "app-2bf60fcaf938122b638e.js",
       "build-js-styles.css",
-      "app-36ea3d5525ab833239c7.js.map",
+      "app-2bf60fcaf938122b638e.js.map",
       "build-js-styles.css.map"
     ],
     "path---docs-guides-middleware": [
