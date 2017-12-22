@@ -14,7 +14,7 @@ This guide will give you some basic concepts of developing a Slack bot. For more
 
 First, create an app on [Slack API](https://api.slack.com/apps?new_app=1) site. Then setup its features:
   - Event Subscriptions:
-    + Subscribe to `message.channels` envet, so your bot can receive message events.
+    + Subscribe to `message.channels` event, so your bot can receive message events.
     + Setup webhook URL after your bot server is up.
   - Permissions:
     + Add **bot** [scope](https://api.slack.com/bot-users#api_usage) to your app
@@ -38,7 +38,7 @@ Then run your server and try it out by invite the **Bot User** to a channel and 
 
 ## Events
 
-There are many types of events your bot may receive from Slack, but it's up to you whether to subscibe each of them. In Bottender, you can access them via `context.event`. For more information, check [Event Reference](./APIReference-Event) and [official docs](https://api.slack.com/events).
+There are many types of events your bot may receive from Slack, but it's up to you whether to subscribe each of them. In Bottender, you can access them via `context.event`. For more information, check [Event Reference](./APIReference-Event) and [official docs](https://api.slack.com/events).
 
 For the **message** related events, Bottender supports some helpers:
 
