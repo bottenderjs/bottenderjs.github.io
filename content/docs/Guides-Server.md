@@ -117,7 +117,7 @@ The full `Micro` server example is [here](https://github.com/Yoctol/bottender/tr
 
 ### Restify
 
-> A Node.js web service framework optimized for building semantically correct RESTful web services ready for production use at scale. restify optimizes for introspection and perfromance, and is used in some of the largest Node.js deployments on Earth.  
+> A Node.js web service framework optimized for building semantically correct RESTful web services ready for production use at scale. restify optimizes for introspection and performance, and is used in some of the largest Node.js deployments on Earth.  
 https://github.com/restify/node-restify
 
 ```js

@@ -25,9 +25,9 @@ $ now secret rename my_verify_token verify_token
 $ now secret rm my_verify_token
 ```
 
-### Enviroment Variables
+### Environment Variables
 
-Use `@var` to set the enviroment variable with your now secrets.
+Use `@var` to set the environment variable with your now secrets.
 ```sh
 $ now -e VERIFY_TOKEN=1qaz2wsx
 $ now -e VERIFY_TOKEN=@verify_token
@@ -60,7 +60,7 @@ You can deploy your bot on Heroku simply using Heroku CLI after creating a new a
 $ heroku login
 ```
 
-### Creating a new Git repositiry
+### Creating a new Git repository
 
 ```sh
 $ cd my-project/

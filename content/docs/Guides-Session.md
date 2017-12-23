@@ -9,7 +9,7 @@ A session is a place to store data that you want to access to across requests. E
 
 ### bot.setInitialState(Object)
 
-To set the initial state of coversation.
+To set the initial state of conversation.
 
 ### context.state
 

@@ -59,7 +59,7 @@ After answer a few questions, a new bot will be ready for you.
 
 ## Platform Specific Commands
 
-To use platfrom specific commands, just type name of platform behind the `bottender` command.
+To use platform specific commands, just type name of platform behind the `bottender` command.
 
 For example, to set Messenger profile for your bots:
 

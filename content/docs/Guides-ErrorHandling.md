@@ -11,7 +11,7 @@ When you develop a bot using Bottender, you can use the following approaches for
 
 Bottender leverages one of the JS features `async/await`. It means that you can use [`try...catch`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch) to handle error.
 
-Put the `try block` inside the handler function, and the error will be catched.
+Put the `try block` inside the handler function, and the error will be caught.
 
 For example:
 
