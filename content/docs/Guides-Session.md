@@ -57,7 +57,7 @@ See more details at [example](https://github.com/Yoctol/bottender/tree/master/ex
 ## Session Expiration
 
 You are able to set expired time for session optionally. The default value of expiration is **one year** after `SessionStore` object is created.  
-The expiration should be sent as a **Number of seconds** when you are initializing a `SessionStore` object.
+The expiration should be sent as a **Number of minutes** when you are initializing a `SessionStore` object.
 
 Here is an example for creating a `MongoSessionStore` object with expired time:
 ```js
