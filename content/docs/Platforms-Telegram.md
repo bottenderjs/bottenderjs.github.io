@@ -1,6 +1,6 @@
 ---
 title: Telegram
-date: "2017-10-12"
+date: "2017-12-25"
 ---
 
 Telegram is a multi-platform instant messaging system. It treasures the security and privacy of the users. Furthermore, as a flexible platform, Telegram allows developers to create bots. Telegram launches lots of [bot APIs](https://core.telegram.org/bots/api) for third-party developers to build Telegram bots to serve their own needs in no time.  
@@ -43,8 +43,6 @@ Here is the complete example for [telegram-hello-world](https://github.com/Yocto
 const { TelegramBot } = require('bottender');
 const { createServer } = require('bottender/express');
 
-const url = '__FILL_URL_HERE__';
-
 const bot = new TelegramBot({
   accessToken: '__FILL_YOUR_TOKEN_HERE__',
 });
@@ -56,9 +54,14 @@ bot.onEvent(async context => {
 const server = createServer(bot);
 
 server.listen(5000, () => {
-  bot.connector.client.setWebhook(url);
   console.log('server is running on 5000 port...');
 });
+```
+
+After running up the bot server, you can use [bottender CLI](./Guides-Commands) command to setup webhook.
+
+```
+$ bottender telegram webhook set -w <YOUR_WEBHOOK_URL>
 ```
 
 ## Events
