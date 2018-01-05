@@ -37,8 +37,8 @@
       "path---docs-getting-started-3eb3a006faa8025f8cd3.js.map"
     ],
     "path---docs-platforms-telegram": [
-      "path---docs-platforms-telegram-45440493a526662496f3.js",
-      "path---docs-platforms-telegram-45440493a526662496f3.js.map"
+      "path---docs-platforms-telegram-8ae6c23ed8361745251e.js",
+      "path---docs-platforms-telegram-8ae6c23ed8361745251e.js.map"
     ],
     "component---node-modules-gatsby-plugin-offline-app-shell-js": [
       "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js",
@@ -105,9 +105,9 @@
       "path---docs-api-reference-event-01a1294c12d82da0620c.js.map"
     ],
     "app": [
-      "app-9b5f2dba9065f7de4028.js",
+      "app-5dde5e4ed53a5f4e53d3.js",
       "build-js-styles.css",
-      "app-9b5f2dba9065f7de4028.js.map",
+      "app-5dde5e4ed53a5f4e53d3.js.map",
       "build-js-styles.css.map"
     ],
     "path---docs-guides-middleware": [
