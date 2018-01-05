@@ -13,8 +13,8 @@
       "path---docs-platforms-line-e24fc9934ba4852f49c5.js.map"
     ],
     "path---docs-guides-session": [
-      "path---docs-guides-session-e13d65c1b7582982b80e.js",
-      "path---docs-guides-session-e13d65c1b7582982b80e.js.map"
+      "path---docs-guides-session-d25f31ced0e53898d975.js",
+      "path---docs-guides-session-d25f31ced0e53898d975.js.map"
     ],
     "component---src-pages-index-js": [
       "component---src-pages-index-js-aa7e4fdbe280698ce43e.js",
@@ -105,9 +105,9 @@
       "path---docs-api-reference-event-01a1294c12d82da0620c.js.map"
     ],
     "app": [
-      "app-6d5defc72d96d6caebdb.js",
+      "app-9b5f2dba9065f7de4028.js",
       "build-js-styles.css",
-      "app-6d5defc72d96d6caebdb.js.map",
+      "app-9b5f2dba9065f7de4028.js.map",
       "build-js-styles.css.map"
     ],
     "path---docs-guides-middleware": [
