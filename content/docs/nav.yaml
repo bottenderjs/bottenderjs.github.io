@@ -32,6 +32,8 @@
       title: Session
     - id: docs/Guides-Testing
       title: Testing
+    - id: docs/Guides-Troubleshooting
+      title: Troubleshooting
 - title: API Reference
   items:
     - id: docs/APIReference-Context
