@@ -113,7 +113,6 @@ const Container = styled.div`
 
   @media (${media.giant}) {
     width: calc(100% - ${rhythm(1)});
-    justify-content: center;
   }
 `;
 
@@ -136,6 +135,10 @@ const Left = styled.main`
 `;
 
 const Right = styled.aside`
+  position: fixed;
+  z-index: 2;
+  top: auto;
+  right: 0;
   display: flex;
   width: 25%;
 
