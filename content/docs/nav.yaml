@@ -4,6 +4,8 @@
       title: Getting Started
 - title: Platforms
   items:
+    - id: docs/Platforms-Console
+      title: Console
     - id: docs/Platforms-Messenger
       title: Messenger
     - id: docs/Platforms-LINE
