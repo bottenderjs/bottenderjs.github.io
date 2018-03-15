@@ -45,6 +45,10 @@ server is running on 5000 port...
 
 ## Messenger
 
+### My bot keeps spamming with no error log until server stops.
+
+It could be that you have subscribed to `message_echoes` events and not filtering them out. Check [this issue](https://github.com/Yoctol/bottender/issues/134) for more information.
+
 ### I can't receive persistent menu or get started button events.
 
 #### Make sure you have subscribed to correct events.
