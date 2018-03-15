@@ -507,6 +507,8 @@ context.push([
 
 ## `pushText(text)`
 
+Alias: `sendText`.
+
 Sends text message to the receiver using ID.
 
 <img src="https://developers.line.me/media/messaging-api/messages/text-bf530b30.png" width="250px" />
@@ -528,6 +530,8 @@ context.pushText('Hello!');
 <br />
 
 ## `pushImage(imageUrl, previewImageUrl)`
+
+Alias: `sendImage`.
 
 Sends image message to the receiver using ID.
 
@@ -551,6 +555,8 @@ context.pushImage(
 
 ## `pushVideo(videoUrl, previewImageUrl)`
 
+Alias: `sendVideo`.
+
 Sends video message to the receiver using ID.
 
 <img src="https://developers.line.me/media/messaging-api/messages/video-a1bc08a4.png" width="250px" />
@@ -573,6 +579,8 @@ context.pushVideo(
 
 ## `pushAudio(audioUrl, duration)`
 
+Alias: `sendAudio`.
+
 Sends audio message to the receiver using ID.
 
 <img src="https://developers.line.me/media/messaging-api/messages/audio-6290d91b.png" width="250px" />
@@ -591,6 +599,8 @@ context.pushAudio('https://example.com/original.m4a', 240000);
 <br />
 
 ## `pushLocation(location)`
+
+Alias: `sendLocation`.
 
 Sends location message to the receiver using ID.
 
@@ -619,6 +629,8 @@ context.pushLocation({
 
 ## `pushSticker(packageId, stickerId)`
 
+Alias: `sendSticker`.
+
 Sends sticker message to the receiver using ID.
 For a list of stickers that can be sent with the Messaging API, see the [sticker list](https://developers.line.me/media/messaging-api/messages/sticker_list.pdf).
 
@@ -640,6 +652,8 @@ context.pushSticker('1', '1');
 ### Push Imagemap Message
 
 ## `pushImagemap(altText, imagemap)`
+
+Alias: `sendImagemap`.
 
 Sends imagemap message to the receiver using ID.
 
@@ -695,6 +709,8 @@ context.pushImagemap('this is an imagemap', {
 
 ## `pushTemplate(altText, template)`
 
+Alias: `sendTemplate`.
+
 Sends template message to the receiver using ID.
 
 | Param    | Type     | Description                               |
@@ -733,6 +749,8 @@ context.pushTemplate('this is a template', {
 <br />
 
 ## `pushButtonTemplate(altText, buttonTemplate)`
+
+Alias: `sendButtonTemplate`.
 
 Sends button template message to the receiver using ID.
 
@@ -781,6 +799,8 @@ context.pushButtonTemplate('this is a template', {
 
 ## `pushConfirmTemplate(altText, confirmTemplate)`
 
+Alias: `sendConfirmTemplate`.
+
 Sends confirm template message to the receiver using ID.
 
 <img src="https://developers.line.me/media/messaging-api/messages/confirm-444aead5.png" width="250px" />
@@ -815,6 +835,8 @@ context.pushConfirmTemplate('this is a confirm template', {
 <br />
 
 ## `pushCarouselTemplate(altText, carouselItems, options)`
+
+Alias: `sendCarouselTemplate`.
 
 Sends carousel template message to the receiver using ID.
 
@@ -882,6 +904,8 @@ context.pushCarouselTemplate('this is a carousel template', [
 <br />
 
 ## `pushImageCarouselTemplate(altText, carouselItems)`
+
+Alias: `sendImageCarouselTemplate`.
 
 Sends image carousel template message to the receiver using ID.
 
