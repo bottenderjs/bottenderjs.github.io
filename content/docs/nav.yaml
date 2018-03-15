@@ -40,6 +40,8 @@
   items:
     - id: docs/APIReference-Context
       title: Context
+    - id: docs/APIReference-LineContext
+      title: LineContext
     - id: docs/APIReference-Event
       title: Event
     - id: docs/APIReference-Handler
