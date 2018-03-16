@@ -42,6 +42,8 @@
       title: Context
     - id: docs/APIReference-MessengerContext
       title: MessengerContext
+    - id: docs/APIReference-SlackContext
+      title: SlackContext
     - id: docs/APIReference-Event
       title: Event
     - id: docs/APIReference-Handler
