@@ -6,127 +6,35 @@ date: "2017-12-04"
 A Bottender Context encapsulates many helpful methods into a single object like session, client from [messaging-apis](https://github.com/Yoctol/messaging-apis), event, etc., which makes you easier to develop a chatbot system on different platform.
 
 ## General Methods
-| Property | Return | Description |
-|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
-| platform | string | The name of the platform. |
-| client | Messenger: [MessengerClient](https://github.com/Yoctol/messaging-apis/tree/master/packages/messaging-api-messenger)<br> LINE: [LineClient](https://github.com/Yoctol/messaging-apis/tree/master/packages/messaging-api-line)<br> Slack: [SlackClient](https://github.com/Yoctol/messaging-apis/tree/master/packages/messaging-api-slack)<br> Telegram: [TelegramClient](https://github.com/Yoctol/messaging-apis/tree/master/packages/messaging-api-telegram)<br> Console: ConsoleClient  | The client instance.<br> Return value depends on your platform. |
-| event | Messenger: MessengerEvent<br> LINE: LineEvent<br> Slack: SlackEvent<br> Telegram: TelegramEvent<br> Console: ConsoleEvent | The event instance.<br> Return value depends on your platform. |
-| session | Object | The session state of the context. |
-| [typing](#typingmilliseconds) | Promise | Delay and show indicators for milliseconds. |
-| [sendText](#sendtexttext-options) | Promise | Send text to the owner of the session. |
+
+|             Property              |                                                                                                                                                                                                                                                                                                Return                                                                                                                                                                                                                                                                                                |                           Description                           |
+| :-------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------: |
+|             platform              |                                                                                                                                                                                                                                                                                                string                                                                                                                                                                                                                                                                                                |                    The name of the platform.                    |
+|              client               | Messenger: [MessengerClient](https://github.com/Yoctol/messaging-apis/tree/master/packages/messaging-api-messenger)<br> LINE: [LineClient](https://github.com/Yoctol/messaging-apis/tree/master/packages/messaging-api-line)<br> Slack: [SlackClient](https://github.com/Yoctol/messaging-apis/tree/master/packages/messaging-api-slack)<br> Telegram: [TelegramClient](https://github.com/Yoctol/messaging-apis/tree/master/packages/messaging-api-telegram)<br> Viber: [ViberClient](https://github.com/Yoctol/messaging-apis/tree/master/packages/messaging-api-viber)<br> Console: ConsoleClient | The client instance.<br> Return value depends on your platform. |
+|               event               |                                                                                                                                                                                                                           Messenger: MessengerEvent<br> LINE: LineEvent<br> Slack: SlackEvent<br> Telegram: TelegramEvent<br> Viber: ViberEvent<br> Console: ConsoleEvent                                                                                                                                                                                                                            | The event instance.<br> Return value depends on your platform.  |
+|              session              |                                                                                                                                                                                                                                                                                                Object                                                                                                                                                                                                                                                                                                |                The session state of the context.                |
+|   [typing](#typingmilliseconds)   |                                                                                                                                                                                                                                                                                               Promise                                                                                                                                                                                                                                                                                                |           Delay and show indicators for milliseconds.           |
+| [sendText](#sendtexttext-options) |                                                                                                                                                                                                                                                                                               Promise                                                                                                                                                                                                                                                                                                |             Send text to the owner of the session.              |
 
 ## Messenger
- These are other methods on Messenger. See more details at [messaging-api-messenger](https://github.com/Yoctol/messaging-apis/tree/master/packages/messaging-api-messenger).
-- sendMessage
-- sendAttachment
-- sendImage
-- sendAudio
-- sendVideo
-- sendFile
-- sendTemplate
-- sendGenericTemplate
-- sendButtonTemplate
-- sendListTemplate
-- sendReceiptTemplate
-- sendOpenGraphTemplate
-- sendMediaTemplate
-- sendAirlineBoardingPassTemplate
-- sendAirlineCheckinTemplate
-- sendAirlineItineraryTemplate
-- sendAirlineFlightUpdateTemplate
-- associateLabel(labelId)
-- dissociateLabel(labelId)
-- getAssociatedLabels
-- passThreadControl(targetAppId, metadata)
-- passThreadControlToPageInbox
-- takeThreadControl
 
-Description:
-- Each of these functions is similar to methods in [messaging-api-messenger](https://github.com/Yoctol/messaging-apis/tree/master/packages/messaging-api-messenger), but we handle **first parameters (userId)** for you.
+These are other methods on Messenger. See more details at [APIReference-MessengerContext](https://bottender.js.org/docs/APIReference-MessengerContext).
 
 ## LINE
-These are other methods on LINE. See more details at [messaging-api-line](https://github.com/Yoctol/messaging-apis/tree/master/packages/messaging-api-line)
-- reply
-- push
-<br><br>
-- replyText
-- pushText
-- sendText
-<br><br>
-- replyImage
-- pushImage
-- sendImage
-<br><br>
-- replyVideo
-- pushVideo
-- sendVideo
-<br><br>
-- replyAudio
-- pushAudio
-- sendAudio
-<br><br>
-- replyLocation
-- pushLocation
-- sendLocation
-<br><br>
-- replySticker
-- pushSticker
-- sendSticker
-<br><br>
-- replyImagemap
-- pushImagemap
-- sendImagemap
-<br><br>
-- replyButtonTemplate
-- pushButtonTemplate
-- sendButtonTemplate
-<br><br>
-- replyConfirmTemplate
-- pushConfirmTemplate
-- sendConfirmTemplate
-<br><br>
-- replyCarouselTemplate
-- pushCarouselTemplate
-- sendCarouselTemplate
-<br><br>
-- replyImageCarouselTemplate
-- pushImageCarouselTemplate
-- sendImageCarouselTemplate
-<br><br>
-- context.getLinkedRichMenu()
-- context.linkRichMenu(richMenuId)
-- context.unlinkRichMenu()
 
-Description:
-- Each of these functions is similar to methods in [messaging-api-line](https://github.com/Yoctol/messaging-apis/tree/master/packages/messaging-api-line), but we handle **first parameters (userId or replyToken)** for you.
-
-- **Notice: sendXXX will use exact same API as pushXXX**
+These are other methods on LINE. See more details at [APIReference-LineContext](https://bottender.js.org/docs/APIReference-LineContext).
 
 ## Slack
-These are other methods on Slack. See more details at [messaging-api-slack](https://github.com/Yoctol/messaging-apis/tree/master/packages/messaging-api-slack)
 
-- postMessage
-
-Description:
-- Each of these functions is similar to methods in [messaging-api-slack](https://github.com/Yoctol/messaging-apis/tree/master/packages/messaging-api-slack), but we handle **first parameters (channelId)** for you.
+These are other methods on Slack. See more details at [APIReference-SlackContext](https://bottender.js.org/docs/APIReference-SlackContext).
 
 ## Telegram
-These are other methods on Telegram. See more details at [messaging-api-telegram](https://github.com/Yoctol/messaging-apis/tree/master/packages/messaging-api-telegram)
 
-- sendMessage
-- sendPhoto
-- sendAudio
-- sendDocument
-- sendSticker
-- sendVideo
-- sendVoice
-- sendLocation
-- sendVenue
-- sendContact
-- sendChatAction
+These are other methods on Telegram. See more details at [[APIReference-TelegramContext](https://bottender.js.org/docs/APIReference-TelegramContext).
 
-Description:
-- Each of these functions is similar to methods in [messaging-api-telegram](https://github.com/Yoctol/messaging-apis/tree/master/packages/messaging-api-telegram), but we handle **first parameters (chatId)** for you.
+## Viber
+
+These are other methods on Telegram. See more details at [[APIReference-TelegramContext](https://bottender.js.org/docs/APIReference-TelegramContext).
 
 ## Example
 
@@ -143,9 +51,10 @@ bot.onEvent(async context => {
 ```
 
 ### `typing(milliseconds)`
-| Param    | Type            | Description
-| -------  | --------------- | -----------
-| milliseconds | `Number` | First, User will see bot is typing. Second, wait for milliseconds. Then bot's typing mode will close.
+
+| Param        | Type     | Description                                                                                           |
+| ------------ | -------- | ----------------------------------------------------------------------------------------------------- |
+| milliseconds | `Number` | First, User will see bot is typing. Second, wait for milliseconds. Then bot's typing mode will close. |
 
 ```js
 bot.onEvent(async context => {
