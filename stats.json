@@ -73,8 +73,8 @@
       "path---docs-api-reference-handler-813a2eff0ce66eebe2b2.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-8e28210d507d39233664.js",
-      "component---src-layouts-index-js-8e28210d507d39233664.js.map"
+      "component---src-layouts-index-js-4165b876ba61a3b5bb9a.js",
+      "component---src-layouts-index-js-4165b876ba61a3b5bb9a.js.map"
     ],
     "path---docs-guides-server": [
       "path---docs-guides-server-39367962a3329ea65bf4.js",
@@ -93,16 +93,20 @@
       "path---docs-guides-error-handling-af15213cef4f08458765.js.map"
     ],
     "component---src-layouts-sidebar-layout-js": [
-      "component---src-layouts-sidebar-layout-js-b7226e05d65deabbb34e.js",
-      "component---src-layouts-sidebar-layout-js-b7226e05d65deabbb34e.js.map"
+      "component---src-layouts-sidebar-layout-js-bea8010d13c6fd4fa298.js",
+      "component---src-layouts-sidebar-layout-js-bea8010d13c6fd4fa298.js.map"
     ],
     "commons": [
       "commons-86e5a681b72391257e15.js",
       "commons-86e5a681b72391257e15.js.map"
     ],
     "component---src-templates-with-sidebar-js": [
-      "component---src-templates-with-sidebar-js-2d6d075048c4bb75b1a5.js",
-      "component---src-templates-with-sidebar-js-2d6d075048c4bb75b1a5.js.map"
+      "component---src-templates-with-sidebar-js-b7dff678f7146c2d5f15.js",
+      "component---src-templates-with-sidebar-js-b7dff678f7146c2d5f15.js.map"
+    ],
+    "path---docs-api-reference-line-context": [
+      "path---docs-api-reference-line-context-64fc1f5523618a68aae8.js",
+      "path---docs-api-reference-line-context-64fc1f5523618a68aae8.js.map"
     ],
     "path---docs-guides-deployment": [
       "path---docs-guides-deployment-c1325ab41b2340485e42.js",
@@ -121,9 +125,9 @@
       "path---docs-api-reference-event-01a1294c12d82da0620c.js.map"
     ],
     "app": [
-      "app-c3f4c8dd7b702aa1d9a9.js",
+      "app-129225c5d59c8eec92c5.js",
       "build-js-styles.css",
-      "app-c3f4c8dd7b702aa1d9a9.js.map",
+      "app-129225c5d59c8eec92c5.js.map",
       "build-js-styles.css.map"
     ],
     "path---docs-guides-middleware": [

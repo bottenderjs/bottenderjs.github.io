@@ -1,0 +1,1723 @@
+<!DOCTYPE html>
+ <html lang="en" dir="ltr"><head><meta charset="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><link rel="preload" href="/component---src-layouts-sidebar-layout-js-bea8010d13c6fd4fa298.js" as="script"/><link rel="preload" href="/component---src-templates-with-sidebar-js-b7dff678f7146c2d5f15.js" as="script"/><link rel="preload" href="/path---docs-api-reference-line-context-64fc1f5523618a68aae8.js" as="script"/><link rel="preload" href="/app-129225c5d59c8eec92c5.js" as="script"/><link rel="preload" href="/commons-86e5a681b72391257e15.js" as="script"/><script id="webpack-manifest">
+            //<![CDATA[
+            window.webpackManifest = {"231608221292675":"app-129225c5d59c8eec92c5.js","99219681209289":"component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js","170005416540901":"component---src-templates-with-sidebar-js-b7dff678f7146c2d5f15.js","35783957827783":"component---src-pages-index-js-aa7e4fdbe280698ce43e.js","60335399758886":"path----e412b4eaf219cfba0f0a.js","210333531512890":"path---offline-plugin-app-shell-fallback-1db04e5021b40904aca6.js","100806059786224":"path---blog-2017-10-31-bottender-96fb4eee5246b85b2699.js","21208922568419":"path---docs-api-reference-context-eeff6423e97ff843a083.js","228770553529361":"path---docs-api-reference-event-01a1294c12d82da0620c.js","103298421532142":"path---docs-api-reference-handler-813a2eff0ce66eebe2b2.js","50039758465245":"path---docs-api-reference-messenger-context-d141dc49485d761eb81e.js","82999037019505":"path---docs-getting-started-3eb3a006faa8025f8cd3.js","101250462880543":"path---docs-guides-commands-c568ec84015134e8d801.js","170325723550815":"path---docs-api-reference-line-context-64fc1f5523618a68aae8.js","116632423255440":"path---docs-api-reference-slack-context-2d1fc7b6fef92c8a36e5.js","178611671805166":"path---docs-guides-deployment-c1325ab41b2340485e42.js","143700379907292":"path---docs-guides-error-handling-af15213cef4f08458765.js","23194109765310":"path---docs-guides-intents-9994cf92f17c90454a4e.js","115502903440177":"path---docs-guides-server-39367962a3329ea65bf4.js","276991605283481":"path---docs-guides-middleware-9673e01d6992cdc42888.js","30531634831716":"path---docs-guides-session-d25f31ced0e53898d975.js","78373065714196":"path---docs-guides-troubleshooting-a7a60d32a04ed88a04f3.js","215997593871352":"path---docs-guides-testing-834ce34fb416855df2f8.js","7500716215872":"path---docs-platforms-console-0fe23610844e04932f48.js","29402239515122":"path---docs-platforms-line-e24fc9934ba4852f49c5.js","66887383499563":"path---docs-platforms-messenger-6c0e9a6c07c1d70a731c.js","101936565711453":"path---docs-platforms-slack-63a240878fe3fca24276.js","87932082906105":"path---docs-platforms-telegram-8ae6c23ed8361745251e.js","80867851804039":"path---docs-platforms-viber-7bd81917b8844e9929b2.js","142629428675168":"path---index-1db04e5021b40904aca6.js","114276838955818":"component---src-layouts-index-js-4165b876ba61a3b5bb9a.js","146507358686788":"component---src-layouts-sidebar-layout-js-bea8010d13c6fd4fa298.js"}
+            //]]>
+            </script><style type="text/css" data-styled-components="fVEdlY kLLhxa byQoER gnzuVN flAXMc jZcPPp dBNkFl inMAJC jskxzb faCitA hlmFGa dDSwwh dbWJYR kPhszq dakLHt dENgFQ sjhaJ bjDceI dNctSA clwtpZ jJdVUp bwaFlD iCtQAW eOXFgm kXjaEp dTJAzw hXyngn kmGqOy kuCQEL hnImCk kUKQjH genBUa lFJbn bJDBPf jVQgvB fvvnMe bXgqgg fzXnha jFjRsK" data-styled-components-is-local="true">/* sc-component-id: sc-bdVaJa */
+
+.kUKQjH{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;height:20px;margin-top:40px;-webkit-flex-direction:row-reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse;}
+/* sc-component-id: sc-bwzfXH */
+
+.genBUa{color:rgb(109,109,109) !important;font-size:16px;text-decoration:underline;}.genBUa:hover{color:#000 !important;}
+/* sc-component-id: sc-htpNat */
+
+.clwtpZ{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;padding-left:20px;}
+/* sc-component-id: sc-bxivhb */
+
+.jJdVUp{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;margin-bottom:12px;padding-bottom:2px;border-bottom:3px solid transparent;color:#000;font-size:18px;}.jJdVUp:hover{border-color:#2b9ac8;}
+
+.kXjaEp{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;margin-bottom:12px;padding-bottom:2px;border-bottom:3px solid transparent;color:#000;font-size:18px;border-color:#2b9ac8;font-weight:bold;}
+/* sc-component-id: sc-ifAKCX */
+
+.dakLHt{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}
+/* sc-component-id: sc-EHOje */
+
+.dENgFQ{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;margin-top:32px;margin-bottom:12px;color:#2b9ac8;font-family:Lato,sans-serif;font-size:21px;cursor:pointer;-webkit-letter-spacing:1px;-moz-letter-spacing:1px;-ms-letter-spacing:1px;letter-spacing:1px;}
+/* sc-component-id: sc-bZQynM */
+
+.dNctSA{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;overflow:hidden;max-height:auto;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}
+
+.iCtQAW{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;overflow:hidden;max-height:0;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}
+/* sc-component-id: sc-gzVnrw */
+
+.sjhaJ{height:21px;margin-left:7px;display:none;-webkit-transform:rotateX(180deg);-ms-transform:rotateX(180deg);transform:rotateX(180deg);-webkit-transition:-webkit-transform 0.2s ease;-webkit-transition:transform 0.2s ease;transition:transform 0.2s ease;}
+
+.bwaFlD{height:21px;margin-left:7px;-webkit-transform:rotateX(0deg);-ms-transform:rotateX(0deg);transform:rotateX(0deg);-webkit-transition:-webkit-transform 0.2s ease;-webkit-transition:transform 0.2s ease;transition:transform 0.2s ease;}
+
+.eOXFgm{height:21px;margin-left:7px;-webkit-transform:rotateX(180deg);-ms-transform:rotateX(180deg);transform:rotateX(180deg);-webkit-transition:-webkit-transform 0.2s ease;-webkit-transition:transform 0.2s ease;transition:transform 0.2s ease;}
+/* sc-component-id: sc-htoDjs */
+
+.bjDceI{width:21px;height:21px;margin:2px 0 0;}
+/* sc-component-id: sc-dnqmqq */
+
+.kPhszq{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-flex:1;-ms-flex:1;flex:1;}
+/* sc-component-id: sc-iwsKbI */
+
+.dTJAzw{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;background-image:linear-gradient(0deg,#fafafa,#fafafa);background-position-x:right;background-repeat:no-repeat;background-size:25% 100%;opacity:1;-webkit-transition:opacity 0.5s;transition:opacity 0.5s;}@media (max-width:992px){.dTJAzw{background-size:25% 100%;}}@media (max-width:768px){.dTJAzw{background:#fff;}}
+/* sc-component-id: sc-gZMcBi */
+
+.hXyngn{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;width:calc(1024px + 0.72rem);margin:0 0.72rem;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;}@media (max-width:1200px){.hXyngn{width:calc(100% - 1.44rem);-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;}}
+/* sc-component-id: sc-gqjmRU */
+
+.kmGqOy{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;width:75%;padding:32px 40px 100px 0;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}@media (max-width:992px){.kmGqOy{width:75%;}}@media (max-width:768px){.kmGqOy{width:calc(100% - 0.72rem);padding:16px 0 32px;}}.kmGqOy h1{margin-top:1em;margin-bottom:0;color:#2d2d2d;font-size:60px;font-weight:bold;}@media (max-width:768px){.kmGqOy h1{font-size:48px;}}.kmGqOy h2{margin-top:1.5em;margin-bottom:0.5em;color:#3c3c3c;font-size:37px;font-weight:bold;}@media (max-width:768px){.kmGqOy h2{font-size:29.6px;}}.kmGqOy h2:first-child{margin-top:0;}.kmGqOy h3{margin-top:1.5em;margin-bottom:0.5em;color:#3c3c3c;font-size:30px;font-weight:bold;}@media (max-width:768px){.kmGqOy h3{font-size:24px;}}.kmGqOy h4{margin-top:1.5em;margin-bottom:0.5em;color:#505050;font-size:26px;font-weight:bold;}@media (max-width:768px){.kmGqOy h4{font-size:20.8px;}}.kmGqOy p{color:#000;font-size:20px;line-height:1.7;}.kmGqOy a{color:#2b9ac8;text-decoration:underline;}.kmGqOy table{display:block;overflow:auto;}.kmGqOy table td,.kmGqOy table th{padding:0.6em;border:1px solid hsla(0,0%,0%,0.12);}
+/* sc-component-id: sc-VigVT */
+
+.lFJbn{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;width:25%;padding-top:calc(32px + 30px);padding-left:40px;background-color:#fafafa;}@media (max-width:992px){.lFJbn{width:25%;padding-left:25px;}}@media (max-width:768px){.lFJbn{display:none;}}
+/* sc-component-id: sc-jTzLTM */
+
+.hnImCk{margin-bottom:0;}
+/* sc-component-id: sc-fjdhpX */
+
+.kuCQEL{margin-bottom:2.5em;}
+/* sc-component-id: sc-iAyFgw */
+
+.inMAJC{margin:0 0 0 50px;padding-top:5px;border-top:5px transparent solid;color:#2d2d2d;font-family:Lato,sans-serif;font-size:18px;font-weight:bold;-webkit-letter-spacing:1px;-moz-letter-spacing:1px;-ms-letter-spacing:1px;letter-spacing:1px;text-transform:uppercase;-webkit-transition:border-top 0.3s;transition:border-top 0.3s;border-color:#2b9ac8;}@media (max-width:768px){.inMAJC{margin:0 0 20px;padding-top:0;border-color:transparent;}}
+
+.jskxzb{margin:0 0 0 50px;padding-top:5px;border-top:5px transparent solid;color:#2d2d2d;font-family:Lato,sans-serif;font-size:18px;font-weight:bold;-webkit-letter-spacing:1px;-moz-letter-spacing:1px;-ms-letter-spacing:1px;letter-spacing:1px;text-transform:uppercase;-webkit-transition:border-top 0.3s;transition:border-top 0.3s;}@media (max-width:768px){.jskxzb{margin:0 0 20px;padding-top:0;border-color:transparent;}}.jskxzb:hover{border-color:#2b9ac8;}
+
+.dbWJYR{margin:0 0 0 50px;padding-top:5px;border-top:5px transparent solid;color:#2d2d2d;font-family:Lato,sans-serif;font-size:18px;font-weight:bold;-webkit-letter-spacing:1px;-moz-letter-spacing:1px;-ms-letter-spacing:1px;letter-spacing:1px;text-transform:uppercase;-webkit-transition:border-top 0.3s;transition:border-top 0.3s;}@media (max-width:768px){.dbWJYR{margin:0 0 20px;padding-top:0;border-color:transparent;}}
+/* sc-component-id: sc-hSdWYo */
+
+.faCitA{display:none;}@media (max-width:768px){.faCitA{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;margin:0;}}
+/* sc-component-id: sc-eHgmQL */
+
+.hlmFGa{width:26px;height:26px;background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDIwIDIwIj4KICAgIDxnIGZpbGw9IiMxMDEwMTAiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGNpcmNsZSBjeD0iMiIgY3k9IjIiIHI9IjIiLz4KICAgICAgICA8Y2lyY2xlIGN4PSIyIiBjeT0iMTAiIHI9IjIiLz4KICAgICAgICA8Y2lyY2xlIGN4PSIxMCIgY3k9IjIiIHI9IjIiLz4KICAgICAgICA8Y2lyY2xlIGN4PSIxMCIgY3k9IjEwIiByPSIyIi8+CiAgICAgICAgPGNpcmNsZSBjeD0iMTgiIGN5PSIyIiByPSIyIi8+CiAgICAgICAgPGNpcmNsZSBjeD0iMTgiIGN5PSIxMCIgcj0iMiIvPgogICAgICAgIDxjaXJjbGUgY3g9IjIiIGN5PSIxOCIgcj0iMiIvPgogICAgICAgIDxjaXJjbGUgY3g9IjEwIiBjeT0iMTgiIHI9IjIiLz4KICAgICAgICA8Y2lyY2xlIGN4PSIxOCIgY3k9IjE4IiByPSIyIi8+CiAgICA8L2c+Cjwvc3ZnPgo=);background-position:center;background-repeat:no-repeat;}
+/* sc-component-id: sc-cvbbAY */
+
+.dDSwwh{padding-bottom:20px;border-bottom:solid 1px #d2d2d2;text-align:center;}
+/* sc-component-id: sc-jWBwVP */
+
+.jZcPPp{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}
+/* sc-component-id: sc-brqgnP */
+
+.dBNkFl{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}@media (max-width:768px){.dBNkFl{display:none;}}
+/* sc-component-id: sc-cMljjf */
+
+.kLLhxa{position:fixed;z-index:1;top:0;left:0;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;width:100%;height:80px;border-bottom:1px solid #d2d2d2;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;background-color:#fff;}
+/* sc-component-id: sc-jAaTju */
+
+.byQoER{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;width:calc(1024px + 0.72rem);height:100%;margin:0 0.72rem;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}
+/* sc-component-id: sc-jDwBTQ */
+
+.flAXMc{display:block;margin:0;}
+/* sc-component-id: sc-gPEVay */
+
+.gnzuVN{width:229px;}
+/* sc-component-id: sc-iRbamj */
+
+.bJDBPf{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;height:129px;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;background:#101010;opacity:1;-webkit-transition:opacity 0.5s;transition:opacity 0.5s;}
+/* sc-component-id: sc-jlyJG */
+
+.jVQgvB{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;width:calc(1024px + 0.72rem);height:100%;margin:0 0.72rem;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;}@media (max-width:768px){.jVQgvB{-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;}}
+/* sc-component-id: sc-gipzik */
+
+.fvvnMe{margin:0;color:#fff;font-size:16px;-webkit-font-smoothing:antialiased;-webkit-letter-spacing:1px;-moz-letter-spacing:1px;-ms-letter-spacing:1px;letter-spacing:1px;}@media (max-width:768px){.fvvnMe{display:none;}}
+/* sc-component-id: sc-csuQGl */
+
+.bXgqgg{display:none;}@media (max-width:768px){.bXgqgg{display:block;margin:0;color:#fff;font-size:16px;text-align:center;-webkit-font-smoothing:antialiased;-webkit-letter-spacing:1px;-moz-letter-spacing:1px;-ms-letter-spacing:1px;letter-spacing:1px;}}
+/* sc-component-id: sc-Rmtcm */
+
+.fzXnha{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;}
+/* sc-component-id: sc-bRBYWo */
+
+.jFjRsK{display:block;margin:0;}@media (max-width:768px){.jFjRsK{display:none;}}
+/* sc-component-id: sc-fBuWsC */
+
+.fVEdlY{margin:0 auto;padding-top:80px;}
+</style><style type="text/css" data-styled-components="" data-styled-components-is-local="false">/* sc-component-id: sc-global-1859819338 */
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;}body{margin:0;}article,aside,footer,header,nav,section{display:block;}h1{font-size:2em;margin:0.67em 0;}figcaption,figure,main{display:block;}figure{margin:1em 40px;}hr{box-sizing:content-box;height:0;overflow:visible;}pre{font-family:monospace,monospace;font-size:1em;}a{background-color:transparent;-webkit-text-decoration-skip:objects;}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted;}b,strong{font-weight:inherit;}b,strong{font-weight:bolder;}code,kbd,samp{font-family:monospace,monospace;font-size:1em;}dfn{font-style:italic;}mark{background-color:#ff0;color:#000;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sub{bottom:-0.25em;}sup{top:-0.5em;}audio,video{display:inline-block;}audio:not([controls]){display:none;height:0;}img{border-style:none;}svg:not(:root){overflow:hidden;}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0;}button,input{overflow:visible;}button,select{text-transform:none;}button,html [type="button"],[type="reset"],[type="submit"]{-webkit-appearance:button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner{border-style:none;padding:0;}button:-moz-focusring,[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring{outline:1px dotted ButtonText;}fieldset{padding:0.35em 0.75em 0.625em;}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal;}progress{display:inline-block;vertical-align:baseline;}textarea{overflow:auto;}[type="checkbox"],[type="radio"]{box-sizing:border-box;padding:0;}[type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button{height:auto;}[type="search"]{-webkit-appearance:textfield;outline-offset:-2px;}[type="search"]::-webkit-search-cancel-button,[type="search"]::-webkit-search-decoration{-webkit-appearance:none;}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit;}details,menu{display:block;}summary{display:list-item;}canvas{display:inline-block;}template{display:none;}[hidden]{display:none;}body{color:#000;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;font-feature-settings:unset;text-rendering:unset;}h1::before,h2::before,h3::before,h4::before,h5::before,h6::before{display:block;height:90px;margin:-90px 0 0;content:"";}h1,h2,h3,h4,h5,h6{color:#2d2d2d;}p{-webkit-letter-spacing:0.3px;-moz-letter-spacing:0.3px;-ms-letter-spacing:0.3px;letter-spacing:0.3px;-webkit-text-size-adjust:100%;text-size-adjust:100%;}p code{background-color:#f5f2f0;}.token.operator,.token.entity,.token.url,.language-css .token.string,.style .token.string{background:none;}a{text-decoration:none;}
+</style><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:112.5%/1.44em 'Roboto',sans-serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.8);font-family:'Roboto',sans-serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.08rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.08rem;color:hsla(0,0%,0%,1);font-family:'Helvetica','Lato',sans-serif;font-weight:700;text-rendering:optimizeLegibility;font-size:2.15rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.08rem;color:hsla(0,0%,0%,1);font-family:'Helvetica','Lato',sans-serif;font-weight:700;text-rendering:optimizeLegibility;font-size:1.58293rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.08rem;color:hsla(0,0%,0%,1);font-family:'Helvetica','Lato',sans-serif;font-weight:700;text-rendering:optimizeLegibility;font-size:1.35824rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.08rem;color:hsla(0,0%,0%,1);font-family:'Helvetica','Lato',sans-serif;font-weight:700;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.08rem;color:hsla(0,0%,0%,1);font-family:'Helvetica','Lato',sans-serif;font-weight:700;text-rendering:optimizeLegibility;font-size:0.85805rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.08rem;color:hsla(0,0%,0%,1);font-family:'Helvetica','Lato',sans-serif;font-weight:700;text-rendering:optimizeLegibility;font-size:0.79482rem;line-height:1.1;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.08rem;}ul{margin-left:1.44rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.08rem;list-style-position:outside;list-style-image:none;}ol{margin-left:1.44rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.08rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.08rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.08rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.08rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.08rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.08rem;font-size:0.85rem;line-height:1.44rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.08rem;font-size:1rem;line-height:1.44rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.08rem;}blockquote{margin-left:0;margin-right:1.44rem;margin-top:0;padding-bottom:0;padding-left:1.17rem;padding-right:0;padding-top:0;margin-bottom:1.08rem;font-size:1.16543rem;line-height:1.44rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.27rem solid hsla(0,0%,0%,0.2);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.08rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.08rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.08rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.08rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.08rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.08rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.44rem;margin-bottom:calc(1.08rem / 2);margin-top:calc(1.08rem / 2);}li > ul{margin-left:1.44rem;margin-bottom:calc(1.08rem / 2);margin-top:calc(1.08rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.08rem / 2);}code{font-size:0.85rem;line-height:1.44rem;}kbd{font-size:0.85rem;line-height:1.44rem;}samp{font-size:0.85rem;line-height:1.44rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:0.96rem;padding-right:0.96rem;padding-top:0.72rem;padding-bottom:calc(0.72rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}a{color:#9f392b;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.44rem;color:hsla(0,0%,0%,0.8);font-weight:400;}blockquote cite:before{content:"— ";}@media only screen and (max-width:480px){blockquote{margin-left:-1.08rem;margin-right:0;padding-left:0.81rem;}}</style><link href="//fonts.googleapis.com/css?family=Playfair+Display:700|Fira+Sans:400,400i,700,700i" rel="stylesheet" type="text/css"/><style type="text/css">
+    .anchor {
+      float: left;
+      padding-right: 4px;
+      margin-left: -20px;
+    }
+    h1 .anchor svg,
+    h2 .anchor svg,
+    h3 .anchor svg,
+    h4 .anchor svg,
+    h5 .anchor svg,
+    h6 .anchor svg {
+      visibility: hidden;
+    }
+    h1:hover .anchor svg,
+    h2:hover .anchor svg,
+    h3:hover .anchor svg,
+    h4:hover .anchor svg,
+    h5:hover .anchor svg,
+    h6:hover .anchor svg {
+      visibility: visible;
+    }
+  </style><script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+      var hash = location.hash.replace('#', '')
+      if (hash !== '') {
+        var element = document.getElementById(hash)
+        if (element) {
+          var offset = element.offsetTop
+          // Wait for the browser to finish rendering before scrolling.
+          setTimeout((function() {
+            window.scrollTo(0, offset - 0)
+          }), 0)
+        }
+      }
+    })
+  </script><title data-react-helmet="true">LineContext | Bottender</title><link data-react-helmet="true" rel="icon" sizes="192x192" href="/favicon-192x192.png"/><link data-react-helmet="true" href="/favicon-32x32.png" rel="shortcut icon" type="image/x-icon"/><link data-react-helmet="true" href="/apple-touch-icon.png" rel="apple-touch-icon"/><meta data-react-helmet="true" name="description" content="Bottender | Make Bots in Your Way, Fast and Flexibly"/><meta data-react-helmet="true" name="apple-mobile-web-app-title" content="Bottender"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" property="og:url" content="https://bottender.js.org/"/><meta data-react-helmet="true" property="og:title" content="Bottender | Make Bots in Your Way, Fast and Flexibly"/><meta data-react-helmet="true" property="og:image" content="https://bottender.js.org/fb-og.png"/><meta data-react-helmet="true" property="og:description" content="Bottender | Make Bots in Your Way, Fast and Flexibly"/><meta data-react-helmet="true" property="og:site_name" content="Bottender"/><meta data-react-helmet="true" property="og:locale" content="en_US"/><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><script>
+  !function(e,t,r){function n(){for(;d[0]&&"loaded"==d[0][f];)c=d.shift(),c[o]=!i.parentNode.insertBefore(c,i)}for(var s,a,c,d=[],i=e.scripts[0],o="onreadystatechange",f="readyState";s=r.shift();)a=e.createElement(t),"async"in i?(a.async=!1,e.head.appendChild(a)):i[f]?(d.push(a),a[o]=n):e.write("<"+t+' src="'+s+'" defer></'+t+">"),a.src=s}(document,"script",[
+  "/commons-86e5a681b72391257e15.js","/app-129225c5d59c8eec92c5.js","/path---docs-api-reference-line-context-64fc1f5523618a68aae8.js","/component---src-templates-with-sidebar-js-b7dff678f7146c2d5f15.js","/component---src-layouts-sidebar-layout-js-bea8010d13c6fd4fa298.js"
+])
+  </script><style id="gatsby-inlined-css">@font-face{font-family:Roboto;src:url(/static/Roboto-Regular.3e1af3ef.ttf);font-weight:400;font-style:normal}@font-face{font-family:Lato;src:url(/static/Lato-Regular.7f690e50.ttf);font-weight:400;font-style:normal}@font-face{font-family:BebasNeue;src:url(/static/BebasNeue.855c60ce.otf);font-weight:400;font-style:normal}@font-face{font-family:SFUIDisplay;src:url(/static/SFDisplay-Light.f00b2a6f.otf);font-weight:400;font-style:normal}code[class*=language-],pre[class*=language-]{color:#000;background:none;text-shadow:0 1px #fff;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}code[class*=language-]::-moz-selection,code[class*=language-] ::-moz-selection,pre[class*=language-]::-moz-selection,pre[class*=language-] ::-moz-selection{text-shadow:none;background:#b3d4fc}code[class*=language-]::selection,code[class*=language-] ::selection,pre[class*=language-]::selection,pre[class*=language-] ::selection{text-shadow:none;background:#b3d4fc}@media print{code[class*=language-],pre[class*=language-]{text-shadow:none}}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#f5f2f0}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#999}.namespace{opacity:.7}.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#905}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#690}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url{color:#a67f59;background:hsla(0,0%,100%,.5)}.token.atrule,.token.attr-value,.token.keyword{color:#07a}.token.function{color:#dd4a68}.token.important,.token.regex,.token.variable{color:#e90}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}</style></head><body><div id="___gatsby"><div class="sc-fBuWsC fVEdlY" data-reactroot="" data-reactid="1" data-react-checksum="-1738637537"><!-- react-empty: 2 --><header class="sc-cMljjf kLLhxa" role="banner" data-reactid="3"><div class="sc-jAaTju byQoER" data-reactid="4"><a class="sc-gPEVay gnzuVN" href="/" data-reactid="5"><img class="sc-jDwBTQ flAXMc" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMjkiIGhlaWdodD0iNDUiIHZpZXdCb3g9IjAgMCAyMjkgNDUiPgogICAgPGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBmaWxsPSIjMjMxRjIwIiBmaWxsLXJ1bGU9Im5vbnplcm8iPgogICAgICAgICAgICA8cGF0aCBkPSJNMTguNzUgOS4wODVBMTcuMTkgMTcuMTkgMCAwIDEgMzQuMzc3IDE5LjE1Yy42OTkuMTc2IDEuMzQzLjM0NiAxLjkyNi41MDhDMzMuNjMgMTIuNTYyIDI2Ljc3IDcuNSAxOC43NSA3LjVhMTguNzE2IDE4LjcxNiAwIDAgMC0xNC4yNTQgNi41ODRjLjU5OS4wNDIgMS4yNjcuMTA1IDEuOTg3LjE3MmExNy4xMTUgMTcuMTE1IDAgMCAxIDEyLjI2OC01LjE3em0xOC4yMzkgMTIuODA2YTU0Ljg0IDU0Ljg0IDAgMCAxLTEuNjY0LS4xMTNjLjM5MyAxLjQ1OC41OTIgMi45NjIuNTkxIDQuNDcxIDAgOS40NjQtNy43IDE3LjE2NS0xNy4xNjYgMTcuMTY1YTE3LjEyMyAxNy4xMjMgMCAwIDEtOS4wNjYtMi41ODZsLS40OS0uMzA0LS40NDUuMzY4YTEwLjI3OSAxMC4yNzkgMCAwIDEtMi4yNTEgMS40NCA0Ljk4NyA0Ljk4NyAwIDAgMCAuNTgtMy4yNzJsLS4wNDMtLjI2LS4xODgtLjE4NGExNy4xNDUgMTcuMTQ1IDAgMCAxLTIuMTU2LTIyLjIwMiA3MS4wNyA3MS4wNyAwIDAgMS0xLjYwMy0uNDU4QTE4LjcyNyAxOC43MjcgMCAwIDAgNS41NDcgMzkuNTZhMy40MzcgMy40MzcgMCAwIDEtMy40MTkgMy43NXYxLjU4NGMyLjYwMSAwIDUuMTMtLjg1NCA3LjItMi40MjlBMTguNzExIDE4LjcxMSAwIDAgMCAxOC43NDggNDVDMjkuMDg5IDQ1IDM3LjUgMzYuNTkgMzcuNSAyNi4yNTJhMTguNzI3IDE4LjcyNyAwIDAgMC0uNTExLTQuMzZ6Ii8+CiAgICAgICAgICAgIDxwYXRoIGQ9Ik0zNy4xNjYgMTcuMjgzYy0uNDc5LTIuMzU3LTMuMTI0LTE0LjM1LTcuMzgzLTE1LjA4OC00LjcyLS44Mi02LjYwNyAxLjEyMy02LjYwNyAxLjEyM1MyMi4wOC44NTggMTcuMzU2LjAzOEMxMy4xMDMtLjcwMiA2LjQ0OCA5LjY3OCA1LjE3OSAxMS43M2MtMi4zNjUtLjE3NS0zLjc4NC0uMTMzLTMuODQuMTcgMCAwLS4yNDYgMS4yOC0uMjY1IDEuMzg4LS4xMzguNzY4IDguNTEyIDIuOTExIDE5LjMyIDQuNzg4QzMxLjIgMTkuOTUyIDQwLjMxIDIwLjg1IDQwLjQ0NyAyMC4wODNsLjI2NS0xLjM0N2MuMDU2LS4zMDMtMS4yNjQtLjgyLTMuNTQ3LTEuNDUzeiIvPgogICAgICAgICAgICA8Y2lyY2xlIGN4PSIxNy41NzEiIGN5PSIyMi45MjkiIHI9IjEuNSIvPgogICAgICAgICAgICA8Y2lyY2xlIGN4PSIzMS41IiBjeT0iMjIuOTI5IiByPSIxLjUiLz4KICAgICAgICA8L2c+CiAgICAgICAgPHBhdGggZmlsbD0iIzAwMCIgZD0iTTU5LjU4IDExLjI2OGMzLjgzMiAwIDUuNDc5IDEuNzc3IDUuNDc5IDUuMzk3di44MzhjMCAyLjQxMy0uNzQgMy45NTUtMi4zODcgNC43MjYgMS45ODMuNzcxIDIuNzU2IDIuNTQ4IDIuNzU2IDUuMDI4djEuOTFjMCAzLjYyLTEuOTE2IDUuNTY1LTUuNjEzIDUuNTY1SDU0VjExLjI2OGg1LjU4em0tLjIzNiAxMi45MDVoLTEuNjQ3djcuMjA3aDIuMTE4YzEuMjQ0IDAgMS45MTYtLjU3IDEuOTE2LTIuMzEzdi0yLjA0NWMwLTIuMTc4LS43MDYtMi44NDktMi4zODctMi44NDl6bS4xMzUtOS41NTNoLTEuNzgydjYuMjAxaDEuNDQ2YzEuMzc4IDAgMi4yMTgtLjYwMyAyLjIxOC0yLjQ4di0xLjMwN2MwLTEuNjc2LS41NzEtMi40MTQtMS44ODItMi40MTR6bTE0Ljc2NCAyLjA0NXYxMi42N2MwIDEuNjc2Ljc0IDIuMzEzIDEuOTE2IDIuMzEzczEuOTE2LS42MzcgMS45MTYtMi4zMTN2LTEyLjY3YzAtMS42NzYtLjc0LTIuMzEzLTEuOTE2LTIuMzEzLTEuMTc3IDAtMS45MTYuNjM3LTEuOTE2IDIuMzEzek03MC41NDUgMjkuMVYxNi44OTljMC0zLjc1NCAxLjk4NC01Ljg5OSA1LjYxNC01Ljg5OXM1LjYxMyAyLjE0NSA1LjYxMyA1Ljl2MTIuMmMwIDMuNzU1LTEuOTgzIDUuOS01LjYxMyA1LjktMy42MyAwLTUuNjE0LTIuMTQ1LTUuNjE0LTUuOXptMTUuNzQtMTQuNDhoMy44NjV2MjAuMTFoMy42OTd2LTIwLjExaDMuODY1di0zLjM1M0g4Ni4yODR2My4zNTJ6bTE1LjE2NiAwaDMuODY2djIwLjExaDMuNjk3di0yMC4xMWgzLjg2NnYtMy4zNTNIMTAxLjQ1djMuMzUyem0xOS45NCAwaDYuMzg3di0zLjM1M2gtMTAuMDg0djIzLjQ2NGgxMC4wODRWMzEuMzhoLTYuMzg2di02Ljg3Mmg1LjA3NXYtMy4zNTJoLTUuMDc1VjE0LjYyem0xOS43NzMgMjAuMTFoMy43OThWMTEuMjY5aC0zLjI5NHYxNC4wNDVsLTMuNzk4LTE0LjA0NWgtNC42Mzl2MjMuNDY0aDMuMzI4VjE3LjczN2w0LjYwNSAxNi45OTV6bTkuNjU1IDBWMTEuMjY5aDUuODQ4YzMuNjk4IDAgNS41MTMgMi4wNDUgNS41MTMgNS43OTl2MTEuODY2YzAgMy43NTQtMS44MTUgNS43OTktNS41MTMgNS43OTloLTUuODQ4em01Ljc4MS0yMC4xMWgtMi4wODRWMzEuMzhoMi4wODRjMS4xNzcgMCAxLjg4Mi0uNjAzIDEuODgyLTIuMjhWMTYuOWMwLTEuNjc3LS43MDUtMi4yOC0xLjg4Mi0yLjI4em0xNC44MzEgMGg2LjM4N3YtMy4zNTNoLTEwLjA4NHYyMy40NjRoMTAuMDg0VjMxLjM4aC02LjM4N3YtNi44NzJoNS4wNzZ2LTMuMzUyaC01LjA3NlYxNC42MnpNMTk0LjggMzQuNzNoLTMuNzY1Yy0uMjAxLS42MDMtLjMzNi0uOTcxLS4zMzYtMi44ODJ2LTMuNjg3YzAtMi4xNzktLjc0LTIuOTgzLTIuNDItMi45ODNoLTEuMjc3djkuNTUzaC0zLjY5OFYxMS4yNjhoNS41OGMzLjgzMiAwIDUuNDc5IDEuNzc3IDUuNDc5IDUuMzk3djEuODQzYzAgMi40MTQtLjc3MyAzLjk5LTIuNDIgNC43NiAxLjg0OS43NzEgMi40NTQgMi41NDggMi40NTQgNC45OTV2My42MmMwIDEuMTQuMDMzIDEuOTc3LjQwMyAyLjg0OXptLTYuMDE3LTIwLjExaC0xLjc4MXY3LjIwNmgxLjQ0NWMxLjM3OCAwIDIuMjE5LS42MDQgMi4yMTktMi40OHYtMi4zMTNjMC0xLjY3Ni0uNTcyLTIuNDE0LTEuODgzLTIuNDE0eiIvPgogICAgPC9nPgo8L3N2Zz4K" alt="Bottender" data-reactid="6"/></a><nav class="sc-jWBwVP jZcPPp" role="navigation" data-reactid="7"><div class="sc-brqgnP dBNkFl" data-reactid="8"><a href="/docs/GettingStarted" data-reactid="9"><p class="sc-iAyFgw inMAJC" selected="" data-reactid="10">docs</p></a><a href="/blog" data-reactid="11"><p class="sc-iAyFgw jskxzb" data-reactid="12">blog</p></a><a href="https://github.com/Yoctol/bottender/tree/master/examples" target="_blank" data-reactid="13"><p class="sc-iAyFgw jskxzb" data-reactid="14">examples</p></a><a href="https://github.com/Yoctol/bottender" target="_blank" data-reactid="15"><p class="sc-iAyFgw jskxzb" data-reactid="16">github</p></a></div><div class="sc-hSdWYo faCitA" data-reactid="17"><a class="sc-eHgmQL hlmFGa" data-reactid="18"></a><div data-reactid="19"><div id="" class="bm-menu-wrap " style="position:fixed;right:0;z-index:2;width:100%;height:auto;-moz-transform:translate3d(100%, 0, 0);-ms-transform:translate3d(100%, 0, 0);-o-transform:translate3d(100%, 0, 0);-webkit-transform:translate3d(100%, 0, 0);transform:translate3d(100%, 0, 0);transition:all 0.5s;top:80px;max-height:calc(100vh - 80px);overflow-y:scroll;-webkit-overflow-scrolling:touch;" data-reactid="20"><div class="bm-menu " style="height:100%;box-sizing:border-box;overflow:auto;min-height:calc(100vh - 80px);background:#fafafa;" data-reactid="21"><nav class="bm-item-list " style="height:100%;display:flex;padding:40px;flex-direction:column;" data-reactid="22"><div class="sc-cvbbAY dDSwwh" style="display:block;outline:none;" data-reactid="23"><a href="/docs/GettingStarted" data-reactid="24"><p class="sc-iAyFgw inMAJC" selected="" data-reactid="25">docs</p></a><a href="/blog" data-reactid="26"><p class="sc-iAyFgw dbWJYR" data-reactid="27">blog</p></a><a href="https://github.com/Yoctol/bottender/tree/master/examples" target="_blank" data-reactid="28"><p class="sc-iAyFgw dbWJYR" data-reactid="29">examples</p></a><a href="https://github.com/Yoctol/bottender" target="_blank" data-reactid="30"><p class="sc-iAyFgw dbWJYR" data-reactid="31">github</p></a></div><div class="sc-dnqmqq kPhszq" data-reactid="32"><section class="sc-ifAKCX dakLHt" data-reactid="33"><h2 class="sc-EHOje dENgFQ" data-reactid="34"><!-- react-text: 35 --> <!-- /react-text --><span class="sc-gzVnrw sjhaJ" data-reactid="36"><img class="sc-htoDjs bjDceI" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjIwcHgiIGhlaWdodD0iMjBweCIgdmlld0JveD0iMCAwIDIwIDIwIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCA0Ny4xICg0NTQyMikgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+CiAgICA8dGl0bGU+QXJ0Ym9hcmQ8L3RpdGxlPgogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CiAgICA8ZGVmcz48L2RlZnM+CiAgICA8ZyBpZD0iUGFnZS0xIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iQXJ0Ym9hcmQiIGZpbGw9IiM0QTRBNEEiPgogICAgICAgICAgICA8cGF0aCBkPSJNMTcuMjIzMjE0Myw3LjQ1NTM1NzE0IEwxMC41OTgyMTQzLDE0LjA3MTQyODYgQzEwLjQ4NTExODUsMTQuMTg0NTI0NCAxMC4zNTExOTEyLDE0LjI0MTA3MTQgMTAuMTk2NDI4NiwxNC4yNDEwNzE0IEMxMC4wNDE2NjU5LDE0LjI0MTA3MTQgOS45MDc3Mzg2NiwxNC4xODQ1MjQ0IDkuNzk0NjQyODYsMTQuMDcxNDI4NiBMMy4xNjk2NDI4Niw3LjQ1NTM1NzE0IEMzLjA1NjU0NzA1LDcuMzQyMjYxMzQgMyw3LjIwNjg0NjAzIDMsNy4wNDkxMDcxNCBDMyw2Ljg5MTM2ODI2IDMuMDU2NTQ3MDUsNi43NTU5NTI5NSAzLjE2OTY0Mjg2LDYuNjQyODU3MTQgTDQuNjUxNzg1NzEsNS4xNjk2NDI4NiBDNC43NjQ4ODE1Miw1LjA1NjU0NzA1IDQuODk4ODA4NzUsNSA1LjA1MzU3MTQzLDUgQzUuMjA4MzM0MTEsNSA1LjM0MjI2MTM0LDUuMDU2NTQ3MDUgNS40NTUzNTcxNCw1LjE2OTY0Mjg2IEwxMC4xOTY0Mjg2LDkuOTEwNzE0MjkgTDE0LjkzNzUsNS4xNjk2NDI4NiBDMTUuMDUwNTk1OCw1LjA1NjU0NzA1IDE1LjE4NDUyMyw1IDE1LjMzOTI4NTcsNSBDMTUuNDk0MDQ4NCw1IDE1LjYyNzk3NTYsNS4wNTY1NDcwNSAxNS43NDEwNzE0LDUuMTY5NjQyODYgTDE3LjIyMzIxNDMsNi42NDI4NTcxNCBDMTcuMzM2MzEwMSw2Ljc1NTk1Mjk1IDE3LjM5Mjg1NzEsNi44OTEzNjgyNiAxNy4zOTI4NTcxLDcuMDQ5MTA3MTQgQzE3LjM5Mjg1NzEsNy4yMDY4NDYwMyAxNy4zMzYzMTAxLDcuMzQyMjYxMzQgMTcuMjIzMjE0Myw3LjQ1NTM1NzE0IFoiIGlkPSLvgbgiPjwvcGF0aD4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==" alt="arrow" data-reactid="37"/></span></h2><div class="sc-bZQynM dNctSA" data-reactid="38"><a class="sc-htpNat clwtpZ" href="/docs/GettingStarted" data-reactid="39"><div class="sc-bxivhb jJdVUp" data-reactid="40">Getting Started</div></a></div></section><section class="sc-ifAKCX dakLHt" data-reactid="41"><h2 class="sc-EHOje dENgFQ" data-reactid="42"><!-- react-text: 43 -->Platforms<!-- /react-text --><span class="sc-gzVnrw bwaFlD" data-reactid="44"><img class="sc-htoDjs bjDceI" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjIwcHgiIGhlaWdodD0iMjBweCIgdmlld0JveD0iMCAwIDIwIDIwIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCA0Ny4xICg0NTQyMikgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+CiAgICA8dGl0bGU+QXJ0Ym9hcmQ8L3RpdGxlPgogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CiAgICA8ZGVmcz48L2RlZnM+CiAgICA8ZyBpZD0iUGFnZS0xIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iQXJ0Ym9hcmQiIGZpbGw9IiM0QTRBNEEiPgogICAgICAgICAgICA8cGF0aCBkPSJNMTcuMjIzMjE0Myw3LjQ1NTM1NzE0IEwxMC41OTgyMTQzLDE0LjA3MTQyODYgQzEwLjQ4NTExODUsMTQuMTg0NTI0NCAxMC4zNTExOTEyLDE0LjI0MTA3MTQgMTAuMTk2NDI4NiwxNC4yNDEwNzE0IEMxMC4wNDE2NjU5LDE0LjI0MTA3MTQgOS45MDc3Mzg2NiwxNC4xODQ1MjQ0IDkuNzk0NjQyODYsMTQuMDcxNDI4NiBMMy4xNjk2NDI4Niw3LjQ1NTM1NzE0IEMzLjA1NjU0NzA1LDcuMzQyMjYxMzQgMyw3LjIwNjg0NjAzIDMsNy4wNDkxMDcxNCBDMyw2Ljg5MTM2ODI2IDMuMDU2NTQ3MDUsNi43NTU5NTI5NSAzLjE2OTY0Mjg2LDYuNjQyODU3MTQgTDQuNjUxNzg1NzEsNS4xNjk2NDI4NiBDNC43NjQ4ODE1Miw1LjA1NjU0NzA1IDQuODk4ODA4NzUsNSA1LjA1MzU3MTQzLDUgQzUuMjA4MzM0MTEsNSA1LjM0MjI2MTM0LDUuMDU2NTQ3MDUgNS40NTUzNTcxNCw1LjE2OTY0Mjg2IEwxMC4xOTY0Mjg2LDkuOTEwNzE0MjkgTDE0LjkzNzUsNS4xNjk2NDI4NiBDMTUuMDUwNTk1OCw1LjA1NjU0NzA1IDE1LjE4NDUyMyw1IDE1LjMzOTI4NTcsNSBDMTUuNDk0MDQ4NCw1IDE1LjYyNzk3NTYsNS4wNTY1NDcwNSAxNS43NDEwNzE0LDUuMTY5NjQyODYgTDE3LjIyMzIxNDMsNi42NDI4NTcxNCBDMTcuMzM2MzEwMSw2Ljc1NTk1Mjk1IDE3LjM5Mjg1NzEsNi44OTEzNjgyNiAxNy4zOTI4NTcxLDcuMDQ5MTA3MTQgQzE3LjM5Mjg1NzEsNy4yMDY4NDYwMyAxNy4zMzYzMTAxLDcuMzQyMjYxMzQgMTcuMjIzMjE0Myw3LjQ1NTM1NzE0IFoiIGlkPSLvgbgiPjwvcGF0aD4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==" alt="arrow" data-reactid="45"/></span></h2><div class="sc-bZQynM iCtQAW" data-reactid="46"><a class="sc-htpNat clwtpZ" href="/docs/Platforms-Console" data-reactid="47"><div class="sc-bxivhb jJdVUp" data-reactid="48">Console</div></a><a class="sc-htpNat clwtpZ" href="/docs/Platforms-Messenger" data-reactid="49"><div class="sc-bxivhb jJdVUp" data-reactid="50">Messenger</div></a><a class="sc-htpNat clwtpZ" href="/docs/Platforms-LINE" data-reactid="51"><div class="sc-bxivhb jJdVUp" data-reactid="52">LINE</div></a><a class="sc-htpNat clwtpZ" href="/docs/Platforms-Slack" data-reactid="53"><div class="sc-bxivhb jJdVUp" data-reactid="54">Slack</div></a><a class="sc-htpNat clwtpZ" href="/docs/Platforms-Telegram" data-reactid="55"><div class="sc-bxivhb jJdVUp" data-reactid="56">Telegram</div></a><a class="sc-htpNat clwtpZ" href="/docs/Platforms-Viber" data-reactid="57"><div class="sc-bxivhb jJdVUp" data-reactid="58">Viber</div></a></div></section><section class="sc-ifAKCX dakLHt" data-reactid="59"><h2 class="sc-EHOje dENgFQ" data-reactid="60"><!-- react-text: 61 -->Guides<!-- /react-text --><span class="sc-gzVnrw bwaFlD" data-reactid="62"><img class="sc-htoDjs bjDceI" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjIwcHgiIGhlaWdodD0iMjBweCIgdmlld0JveD0iMCAwIDIwIDIwIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCA0Ny4xICg0NTQyMikgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+CiAgICA8dGl0bGU+QXJ0Ym9hcmQ8L3RpdGxlPgogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CiAgICA8ZGVmcz48L2RlZnM+CiAgICA8ZyBpZD0iUGFnZS0xIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iQXJ0Ym9hcmQiIGZpbGw9IiM0QTRBNEEiPgogICAgICAgICAgICA8cGF0aCBkPSJNMTcuMjIzMjE0Myw3LjQ1NTM1NzE0IEwxMC41OTgyMTQzLDE0LjA3MTQyODYgQzEwLjQ4NTExODUsMTQuMTg0NTI0NCAxMC4zNTExOTEyLDE0LjI0MTA3MTQgMTAuMTk2NDI4NiwxNC4yNDEwNzE0IEMxMC4wNDE2NjU5LDE0LjI0MTA3MTQgOS45MDc3Mzg2NiwxNC4xODQ1MjQ0IDkuNzk0NjQyODYsMTQuMDcxNDI4NiBMMy4xNjk2NDI4Niw3LjQ1NTM1NzE0IEMzLjA1NjU0NzA1LDcuMzQyMjYxMzQgMyw3LjIwNjg0NjAzIDMsNy4wNDkxMDcxNCBDMyw2Ljg5MTM2ODI2IDMuMDU2NTQ3MDUsNi43NTU5NTI5NSAzLjE2OTY0Mjg2LDYuNjQyODU3MTQgTDQuNjUxNzg1NzEsNS4xNjk2NDI4NiBDNC43NjQ4ODE1Miw1LjA1NjU0NzA1IDQuODk4ODA4NzUsNSA1LjA1MzU3MTQzLDUgQzUuMjA4MzM0MTEsNSA1LjM0MjI2MTM0LDUuMDU2NTQ3MDUgNS40NTUzNTcxNCw1LjE2OTY0Mjg2IEwxMC4xOTY0Mjg2LDkuOTEwNzE0MjkgTDE0LjkzNzUsNS4xNjk2NDI4NiBDMTUuMDUwNTk1OCw1LjA1NjU0NzA1IDE1LjE4NDUyMyw1IDE1LjMzOTI4NTcsNSBDMTUuNDk0MDQ4NCw1IDE1LjYyNzk3NTYsNS4wNTY1NDcwNSAxNS43NDEwNzE0LDUuMTY5NjQyODYgTDE3LjIyMzIxNDMsNi42NDI4NTcxNCBDMTcuMzM2MzEwMSw2Ljc1NTk1Mjk1IDE3LjM5Mjg1NzEsNi44OTEzNjgyNiAxNy4zOTI4NTcxLDcuMDQ5MTA3MTQgQzE3LjM5Mjg1NzEsNy4yMDY4NDYwMyAxNy4zMzYzMTAxLDcuMzQyMjYxMzQgMTcuMjIzMjE0Myw3LjQ1NTM1NzE0IFoiIGlkPSLvgbgiPjwvcGF0aD4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==" alt="arrow" data-reactid="63"/></span></h2><div class="sc-bZQynM iCtQAW" data-reactid="64"><a class="sc-htpNat clwtpZ" href="/docs/Guides-Commands" data-reactid="65"><div class="sc-bxivhb jJdVUp" data-reactid="66">Commands</div></a><a class="sc-htpNat clwtpZ" href="/docs/Guides-Deployment" data-reactid="67"><div class="sc-bxivhb jJdVUp" data-reactid="68">Deployment</div></a><a class="sc-htpNat clwtpZ" href="/docs/Guides-ErrorHandling" data-reactid="69"><div class="sc-bxivhb jJdVUp" data-reactid="70">Error Handling</div></a><a class="sc-htpNat clwtpZ" href="/docs/Guides-Intents" data-reactid="71"><div class="sc-bxivhb jJdVUp" data-reactid="72">Intents</div></a><a class="sc-htpNat clwtpZ" href="/docs/Guides-Middleware" data-reactid="73"><div class="sc-bxivhb jJdVUp" data-reactid="74">Middleware</div></a><a class="sc-htpNat clwtpZ" href="/docs/Guides-Server" data-reactid="75"><div class="sc-bxivhb jJdVUp" data-reactid="76">Server</div></a><a class="sc-htpNat clwtpZ" href="/docs/Guides-Session" data-reactid="77"><div class="sc-bxivhb jJdVUp" data-reactid="78">Session</div></a><a class="sc-htpNat clwtpZ" href="/docs/Guides-Testing" data-reactid="79"><div class="sc-bxivhb jJdVUp" data-reactid="80">Testing</div></a><a class="sc-htpNat clwtpZ" href="/docs/Guides-Troubleshooting" data-reactid="81"><div class="sc-bxivhb jJdVUp" data-reactid="82">Troubleshooting</div></a></div></section><section class="sc-ifAKCX dakLHt" data-reactid="83"><h2 class="sc-EHOje dENgFQ" data-reactid="84"><!-- react-text: 85 -->API Reference<!-- /react-text --><span class="sc-gzVnrw eOXFgm" data-reactid="86"><img class="sc-htoDjs bjDceI" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjIwcHgiIGhlaWdodD0iMjBweCIgdmlld0JveD0iMCAwIDIwIDIwIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCA0Ny4xICg0NTQyMikgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+CiAgICA8dGl0bGU+QXJ0Ym9hcmQ8L3RpdGxlPgogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CiAgICA8ZGVmcz48L2RlZnM+CiAgICA8ZyBpZD0iUGFnZS0xIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iQXJ0Ym9hcmQiIGZpbGw9IiM0QTRBNEEiPgogICAgICAgICAgICA8cGF0aCBkPSJNMTcuMjIzMjE0Myw3LjQ1NTM1NzE0IEwxMC41OTgyMTQzLDE0LjA3MTQyODYgQzEwLjQ4NTExODUsMTQuMTg0NTI0NCAxMC4zNTExOTEyLDE0LjI0MTA3MTQgMTAuMTk2NDI4NiwxNC4yNDEwNzE0IEMxMC4wNDE2NjU5LDE0LjI0MTA3MTQgOS45MDc3Mzg2NiwxNC4xODQ1MjQ0IDkuNzk0NjQyODYsMTQuMDcxNDI4NiBMMy4xNjk2NDI4Niw3LjQ1NTM1NzE0IEMzLjA1NjU0NzA1LDcuMzQyMjYxMzQgMyw3LjIwNjg0NjAzIDMsNy4wNDkxMDcxNCBDMyw2Ljg5MTM2ODI2IDMuMDU2NTQ3MDUsNi43NTU5NTI5NSAzLjE2OTY0Mjg2LDYuNjQyODU3MTQgTDQuNjUxNzg1NzEsNS4xNjk2NDI4NiBDNC43NjQ4ODE1Miw1LjA1NjU0NzA1IDQuODk4ODA4NzUsNSA1LjA1MzU3MTQzLDUgQzUuMjA4MzM0MTEsNSA1LjM0MjI2MTM0LDUuMDU2NTQ3MDUgNS40NTUzNTcxNCw1LjE2OTY0Mjg2IEwxMC4xOTY0Mjg2LDkuOTEwNzE0MjkgTDE0LjkzNzUsNS4xNjk2NDI4NiBDMTUuMDUwNTk1OCw1LjA1NjU0NzA1IDE1LjE4NDUyMyw1IDE1LjMzOTI4NTcsNSBDMTUuNDk0MDQ4NCw1IDE1LjYyNzk3NTYsNS4wNTY1NDcwNSAxNS43NDEwNzE0LDUuMTY5NjQyODYgTDE3LjIyMzIxNDMsNi42NDI4NTcxNCBDMTcuMzM2MzEwMSw2Ljc1NTk1Mjk1IDE3LjM5Mjg1NzEsNi44OTEzNjgyNiAxNy4zOTI4NTcxLDcuMDQ5MTA3MTQgQzE3LjM5Mjg1NzEsNy4yMDY4NDYwMyAxNy4zMzYzMTAxLDcuMzQyMjYxMzQgMTcuMjIzMjE0Myw3LjQ1NTM1NzE0IFoiIGlkPSLvgbgiPjwvcGF0aD4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==" alt="arrow" data-reactid="87"/></span></h2><div class="sc-bZQynM dNctSA" data-reactid="88"><a class="sc-htpNat clwtpZ" href="/docs/APIReference-Context" data-reactid="89"><div class="sc-bxivhb jJdVUp" data-reactid="90">Context</div></a><a class="sc-htpNat clwtpZ" href="/docs/APIReference-MessengerContext" data-reactid="91"><div class="sc-bxivhb jJdVUp" data-reactid="92">MessengerContext</div></a><a class="sc-htpNat clwtpZ" href="/docs/APIReference-LineContext" data-reactid="93"><div class="sc-bxivhb kXjaEp" selected="" data-reactid="94">LineContext</div></a><a class="sc-htpNat clwtpZ" href="/docs/APIReference-SlackContext" data-reactid="95"><div class="sc-bxivhb jJdVUp" data-reactid="96">SlackContext</div></a><a class="sc-htpNat clwtpZ" href="/docs/APIReference-Event" data-reactid="97"><div class="sc-bxivhb jJdVUp" data-reactid="98">Event</div></a><a class="sc-htpNat clwtpZ" href="/docs/APIReference-Handler" data-reactid="99"><div class="sc-bxivhb jJdVUp" data-reactid="100">Handler</div></a></div></section></div></nav></div><div data-reactid="101"><div class="bm-cross-button " style="position:absolute;width:24px;height:24px;right:8px;top:8px;display:none;" data-reactid="102"><span style="position:absolute;top:6px;right:14px;" data-reactid="103"><span class="bm-cross " style="position:absolute;width:3px;height:14px;transform:rotate(45deg);" data-reactid="104"></span><span class="bm-cross " style="position:absolute;width:3px;height:14px;transform:rotate(-45deg);" data-reactid="105"></span></span><button style="position:absolute;left:0;top:0;width:100%;height:100%;margin:0;padding:0;border:none;text-indent:-9999px;background:transparent;outline:none;cursor:pointer;" data-reactid="106">Close Menu</button></div></div></div><div data-reactid="107"><div class="bm-burger-button " style="z-index:1;display:none;" data-reactid="108"><span data-reactid="109"><span class="bm-burger-bars " style="position:absolute;height:20%;left:0;right:0;top:0%;opacity:1;" data-reactid="110"></span><span class="bm-burger-bars " style="position:absolute;height:20%;left:0;right:0;top:40%;opacity:1;" data-reactid="111"></span><span class="bm-burger-bars " style="position:absolute;height:20%;left:0;right:0;top:80%;opacity:1;" data-reactid="112"></span></span><button style="position:absolute;left:0;top:0;width:100%;height:100%;margin:0;padding:0;border:none;opacity:0;font-size:8px;cursor:pointer;" data-reactid="113">Open Menu</button></div></div></div></div></nav></div></header><div class="sc-iwsKbI dTJAzw" id="content" data-reactid="114"><!-- react-empty: 115 --><div class="sc-gZMcBi hXyngn" data-reactid="116"><main class="sc-gqjmRU kmGqOy" role="main" data-reactid="117"><section class="sc-fjdhpX kuCQEL" data-reactid="118"><h1 class="sc-jTzLTM hnImCk" data-reactid="119">LineContext</h1></section><div data-reactid="120"><ul>
+<li>
+<p><a href="#reply-api">Reply API</a></p>
+<ul>
+<li><a href="#reply-imagemap-message">Imagemap Message</a></li>
+<li><a href="#reply-template-messages">Template Messages</a></li>
+</ul>
+</li>
+<li>
+<p><a href="#push-api">Push API</a></p>
+<ul>
+<li><a href="#push-imagemap-message">Imagemap Message</a></li>
+<li><a href="#push-template-messages">Template Messages</a></li>
+</ul>
+</li>
+<li><a href="#content-api">Content API</a></li>
+<li><a href="#profile-api">Profile API</a></li>
+<li><a href="#grouproom-member-profile-api">Group/Room Member Profile API</a></li>
+<li><a href="#grouproom-member-ids-api">Group/Room Member IDs API</a></li>
+<li><a href="#leave-api">Leave API</a></li>
+<li><a href="#rich-menu-api">Rich Menu API</a></li>
+</ul>
+<a id="reply-api" />
+<h3 id="reply-api---official-docs"><a href="#reply-api---official-docs" aria-hidden="true" class="anchor"><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Reply API - <a href="https://devdocs.line.me/en/#reply-message">Official Docs</a></h3>
+<p>Responds to events from users, groups, and rooms.</p>
+<h2 id="replymessages"><a href="#replymessages" aria-hidden="true" class="anchor"><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>reply(messages)</code></h2>
+<p>Responds messages to the receiver using reply token.</p>
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>messages</td>
+<td><code>Array&#x3C;Object></code></td>
+<td>Array of objects which contains the contents of the message to be sent.</td>
+</tr>
+</tbody>
+</table>
+<p>Example:</p>
+<div class="gatsby-highlight">
+      <pre class="language-js"><code>context<span class="token punctuation">.</span><span class="token function">reply</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    type<span class="token punctuation">:</span> <span class="token string">'text'</span><span class="token punctuation">,</span>
+    text<span class="token punctuation">:</span> <span class="token string">'Hello!'</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+      </div>
+<p><code>replyToken</code> can only be used once, but you can send up to 5 messages using the same token.</p>
+<div class="gatsby-highlight">
+      <pre class="language-js"><code><span class="token keyword">const</span> <span class="token punctuation">{</span> Line <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'messaging-api-line'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+context<span class="token punctuation">.</span><span class="token function">reply</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+  Line<span class="token punctuation">.</span><span class="token function">createText</span><span class="token punctuation">(</span><span class="token string">'Hello'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+  Line<span class="token punctuation">.</span><span class="token function">createImage</span><span class="token punctuation">(</span>
+    <span class="token string">'https://example.com/original.jpg'</span><span class="token punctuation">,</span>
+    <span class="token string">'https://example.com/preview.jpg'</span>
+  <span class="token punctuation">)</span><span class="token punctuation">,</span>
+  Line<span class="token punctuation">.</span><span class="token function">createText</span><span class="token punctuation">(</span><span class="token string">'End'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+      </div>
+<br />
+<h2 id="replytexttext"><a href="#replytexttext" aria-hidden="true" class="anchor"><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>replyText(text)</code></h2>
+<p>Responds text message to the receiver using reply token.</p>
+<img src="https://developers.line.me/media/messaging-api/messages/text-bf530b30.png" width="250px" />
+<p>You can include LINE original emoji in text messages using character codes. For a list of LINE emoji that can be sent in LINE chats, see the <a href="https://developers.line.me/media/messaging-api/emoji-list.pdf">emoji list</a>.</p>
+<img src="https://developers.line.me/media/messaging-api/messages/emoji-b3285d27.png" width="250px" />
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>text</td>
+<td><code>String</code></td>
+<td>Text of the message to be sent.</td>
+</tr>
+</tbody>
+</table>
+<p>Example:</p>
+<div class="gatsby-highlight">
+      <pre class="language-js"><code>context<span class="token punctuation">.</span><span class="token function">reply</span><span class="token punctuation">(</span><span class="token string">'Hello!'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+      </div>
+<br />
+<h2 id="replyimageimageurl-previewimageurl"><a href="#replyimageimageurl-previewimageurl" aria-hidden="true" class="anchor"><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>replyImage(imageUrl, previewImageUrl)</code></h2>
+<p>Responds image message to the receiver using reply token.</p>
+<p><img src="https://developers.line.me/media/messaging-api/messages/image-167efb33.png" width="250px" /><img src="https://developers.line.me/media/messaging-api/messages/image-full-04fbba55.png" width="250px" /></p>
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>imageUrl</td>
+<td><code>String</code></td>
+<td>Image URL.</td>
+</tr>
+<tr>
+<td>previewImageUrl</td>
+<td><code>String</code></td>
+<td>Preview image URL.</td>
+</tr>
+</tbody>
+</table>
+<p>Example:</p>
+<div class="gatsby-highlight">
+      <pre class="language-js"><code>context<span class="token punctuation">.</span><span class="token function">replyImage</span><span class="token punctuation">(</span>
+  <span class="token string">'https://example.com/original.jpg'</span><span class="token punctuation">,</span>
+  <span class="token string">'https://example.com/preview.jpg'</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+      </div>
+<br />
+<h2 id="replyvideovideourl-previewimageurl"><a href="#replyvideovideourl-previewimageurl" aria-hidden="true" class="anchor"><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>replyVideo(videoUrl, previewImageUrl)</code></h2>
+<p>Responds video message to the receiver using reply token.</p>
+<img src="https://developers.line.me/media/messaging-api/messages/video-a1bc08a4.png" width="250px" />
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>videoUrl</td>
+<td><code>String</code></td>
+<td>URL of video file.</td>
+</tr>
+<tr>
+<td>previewImageUrl</td>
+<td><code>String</code></td>
+<td>URL of preview image.</td>
+</tr>
+</tbody>
+</table>
+<p>Example:</p>
+<div class="gatsby-highlight">
+      <pre class="language-js"><code>context<span class="token punctuation">.</span><span class="token function">replyVideo</span><span class="token punctuation">(</span>
+  <span class="token string">'https://example.com/original.mp4'</span><span class="token punctuation">,</span>
+  <span class="token string">'https://example.com/preview.jpg'</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+      </div>
+<br />
+<h2 id="replyaudioaudiourl-duration"><a href="#replyaudioaudiourl-duration" aria-hidden="true" class="anchor"><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>replyAudio(audioUrl, duration)</code></h2>
+<p>Responds audio message to the receiver using reply token.</p>
+<img src="https://developers.line.me/media/messaging-api/messages/audio-6290d91b.png" width="250px" />
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>audioUrl</td>
+<td><code>String</code></td>
+<td>URL of audio file.</td>
+</tr>
+<tr>
+<td>duration</td>
+<td><code>Number</code></td>
+<td>Length of audio file.</td>
+</tr>
+</tbody>
+</table>
+<p>Example:</p>
+<div class="gatsby-highlight">
+      <pre class="language-js"><code>context<span class="token punctuation">.</span><span class="token function">replyAudio</span><span class="token punctuation">(</span><span class="token string">'https://example.com/original.m4a'</span><span class="token punctuation">,</span> <span class="token number">240000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+      </div>
+<br />
+<h2 id="replylocationlocation"><a href="#replylocationlocation" aria-hidden="true" class="anchor"><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>replyLocation(location)</code></h2>
+<p>Responds location message to the receiver using reply token.</p>
+<img src="https://developers.line.me/media/messaging-api/messages/location-8f9b6b79.png" width="250px" />
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>location</td>
+<td><code>Object</code></td>
+<td>Object contains location's parameters.</td>
+</tr>
+<tr>
+<td>location.title</td>
+<td><code>String</code></td>
+<td>Title of the location.</td>
+</tr>
+<tr>
+<td>location.address</td>
+<td><code>String</code></td>
+<td>Address of the location.</td>
+</tr>
+<tr>
+<td>location.latitude</td>
+<td><code>Number</code></td>
+<td>Latitude of the location.</td>
+</tr>
+<tr>
+<td>location.longitude</td>
+<td><code>Number</code></td>
+<td>Longitude of the location.</td>
+</tr>
+</tbody>
+</table>
+<p>Example:</p>
+<div class="gatsby-highlight">
+      <pre class="language-js"><code>context<span class="token punctuation">.</span><span class="token function">replyLocation</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  title<span class="token punctuation">:</span> <span class="token string">'my location'</span><span class="token punctuation">,</span>
+  address<span class="token punctuation">:</span> <span class="token string">'〒150-0002 東京都渋谷区渋谷２丁目２１−１'</span><span class="token punctuation">,</span>
+  latitude<span class="token punctuation">:</span> <span class="token number">35.65910807942215</span><span class="token punctuation">,</span>
+  longitude<span class="token punctuation">:</span> <span class="token number">139.70372892916203</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+      </div>
+<br />
+<h2 id="replystickerpackageid-stickerid"><a href="#replystickerpackageid-stickerid" aria-hidden="true" class="anchor"><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>replySticker(packageId, stickerId)</code></h2>
+<p>Responds sticker message to the receiver using reply token.<br>
+For a list of stickers that can be sent with the Messaging API, see the <a href="https://developers.line.me/media/messaging-api/messages/sticker_list.pdf">sticker list</a>.</p>
+<img src="https://developers.line.me/media/messaging-api/messages/sticker-cb1a6a3a.png" width="250px" />
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>packageId</td>
+<td><code>String</code></td>
+<td>Package ID.</td>
+</tr>
+<tr>
+<td>stickerId</td>
+<td><code>String</code></td>
+<td>Sticker ID.</td>
+</tr>
+</tbody>
+</table>
+<p>Example:</p>
+<div class="gatsby-highlight">
+      <pre class="language-js"><code>context<span class="token punctuation">.</span><span class="token function">replySticker</span><span class="token punctuation">(</span><span class="token string">'1'</span><span class="token punctuation">,</span> <span class="token string">'1'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+      </div>
+<br />
+<h3 id="reply-imagemap-message"><a href="#reply-imagemap-message" aria-hidden="true" class="anchor"><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Reply Imagemap Message</h3>
+<h2 id="replyimagemapalttext-imagemap"><a href="#replyimagemapalttext-imagemap" aria-hidden="true" class="anchor"><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>replyImagemap(altText, imagemap)</code></h2>
+<p>Responds imagemap message to the receiver using reply token.</p>
+<img src="https://developers.line.me/media/messaging-api/messages/imagemap-dd854fa7.png" width="250px" />
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>altText</td>
+<td><code>String</code></td>
+<td>Alternative text.</td>
+</tr>
+<tr>
+<td>imagemap</td>
+<td><code>Object</code></td>
+<td>Object contains imagemap's parameters.</td>
+</tr>
+<tr>
+<td>imagemap.baseUrl</td>
+<td><code>String</code></td>
+<td>Base URL of image.</td>
+</tr>
+<tr>
+<td>imagemap.baseSize</td>
+<td><code>Object</code></td>
+<td>Base size object.</td>
+</tr>
+<tr>
+<td>imagemap.baseSize.width</td>
+<td><code>Number</code></td>
+<td>Width of base image.</td>
+</tr>
+<tr>
+<td>imagemap.baseSize.height</td>
+<td><code>Number</code></td>
+<td>Height of base image.</td>
+</tr>
+<tr>
+<td>imagemap.actions</td>
+<td><code>Array&#x3C;Object></code></td>
+<td>Action when tapped.</td>
+</tr>
+</tbody>
+</table>
+<p>Example:</p>
+<div class="gatsby-highlight">
+      <pre class="language-js"><code>context<span class="token punctuation">.</span><span class="token function">replyImagemap</span><span class="token punctuation">(</span><span class="token string">'this is an imagemap'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  baseUrl<span class="token punctuation">:</span> <span class="token string">'https://example.com/bot/images/rm001'</span><span class="token punctuation">,</span>
+  baseSize<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    width<span class="token punctuation">:</span> <span class="token number">1040</span><span class="token punctuation">,</span>
+    height<span class="token punctuation">:</span> <span class="token number">1040</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  actions<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      type<span class="token punctuation">:</span> <span class="token string">'uri'</span><span class="token punctuation">,</span>
+      linkUri<span class="token punctuation">:</span> <span class="token string">'https://example.com/'</span><span class="token punctuation">,</span>
+      area<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        x<span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+        y<span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+        width<span class="token punctuation">:</span> <span class="token number">520</span><span class="token punctuation">,</span>
+        height<span class="token punctuation">:</span> <span class="token number">1040</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      type<span class="token punctuation">:</span> <span class="token string">'message'</span><span class="token punctuation">,</span>
+      text<span class="token punctuation">:</span> <span class="token string">'hello'</span><span class="token punctuation">,</span>
+      area<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        x<span class="token punctuation">:</span> <span class="token number">520</span><span class="token punctuation">,</span>
+        y<span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+        width<span class="token punctuation">:</span> <span class="token number">520</span><span class="token punctuation">,</span>
+        height<span class="token punctuation">:</span> <span class="token number">1040</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+      </div>
+<br />
+<h3 id="reply-template-messages"><a href="#reply-template-messages" aria-hidden="true" class="anchor"><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Reply Template Messages</h3>
+<h2 id="replytemplatealttext-template"><a href="#replytemplatealttext-template" aria-hidden="true" class="anchor"><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>replyTemplate(altText, template)</code></h2>
+<p>Responds template message to the receiver using reply token.</p>
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>altText</td>
+<td><code>String</code></td>
+<td>Alternative text.</td>
+</tr>
+<tr>
+<td>template</td>
+<td><code>Object</code></td>
+<td>Object with the contents of the template.</td>
+</tr>
+</tbody>
+</table>
+<p>Example:</p>
+<div class="gatsby-highlight">
+      <pre class="language-js"><code>context<span class="token punctuation">.</span><span class="token function">replyTemplate</span><span class="token punctuation">(</span><span class="token string">'this is a template'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  type<span class="token punctuation">:</span> <span class="token string">'buttons'</span><span class="token punctuation">,</span>
+  thumbnailImageUrl<span class="token punctuation">:</span> <span class="token string">'https://example.com/bot/images/image.jpg'</span><span class="token punctuation">,</span>
+  title<span class="token punctuation">:</span> <span class="token string">'Menu'</span><span class="token punctuation">,</span>
+  text<span class="token punctuation">:</span> <span class="token string">'Please select'</span><span class="token punctuation">,</span>
+  actions<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      type<span class="token punctuation">:</span> <span class="token string">'postback'</span><span class="token punctuation">,</span>
+      label<span class="token punctuation">:</span> <span class="token string">'Buy'</span><span class="token punctuation">,</span>
+      data<span class="token punctuation">:</span> <span class="token string">'action=buy&amp;itemid=123'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      type<span class="token punctuation">:</span> <span class="token string">'postback'</span><span class="token punctuation">,</span>
+      label<span class="token punctuation">:</span> <span class="token string">'Add to cart'</span><span class="token punctuation">,</span>
+      data<span class="token punctuation">:</span> <span class="token string">'action=add&amp;itemid=123'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      type<span class="token punctuation">:</span> <span class="token string">'uri'</span><span class="token punctuation">,</span>
+      label<span class="token punctuation">:</span> <span class="token string">'View detail'</span><span class="token punctuation">,</span>
+      uri<span class="token punctuation">:</span> <span class="token string">'http://example.com/page/123'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+      </div>
+<br />
+<h2 id="replybuttontemplatealttext-buttontemplate"><a href="#replybuttontemplatealttext-buttontemplate" aria-hidden="true" class="anchor"><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>replyButtonTemplate(altText, buttonTemplate)</code></h2>
+<p>Responds button template message to the receiver using reply token.</p>
+<img src="https://developers.line.me/media/messaging-api/messages/buttons-86e14165.png" width="250px" />
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>altText</td>
+<td><code>String</code></td>
+<td>Alternative text.</td>
+</tr>
+<tr>
+<td>buttonTemplate</td>
+<td><code>Object</code></td>
+<td>Object contains buttonTemplate's parameters.</td>
+</tr>
+<tr>
+<td>buttonTemplate.thumbnailImageUrl</td>
+<td><code>String</code></td>
+<td>Image URL of buttonTemplate.</td>
+</tr>
+<tr>
+<td>buttonTemplate.imageAspectRatio</td>
+<td><code>String</code></td>
+<td>Aspect ratio of the image. Specify one of the following values: 
+<code>rectangle</code>
+, 
+<code>square</code></td>
+</tr>
+<tr>
+<td>buttonTemplate.imageSize</td>
+<td><code>String</code></td>
+<td>Size of the image. Specify one of the following values: 
+<code>cover</code>
+, 
+<code>contain</code></td>
+</tr>
+<tr>
+<td>buttonTemplate.imageBackgroundColor</td>
+<td><code>String</code></td>
+<td>Background color of image. Specify a RGB color value. The default value is 
+<code>#FFFFFF</code>
+ (white).</td>
+</tr>
+<tr>
+<td>buttonTemplate.title</td>
+<td><code>String</code></td>
+<td>Title of buttonTemplate.</td>
+</tr>
+<tr>
+<td>buttonTemplate.text</td>
+<td><code>String</code></td>
+<td>Message text of buttonTemplate.</td>
+</tr>
+<tr>
+<td>buttonTemplate.actions</td>
+<td><code>Array&#x3C;Object></code></td>
+<td>Action when tapped.</td>
+</tr>
+</tbody>
+</table>
+<p>Example:</p>
+<div class="gatsby-highlight">
+      <pre class="language-js"><code>context<span class="token punctuation">.</span><span class="token function">replyButtonTemplate</span><span class="token punctuation">(</span><span class="token string">'this is a template'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  thumbnailImageUrl<span class="token punctuation">:</span> <span class="token string">'https://example.com/bot/images/image.jpg'</span><span class="token punctuation">,</span>
+  title<span class="token punctuation">:</span> <span class="token string">'Menu'</span><span class="token punctuation">,</span>
+  text<span class="token punctuation">:</span> <span class="token string">'Please select'</span><span class="token punctuation">,</span>
+  actions<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      type<span class="token punctuation">:</span> <span class="token string">'postback'</span><span class="token punctuation">,</span>
+      label<span class="token punctuation">:</span> <span class="token string">'Buy'</span><span class="token punctuation">,</span>
+      data<span class="token punctuation">:</span> <span class="token string">'action=buy&amp;itemid=123'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      type<span class="token punctuation">:</span> <span class="token string">'postback'</span><span class="token punctuation">,</span>
+      label<span class="token punctuation">:</span> <span class="token string">'Add to cart'</span><span class="token punctuation">,</span>
+      data<span class="token punctuation">:</span> <span class="token string">'action=add&amp;itemid=123'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      type<span class="token punctuation">:</span> <span class="token string">'uri'</span><span class="token punctuation">,</span>
+      label<span class="token punctuation">:</span> <span class="token string">'View detail'</span><span class="token punctuation">,</span>
+      uri<span class="token punctuation">:</span> <span class="token string">'http://example.com/page/123'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+      </div>
+<br />
+<h2 id="replyconfirmtemplatealttext-confirmtemplate"><a href="#replyconfirmtemplatealttext-confirmtemplate" aria-hidden="true" class="anchor"><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>replyConfirmTemplate(altText, confirmTemplate)</code></h2>
+<p>Responds confirm template message to the receiver using reply token.</p>
+<img src="https://developers.line.me/media/messaging-api/messages/confirm-444aead5.png" width="250px" />
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>altText</td>
+<td><code>String</code></td>
+<td>Alternative text.</td>
+</tr>
+<tr>
+<td>confirmTemplate</td>
+<td><code>Object</code></td>
+<td>Object contains confirmTemplate's parameters.</td>
+</tr>
+<tr>
+<td>confirmTemplate.text</td>
+<td><code>String</code></td>
+<td>Message text of confirmTemplate.</td>
+</tr>
+<tr>
+<td>confirmTemplate.actions</td>
+<td><code>Array&#x3C;Object></code></td>
+<td>Action when tapped.</td>
+</tr>
+</tbody>
+</table>
+<p>Example:</p>
+<div class="gatsby-highlight">
+      <pre class="language-js"><code>context<span class="token punctuation">.</span><span class="token function">replyConfirmTemplate</span><span class="token punctuation">(</span><span class="token string">'this is a confirm template'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  text<span class="token punctuation">:</span> <span class="token string">'Are you sure?'</span><span class="token punctuation">,</span>
+  actions<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      type<span class="token punctuation">:</span> <span class="token string">'message'</span><span class="token punctuation">,</span>
+      label<span class="token punctuation">:</span> <span class="token string">'Yes'</span><span class="token punctuation">,</span>
+      text<span class="token punctuation">:</span> <span class="token string">'yes'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      type<span class="token punctuation">:</span> <span class="token string">'message'</span><span class="token punctuation">,</span>
+      label<span class="token punctuation">:</span> <span class="token string">'No'</span><span class="token punctuation">,</span>
+      text<span class="token punctuation">:</span> <span class="token string">'no'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+      </div>
+<br />
+<h2 id="replycarouseltemplatealttext-carouselitems-options"><a href="#replycarouseltemplatealttext-carouselitems-options" aria-hidden="true" class="anchor"><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>replyCarouselTemplate(altText, carouselItems, options)</code></h2>
+<p>Responds carousel template message to the receiver using reply token.</p>
+<img src="https://developers.line.me/media/messaging-api/messages/carousel-c59baef6.png" width="250px" />
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>altText</td>
+<td><code>String</code></td>
+<td>Alternative text.</td>
+</tr>
+<tr>
+<td>carouselItems</td>
+<td><code>Array&#x3C;Object></code></td>
+<td>Array of columns which contains object for carousel.</td>
+</tr>
+<tr>
+<td>options</td>
+<td><code>Object</code></td>
+<td>Object contains options.</td>
+</tr>
+<tr>
+<td>options.imageAspectRatio</td>
+<td><code>String</code></td>
+<td>Aspect ratio of the image. Specify one of the following values: 
+<code>rectangle</code>
+, 
+<code>square</code></td>
+</tr>
+<tr>
+<td>options.imageSize</td>
+<td><code>String</code></td>
+<td>Size of the image. Specify one of the following values: 
+<code>cover</code>
+, 
+<code>contain</code></td>
+</tr>
+</tbody>
+</table>
+<p>Example:</p>
+<div class="gatsby-highlight">
+      <pre class="language-js"><code>context<span class="token punctuation">.</span><span class="token function">replyCarouselTemplate</span><span class="token punctuation">(</span><span class="token string">'this is a carousel template'</span><span class="token punctuation">,</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    thumbnailImageUrl<span class="token punctuation">:</span> <span class="token string">'https://example.com/bot/images/item1.jpg'</span><span class="token punctuation">,</span>
+    title<span class="token punctuation">:</span> <span class="token string">'this is menu'</span><span class="token punctuation">,</span>
+    text<span class="token punctuation">:</span> <span class="token string">'description'</span><span class="token punctuation">,</span>
+    actions<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        type<span class="token punctuation">:</span> <span class="token string">'postback'</span><span class="token punctuation">,</span>
+        label<span class="token punctuation">:</span> <span class="token string">'Buy'</span><span class="token punctuation">,</span>
+        data<span class="token punctuation">:</span> <span class="token string">'action=buy&amp;itemid=111'</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        type<span class="token punctuation">:</span> <span class="token string">'postback'</span><span class="token punctuation">,</span>
+        label<span class="token punctuation">:</span> <span class="token string">'Add to cart'</span><span class="token punctuation">,</span>
+        data<span class="token punctuation">:</span> <span class="token string">'action=add&amp;itemid=111'</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        type<span class="token punctuation">:</span> <span class="token string">'uri'</span><span class="token punctuation">,</span>
+        label<span class="token punctuation">:</span> <span class="token string">'View detail'</span><span class="token punctuation">,</span>
+        uri<span class="token punctuation">:</span> <span class="token string">'http://example.com/page/111'</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    thumbnailImageUrl<span class="token punctuation">:</span> <span class="token string">'https://example.com/bot/images/item2.jpg'</span><span class="token punctuation">,</span>
+    title<span class="token punctuation">:</span> <span class="token string">'this is menu'</span><span class="token punctuation">,</span>
+    text<span class="token punctuation">:</span> <span class="token string">'description'</span><span class="token punctuation">,</span>
+    actions<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        type<span class="token punctuation">:</span> <span class="token string">'postback'</span><span class="token punctuation">,</span>
+        label<span class="token punctuation">:</span> <span class="token string">'Buy'</span><span class="token punctuation">,</span>
+        data<span class="token punctuation">:</span> <span class="token string">'action=buy&amp;itemid=222'</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        type<span class="token punctuation">:</span> <span class="token string">'postback'</span><span class="token punctuation">,</span>
+        label<span class="token punctuation">:</span> <span class="token string">'Add to cart'</span><span class="token punctuation">,</span>
+        data<span class="token punctuation">:</span> <span class="token string">'action=add&amp;itemid=222'</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        type<span class="token punctuation">:</span> <span class="token string">'uri'</span><span class="token punctuation">,</span>
+        label<span class="token punctuation">:</span> <span class="token string">'View detail'</span><span class="token punctuation">,</span>
+        uri<span class="token punctuation">:</span> <span class="token string">'http://example.com/page/222'</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+      </div>
+<br />
+<h2 id="replyimagecarouseltemplatealttext-carouselitems"><a href="#replyimagecarouseltemplatealttext-carouselitems" aria-hidden="true" class="anchor"><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>replyImageCarouselTemplate(altText, carouselItems)</code></h2>
+<p>Responds image carousel template message to the receiver using reply token.</p>
+<img src="https://developers.line.me/media/messaging-api/messages/image-carousel-301701f6.png" width="250px" />
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>altText</td>
+<td><code>String</code></td>
+<td>Alternative text.</td>
+</tr>
+<tr>
+<td>carouselItems</td>
+<td><code>Array&#x3C;Object></code></td>
+<td>Array of columns which contains object for image carousel.</td>
+</tr>
+</tbody>
+</table>
+<p>Example:</p>
+<div class="gatsby-highlight">
+      <pre class="language-js"><code>context<span class="token punctuation">.</span><span class="token function">replyImageCarouselTemplate</span><span class="token punctuation">(</span><span class="token string">'this is an image carousel template'</span><span class="token punctuation">,</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    imageUrl<span class="token punctuation">:</span> <span class="token string">'https://example.com/bot/images/item1.jpg'</span><span class="token punctuation">,</span>
+    action<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      type<span class="token punctuation">:</span> <span class="token string">'postback'</span><span class="token punctuation">,</span>
+      label<span class="token punctuation">:</span> <span class="token string">'Buy'</span><span class="token punctuation">,</span>
+      data<span class="token punctuation">:</span> <span class="token string">'action=buy&amp;itemid=111'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    imageUrl<span class="token punctuation">:</span> <span class="token string">'https://example.com/bot/images/item2.jpg'</span><span class="token punctuation">,</span>
+    action<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      type<span class="token punctuation">:</span> <span class="token string">'message'</span><span class="token punctuation">,</span>
+      label<span class="token punctuation">:</span> <span class="token string">'Yes'</span><span class="token punctuation">,</span>
+      text<span class="token punctuation">:</span> <span class="token string">'yes'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    imageUrl<span class="token punctuation">:</span> <span class="token string">'https://example.com/bot/images/item3.jpg'</span><span class="token punctuation">,</span>
+    action<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      type<span class="token punctuation">:</span> <span class="token string">'uri'</span><span class="token punctuation">,</span>
+      label<span class="token punctuation">:</span> <span class="token string">'View detail'</span><span class="token punctuation">,</span>
+      uri<span class="token punctuation">:</span> <span class="token string">'http://example.com/page/222'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+      </div>
+<br />
+<a id="push-api" />
+<h3 id="push-api---official-docs"><a href="#push-api---official-docs" aria-hidden="true" class="anchor"><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Push API - <a href="https://devdocs.line.me/en/#push-message">Official Docs</a></h3>
+<p>Sends messages to the user, group, or room at any time.</p>
+<h2 id="pushmessages"><a href="#pushmessages" aria-hidden="true" class="anchor"><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>push(messages)</code></h2>
+<p>Sends messages to the receiver using ID.</p>
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>messages</td>
+<td><code>Array&#x3C;Object></code></td>
+<td>Array of objects which contains the contents of the message to be sent.</td>
+</tr>
+</tbody>
+</table>
+<p>Example:</p>
+<div class="gatsby-highlight">
+      <pre class="language-js"><code>context<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    type<span class="token punctuation">:</span> <span class="token string">'text'</span><span class="token punctuation">,</span>
+    text<span class="token punctuation">:</span> <span class="token string">'Hello!'</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+      </div>
+<br />
+<h2 id="pushtexttext"><a href="#pushtexttext" aria-hidden="true" class="anchor"><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>pushText(text)</code></h2>
+<p>Alias: <code>sendText</code>.</p>
+<p>Sends text message to the receiver using ID.</p>
+<img src="https://developers.line.me/media/messaging-api/messages/text-bf530b30.png" width="250px" />
+<p>You can include LINE original emoji in text messages using character codes. For a list of LINE emoji that can be sent in LINE chats, see the <a href="https://developers.line.me/media/messaging-api/emoji-list.pdf">emoji list</a>.</p>
+<img src="https://developers.line.me/media/messaging-api/messages/emoji-b3285d27.png" width="250px" />
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>text</td>
+<td><code>String</code></td>
+<td>Text of the message to be sent.</td>
+</tr>
+</tbody>
+</table>
+<p>Example:</p>
+<div class="gatsby-highlight">
+      <pre class="language-js"><code>context<span class="token punctuation">.</span><span class="token function">pushText</span><span class="token punctuation">(</span><span class="token string">'Hello!'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+      </div>
+<br />
+<h2 id="pushimageimageurl-previewimageurl"><a href="#pushimageimageurl-previewimageurl" aria-hidden="true" class="anchor"><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>pushImage(imageUrl, previewImageUrl)</code></h2>
+<p>Alias: <code>sendImage</code>.</p>
+<p>Sends image message to the receiver using ID.</p>
+<p><img src="https://developers.line.me/media/messaging-api/messages/image-167efb33.png" width="250px" /><img src="https://developers.line.me/media/messaging-api/messages/image-full-04fbba55.png" width="250px" /></p>
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>imageUrl</td>
+<td><code>String</code></td>
+<td>Image URL.</td>
+</tr>
+<tr>
+<td>previewImageUrl</td>
+<td><code>String</code></td>
+<td>Preview image URL.</td>
+</tr>
+</tbody>
+</table>
+<p>Example:</p>
+<div class="gatsby-highlight">
+      <pre class="language-js"><code>context<span class="token punctuation">.</span><span class="token function">pushImage</span><span class="token punctuation">(</span>
+  <span class="token string">'https://example.com/original.jpg'</span><span class="token punctuation">,</span>
+  <span class="token string">'https://example.com/preview.jpg'</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+      </div>
+<br />
+<h2 id="pushvideovideourl-previewimageurl"><a href="#pushvideovideourl-previewimageurl" aria-hidden="true" class="anchor"><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>pushVideo(videoUrl, previewImageUrl)</code></h2>
+<p>Alias: <code>sendVideo</code>.</p>
+<p>Sends video message to the receiver using ID.</p>
+<img src="https://developers.line.me/media/messaging-api/messages/video-a1bc08a4.png" width="250px" />
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>videoUrl</td>
+<td><code>String</code></td>
+<td>URL of video file.</td>
+</tr>
+<tr>
+<td>previewImageUrl</td>
+<td><code>String</code></td>
+<td>URL of preview image.</td>
+</tr>
+</tbody>
+</table>
+<p>Example:</p>
+<div class="gatsby-highlight">
+      <pre class="language-js"><code>context<span class="token punctuation">.</span><span class="token function">pushVideo</span><span class="token punctuation">(</span>
+  <span class="token string">'https://example.com/original.mp4'</span><span class="token punctuation">,</span>
+  <span class="token string">'https://example.com/preview.jpg'</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+      </div>
+<br />
+<h2 id="pushaudioaudiourl-duration"><a href="#pushaudioaudiourl-duration" aria-hidden="true" class="anchor"><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>pushAudio(audioUrl, duration)</code></h2>
+<p>Alias: <code>sendAudio</code>.</p>
+<p>Sends audio message to the receiver using ID.</p>
+<img src="https://developers.line.me/media/messaging-api/messages/audio-6290d91b.png" width="250px" />
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>audioUrl</td>
+<td><code>String</code></td>
+<td>URL of audio file.</td>
+</tr>
+<tr>
+<td>duration</td>
+<td><code>Number</code></td>
+<td>Length of audio file.</td>
+</tr>
+</tbody>
+</table>
+<p>Example:</p>
+<div class="gatsby-highlight">
+      <pre class="language-js"><code>context<span class="token punctuation">.</span><span class="token function">pushAudio</span><span class="token punctuation">(</span><span class="token string">'https://example.com/original.m4a'</span><span class="token punctuation">,</span> <span class="token number">240000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+      </div>
+<br />
+<h2 id="pushlocationlocation"><a href="#pushlocationlocation" aria-hidden="true" class="anchor"><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>pushLocation(location)</code></h2>
+<p>Alias: <code>sendLocation</code>.</p>
+<p>Sends location message to the receiver using ID.</p>
+<img src="https://developers.line.me/media/messaging-api/messages/location-8f9b6b79.png" width="250px" />
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>location</td>
+<td><code>Object</code></td>
+<td>Object contains location's parameters.</td>
+</tr>
+<tr>
+<td>location.title</td>
+<td><code>String</code></td>
+<td>Title of the location.</td>
+</tr>
+<tr>
+<td>location.address</td>
+<td><code>String</code></td>
+<td>Address of the location.</td>
+</tr>
+<tr>
+<td>location.latitude</td>
+<td><code>Number</code></td>
+<td>Latitude of the location.</td>
+</tr>
+<tr>
+<td>location.longitude</td>
+<td><code>Number</code></td>
+<td>Longitude of the location.</td>
+</tr>
+</tbody>
+</table>
+<p>Example:</p>
+<div class="gatsby-highlight">
+      <pre class="language-js"><code>context<span class="token punctuation">.</span><span class="token function">pushLocation</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  title<span class="token punctuation">:</span> <span class="token string">'my location'</span><span class="token punctuation">,</span>
+  address<span class="token punctuation">:</span> <span class="token string">'〒150-0002 東京都渋谷区渋谷２丁目２１−１'</span><span class="token punctuation">,</span>
+  latitude<span class="token punctuation">:</span> <span class="token number">35.65910807942215</span><span class="token punctuation">,</span>
+  longitude<span class="token punctuation">:</span> <span class="token number">139.70372892916203</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+      </div>
+<br />
+<h2 id="pushstickerpackageid-stickerid"><a href="#pushstickerpackageid-stickerid" aria-hidden="true" class="anchor"><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>pushSticker(packageId, stickerId)</code></h2>
+<p>Alias: <code>sendSticker</code>.</p>
+<p>Sends sticker message to the receiver using ID.
+For a list of stickers that can be sent with the Messaging API, see the <a href="https://developers.line.me/media/messaging-api/messages/sticker_list.pdf">sticker list</a>.</p>
+<img src="https://developers.line.me/media/messaging-api/messages/sticker-cb1a6a3a.png" width="250px" />
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>packageId</td>
+<td><code>String</code></td>
+<td>Package ID.</td>
+</tr>
+<tr>
+<td>stickerId</td>
+<td><code>String</code></td>
+<td>Sticker ID.</td>
+</tr>
+</tbody>
+</table>
+<p>Example:</p>
+<div class="gatsby-highlight">
+      <pre class="language-js"><code>context<span class="token punctuation">.</span><span class="token function">pushSticker</span><span class="token punctuation">(</span><span class="token string">'1'</span><span class="token punctuation">,</span> <span class="token string">'1'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+      </div>
+<br />
+<h3 id="push-imagemap-message"><a href="#push-imagemap-message" aria-hidden="true" class="anchor"><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Push Imagemap Message</h3>
+<h2 id="pushimagemapalttext-imagemap"><a href="#pushimagemapalttext-imagemap" aria-hidden="true" class="anchor"><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>pushImagemap(altText, imagemap)</code></h2>
+<p>Alias: <code>sendImagemap</code>.</p>
+<p>Sends imagemap message to the receiver using ID.</p>
+<img src="https://developers.line.me/media/messaging-api/messages/imagemap-dd854fa7.png" width="250px" />
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>altText</td>
+<td><code>String</code></td>
+<td>Alternative text.</td>
+</tr>
+<tr>
+<td>imagemap</td>
+<td><code>Object</code></td>
+<td>Object contains imagemap's parameters.</td>
+</tr>
+<tr>
+<td>imagemap.baseUrl</td>
+<td><code>String</code></td>
+<td>Base URL of image.</td>
+</tr>
+<tr>
+<td>imagemap.baseSize</td>
+<td><code>Object</code></td>
+<td>Base size object.</td>
+</tr>
+<tr>
+<td>imagemap.baseSize.width</td>
+<td><code>Number</code></td>
+<td>Width of base image.</td>
+</tr>
+<tr>
+<td>imagemap.baseSize.height</td>
+<td><code>Number</code></td>
+<td>Height of base image.</td>
+</tr>
+<tr>
+<td>imagemap.actions</td>
+<td><code>Array&#x3C;Object></code></td>
+<td>Action when tapped.</td>
+</tr>
+</tbody>
+</table>
+<p>Example:</p>
+<div class="gatsby-highlight">
+      <pre class="language-js"><code>context<span class="token punctuation">.</span><span class="token function">pushImagemap</span><span class="token punctuation">(</span><span class="token string">'this is an imagemap'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  baseUrl<span class="token punctuation">:</span> <span class="token string">'https://example.com/bot/images/rm001'</span><span class="token punctuation">,</span>
+  baseSize<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+    width<span class="token punctuation">:</span> <span class="token number">1040</span><span class="token punctuation">,</span>
+    height<span class="token punctuation">:</span> <span class="token number">1040</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  actions<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      type<span class="token punctuation">:</span> <span class="token string">'uri'</span><span class="token punctuation">,</span>
+      linkUri<span class="token punctuation">:</span> <span class="token string">'https://example.com/'</span><span class="token punctuation">,</span>
+      area<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        x<span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+        y<span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+        width<span class="token punctuation">:</span> <span class="token number">520</span><span class="token punctuation">,</span>
+        height<span class="token punctuation">:</span> <span class="token number">1040</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      type<span class="token punctuation">:</span> <span class="token string">'message'</span><span class="token punctuation">,</span>
+      text<span class="token punctuation">:</span> <span class="token string">'hello'</span><span class="token punctuation">,</span>
+      area<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        x<span class="token punctuation">:</span> <span class="token number">520</span><span class="token punctuation">,</span>
+        y<span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span>
+        width<span class="token punctuation">:</span> <span class="token number">520</span><span class="token punctuation">,</span>
+        height<span class="token punctuation">:</span> <span class="token number">1040</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+      </div>
+<br />
+<h3 id="push-template-messages"><a href="#push-template-messages" aria-hidden="true" class="anchor"><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Push Template Messages</h3>
+<h2 id="pushtemplatealttext-template"><a href="#pushtemplatealttext-template" aria-hidden="true" class="anchor"><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>pushTemplate(altText, template)</code></h2>
+<p>Alias: <code>sendTemplate</code>.</p>
+<p>Sends template message to the receiver using ID.</p>
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>altText</td>
+<td><code>String</code></td>
+<td>Alternative text.</td>
+</tr>
+<tr>
+<td>template</td>
+<td><code>Object</code></td>
+<td>Object with the contents of the template.</td>
+</tr>
+</tbody>
+</table>
+<p>Example:</p>
+<div class="gatsby-highlight">
+      <pre class="language-js"><code>context<span class="token punctuation">.</span><span class="token function">pushTemplate</span><span class="token punctuation">(</span><span class="token string">'this is a template'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  type<span class="token punctuation">:</span> <span class="token string">'buttons'</span><span class="token punctuation">,</span>
+  thumbnailImageUrl<span class="token punctuation">:</span> <span class="token string">'https://example.com/bot/images/image.jpg'</span><span class="token punctuation">,</span>
+  title<span class="token punctuation">:</span> <span class="token string">'Menu'</span><span class="token punctuation">,</span>
+  text<span class="token punctuation">:</span> <span class="token string">'Please select'</span><span class="token punctuation">,</span>
+  actions<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      type<span class="token punctuation">:</span> <span class="token string">'postback'</span><span class="token punctuation">,</span>
+      label<span class="token punctuation">:</span> <span class="token string">'Buy'</span><span class="token punctuation">,</span>
+      data<span class="token punctuation">:</span> <span class="token string">'action=buy&amp;itemid=123'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      type<span class="token punctuation">:</span> <span class="token string">'postback'</span><span class="token punctuation">,</span>
+      label<span class="token punctuation">:</span> <span class="token string">'Add to cart'</span><span class="token punctuation">,</span>
+      data<span class="token punctuation">:</span> <span class="token string">'action=add&amp;itemid=123'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      type<span class="token punctuation">:</span> <span class="token string">'uri'</span><span class="token punctuation">,</span>
+      label<span class="token punctuation">:</span> <span class="token string">'View detail'</span><span class="token punctuation">,</span>
+      uri<span class="token punctuation">:</span> <span class="token string">'http://example.com/page/123'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+      </div>
+<br />
+<h2 id="pushbuttontemplatealttext-buttontemplate"><a href="#pushbuttontemplatealttext-buttontemplate" aria-hidden="true" class="anchor"><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>pushButtonTemplate(altText, buttonTemplate)</code></h2>
+<p>Alias: <code>sendButtonTemplate</code>.</p>
+<p>Sends button template message to the receiver using ID.</p>
+<img src="https://developers.line.me/media/messaging-api/messages/buttons-86e14165.png" width="250px" />
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>altText</td>
+<td><code>String</code></td>
+<td>Alternative text.</td>
+</tr>
+<tr>
+<td>buttonTemplate</td>
+<td><code>Object</code></td>
+<td>Object contains buttonTemplate's parameters.</td>
+</tr>
+<tr>
+<td>buttonTemplate.thumbnailImageUrl</td>
+<td><code>String</code></td>
+<td>Image URL of buttonTemplate.</td>
+</tr>
+<tr>
+<td>buttonTemplate.imageAspectRatio</td>
+<td><code>String</code></td>
+<td>Aspect ratio of the image. Specify one of the following values: 
+<code>rectangle</code>
+, 
+<code>square</code></td>
+</tr>
+<tr>
+<td>buttonTemplate.imageSize</td>
+<td><code>String</code></td>
+<td>Size of the image. Specify one of the following values: 
+<code>cover</code>
+, 
+<code>contain</code></td>
+</tr>
+<tr>
+<td>buttonTemplate.imageBackgroundColor</td>
+<td><code>String</code></td>
+<td>Background color of image. Specify a RGB color value. The default value is 
+<code>#FFFFFF</code>
+ (white).</td>
+</tr>
+<tr>
+<td>buttonTemplate.title</td>
+<td><code>String</code></td>
+<td>Title of buttonTemplate.</td>
+</tr>
+<tr>
+<td>buttonTemplate.text</td>
+<td><code>String</code></td>
+<td>Message text of buttonTemplate.</td>
+</tr>
+<tr>
+<td>buttonTemplate.actions</td>
+<td><code>Array&#x3C;Object></code></td>
+<td>Action when tapped.</td>
+</tr>
+</tbody>
+</table>
+<p>Example:</p>
+<div class="gatsby-highlight">
+      <pre class="language-js"><code>context<span class="token punctuation">.</span><span class="token function">pushButtonTemplate</span><span class="token punctuation">(</span><span class="token string">'this is a template'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  thumbnailImageUrl<span class="token punctuation">:</span> <span class="token string">'https://example.com/bot/images/image.jpg'</span><span class="token punctuation">,</span>
+  title<span class="token punctuation">:</span> <span class="token string">'Menu'</span><span class="token punctuation">,</span>
+  text<span class="token punctuation">:</span> <span class="token string">'Please select'</span><span class="token punctuation">,</span>
+  actions<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      type<span class="token punctuation">:</span> <span class="token string">'postback'</span><span class="token punctuation">,</span>
+      label<span class="token punctuation">:</span> <span class="token string">'Buy'</span><span class="token punctuation">,</span>
+      data<span class="token punctuation">:</span> <span class="token string">'action=buy&amp;itemid=123'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      type<span class="token punctuation">:</span> <span class="token string">'postback'</span><span class="token punctuation">,</span>
+      label<span class="token punctuation">:</span> <span class="token string">'Add to cart'</span><span class="token punctuation">,</span>
+      data<span class="token punctuation">:</span> <span class="token string">'action=add&amp;itemid=123'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      type<span class="token punctuation">:</span> <span class="token string">'uri'</span><span class="token punctuation">,</span>
+      label<span class="token punctuation">:</span> <span class="token string">'View detail'</span><span class="token punctuation">,</span>
+      uri<span class="token punctuation">:</span> <span class="token string">'http://example.com/page/123'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+      </div>
+<br />
+<h2 id="pushconfirmtemplatealttext-confirmtemplate"><a href="#pushconfirmtemplatealttext-confirmtemplate" aria-hidden="true" class="anchor"><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>pushConfirmTemplate(altText, confirmTemplate)</code></h2>
+<p>Alias: <code>sendConfirmTemplate</code>.</p>
+<p>Sends confirm template message to the receiver using ID.</p>
+<img src="https://developers.line.me/media/messaging-api/messages/confirm-444aead5.png" width="250px" />
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>altText</td>
+<td><code>String</code></td>
+<td>Alternative text.</td>
+</tr>
+<tr>
+<td>confirmTemplate</td>
+<td><code>Object</code></td>
+<td>Object contains confirmTemplate's parameters.</td>
+</tr>
+<tr>
+<td>confirmTemplate.text</td>
+<td><code>String</code></td>
+<td>Message text of confirmTemplate.</td>
+</tr>
+<tr>
+<td>confirmTemplate.actions</td>
+<td><code>Array&#x3C;Object></code></td>
+<td>Action when tapped.</td>
+</tr>
+</tbody>
+</table>
+<p>Example:</p>
+<div class="gatsby-highlight">
+      <pre class="language-js"><code>context<span class="token punctuation">.</span><span class="token function">pushConfirmTemplate</span><span class="token punctuation">(</span><span class="token string">'this is a confirm template'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  text<span class="token punctuation">:</span> <span class="token string">'Are you sure?'</span><span class="token punctuation">,</span>
+  actions<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+    <span class="token punctuation">{</span>
+      type<span class="token punctuation">:</span> <span class="token string">'message'</span><span class="token punctuation">,</span>
+      label<span class="token punctuation">:</span> <span class="token string">'Yes'</span><span class="token punctuation">,</span>
+      text<span class="token punctuation">:</span> <span class="token string">'yes'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">{</span>
+      type<span class="token punctuation">:</span> <span class="token string">'message'</span><span class="token punctuation">,</span>
+      label<span class="token punctuation">:</span> <span class="token string">'No'</span><span class="token punctuation">,</span>
+      text<span class="token punctuation">:</span> <span class="token string">'no'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">]</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+      </div>
+<br />
+<h2 id="pushcarouseltemplatealttext-carouselitems-options"><a href="#pushcarouseltemplatealttext-carouselitems-options" aria-hidden="true" class="anchor"><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>pushCarouselTemplate(altText, carouselItems, options)</code></h2>
+<p>Alias: <code>sendCarouselTemplate</code>.</p>
+<p>Sends carousel template message to the receiver using ID.</p>
+<img src="https://developers.line.me/media/messaging-api/messages/carousel-c59baef6.png" width="250px" />
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>altText</td>
+<td><code>String</code></td>
+<td>Alternative text.</td>
+</tr>
+<tr>
+<td>carouselItems</td>
+<td><code>Array&#x3C;Object></code></td>
+<td>Array of columns which contains object for carousel.</td>
+</tr>
+<tr>
+<td>options</td>
+<td><code>Object</code></td>
+<td>Object contains options.</td>
+</tr>
+<tr>
+<td>options.imageAspectRatio</td>
+<td><code>String</code></td>
+<td>Aspect ratio of the image. Specify one of the following values: 
+<code>rectangle</code>
+, 
+<code>square</code></td>
+</tr>
+<tr>
+<td>options.imageSize</td>
+<td><code>String</code></td>
+<td>Size of the image. Specify one of the following values: 
+<code>cover</code>
+, 
+<code>contain</code></td>
+</tr>
+</tbody>
+</table>
+<p>Example:</p>
+<div class="gatsby-highlight">
+      <pre class="language-js"><code>context<span class="token punctuation">.</span><span class="token function">pushCarouselTemplate</span><span class="token punctuation">(</span><span class="token string">'this is a carousel template'</span><span class="token punctuation">,</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    thumbnailImageUrl<span class="token punctuation">:</span> <span class="token string">'https://example.com/bot/images/item1.jpg'</span><span class="token punctuation">,</span>
+    title<span class="token punctuation">:</span> <span class="token string">'this is menu'</span><span class="token punctuation">,</span>
+    text<span class="token punctuation">:</span> <span class="token string">'description'</span><span class="token punctuation">,</span>
+    actions<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        type<span class="token punctuation">:</span> <span class="token string">'postback'</span><span class="token punctuation">,</span>
+        label<span class="token punctuation">:</span> <span class="token string">'Buy'</span><span class="token punctuation">,</span>
+        data<span class="token punctuation">:</span> <span class="token string">'action=buy&amp;itemid=111'</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        type<span class="token punctuation">:</span> <span class="token string">'postback'</span><span class="token punctuation">,</span>
+        label<span class="token punctuation">:</span> <span class="token string">'Add to cart'</span><span class="token punctuation">,</span>
+        data<span class="token punctuation">:</span> <span class="token string">'action=add&amp;itemid=111'</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        type<span class="token punctuation">:</span> <span class="token string">'uri'</span><span class="token punctuation">,</span>
+        label<span class="token punctuation">:</span> <span class="token string">'View detail'</span><span class="token punctuation">,</span>
+        uri<span class="token punctuation">:</span> <span class="token string">'http://example.com/page/111'</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    thumbnailImageUrl<span class="token punctuation">:</span> <span class="token string">'https://example.com/bot/images/item2.jpg'</span><span class="token punctuation">,</span>
+    title<span class="token punctuation">:</span> <span class="token string">'this is menu'</span><span class="token punctuation">,</span>
+    text<span class="token punctuation">:</span> <span class="token string">'description'</span><span class="token punctuation">,</span>
+    actions<span class="token punctuation">:</span> <span class="token punctuation">[</span>
+      <span class="token punctuation">{</span>
+        type<span class="token punctuation">:</span> <span class="token string">'postback'</span><span class="token punctuation">,</span>
+        label<span class="token punctuation">:</span> <span class="token string">'Buy'</span><span class="token punctuation">,</span>
+        data<span class="token punctuation">:</span> <span class="token string">'action=buy&amp;itemid=222'</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        type<span class="token punctuation">:</span> <span class="token string">'postback'</span><span class="token punctuation">,</span>
+        label<span class="token punctuation">:</span> <span class="token string">'Add to cart'</span><span class="token punctuation">,</span>
+        data<span class="token punctuation">:</span> <span class="token string">'action=add&amp;itemid=222'</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token punctuation">{</span>
+        type<span class="token punctuation">:</span> <span class="token string">'uri'</span><span class="token punctuation">,</span>
+        label<span class="token punctuation">:</span> <span class="token string">'View detail'</span><span class="token punctuation">,</span>
+        uri<span class="token punctuation">:</span> <span class="token string">'http://example.com/page/222'</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+      </div>
+<br />
+<h2 id="pushimagecarouseltemplatealttext-carouselitems"><a href="#pushimagecarouseltemplatealttext-carouselitems" aria-hidden="true" class="anchor"><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>pushImageCarouselTemplate(altText, carouselItems)</code></h2>
+<p>Alias: <code>sendImageCarouselTemplate</code>.</p>
+<p>Sends image carousel template message to the receiver using ID.</p>
+<img src="https://developers.line.me/media/messaging-api/messages/image-carousel-301701f6.png" width="250px" />
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>altText</td>
+<td><code>String</code></td>
+<td>Alternative text.</td>
+</tr>
+<tr>
+<td>carouselItems</td>
+<td><code>Array&#x3C;Object></code></td>
+<td>Array of columns which contains object for image carousel.</td>
+</tr>
+</tbody>
+</table>
+<p>Example:</p>
+<div class="gatsby-highlight">
+      <pre class="language-js"><code>context<span class="token punctuation">.</span><span class="token function">pushImageCarouselTemplate</span><span class="token punctuation">(</span><span class="token string">'this is an image carousel template'</span><span class="token punctuation">,</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    imageUrl<span class="token punctuation">:</span> <span class="token string">'https://example.com/bot/images/item1.jpg'</span><span class="token punctuation">,</span>
+    action<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      type<span class="token punctuation">:</span> <span class="token string">'postback'</span><span class="token punctuation">,</span>
+      label<span class="token punctuation">:</span> <span class="token string">'Buy'</span><span class="token punctuation">,</span>
+      data<span class="token punctuation">:</span> <span class="token string">'action=buy&amp;itemid=111'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    imageUrl<span class="token punctuation">:</span> <span class="token string">'https://example.com/bot/images/item2.jpg'</span><span class="token punctuation">,</span>
+    action<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      type<span class="token punctuation">:</span> <span class="token string">'message'</span><span class="token punctuation">,</span>
+      label<span class="token punctuation">:</span> <span class="token string">'Yes'</span><span class="token punctuation">,</span>
+      text<span class="token punctuation">:</span> <span class="token string">'yes'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    imageUrl<span class="token punctuation">:</span> <span class="token string">'https://example.com/bot/images/item3.jpg'</span><span class="token punctuation">,</span>
+    action<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      type<span class="token punctuation">:</span> <span class="token string">'uri'</span><span class="token punctuation">,</span>
+      label<span class="token punctuation">:</span> <span class="token string">'View detail'</span><span class="token punctuation">,</span>
+      uri<span class="token punctuation">:</span> <span class="token string">'http://example.com/page/222'</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+      </div>
+<br />
+<a id="profile-api" />
+<h3 id="profile-api---official-docs"><a href="#profile-api---official-docs" aria-hidden="true" class="anchor"><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Profile API - <a href="https://devdocs.line.me/en/#bot-api-get-profile">Official Docs</a></h3>
+<p>Coming soon.</p>
+<!--
+
+## `getUserProfile()`
+
+Gets user profile information.
+
+Example:
+
+```js
+context.getUserProfile().then(profile => {
+  console.log(profile);
+  // {
+  //   displayName: 'LINE taro',
+  //   userId: USER_ID,
+  //   pictureUrl: 'http://obs.line-apps.com/...',
+  //   statusMessage: 'Hello, LINE!',
+  // }
+});
+```
+
+-->
+<br />
+<a id="grouproom-member-profile-api" />
+<h3 id="grouproom-member-profile-api---official-docs"><a href="#grouproom-member-profile-api---official-docs" aria-hidden="true" class="anchor"><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Group/Room Member Profile API - <a href="https://devdocs.line.me/en/#get-group-room-member-profile">Official Docs</a></h3>
+<p>Coming soon.</p>
+<!--
+
+## `getMemberProfile(userId)`
+
+Gets the user profile of a member of the group/room that the bot is in. This includes the user IDs of users who has not added the bot as a friend or has blocked the bot.
+
+| Param  | Type     | Description     |
+| ------ | -------- | --------------- |
+| userId | `String` | ID of the user. |
+
+Example:
+
+```js
+context.getMemberProfile(USER_ID).then(member => {
+  console.log(member);
+  // {
+  //   "displayName":"LINE taro",
+  //   "userId":"Uxxxxxxxxxxxxxx...",
+  //   "pictureUrl":"http://obs.line-apps.com/..."
+  // }
+});
+```
+
+-->
+<br />
+<a id="grouproom-member-ids-api" />
+<h3 id="grouproom-member-ids-api---official-docs"><a href="#grouproom-member-ids-api---official-docs" aria-hidden="true" class="anchor"><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Group/Room Member IDs API - <a href="https://devdocs.line.me/en/#get-group-room-member-ids">Official Docs</a></h3>
+<p>Coming soon.</p>
+<!--
+
+## `getMemberIds(start)`
+
+Gets the ID of the users of the members of the group/room that the bot is in. This includes the user IDs of users who have not added the bot as a friend or has blocked the bot.  
+This feature is only available for LINE@ Approved accounts or official accounts.
+
+| Param | Type     | Description          |
+| ----- | -------- | -------------------- |
+| start | `String` | `continuationToken`. |
+
+Example:
+
+```js
+context.getMemberIds(CURSOR).then(res => {
+  console.log(res);
+  // {
+  //   memberIds: [
+  //     'Uxxxxxxxxxxxxxx...',
+  //     'Uxxxxxxxxxxxxxx...',
+  //     'Uxxxxxxxxxxxxxx...'
+  //   ],
+  //   next: 'jxEWCEEP...'
+  // }
+});
+```
+
+<br />
+
+## `getAllMemberIds()`
+
+Recursively gets the ID of the users of the members of the group/room that the bot is in using cursors.  
+This feature is only available for LINE@ Approved accounts or official accounts.
+
+Example:
+
+```js
+context.getAllMemberIds().then(ids => {
+  console.log(ids);
+  // [
+  //   'Uxxxxxxxxxxxxxx..1',
+  //   'Uxxxxxxxxxxxxxx..2',
+  //   'Uxxxxxxxxxxxxxx..3',
+  //   'Uxxxxxxxxxxxxxx..4',
+  //   'Uxxxxxxxxxxxxxx..5',
+  //   'Uxxxxxxxxxxxxxx..6',
+  // ]
+});
+```
+
+-->
+<br />
+<a id="leave-api" />
+<h3 id="leave-api---official-docs"><a href="#leave-api---official-docs" aria-hidden="true" class="anchor"><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Leave API - <a href="https://devdocs.line.me/en/#leave">Official Docs</a></h3>
+<h2 id="leave"><a href="#leave" aria-hidden="true" class="anchor"><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>leave()</code></h2>
+<p>Leave from the group or room.</p>
+<p>Example:</p>
+<div class="gatsby-highlight">
+      <pre class="language-js"><code>context<span class="token punctuation">.</span><span class="token function">leave</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+      </div>
+<br />
+<a id="rich-menu-api" />
+<h3 id="rich-menu-api---official-docs"><a href="#rich-menu-api---official-docs" aria-hidden="true" class="anchor"><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Rich Menu API - <a href="https://developers.line.me/en/docs/messaging-api/reference/#rich-menu">Official Docs</a></h3>
+<br />
+<h2 id="getlinkedrichmenu"><a href="#getlinkedrichmenu" aria-hidden="true" class="anchor"><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>getLinkedRichMenu()</code></h2>
+<p>Gets the ID of the rich menu linked to the user.</p>
+<p>Example:</p>
+<div class="gatsby-highlight">
+      <pre class="language-js"><code>context<span class="token punctuation">.</span><span class="token function">getLinkedRichMenu</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span>richMenu <span class="token operator">=></span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>richMenu<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token comment" spellcheck="true">// {</span>
+  <span class="token comment" spellcheck="true">//   richMenuId: "{richMenuId}"</span>
+  <span class="token comment" spellcheck="true">// }</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+      </div>
+<br />
+<h2 id="linkrichmenurichmenuid"><a href="#linkrichmenurichmenuid" aria-hidden="true" class="anchor"><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>linkRichMenu(richMenuId)</code></h2>
+<p>Links a rich menu to the user.</p>
+<table>
+<thead>
+<tr>
+<th>Param</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>richMenuId</td>
+<td><code>String</code></td>
+<td>ID of an uploaded rich menu.</td>
+</tr>
+</tbody>
+</table>
+<p>Example:</p>
+<div class="gatsby-highlight">
+      <pre class="language-js"><code>context<span class="token punctuation">.</span><span class="token function">linkRichMenu</span><span class="token punctuation">(</span>RICH_MENU_ID<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+      </div>
+<br />
+<h2 id="unlinkrichmenu"><a href="#unlinkrichmenu" aria-hidden="true" class="anchor"><svg aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><code>unlinkRichMenu()</code></h2>
+<p>Unlinks a rich menu from the user.</p>
+<p>Example:</p>
+<div class="gatsby-highlight">
+      <pre class="language-js"><code>context<span class="token punctuation">.</span><span class="token function">unlinkRichMenu</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+      </div></div><div class="sc-bdVaJa kUKQjH" data-reactid="121"><a class="sc-bwzfXH genBUa" href="https://github.com/bottenderjs/bottenderjs.github.io/blob/source/content/docs/APIReference-LineContext.md" data-reactid="122">Edit This Page</a></div></main><aside class="sc-VigVT lFJbn" data-reactid="123"><div class="sc-dnqmqq kPhszq" data-reactid="124"><section class="sc-ifAKCX dakLHt" data-reactid="125"><h2 class="sc-EHOje dENgFQ" data-reactid="126"><!-- react-text: 127 --> <!-- /react-text --><span class="sc-gzVnrw sjhaJ" data-reactid="128"><img class="sc-htoDjs bjDceI" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjIwcHgiIGhlaWdodD0iMjBweCIgdmlld0JveD0iMCAwIDIwIDIwIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCA0Ny4xICg0NTQyMikgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+CiAgICA8dGl0bGU+QXJ0Ym9hcmQ8L3RpdGxlPgogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CiAgICA8ZGVmcz48L2RlZnM+CiAgICA8ZyBpZD0iUGFnZS0xIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iQXJ0Ym9hcmQiIGZpbGw9IiM0QTRBNEEiPgogICAgICAgICAgICA8cGF0aCBkPSJNMTcuMjIzMjE0Myw3LjQ1NTM1NzE0IEwxMC41OTgyMTQzLDE0LjA3MTQyODYgQzEwLjQ4NTExODUsMTQuMTg0NTI0NCAxMC4zNTExOTEyLDE0LjI0MTA3MTQgMTAuMTk2NDI4NiwxNC4yNDEwNzE0IEMxMC4wNDE2NjU5LDE0LjI0MTA3MTQgOS45MDc3Mzg2NiwxNC4xODQ1MjQ0IDkuNzk0NjQyODYsMTQuMDcxNDI4NiBMMy4xNjk2NDI4Niw3LjQ1NTM1NzE0IEMzLjA1NjU0NzA1LDcuMzQyMjYxMzQgMyw3LjIwNjg0NjAzIDMsNy4wNDkxMDcxNCBDMyw2Ljg5MTM2ODI2IDMuMDU2NTQ3MDUsNi43NTU5NTI5NSAzLjE2OTY0Mjg2LDYuNjQyODU3MTQgTDQuNjUxNzg1NzEsNS4xNjk2NDI4NiBDNC43NjQ4ODE1Miw1LjA1NjU0NzA1IDQuODk4ODA4NzUsNSA1LjA1MzU3MTQzLDUgQzUuMjA4MzM0MTEsNSA1LjM0MjI2MTM0LDUuMDU2NTQ3MDUgNS40NTUzNTcxNCw1LjE2OTY0Mjg2IEwxMC4xOTY0Mjg2LDkuOTEwNzE0MjkgTDE0LjkzNzUsNS4xNjk2NDI4NiBDMTUuMDUwNTk1OCw1LjA1NjU0NzA1IDE1LjE4NDUyMyw1IDE1LjMzOTI4NTcsNSBDMTUuNDk0MDQ4NCw1IDE1LjYyNzk3NTYsNS4wNTY1NDcwNSAxNS43NDEwNzE0LDUuMTY5NjQyODYgTDE3LjIyMzIxNDMsNi42NDI4NTcxNCBDMTcuMzM2MzEwMSw2Ljc1NTk1Mjk1IDE3LjM5Mjg1NzEsNi44OTEzNjgyNiAxNy4zOTI4NTcxLDcuMDQ5MTA3MTQgQzE3LjM5Mjg1NzEsNy4yMDY4NDYwMyAxNy4zMzYzMTAxLDcuMzQyMjYxMzQgMTcuMjIzMjE0Myw3LjQ1NTM1NzE0IFoiIGlkPSLvgbgiPjwvcGF0aD4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==" alt="arrow" data-reactid="129"/></span></h2><div class="sc-bZQynM dNctSA" data-reactid="130"><a class="sc-htpNat clwtpZ" href="/docs/GettingStarted" data-reactid="131"><div class="sc-bxivhb jJdVUp" data-reactid="132">Getting Started</div></a></div></section><section class="sc-ifAKCX dakLHt" data-reactid="133"><h2 class="sc-EHOje dENgFQ" data-reactid="134"><!-- react-text: 135 -->Platforms<!-- /react-text --><span class="sc-gzVnrw bwaFlD" data-reactid="136"><img class="sc-htoDjs bjDceI" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjIwcHgiIGhlaWdodD0iMjBweCIgdmlld0JveD0iMCAwIDIwIDIwIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCA0Ny4xICg0NTQyMikgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+CiAgICA8dGl0bGU+QXJ0Ym9hcmQ8L3RpdGxlPgogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CiAgICA8ZGVmcz48L2RlZnM+CiAgICA8ZyBpZD0iUGFnZS0xIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iQXJ0Ym9hcmQiIGZpbGw9IiM0QTRBNEEiPgogICAgICAgICAgICA8cGF0aCBkPSJNMTcuMjIzMjE0Myw3LjQ1NTM1NzE0IEwxMC41OTgyMTQzLDE0LjA3MTQyODYgQzEwLjQ4NTExODUsMTQuMTg0NTI0NCAxMC4zNTExOTEyLDE0LjI0MTA3MTQgMTAuMTk2NDI4NiwxNC4yNDEwNzE0IEMxMC4wNDE2NjU5LDE0LjI0MTA3MTQgOS45MDc3Mzg2NiwxNC4xODQ1MjQ0IDkuNzk0NjQyODYsMTQuMDcxNDI4NiBMMy4xNjk2NDI4Niw3LjQ1NTM1NzE0IEMzLjA1NjU0NzA1LDcuMzQyMjYxMzQgMyw3LjIwNjg0NjAzIDMsNy4wNDkxMDcxNCBDMyw2Ljg5MTM2ODI2IDMuMDU2NTQ3MDUsNi43NTU5NTI5NSAzLjE2OTY0Mjg2LDYuNjQyODU3MTQgTDQuNjUxNzg1NzEsNS4xNjk2NDI4NiBDNC43NjQ4ODE1Miw1LjA1NjU0NzA1IDQuODk4ODA4NzUsNSA1LjA1MzU3MTQzLDUgQzUuMjA4MzM0MTEsNSA1LjM0MjI2MTM0LDUuMDU2NTQ3MDUgNS40NTUzNTcxNCw1LjE2OTY0Mjg2IEwxMC4xOTY0Mjg2LDkuOTEwNzE0MjkgTDE0LjkzNzUsNS4xNjk2NDI4NiBDMTUuMDUwNTk1OCw1LjA1NjU0NzA1IDE1LjE4NDUyMyw1IDE1LjMzOTI4NTcsNSBDMTUuNDk0MDQ4NCw1IDE1LjYyNzk3NTYsNS4wNTY1NDcwNSAxNS43NDEwNzE0LDUuMTY5NjQyODYgTDE3LjIyMzIxNDMsNi42NDI4NTcxNCBDMTcuMzM2MzEwMSw2Ljc1NTk1Mjk1IDE3LjM5Mjg1NzEsNi44OTEzNjgyNiAxNy4zOTI4NTcxLDcuMDQ5MTA3MTQgQzE3LjM5Mjg1NzEsNy4yMDY4NDYwMyAxNy4zMzYzMTAxLDcuMzQyMjYxMzQgMTcuMjIzMjE0Myw3LjQ1NTM1NzE0IFoiIGlkPSLvgbgiPjwvcGF0aD4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==" alt="arrow" data-reactid="137"/></span></h2><div class="sc-bZQynM iCtQAW" data-reactid="138"><a class="sc-htpNat clwtpZ" href="/docs/Platforms-Console" data-reactid="139"><div class="sc-bxivhb jJdVUp" data-reactid="140">Console</div></a><a class="sc-htpNat clwtpZ" href="/docs/Platforms-Messenger" data-reactid="141"><div class="sc-bxivhb jJdVUp" data-reactid="142">Messenger</div></a><a class="sc-htpNat clwtpZ" href="/docs/Platforms-LINE" data-reactid="143"><div class="sc-bxivhb jJdVUp" data-reactid="144">LINE</div></a><a class="sc-htpNat clwtpZ" href="/docs/Platforms-Slack" data-reactid="145"><div class="sc-bxivhb jJdVUp" data-reactid="146">Slack</div></a><a class="sc-htpNat clwtpZ" href="/docs/Platforms-Telegram" data-reactid="147"><div class="sc-bxivhb jJdVUp" data-reactid="148">Telegram</div></a><a class="sc-htpNat clwtpZ" href="/docs/Platforms-Viber" data-reactid="149"><div class="sc-bxivhb jJdVUp" data-reactid="150">Viber</div></a></div></section><section class="sc-ifAKCX dakLHt" data-reactid="151"><h2 class="sc-EHOje dENgFQ" data-reactid="152"><!-- react-text: 153 -->Guides<!-- /react-text --><span class="sc-gzVnrw bwaFlD" data-reactid="154"><img class="sc-htoDjs bjDceI" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjIwcHgiIGhlaWdodD0iMjBweCIgdmlld0JveD0iMCAwIDIwIDIwIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCA0Ny4xICg0NTQyMikgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+CiAgICA8dGl0bGU+QXJ0Ym9hcmQ8L3RpdGxlPgogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CiAgICA8ZGVmcz48L2RlZnM+CiAgICA8ZyBpZD0iUGFnZS0xIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iQXJ0Ym9hcmQiIGZpbGw9IiM0QTRBNEEiPgogICAgICAgICAgICA8cGF0aCBkPSJNMTcuMjIzMjE0Myw3LjQ1NTM1NzE0IEwxMC41OTgyMTQzLDE0LjA3MTQyODYgQzEwLjQ4NTExODUsMTQuMTg0NTI0NCAxMC4zNTExOTEyLDE0LjI0MTA3MTQgMTAuMTk2NDI4NiwxNC4yNDEwNzE0IEMxMC4wNDE2NjU5LDE0LjI0MTA3MTQgOS45MDc3Mzg2NiwxNC4xODQ1MjQ0IDkuNzk0NjQyODYsMTQuMDcxNDI4NiBMMy4xNjk2NDI4Niw3LjQ1NTM1NzE0IEMzLjA1NjU0NzA1LDcuMzQyMjYxMzQgMyw3LjIwNjg0NjAzIDMsNy4wNDkxMDcxNCBDMyw2Ljg5MTM2ODI2IDMuMDU2NTQ3MDUsNi43NTU5NTI5NSAzLjE2OTY0Mjg2LDYuNjQyODU3MTQgTDQuNjUxNzg1NzEsNS4xNjk2NDI4NiBDNC43NjQ4ODE1Miw1LjA1NjU0NzA1IDQuODk4ODA4NzUsNSA1LjA1MzU3MTQzLDUgQzUuMjA4MzM0MTEsNSA1LjM0MjI2MTM0LDUuMDU2NTQ3MDUgNS40NTUzNTcxNCw1LjE2OTY0Mjg2IEwxMC4xOTY0Mjg2LDkuOTEwNzE0MjkgTDE0LjkzNzUsNS4xNjk2NDI4NiBDMTUuMDUwNTk1OCw1LjA1NjU0NzA1IDE1LjE4NDUyMyw1IDE1LjMzOTI4NTcsNSBDMTUuNDk0MDQ4NCw1IDE1LjYyNzk3NTYsNS4wNTY1NDcwNSAxNS43NDEwNzE0LDUuMTY5NjQyODYgTDE3LjIyMzIxNDMsNi42NDI4NTcxNCBDMTcuMzM2MzEwMSw2Ljc1NTk1Mjk1IDE3LjM5Mjg1NzEsNi44OTEzNjgyNiAxNy4zOTI4NTcxLDcuMDQ5MTA3MTQgQzE3LjM5Mjg1NzEsNy4yMDY4NDYwMyAxNy4zMzYzMTAxLDcuMzQyMjYxMzQgMTcuMjIzMjE0Myw3LjQ1NTM1NzE0IFoiIGlkPSLvgbgiPjwvcGF0aD4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==" alt="arrow" data-reactid="155"/></span></h2><div class="sc-bZQynM iCtQAW" data-reactid="156"><a class="sc-htpNat clwtpZ" href="/docs/Guides-Commands" data-reactid="157"><div class="sc-bxivhb jJdVUp" data-reactid="158">Commands</div></a><a class="sc-htpNat clwtpZ" href="/docs/Guides-Deployment" data-reactid="159"><div class="sc-bxivhb jJdVUp" data-reactid="160">Deployment</div></a><a class="sc-htpNat clwtpZ" href="/docs/Guides-ErrorHandling" data-reactid="161"><div class="sc-bxivhb jJdVUp" data-reactid="162">Error Handling</div></a><a class="sc-htpNat clwtpZ" href="/docs/Guides-Intents" data-reactid="163"><div class="sc-bxivhb jJdVUp" data-reactid="164">Intents</div></a><a class="sc-htpNat clwtpZ" href="/docs/Guides-Middleware" data-reactid="165"><div class="sc-bxivhb jJdVUp" data-reactid="166">Middleware</div></a><a class="sc-htpNat clwtpZ" href="/docs/Guides-Server" data-reactid="167"><div class="sc-bxivhb jJdVUp" data-reactid="168">Server</div></a><a class="sc-htpNat clwtpZ" href="/docs/Guides-Session" data-reactid="169"><div class="sc-bxivhb jJdVUp" data-reactid="170">Session</div></a><a class="sc-htpNat clwtpZ" href="/docs/Guides-Testing" data-reactid="171"><div class="sc-bxivhb jJdVUp" data-reactid="172">Testing</div></a><a class="sc-htpNat clwtpZ" href="/docs/Guides-Troubleshooting" data-reactid="173"><div class="sc-bxivhb jJdVUp" data-reactid="174">Troubleshooting</div></a></div></section><section class="sc-ifAKCX dakLHt" data-reactid="175"><h2 class="sc-EHOje dENgFQ" data-reactid="176"><!-- react-text: 177 -->API Reference<!-- /react-text --><span class="sc-gzVnrw eOXFgm" data-reactid="178"><img class="sc-htoDjs bjDceI" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjIwcHgiIGhlaWdodD0iMjBweCIgdmlld0JveD0iMCAwIDIwIDIwIiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCA0Ny4xICg0NTQyMikgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+CiAgICA8dGl0bGU+QXJ0Ym9hcmQ8L3RpdGxlPgogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CiAgICA8ZGVmcz48L2RlZnM+CiAgICA8ZyBpZD0iUGFnZS0xIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj4KICAgICAgICA8ZyBpZD0iQXJ0Ym9hcmQiIGZpbGw9IiM0QTRBNEEiPgogICAgICAgICAgICA8cGF0aCBkPSJNMTcuMjIzMjE0Myw3LjQ1NTM1NzE0IEwxMC41OTgyMTQzLDE0LjA3MTQyODYgQzEwLjQ4NTExODUsMTQuMTg0NTI0NCAxMC4zNTExOTEyLDE0LjI0MTA3MTQgMTAuMTk2NDI4NiwxNC4yNDEwNzE0IEMxMC4wNDE2NjU5LDE0LjI0MTA3MTQgOS45MDc3Mzg2NiwxNC4xODQ1MjQ0IDkuNzk0NjQyODYsMTQuMDcxNDI4NiBMMy4xNjk2NDI4Niw3LjQ1NTM1NzE0IEMzLjA1NjU0NzA1LDcuMzQyMjYxMzQgMyw3LjIwNjg0NjAzIDMsNy4wNDkxMDcxNCBDMyw2Ljg5MTM2ODI2IDMuMDU2NTQ3MDUsNi43NTU5NTI5NSAzLjE2OTY0Mjg2LDYuNjQyODU3MTQgTDQuNjUxNzg1NzEsNS4xNjk2NDI4NiBDNC43NjQ4ODE1Miw1LjA1NjU0NzA1IDQuODk4ODA4NzUsNSA1LjA1MzU3MTQzLDUgQzUuMjA4MzM0MTEsNSA1LjM0MjI2MTM0LDUuMDU2NTQ3MDUgNS40NTUzNTcxNCw1LjE2OTY0Mjg2IEwxMC4xOTY0Mjg2LDkuOTEwNzE0MjkgTDE0LjkzNzUsNS4xNjk2NDI4NiBDMTUuMDUwNTk1OCw1LjA1NjU0NzA1IDE1LjE4NDUyMyw1IDE1LjMzOTI4NTcsNSBDMTUuNDk0MDQ4NCw1IDE1LjYyNzk3NTYsNS4wNTY1NDcwNSAxNS43NDEwNzE0LDUuMTY5NjQyODYgTDE3LjIyMzIxNDMsNi42NDI4NTcxNCBDMTcuMzM2MzEwMSw2Ljc1NTk1Mjk1IDE3LjM5Mjg1NzEsNi44OTEzNjgyNiAxNy4zOTI4NTcxLDcuMDQ5MTA3MTQgQzE3LjM5Mjg1NzEsNy4yMDY4NDYwMyAxNy4zMzYzMTAxLDcuMzQyMjYxMzQgMTcuMjIzMjE0Myw3LjQ1NTM1NzE0IFoiIGlkPSLvgbgiPjwvcGF0aD4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==" alt="arrow" data-reactid="179"/></span></h2><div class="sc-bZQynM dNctSA" data-reactid="180"><a class="sc-htpNat clwtpZ" href="/docs/APIReference-Context" data-reactid="181"><div class="sc-bxivhb jJdVUp" data-reactid="182">Context</div></a><a class="sc-htpNat clwtpZ" href="/docs/APIReference-MessengerContext" data-reactid="183"><div class="sc-bxivhb jJdVUp" data-reactid="184">MessengerContext</div></a><a class="sc-htpNat clwtpZ" href="/docs/APIReference-LineContext" data-reactid="185"><div class="sc-bxivhb kXjaEp" selected="" data-reactid="186">LineContext</div></a><a class="sc-htpNat clwtpZ" href="/docs/APIReference-SlackContext" data-reactid="187"><div class="sc-bxivhb jJdVUp" data-reactid="188">SlackContext</div></a><a class="sc-htpNat clwtpZ" href="/docs/APIReference-Event" data-reactid="189"><div class="sc-bxivhb jJdVUp" data-reactid="190">Event</div></a><a class="sc-htpNat clwtpZ" href="/docs/APIReference-Handler" data-reactid="191"><div class="sc-bxivhb jJdVUp" data-reactid="192">Handler</div></a></div></section></div></aside></div></div><footer class="sc-iRbamj bJDBPf" id="footer" role="contentinfo" data-reactid="193"><div class="sc-jlyJG jVQgvB" data-reactid="194"><h4 class="sc-gipzik fvvnMe" data-reactid="195">© 2017 - PRESENT YOCTOL INFO INC. ALL RIGHTS RESERVED</h4><h4 class="sc-csuQGl bXgqgg" data-reactid="196"><!-- react-text: 197 -->© 2017 - PRESENT YOCTOL INFO INC. <!-- /react-text --><br data-reactid="198"/><!-- react-text: 199 -->ALL RIGHTS RESERVED<!-- /react-text --></h4><a class="sc-Rmtcm fzXnha" href="https://github.com/Yoctol/bottender" target="_blank" data-reactid="200"><img class="sc-bRBYWo jFjRsK" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+Cjxzdmcgd2lkdGg9IjQwcHgiIGhlaWdodD0iMzlweCIgdmlld0JveD0iMCAwIDQwIDM5IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPCEtLSBHZW5lcmF0b3I6IFNrZXRjaCA0Ny4xICg0NTQyMikgLSBodHRwOi8vd3d3LmJvaGVtaWFuY29kaW5nLmNvbS9za2V0Y2ggLS0+CiAgICA8dGl0bGU+aWNvbi9naXRodWI8L3RpdGxlPgogICAgPGRlc2M+Q3JlYXRlZCB3aXRoIFNrZXRjaC48L2Rlc2M+CiAgICA8ZGVmcz48L2RlZnM+CiAgICA8ZyBpZD0iUGFnZXMtKEVOKSIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgaWQ9IkJPVFRFTkRFUl9JTkRFWO+8iEVO77yJXzEwMTciIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xMTU1LjAwMDAwMCwgLTI4NTcuMDAwMDAwKSIgZmlsbD0iI0ZGRkZGRiI+CiAgICAgICAgICAgIDxnIGlkPSJHcm91cCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTcxLjAwMDAwMCwgMjg1Ny4wMDAwMDApIj4KICAgICAgICAgICAgICAgIDxnIGlkPSJpY29uL2dpdGh1YiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoOTg0LjAwMDAwMCwgMC4wMDAwMDApIj4KICAgICAgICAgICAgICAgICAgICA8ZyBpZD0ibWF0ZXJpYWxzLTAyIj4KICAgICAgICAgICAgICAgICAgICAgICAgPHBhdGggZD0iTTM5Ljk5NjA5NDEsMjAuOTA5NTc5MSBDMzkuOTI0MjI1NSwyMS41MjI1NjkgMzkuODYxNzMxLDIyLjEzNzEwODkgMzkuNzc4OTI1OSwyMi43NDkzMjM5IEMzOS40MTg4MTIyLDI1LjQxODAxMjEgMzguNDgwNDY2NywyNy45Nzc3MDEgMzcuMDI4Mzg4NywzMC4yNTI0NDUgQzM1LjQwMTE4OTMsMzIuODI0NTIyOSAzMy4zMjcxNTQ2LDM0Ljk3MzQ3NTEgMzAuNzMzNjM0OCwzNi42MDcwODE3IEMyOS4zODAxMzgsMzcuNDU2MTI1MyAyNy45Mjc3MDUsMzguMTM4OTUyNSAyNi40MDgyMzczLDM4LjY0MDU2NTQgQzI1LjU2NjEyNDYsMzguOTIxMDk5NCAyNC45ODMzNjM4LDM4LjQ4NTU3NDMgMjQuOTc4Njc2NywzNy42MDc1NDk1IEMyNC45NzAwODM3LDM1Ljg3NzA3MzQgMjQuOTc4Njc2NywzNC4xNDY1OTczIDI0Ljk3Mzk4OTYsMzIuNDE1MzQ2MyBDMjQuOTY5MzAyNSwzMS4zNjA2MzE2IDI0Ljg2MzA2MiwzMC4zMjI5NjU5IDI0LjI4MTg2MzUsMjkuMzk5MjE4NyBDMjQuMTEyMzQ3MywyOS4xMjk1MzQyIDIzLjg5NzUyMjYsMjguODg3NzQ4IDIzLjY5Njc1OTIsMjguNjI0MjYzIEMyNC40Nzc5Mzk5LDI4LjQ3OTM0NjMgMjUuMjU5MTIwNiwyOC4zNzYyNzcyIDI2LjAxOTIwOTQsMjguMTg0ODYzMiBDMjguMDU5NjUzMywyNy42NzEwNjc1IDI5Ljg4MzcxMDIsMjYuNzc1OTkzNyAzMS4xMjY1Njg2LDI1LjAwNzU0NDggQzMyLjAzOTc2ODksMjMuNzA5NDk0IDMyLjQ1NDU3NTgsMjIuMjE3NzA0MyAzMi42NDEyNzgsMjAuNjYzOTE4MSBDMzIuNzg0MjM0MSwxOS40NTU3NjIyIDMyLjgyNDg1NTQsMTguMjQzNzMxNSAzMi41Njg2MjgyLDE3LjA0MTAwMDIgQzMyLjMyMzMxOTMsMTUuODQ2NDQ5MiAzMS43NzE3Njk3LDE0LjczNDc5MTYgMzAuOTY3MjA3OCwxMy44MTMzMDk4IEMzMC43NjY0NDQ0LDEzLjU4MDgyMyAzMC43MjY2MDQxLDEzLjM5NzE1ODUgMzAuODI1ODE0MSwxMy4wOTk1NzU2IEMzMS4zNjI0ODUyLDExLjQ5MTU0MjUgMzEuMTM4Mjg2NCw5LjkxNjA1NzU1IDMwLjUzNTIxNDksOC4zNzIzNDU4IEMzMC41MDA4NDI5LDguMjg0MDAwODUgMzAuMzUwODU2Miw4LjIwMTg1NTU1IDMwLjI0MzgzNDUsOC4xODU1ODE0OCBDMjkuNTM0NTIyNCw4LjA4MDE4NzUgMjguODY1ODMxOCw4LjI3OTM1MTEyIDI4LjI0NDAxMTksOC41NzMwNTkzMyBDMjcuMjM1NTA3Nyw5LjA0NTc4MjMgMjYuMjYwNTk0Miw5LjU4NzQ3NjM0IDI1LjI2MjI0NTMsMTAuMDgxODk4MSBDMjUuMDkzNTEwMywxMC4xNjU1OTMzIDI0Ljg2MDcxODQsMTAuMjIyMTY1MSAyNC42ODY1MTUxLDEwLjE3ODc2NzUgQzIxLjYwODUxOTUsOS4zOTUzMDQxIDE4LjM4MDk2ODQsOS4zOTUzMDQxIDE1LjMwMjk3MjgsMTAuMTc4NzY3NSBDMTUuMDkzMDg3MywxMC4yMTQzNTI1IDE0Ljg3NzMzODksMTAuMTcyMTUzNSAxNC42OTY3NzY2LDEwLjA2MDE5OTMgQzEzLjQyNzM1OCw5LjI1NzM0NTIxIDEyLjA4NTI4OTYsOC42MjE4ODE1NCAxMC42MjY4MjUyLDguMjM5ODI4MzggQzEwLjYwMTgyNzQsOC4yMzM2Mjg3MyAxMC41NzY4Mjk3LDguMjIzNTU0MzEgMTAuNTQ4NzA3Miw4LjIxODkwNDU3IEM5LjYzMTYwMTA0LDguMDMyOTE1MjEgOS40NjM2NDcxOSw4LjEzNjc1OTI3IDkuMjAxOTUxNjcsOS4wMTcxMDg5NCBDOC43NzkzMzI5MiwxMC40MzgzNzc3IDguNzAzNTU4MzksMTEuODU1NzcxNyA5LjIwNTg1NzU3LDEzLjI3OTM2NTMgQzkuMjM3NTE1NywxMy40MTg1NTcyIDkuMjA1MTcxNjcsMTMuNTY0NTA3MiA5LjExNzU4NDE1LDEzLjY3NzY5MjUgQzcuNDY5MjkyOTIsMTUuNTM3NTg2MiA3LjA3ODcwMjU4LDE3LjczOTIzNTMgNy4yODQ5MzQyOCwyMC4xMTUyNDk1IEM3LjQwOTkyMzE5LDIxLjU1NTg5MjEgNy43NDY2MTIwNiwyMi45Mzg0MTMxIDguMzk1NzczMiwyNC4yMzgwMTM4IEM5LjI5MzM0OTgxLDI2LjAzNDM2MTEgMTAuODEyNzQ2MiwyNy4xMzI0NzMzIDEyLjY1MzIwNzksMjcuNzc4MDExNCBDMTMuODA4NTc0MSwyOC4xODMzMTMzIDE1LjAzNDI0NjYsMjguMzkzMzI2MiAxNi4yNDY2MzksMjguNjk1NTU5IEMxNi4yNTYwMTMyLDI4LjYzNzQzNzMgMTYuMjYzMDQzOCwyOC42ODMxNTk3IDE2LjI0NjYzOSwyOC43MDQwODM1IEMxNS42MjE2OTQ1LDI5LjM0OTYyMTYgMTUuMjczMjg3OSwzMC4xMjQ1NzczIDE1LjEyNjQyNTksMzEuMDAwMjc3MiBDMTUuMTA3Njc3NiwzMS4xMTEwOTU5IDE1LjAzMTEyMTksMzEuMjY5MTg2OCAxNC45NDIwNjczLDMxLjMwMjUwOTkgQzEzLjU1MzEyODEsMzEuODIwOTU1MyAxMi4xNTYzNzcsMzIuMDkzNzM5NyAxMC43ODMwNjE0LDMxLjI2MjIxMjIgQzEwLjE1ODExNjgsMzAuODg0MDMzOSA5LjcwMzQ2OTY2LDMwLjMzNzY5MDEgOS4zMzU1MzM1NiwyOS43MTY5NTA2IEM4Ljc1OTAyMjIyLDI4Ljc0MzYwNjIgNy45NDU4MTMxMywyOC4wMzc2MjE2IDYuODUzNzIyNTQsMjcuNzE2MDE1IEM2LjQ2MzEzMjIsMjcuNjAwNTQ2NiA2LjAxMjM5MDk1LDI3LjYyOTk5NDkgNS41OTI4OTY5MiwyNy42NTQwMTg1IEM1LjMwNjk4NDc5LDI3LjY3MDI5MjYgNS4yMTMyNDMxMSwyNy44ODY1MDUyIDUuNDA0NjMyMzgsMjguMTE4OTkxOSBDNS41ODExNzkyMSwyOC4zMzgzMDQ0IDUuNzYxNjMxOTUsMjguNTgzOTY1NCA1Ljk5ODMyOTcsMjguNzIxMTMyNSBDNy4wNDkwMTc3MSwyOS4zMjE3MjMyIDcuNjM4ODA5MTIsMzAuMjgwMzQzNCA4LjExOTIzNTI0LDMxLjMyNDk4MzcgQzguNDA1OTI4NTUsMzEuOTQ0OTQ4MiA4LjY1MTIxOTI5LDMyLjU4MjczNjcgOS4xODMyMDMzMywzMy4wNjA4ODQ0IEMxMC4wMzAwMDMyLDMzLjgyMjY2NTkgMTEuMDU4MDM3LDM0LjExMDE3NDQgMTIuMTUxNjg5OSwzNC4xNTgyMjE3IEMxMy4wODIwNzYxLDM0LjE5ODUxOTQgMTQuMDE2MzY4MiwzNC4xNjY3NDYyIDE0Ljk5Mjg0NDEsMzQuMTY2NzQ2MiBDMTUuMDA0OTA1NCwzNC4yMjY0NzY5IDE1LjAxMTQ0MjQsMzQuMjg3MTc1NSAxNS4wMTIzNzM2LDM0LjM0ODA4NTggQzE1LjAyNjQzNDgsMzUuMzk0Mjc2IDE1LjA0MDQ5NjEsMzYuNDQwNDY2MiAxNS4wNDgzMDc5LDM3LjQ4NTg4MTQgQzE1LjA1NTMzODUsMzguNTA5NTk3OSAxNC40MzU4NjIyLDM4LjkzMjcyMzcgMTMuNDU3ODI0LDM4LjU5NTYxOCBDOC4zODAxNDk1OSwzNi44NDczMTggNC42NTYyNjEyOSwzMy41MzU5MzIzIDIuMTcwNTQ0MzYsMjguODU2NzQ5OCBDMC4yOTU3MTA3MjcsMjUuMzMzMDI2MiAtMC4yOTI1MTgzMjYsMjEuNTQ4MTQyNiAwLjEzMDEwMDQyMiwxNy41OTc0MTg0IEMwLjU3NjkzNTc3MiwxMy40NjIyNTQ4IDIuMjI2Nzg5MzcsOS44NDMyMTE3MiA0Ljk3ODg4ODkxLDYuNzM1NjM5MzcgQzcuODU1OTc3MzUsMy40ODg1NzUgMTEuNDM4NDcyLDEuMzMxMDk4MzQgMTUuNzE4NTYwOSwwLjQ2NjI0Nzc3NyBDMjEuOTM3NTQwMywtMC43ODc2MzA1NDIgMjcuNjE3NTA1LDAuNDcxNjcyNDY3IDMyLjU5MjA2MzYsNC40MzYzNDU4MiBDMzYuMzU5Njk4LDcuNDQwODQ5MDUgMzguNjkzMDg0NywxMS4zNTQzNzUzIDM5LjYzNTE4ODYsMTYuMDY2MTA2IEMzOS43NzQyMzg4LDE2Ljc2MzU2NjEgMzkuODI2NTc3OSwxNy40NzExMDA2IDM5LjkyMTg4MTksMTguMTczOTg1NSBDMzkuOTQwNjMwMywxOC4zMTE5Mjc2IDM5Ljk3MTA5NjMsMTguNDQ3NTQ0OCA0MCwxOC41ODQ3MTIgTDQwLDIwLjkwOTU3OTEgTDM5Ljk5NjA5NDEsMjAuOTA5NTc5MSBaIiBpZD0iU2hhcGUiIGZpbGwtcnVsZT0ibm9uemVybyI+PC9wYXRoPgogICAgICAgICAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgICAgIDwvZz4KICAgICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+" alt="Bottender github link" data-reactid="201"/></a></div></footer></div></div><script>
+  
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-108095811-1', 'auto');
+  
+  ga('send', 'pageview');
+      </script></body></html>
