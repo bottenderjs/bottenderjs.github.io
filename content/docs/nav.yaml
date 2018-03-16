@@ -42,6 +42,8 @@
       title: Context
     - id: docs/APIReference-LineContext
       title: LineContext
+    - id: docs/APIReference-SlackContext
+      title: SlackContext
     - id: docs/APIReference-Event
       title: Event
     - id: docs/APIReference-Handler

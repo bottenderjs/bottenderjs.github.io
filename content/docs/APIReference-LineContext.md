@@ -953,6 +953,10 @@ context.pushImageCarouselTemplate('this is an image carousel template', [
 
 ### Profile API - [Official Docs](https://devdocs.line.me/en/#bot-api-get-profile)
 
+Coming soon.
+
+<!--
+
 ## `getUserProfile()`
 
 Gets user profile information.
@@ -971,15 +975,21 @@ context.getUserProfile().then(profile => {
 });
 ```
 
+-->
+
 <br />
 
 <a id="grouproom-member-profile-api" />
 
 ### Group/Room Member Profile API - [Official Docs](https://devdocs.line.me/en/#get-group-room-member-profile)
 
-## `getGroupMemberProfile(userId)`
+Coming soon.
 
-Gets the user profile of a member of the group that the bot is in. This includes the user IDs of users who has not added the bot as a friend or has blocked the bot.
+<!--
+
+## `getMemberProfile(userId)`
+
+Gets the user profile of a member of the group/room that the bot is in. This includes the user IDs of users who has not added the bot as a friend or has blocked the bot.
 
 | Param  | Type     | Description     |
 | ------ | -------- | --------------- |
@@ -988,7 +998,7 @@ Gets the user profile of a member of the group that the bot is in. This includes
 Example:
 
 ```js
-context.getGroupMemberProfile(USER_ID).then(member => {
+context.getMemberProfile(USER_ID).then(member => {
   console.log(member);
   // {
   //   "displayName":"LINE taro",
@@ -998,28 +1008,7 @@ context.getGroupMemberProfile(USER_ID).then(member => {
 });
 ```
 
-<br />
-
-## `getRoomMemberProfile(userId)`
-
-Gets the user profile of a member of the room that the bot is in. This includes the user IDs of users who has not added the bot as a friend or has blocked the bot.
-
-| Param  | Type     | Description     |
-| ------ | -------- | --------------- |
-| userId | `String` | ID of the user. |
-
-Example:
-
-```js
-context.getRoomMemberProfile(USER_ID).then(member => {
-  console.log(member);
-  // {
-  //   "displayName":"LINE taro",
-  //   "userId":"Uxxxxxxxxxxxxxx...",
-  //   "pictureUrl":"http://obs.line-apps.com/..."
-  // }
-});
-```
+-->
 
 <br />
 
@@ -1027,19 +1016,23 @@ context.getRoomMemberProfile(USER_ID).then(member => {
 
 ### Group/Room Member IDs API - [Official Docs](https://devdocs.line.me/en/#get-group-room-member-ids)
 
-## `getGroupMemberIds(start)`
+Coming soon.
 
-Gets the ID of the users of the members of the group that the bot is in. This includes the user IDs of users who have not added the bot as a friend or has blocked the bot.  
+<!--
+
+## `getMemberIds(start)`
+
+Gets the ID of the users of the members of the group/room that the bot is in. This includes the user IDs of users who have not added the bot as a friend or has blocked the bot.  
 This feature is only available for LINE@ Approved accounts or official accounts.
 
-| Param  | Type     | Description     |
-| ------ | -------- | --------------- |
-| userId | `String` | ID of the user. |
+| Param | Type     | Description          |
+| ----- | -------- | -------------------- |
+| start | `String` | `continuationToken`. |
 
 Example:
 
 ```js
-context.getGroupMemberIds(CURSOR).then(res => {
+context.getMemberIds(CURSOR).then(res => {
   console.log(res);
   // {
   //   memberIds: [
@@ -1054,15 +1047,15 @@ context.getGroupMemberIds(CURSOR).then(res => {
 
 <br />
 
-## `getAllGroupMemberIds()`
+## `getAllMemberIds()`
 
-Recursively gets the ID of the users of the members of the group that the bot is in using cursors.  
+Recursively gets the ID of the users of the members of the group/room that the bot is in using cursors.  
 This feature is only available for LINE@ Approved accounts or official accounts.
 
 Example:
 
 ```js
-context.getAllGroupMemberIds().then(ids => {
+context.getAllMemberIds().then(ids => {
   console.log(ids);
   // [
   //   'Uxxxxxxxxxxxxxx..1',
@@ -1075,56 +1068,7 @@ context.getAllGroupMemberIds().then(ids => {
 });
 ```
 
-<br />
-
-## `getRoomMemberIds(start)`
-
-Gets the ID of the users of the members of the room that the bot is in. This includes the user IDs of users who have not added the bot as a friend or has blocked the bot.  
-This feature is only available for LINE@ Approved accounts or official accounts.
-
-| Param  | Type     | Description          |
-| ------ | -------- | -------------------- |
-| roomId | `String` | ID of the room.      |
-| start  | `String` | `continuationToken`. |
-
-Example:
-
-```js
-context.getRoomMemberIds(CURSOR).then(res => {
-  console.log(res);
-  // {
-  //   memberIds: [
-  //     'Uxxxxxxxxxxxxxx...',
-  //     'Uxxxxxxxxxxxxxx...',
-  //     'Uxxxxxxxxxxxxxx...'
-  //   ],
-  //   next: 'jxEWCEEP...'
-  // }
-});
-```
-
-<br />
-
-## `getAllRoomMemberIds()`
-
-Recursively gets the ID of the users of the members of the room that the bot is in using cursors.  
-This feature is only available for LINE@ Approved accounts or official accounts.
-
-Example:
-
-```js
-context.getAllRoomMemberIds().then(ids => {
-  console.log(ids);
-  // [
-  //   'Uxxxxxxxxxxxxxx..1',
-  //   'Uxxxxxxxxxxxxxx..2',
-  //   'Uxxxxxxxxxxxxxx..3',
-  //   'Uxxxxxxxxxxxxxx..4',
-  //   'Uxxxxxxxxxxxxxx..5',
-  //   'Uxxxxxxxxxxxxxx..6',
-  // ]
-});
-```
+-->
 
 <br />
 
