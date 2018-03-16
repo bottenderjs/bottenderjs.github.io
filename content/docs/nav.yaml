@@ -46,6 +46,8 @@
       title: LineContext
     - id: docs/APIReference-SlackContext
       title: SlackContext
+    - id: docs/APIReference-TelegramContext
+      title: TelegramContext
     - id: docs/APIReference-Event
       title: Event
     - id: docs/APIReference-Handler
