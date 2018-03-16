@@ -40,6 +40,10 @@
   items:
     - id: docs/APIReference-Context
       title: Context
+    - id: docs/APIReference-MessengerContext
+      title: MessengerContext
+    - id: docs/APIReference-SlackContext
+      title: SlackContext
     - id: docs/APIReference-TelegramContext
       title: TelegramContext
     - id: docs/APIReference-Event

@@ -295,6 +295,10 @@ context.sendChatAction('typing');
 
 ### Get API
 
+Coming soon.
+
+<!--
+
 ## `getChat()` - [Official Docs](https://core.telegram.org/bots/api/#getchat)
 
 Gets up to date information about the chat (current name of the user for one-on-one conversations, current username of a user, group or channel, etc.)
@@ -345,9 +349,15 @@ Example:
 context.getChatMember(USER_ID);
 ```
 
+-->
+
 <br />
 
 ### Updating API
+
+Coming soon.
+
+<!--
 
 ## `editMessageText(text [, options])` - [Official Docs](https://core.telegram.org/bots/api/#editmessagetext)
 
@@ -436,7 +446,13 @@ Example:
 context.stopMessageLiveLocation();
 ```
 
+-->
+
 ### Group API
+
+Coming soon.
+
+<!--
 
 ## `kickChatMember(userId [, options])` - [Official Docs](https://core.telegram.org/bots/api/#kickchatmember)
 
@@ -647,6 +663,8 @@ Example:
 client.leaveChat();
 ```
 
+-->
+
 <br />
 
 ### Payments API
@@ -686,6 +704,8 @@ context.sendInvoice({
 
 <br />
 
+<!--
+
 ## `answerShippingQuery(ok [, options])` - [Official Docs](https://core.telegram.org/bots/api/#answershippingquery)
 
 Reply to the shipping query.
@@ -717,6 +737,8 @@ Example:
 ```js
 context.answerPreCheckoutQuery(true);
 ```
+
+-->
 
 <br />
 
@@ -813,6 +835,10 @@ context.getGameHighScores();
 
 ### Others
 
+Coming soon.
+
+<!--
+
 ## `forwardMessage(fromChatId, messageId [, options])` - [Official Docs](https://core.telegram.org/bots/api/#forwardmessage)
 
 Forwards messages of any kind.
@@ -830,3 +856,5 @@ context.forwardMessage(USER_ID, MESSAGE_ID, {
   disable_notification: true,
 });
 ```
+
+-->
