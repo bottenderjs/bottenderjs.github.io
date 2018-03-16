@@ -30,11 +30,11 @@ These are other methods on Slack. See more details at [APIReference-SlackContext
 
 ## Telegram
 
-These are other methods on Telegram. See more details at [[APIReference-TelegramContext](https://bottender.js.org/docs/APIReference-TelegramContext).
+These are other methods on Telegram. See more details at [APIReference-TelegramContext](https://bottender.js.org/docs/APIReference-TelegramContext).
 
 ## Viber
 
-These are other methods on Telegram. See more details at [[APIReference-TelegramContext](https://bottender.js.org/docs/APIReference-TelegramContext).
+These are other methods on Telegram. See more details at [APIReference-TelegramContext](https://bottender.js.org/docs/APIReference-TelegramContext).
 
 ## Example
 
