@@ -9,8 +9,9 @@ This guide will focus on major concept of building a Telegram bot by Bottender. 
 ## Requirements
 
 To start building a Telegram Bot, there are two requirements you need to satisfy.
-- Token
-- Webhook URL
+
+* Token
+* Webhook URL
 
 ### Get token
 
@@ -71,17 +72,18 @@ For more information, check [Event Reference](./APIReference-Event).
 
 ### Telegram-specific context event
 
-- isText
-- isPhoto
-- isAudio
-- isVoice
-- isVideo
-- callbackQuery
-- ...
+* isText
+* isPhoto
+* isAudio
+* isVoice
+* isVideo
+* callbackQuery
+* ...
 
 more on [Event Reference](./APIReference-Event).
 
 Example:
+
 ```js
 bot.onEvent(async context => {
   if (context.event.isPhoto) {
@@ -102,15 +104,16 @@ After your bot receives the request from Telegram, you can use context send APIs
 
 ### Telegram-specific context send API
 
-- sendMessage
-- sendPhoto
-- sendVideo
-- sendContact
-- ...
+* sendMessage
+* sendPhoto
+* sendVideo
+* sendContact
+* ...
 
-more on [Context Reference](./APIReference-Context).
+more on [TelegramContext Reference](./APIReference-TelegramContext).
 
 Example:
+
 ```js
 bot.onEvent(async context => {
   await context.sendMessage('Hello World!');
@@ -120,12 +123,11 @@ bot.onEvent(async context => {
     first_name: 'first name',
   });
 });
-
 ```
 
 ## References
 
-- [Messaging-apis-telegram](https://github.com/Yoctol/messaging-apis/tree/master/packages/messaging-api-telegram)
-- [Official Telegram Page](https://telegram.org)
-- [Official Telegram Bot Introduction](https://core.telegram.org/bots)
-- [Official Telegram Bot API](https://core.telegram.org/bots/api)
+* [Messaging-apis-telegram](https://github.com/Yoctol/messaging-apis/tree/master/packages/messaging-api-telegram)
+* [Official Telegram Page](https://telegram.org)
+* [Official Telegram Bot Introduction](https://core.telegram.org/bots)
+* [Official Telegram Bot API](https://core.telegram.org/bots/api)

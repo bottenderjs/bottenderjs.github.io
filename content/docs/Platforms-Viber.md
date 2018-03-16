@@ -98,7 +98,7 @@ After your bot receives the request from Viber, you can use context send APIs to
 * sendSticker
 * sendCarouselContent
 
-more on [Context Reference](./APIReference-Context).
+more on [ViberContext Reference](./APIReference-ViberContext).
 
 Example:
 
