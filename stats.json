@@ -25,8 +25,8 @@
       "component---src-pages-index-js-aa7e4fdbe280698ce43e.js.map"
     ],
     "path---docs-api-reference-messenger-context": [
-      "path---docs-api-reference-messenger-context-d141dc49485d761eb81e.js",
-      "path---docs-api-reference-messenger-context-d141dc49485d761eb81e.js.map"
+      "path---docs-api-reference-messenger-context-29cbdc5553743ff42597.js",
+      "path---docs-api-reference-messenger-context-29cbdc5553743ff42597.js.map"
     ],
     "path---": [
       "path----e412b4eaf219cfba0f0a.js",
@@ -53,8 +53,8 @@
       "path---docs-platforms-telegram-2aa8c2d935cf3ed4f850.js.map"
     ],
     "path---docs-api-reference-viber-context": [
-      "path---docs-api-reference-viber-context-7ecf44d2e04ad1d9d5aa.js",
-      "path---docs-api-reference-viber-context-7ecf44d2e04ad1d9d5aa.js.map"
+      "path---docs-api-reference-viber-context-3a4d1f9e3bb05d7cf0ec.js",
+      "path---docs-api-reference-viber-context-3a4d1f9e3bb05d7cf0ec.js.map"
     ],
     "path---docs-api-reference-telegram-context": [
       "path---docs-api-reference-telegram-context-90fc823acb34a975341a.js",
@@ -133,9 +133,9 @@
       "path---docs-api-reference-event-01a1294c12d82da0620c.js.map"
     ],
     "app": [
-      "app-dd1c2320ad2fd56465cf.js",
+      "app-7e03f05c5480f0d80e1b.js",
       "build-js-styles.css",
-      "app-dd1c2320ad2fd56465cf.js.map",
+      "app-7e03f05c5480f0d80e1b.js.map",
       "build-js-styles.css.map"
     ],
     "path---docs-guides-middleware": [
