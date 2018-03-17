@@ -363,17 +363,9 @@ Which in turn will look like this:
 
 ### Get User Details
 
-Coming soon.
+## `getUserDetails()` - [Official Docs](https://developers.viber.com/docs/api/rest-bot-api/#get-user-details)
 
-<!--
-
-## `getUserDetails(id)` - [Official Docs](https://developers.viber.com/docs/api/rest-bot-api/#get-user-details)
-
-It will fetch the details of a specific Viber user based on his unique user ID.
-
-| Param | Type     | Description           |
-| ----- | -------- | --------------------- |
-| id    | `String` | Unique Viber user id. |
+It will fetch the details of the user.
 
 Example:
 
@@ -402,10 +394,6 @@ context.getUserDetails().then(user => {
 
 ### Get Online
 
-Coming soon.
-
-<!--
-
 ## `getOnlineStatus()` - [Official Docs](https://developers.viber.com/docs/api/rest-bot-api/#get-online)
 
 It will fetch the online status of the user.
@@ -413,15 +401,13 @@ It will fetch the online status of the user.
 Example:
 
 ```js
-client.getOnlineStatus().then(status => {
+context.getOnlineStatus().then(status => {
   console.log(status);
-  //   {
-  //     id: '01234567891=',
-  //     online_status: 1,
-  //     online_status_message: 'offline',
-  //     last_online: 1457764197627,
-  //   }
+  // {
+  //   id: '01234567891=',
+  //   online_status: 1,
+  //   online_status_message: 'offline',
+  //   last_online: 1457764197627,
+  // }
 });
 ```
-
--->
