@@ -953,9 +953,6 @@ context.pushImageCarouselTemplate('this is an image carousel template', [
 
 ### Profile API - [Official Docs](https://devdocs.line.me/en/#bot-api-get-profile)
 
-Coming soon.
-
-<!--
 
 ## `getUserProfile()`
 
@@ -975,17 +972,11 @@ context.getUserProfile().then(profile => {
 });
 ```
 
--->
-
 <br />
 
 <a id="grouproom-member-profile-api" />
 
 ### Group/Room Member Profile API - [Official Docs](https://devdocs.line.me/en/#get-group-room-member-profile)
-
-Coming soon.
-
-<!--
 
 ## `getMemberProfile(userId)`
 
@@ -1008,17 +999,11 @@ context.getMemberProfile(USER_ID).then(member => {
 });
 ```
 
--->
-
 <br />
 
 <a id="grouproom-member-ids-api" />
 
 ### Group/Room Member IDs API - [Official Docs](https://devdocs.line.me/en/#get-group-room-member-ids)
-
-Coming soon.
-
-<!--
 
 ## `getMemberIds(start)`
 
@@ -1067,8 +1052,6 @@ context.getAllMemberIds().then(ids => {
   // ]
 });
 ```
-
--->
 
 <br />
 
