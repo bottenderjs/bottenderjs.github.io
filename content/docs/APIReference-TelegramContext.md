@@ -698,8 +698,6 @@ context.sendInvoice({
 
 <br />
 
-<!--
-
 ## `answerShippingQuery(ok [, options])` - [Official Docs](https://core.telegram.org/bots/api/#answershippingquery)
 
 Reply to the shipping query.
@@ -731,8 +729,6 @@ Example:
 ```js
 context.answerPreCheckoutQuery(true);
 ```
-
--->
 
 <br />
 
