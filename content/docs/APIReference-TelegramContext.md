@@ -450,10 +450,6 @@ context.stopMessageLiveLocation();
 
 ### Group API
 
-Coming soon.
-
-<!--
-
 ## `kickChatMember(userId [, options])` - [Official Docs](https://core.telegram.org/bots/api/#kickchatmember)
 
 Kicks a user from the group, the supergroup or the channel.
@@ -663,8 +659,6 @@ Example:
 client.leaveChat();
 ```
 
--->
-
 <br />
 
 ### Payments API
@@ -704,8 +698,6 @@ context.sendInvoice({
 
 <br />
 
-<!--
-
 ## `answerShippingQuery(ok [, options])` - [Official Docs](https://core.telegram.org/bots/api/#answershippingquery)
 
 Reply to the shipping query.
@@ -737,8 +729,6 @@ Example:
 ```js
 context.answerPreCheckoutQuery(true);
 ```
-
--->
 
 <br />
 
