@@ -57,8 +57,8 @@
       "path---docs-api-reference-viber-context-3a4d1f9e3bb05d7cf0ec.js.map"
     ],
     "path---docs-api-reference-telegram-context": [
-      "path---docs-api-reference-telegram-context-90fc823acb34a975341a.js",
-      "path---docs-api-reference-telegram-context-90fc823acb34a975341a.js.map"
+      "path---docs-api-reference-telegram-context-1693114ba4504b9a2102.js",
+      "path---docs-api-reference-telegram-context-1693114ba4504b9a2102.js.map"
     ],
     "component---node-modules-gatsby-plugin-offline-app-shell-js": [
       "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js",
@@ -133,9 +133,9 @@
       "path---docs-api-reference-event-01a1294c12d82da0620c.js.map"
     ],
     "app": [
-      "app-f56e6700361991af69e1.js",
+      "app-1c8ab2de3ead61e1f593.js",
       "build-js-styles.css",
-      "app-f56e6700361991af69e1.js.map",
+      "app-1c8ab2de3ead61e1f593.js.map",
       "build-js-styles.css.map"
     ],
     "path---docs-guides-middleware": [
