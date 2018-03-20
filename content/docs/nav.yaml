@@ -58,5 +58,7 @@
       title: LineEvent
     - id: docs/APIReference-TelegramEvent
       title: TelegramEvent
+    - id: docs/APIReference-ViberEvent
+      title: ViberEvent
     - id: docs/APIReference-Handler
       title: Handler
