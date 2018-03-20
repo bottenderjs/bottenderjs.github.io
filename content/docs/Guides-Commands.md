@@ -16,7 +16,7 @@ npm install -g bottender
 Or use [`npx`](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b)(already installed in `npm@5.2.0` or greater) to get local `bottender` installation:
 
 ```sh
-npx bottender 
+npx bottender
 ```
 
 Some commands will need a `bottender.config.js` file to be properly configured.
@@ -55,7 +55,7 @@ You can use interactive CLI to create your bots:
 bottender init
 ```
 
-After answer a few questions, a new bot will be ready for you. 
+After answer a few questions, a new bot will be ready for you.
 
 ## Platform Specific Commands
 

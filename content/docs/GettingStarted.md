@@ -7,7 +7,7 @@ date: "2017-10-17"
 
 Bottender highly depends on [async function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function) syntax, so you must make sure your runtime meets the following requirements:
 
-- node >= 7.6
+* node >= 7.6
 
 ## Installing Bottender
 

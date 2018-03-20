@@ -3,7 +3,7 @@ title: Viber
 date: "2017-12-14"
 ---
 
-# Build your first Viber bot
+## Build Your First Viber Bot
 
 After setting up and getting the authorization token, you should fill it in [viber-hello-world](https://github.com/Yoctol/bottender/tree/master/examples/viber-hello-world/index.js). The following is part of sample code.
 
@@ -17,7 +17,7 @@ const bot = new ViberBot({
 
 Run your server and talk to the Viber bot. It works!
 
-### Full example
+### Full Example
 
 Here is the complete example for [viber-hello-world](https://github.com/Yoctol/bottender/tree/master/examples/viber-hello-world/index.js).
 
@@ -45,7 +45,7 @@ server.listen(5000, () => {
 Bottender supplies several types of event. You are able to access them via `context.event`.  
 For more information, check [Event Reference](./APIReference-Event).
 
-### Viber-specific context event
+### Viber-Specific Context Event
 
 * isMessage
 * isText
@@ -85,7 +85,7 @@ bot.onEvent(async context => {
 
 After your bot receives the request from Viber, you can use context send APIs to interact with users.
 
-### Viber-specific context send API
+### Viber-Specific Context Send API
 
 * sendMessage
 * sendText

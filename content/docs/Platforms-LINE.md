@@ -20,11 +20,11 @@ You need an [LINE@](http://at.line.me/) account for your bot to connect to. You 
 
 After that, you can manage your LINE@ accounts at [LINE@ MANAGER](https://admin-official.line.me/) and set them up to use **Messaging API** for bots to connect to.
 
-### LINE developers
+### LINE Developers
 
 After setting up LINE@ accounts to use Messaging API, further setup such as **webhook**, **access token** can be found at [LINE developers](https://developers.line.me). A **LINE Login** app or a **Messaging API** app is called a **channel** here.
 
-## Build your first LINE bot
+## Build Your First LINE Bot
 
 Check out your channel's **access token** and **channel secret** at [LINE developers](https://developers.line.me) then fill them in [line-hello-world](https://github.com/Yoctol/bottender/blob/master/examples/line-hello-world/index.js) example:
 
@@ -89,9 +89,9 @@ There are 8 types of messages you can send from your bot. In Bottender, you can 
   * Carousel
   * Image carousel
 
-## LINE specific
+## LINE Specific
 
-### Group chats
+### Group Chats
 
 LINE has 2 types of group chats, **groups** and **rooms**. For more information, check [official docs](https://developers.line.me/en/docs/messaging-api/group-chats/).
 

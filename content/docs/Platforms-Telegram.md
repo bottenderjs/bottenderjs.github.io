@@ -13,7 +13,7 @@ To start building a Telegram Bot, there are two requirements you need to satisfy
 * Token
 * Webhook URL
 
-### Get token
+### Get Token
 
 You have to generate a token by talking to [BotFather](https://telegram.me/botfather). It is an official bot which will help you create new bots or change settings for existing ones.  
 Check [Official Telegram Bot Introduction](https://core.telegram.org/bots#6-botfather) for more details about it.
@@ -22,7 +22,7 @@ Check [Official Telegram Bot Introduction](https://core.telegram.org/bots#6-botf
 
 Your bot receives updates via an outgoing webhook which is a specific `URL`. When there are any updates for the bot, Telegram will send an HTTPS request to the webhook `URL`.
 
-## Build your first Telegram bot
+## Build Your First Telegram Bot
 
 After setting up the webhook `URL` and getting the authorization token, you should fill them in [telegram-hello-world](https://github.com/Yoctol/bottender/tree/master/examples/telegram-hello-world/index.js). The following is part of sample code.
 
@@ -36,7 +36,7 @@ const bot = new TelegramBot({
 
 Run your server and talk to the Telegram bot. It works!
 
-### Full example
+### Full Example
 
 Here is the complete example for [telegram-hello-world](https://github.com/Yoctol/bottender/tree/master/examples/telegram-hello-world/index.js).
 
@@ -70,7 +70,7 @@ $ bottender telegram webhook set -w <YOUR_WEBHOOK_URL>
 Bottender supplies several types of event. You are able to access them via `context.event`.  
 For more information, check [Event Reference](./APIReference-Event).
 
-### Telegram-specific context event
+### Telegram-Specific Context Event
 
 * isText
 * isPhoto
@@ -102,7 +102,7 @@ bot.onEvent(async context => {
 
 After your bot receives the request from Telegram, you can use context send APIs to interact with users.
 
-### Telegram-specific context send API
+### Telegram-Specific Context Send API
 
 * sendMessage
 * sendPhoto
