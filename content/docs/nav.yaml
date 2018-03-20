@@ -56,5 +56,7 @@
       title: MessengerEvent
     - id: docs/APIReference-LineEvent
       title: LineEvent
+    - id: docs/APIReference-TelegramEvent
+      title: TelegramEvent
     - id: docs/APIReference-Handler
       title: Handler
