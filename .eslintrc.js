@@ -24,6 +24,7 @@ module.exports = {
     'react/jsx-wrap-multilines': 'off',
     'react/jsx-indent': 'off',
     'react/no-multi-comp': 'off',
+    'jsx-a11y/anchor-is-valid': 'off',
     'jsx-a11y/href-no-hash': 'off',
     'array-callback-return': 'off',
   },

@@ -21,8 +21,9 @@ const Container = styled.main`
 
 export default ({ children, data, location }) => {
   baseStyles();
-  const title = `${data.site.siteMetadata
-    .title} | Make Bots in Your Way, Fast and Flexibly`;
+  const title = `${
+    data.site.siteMetadata.title
+  } | Make Bots in Your Way, Fast and Flexibly`;
   const { pathname } = location;
 
   return (
