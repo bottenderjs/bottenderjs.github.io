@@ -54,5 +54,7 @@
       title: Event
     - id: docs/APIReference-MessengerEvent
       title: MessengerEvent
+    - id: docs/APIReference-LineEvent
+      title: LineEvent
     - id: docs/APIReference-Handler
       title: Handler
