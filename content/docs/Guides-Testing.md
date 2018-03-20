@@ -26,7 +26,7 @@ module.exports = async context => {
   } else if (context.event.isMessage) {
     await context.sendText('Sorry, I only read text messages.');
   }
-}
+};
 ```
 
 Then, we can start to test it with mock context.
@@ -76,10 +76,10 @@ After simulator instantiated with specific platform, you can create mocking cont
 
 ```js
 const simulator = new ContextSimulator({
-  platform: 'messenger'
+  platform: 'messenger',
 });
 
-const context = simulator.createTextContext('Awesome');  
+const context = simulator.createTextContext('Awesome');
 ```
 
 And we can use created context same way as the above example:
@@ -91,7 +91,7 @@ const { ContextSimulator } = require('bottender/test-utils');
 const handler = require('../handler');
 
 const simulator = new ContextSimulator({
-  platform: 'messenger'
+  platform: 'messenger',
 });
 
 it('should work', async () => {

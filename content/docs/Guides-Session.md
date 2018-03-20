@@ -33,7 +33,6 @@ Bot  > Hello Tim
 ```
 
 ```js
-
 // Bot will use memory session store as default if you don't assign sessionStore.
 bot.setInitialState({
   asking: false,
@@ -49,7 +48,7 @@ bot.onEvent(async context => {
     context.setState({ asking: true });
     await context.sendText("Hi, what's your nickname?");
   }
-})
+});
 ```
 
 See more details at [example](https://github.com/Yoctol/bottender/tree/master/examples/with-state)
@@ -60,6 +59,7 @@ You are able to set expired time for session optionally. The default value of ex
 The expiration should be sent as a **Number of minutes** when you are initializing a `SessionStore` object.
 
 Here is an example for creating a `MongoSessionStore` object with expired time:
+
 ```js
 // Session will expire after 10 seconds
 const { ConsoleBot, MongoSessionStore } = require('bottender');
@@ -81,14 +81,13 @@ Session store is a place where session data is being stored on server.
 
 We implement following kinds of session store. All kinds of bots will use memory session store as default.
 
-- **memory** - sessions are stored in memory with [LRU cache](https://github.com/isaacs/node-lru-cache) and will not be persisted. See [example](https://github.com/Yoctol/bottender/tree/master/examples/session-memory)
-- **file** - sessions are stored in `.sessions` by default. See
+* **memory** - sessions are stored in memory with [LRU cache](https://github.com/isaacs/node-lru-cache) and will not be persisted. See [example](https://github.com/Yoctol/bottender/tree/master/examples/session-memory)
+* **file** - sessions are stored in `.sessions` by default. See
   [example](https://github.com/Yoctol/bottender/tree/master/examples/session-file)
-- **mongo** - sessions are stored in a mongo database. See
+* **mongo** - sessions are stored in a mongo database. See
   [example](https://github.com/Yoctol/bottender/tree/master/examples/session-mongo)
-- **redis** - sessions are stored in redis based stores. See
+* **redis** - sessions are stored in redis based stores. See
   [example](https://github.com/Yoctol/bottender/tree/master/examples/session-redis)
-
 
 ## Adding Custom Session Drivers
 
@@ -98,9 +97,17 @@ Your custom session driver should implement the `SessionStore` interface. This i
 // @flow
 
 class Store implements SessionStore {
-  init(): Promise<SessionStore> { /* ... */ }
-  read(sessionId: string): Promise<Session | null> { /* ... */ }
-  write(sessionId: string, data): Promise<void> { /* ... */ }
-  destroy(sessionId: string): Promise<void> { /* ... */ }
+  init(): Promise<SessionStore> {
+    /* ... */
+  }
+  read(sessionId: string): Promise<Session | null> {
+    /* ... */
+  }
+  write(sessionId: string, data): Promise<void> {
+    /* ... */
+  }
+  destroy(sessionId: string): Promise<void> {
+    /* ... */
+  }
 }
 ```

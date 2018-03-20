@@ -23,7 +23,7 @@ First, create an app on [Slack API](https://api.slack.com/apps?new_app=1) site. 
 * Bots:
   * Setup your bot's display name.
 
-## Build your first Slack bot
+## Build Your First Slack Bot
 
 Check out your app's **access token** [Slack API](https://api.slack.com/apps/) then fill them in [slack-hello-world](https://github.com/Yoctol/bottender/blob/master/examples/slack-hello-world/index.js) example:
 
@@ -68,9 +68,9 @@ bot.onEvent(async context => {
 });
 ```
 
-## Slack specific
+## Slack Specific
 
-### Message format
+### Message Format
 
 In Bottender, you can use function `context.sendText()` to send messages. You can format messages with [Slack message formatting](https://api.slack.com/docs/message-formatting). For more information, check [SlackContext Reference](./APIReference-SlackContext) and [official docs](https://api.slack.com/methods/chat.postMessage).
 
@@ -80,7 +80,7 @@ You can invite your bot account into a channel. By doing so, the events will cre
 
 You can access the channel and team members in `context.session.channel` and `context.session.team`.
 
-### Get user info from ID
+### Get User Info from ID
 
 If you want to get user info from user ID, you can find it with `session.team` info. For example, getting an user's name can be:
 

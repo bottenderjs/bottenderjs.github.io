@@ -3,7 +3,7 @@ title: Console
 date: "2018-03-13"
 ---
 
-## Build your first Console bot
+## Build Your First Console Bot
 
 Import `ConsoleBot` from `bottender` package and create a bot instance:
 

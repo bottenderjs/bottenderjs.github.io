@@ -27,7 +27,7 @@ Before leaving this section, make sure you have the following requirements:
 
 We will use them to develop our messenger bot later.
 
-## Build your first Messenger bot
+## Build Your First Messenger Bot
 
 The following is a partial sample code, see the full example [here](https://github.com/Yoctol/bottender/tree/master/examples/messenger-hello-world).
 
@@ -42,7 +42,7 @@ const bot = new MessengerBot({
 
 After you fill the `accessToken` and `appSecret`, run your server and try it out by talking to your Facebook Page! It works!
 
-### Full example
+### Full Example
 
 Here is the complete example for [messenger-hello-world](https://github.com/Yoctol/bottender/tree/master/examples/messenger-hello-world).
 
@@ -85,7 +85,7 @@ more on [Guides Server](./Guides-Server#options).
 Bottender supports several types of events. You are able to access them via `context.event`.
 For more information, check [Event Reference](./APIReference-Event).
 
-### Messenger event properties
+### Messenger Event Properties
 
 * isText
 * isImage
@@ -123,7 +123,7 @@ Messenger introduced a `messaging_type` field in Messenger Platform 2.2 and it w
 
 When using Bottender, we automatically set `messaging_type` to `RESPONSE` when using send APIs in context so you don't need to worry about it. You can still pass other `messaging_types` in the `options` argument.
 
-### Messenger-specific context send API
+### Messenger-Specific Context Send API
 
 * sendText
 * sendImage
