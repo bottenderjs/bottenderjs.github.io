@@ -52,5 +52,7 @@
       title: ViberContext
     - id: docs/APIReference-Event
       title: Event
+    - id: docs/APIReference-MessengerEvent
+      title: MessengerEvent
     - id: docs/APIReference-Handler
       title: Handler
