@@ -1,2 +1,0 @@
-webpackJsonp([0xfb4fdf023ad3],{624:function(e,t){e.exports={data:{markdownRemark:{html:"",frontmatter:{title:"ViberEvent",date:"March 20, 2018",author:null},fields:{path:"docs/APIReference-ViberEvent.md"}},site:{siteMetadata:{title:"Bottender"}}},pathContext:{slug:"/docs/APIReference-ViberEvent/"}}}});
-//# sourceMappingURL=path---docs-api-reference-viber-event-f8a61828f1c93442f0d9.js.map
