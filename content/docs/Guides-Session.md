@@ -61,7 +61,7 @@ The expiration should be sent as a **Number of minutes** when you are initializi
 Here is an example for creating a `MongoSessionStore` object with expired time:
 
 ```js
-// Session will expire after 10 seconds
+// Session will expire after 10 minutes
 const { ConsoleBot, MongoSessionStore } = require('bottender');
 
 const bot = new ConsoleBot({
