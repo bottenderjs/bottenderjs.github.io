@@ -81,8 +81,8 @@
       "path---docs-platforms-slack-907f9b6a707c5bd2da72.js.map"
     ],
     "path---docs-api-reference-handler": [
-      "path---docs-api-reference-handler-06cce59d7d2e70947661.js",
-      "path---docs-api-reference-handler-06cce59d7d2e70947661.js.map"
+      "path---docs-api-reference-handler-e89886827e4012078bdb.js",
+      "path---docs-api-reference-handler-e89886827e4012078bdb.js.map"
     ],
     "path---docs-api-reference-slack-event": [
       "path---docs-api-reference-slack-event-10dc858fe655cd6e0fee.js",
@@ -149,9 +149,9 @@
       "path---docs-api-reference-event-d6bd05da95c2c36a4894.js.map"
     ],
     "app": [
-      "app-e6a9ae86f47d3b122c5f.js",
+      "app-cc9b90c5ce3106274c5a.js",
       "build-js-styles.css",
-      "app-e6a9ae86f47d3b122c5f.js.map",
+      "app-cc9b90c5ce3106274c5a.js.map",
       "build-js-styles.css.map"
     ],
     "path---docs-api-reference-viber-event": [
