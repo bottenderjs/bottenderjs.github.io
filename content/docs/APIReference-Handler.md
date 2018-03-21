@@ -106,8 +106,9 @@ It will trigger handler function if any Error is thrown.
 - [LineHandler](https://github.com/Yoctol/bottender/tree/master/examples/line-builder/index.js)
 - [SlackHandler](https://github.com/Yoctol/bottender/tree/master/examples/slack-builder/index.js)
 - [TelegramHandler](https://github.com/Yoctol/bottender/tree/master/examples/telegram-builder/index.js)
+- [ViberHandler](https://github.com/Yoctol/bottender/tree/master/examples/viber-builder/index.js)
 
-Let's use MessengerHandler as an example.
+Let's use `MessengerHandler` as an example.
 
 ### `onText`
 
