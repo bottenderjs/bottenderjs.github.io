@@ -41,7 +41,7 @@ Then run your server and try it out by talking to your LINE@ account!
 
 ## Event Types
 
-There are 7 types of events your bot may receive from LINE. In Bottender, you can access them via `context.event`. For more information, check [Event Reference](./APIReference-Event) and [official docs](https://developers.line.me/en/docs/messaging-api/reference/#webhook-event-objects).
+There are 7 types of events your bot may receive from LINE. In Bottender, you can access them via `context.event`. For more information, check [LineEvent Reference](./APIReference-LineEvent) and [official docs](https://developers.line.me/en/docs/messaging-api/reference/#webhook-event-objects).
 
 * Message event
   * Text

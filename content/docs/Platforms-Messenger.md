@@ -97,7 +97,7 @@ For more information, check [Event Reference](./APIReference-Event).
 * payload
 * ...
 
-more on [Event Reference](./APIReference-Event).
+more on [MessengerEvent Reference](./APIReference-MessengerEvent).
 
 For example:
 

@@ -80,7 +80,7 @@ For more information, check [Event Reference](./APIReference-Event).
 * callbackQuery
 * ...
 
-more on [Event Reference](./APIReference-Event).
+more on [TelegramEvent Reference](./APIReference-TelegramEvent).
 
 Example:
 

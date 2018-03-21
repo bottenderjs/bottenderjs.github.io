@@ -65,7 +65,7 @@ For more information, check [Event Reference](./APIReference-Event).
 * picture
 * ...
 
-more on [Event Reference](./APIReference-Event).
+more on [ViberEvent Reference](./APIReference-ViberEvent).
 
 Example:
 

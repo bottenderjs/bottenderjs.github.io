@@ -39,7 +39,7 @@ Then run your server and try it out by invite the **Bot User** to a channel and 
 
 ## Events
 
-There are many types of events your bot may receive from Slack, but it's up to you whether to subscribe each of them. In Bottender, you can access them via `context.event`. For more information, check [Event Reference](./APIReference-Event) and [official docs](https://api.slack.com/events).
+There are many types of events your bot may receive from Slack, but it's up to you whether to subscribe each of them. In Bottender, you can access them via `context.event`. For more information, check [SlackEvent Reference](./APIReference-SlackEvent) and [official docs](https://api.slack.com/events).
 
 For the **message** related events, Bottender supports some helpers:
 
