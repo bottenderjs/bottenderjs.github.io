@@ -295,9 +295,46 @@ context.sendChatAction('typing');
 
 ### Get API
 
-Coming soon.
+## `getUserProfilePhotos(options)` - [Official Docs](https://core.telegram.org/bots/api/#getuserprofilephotos)
 
-<!--
+Gets a list of profile pictures for a user.
+
+| Param   | Type     | Description               |
+| ------- | -------- | ------------------------- |
+| options | `Object` | Other optional parameters |
+
+Example:
+
+```js
+context.getUserProfilePhotos().then(result => {
+  console.log(result);
+  // {
+  //   total_count: 3,
+  //   photos: [
+  //     [
+  //       {
+  //         file_id: 'AgADBAADGTo4Gz8cZAeR-ouu4XBx78EeqRkABHahi76pN-aO0UoDA050',
+  //         file_size: 14650,
+  //         width: 160,
+  //         height: 160,
+  //       },
+  //       {
+  //         file_id: 'AgADBAADGTo4Gz8cZAeR-ouu4XBx78EeqRkABKCfooqTgFUX0EoD5B1C',
+  //         file_size: 39019,
+  //         width: 320,
+  //         height: 320,
+  //       },
+  //       {
+  //         file_id: 'AgADBAADGTo4Gz8cZAeR-ouu4XBx78EeqRkABPL_pC9K3UpI0koD1B1C',
+  //         file_size: 132470,
+  //         width: 640,
+  //         height: 640,
+  //       },
+  //     ],
+  //   ],
+  // }
+});
+```
 
 ## `getChat()` - [Official Docs](https://core.telegram.org/bots/api/#getchat)
 
@@ -306,7 +343,16 @@ Gets up to date information about the chat (current name of the user for one-on-
 Example:
 
 ```js
-context.getChat();
+context.getChat().then(result => {
+  console.log(result);
+  // {
+  //   id: 313534466,
+  //   first_name: 'first',
+  //   last_name: 'last',
+  //   username: 'username',
+  //   type: 'private',
+  // }
+});
 ```
 
 <br />
@@ -318,7 +364,21 @@ Gets a list of administrators in the chat.
 Example:
 
 ```js
-context.getChatAdministrators();
+context.getChatAdministrators().then(result => {
+  console.log(result);
+  // [
+  //   {
+  //     user: {
+  //       id: 313534466,
+  //       first_name: 'first',
+  //       last_name: 'last',
+  //       username: 'username',
+  //       languange_code: 'zh-TW',
+  //     },
+  //     status: 'creator',
+  //   },
+  // ]
+});
 ```
 
 <br />
@@ -330,7 +390,10 @@ Gets the number of members in the chat.
 Example:
 
 ```js
-context.getChatMembersCount();
+context.getChatMembersCount().then(result => {
+  console.log(result);
+  // '6'
+});
 ```
 
 <br />
@@ -346,10 +409,20 @@ Gets information about a member of the chat.
 Example:
 
 ```js
-context.getChatMember(USER_ID);
+context.getChatMember(USER_ID).then(result => {
+  console.log(result);
+  // {
+  //   user: {
+  //     id: 313534466,
+  //     first_name: 'first',
+  //     last_name: 'last',
+  //     username: 'username',
+  //     languange_code: 'zh-TW',
+  //   },
+  //   status: 'creator',
+  // }
+});
 ```
-
--->
 
 <br />
 
