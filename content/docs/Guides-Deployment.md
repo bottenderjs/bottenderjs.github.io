@@ -3,7 +3,9 @@ title: Deployment
 date: "2017-10-15"
 ---
 
-In this section, two fast and simple ways of deployment are introduced. You can deploy on
+Deploying a Bottender server is as easy as deploying a regular Node server.
+
+In this section, following fast and simple ways of deployment are introduced:
 
 * [Now](https://zeit.co/now)
 * [Heroku](https://www.heroku.com/home)
@@ -12,7 +14,7 @@ Note that these services have limited free dynos. If your bots need to be up 24/
 
 ## Now
 
-You can set vars in bottender.config as environment vars and secrets.
+You can set vars in `bottender.config.js` as environment vars and secrets.
 
 ### Secrets
 
