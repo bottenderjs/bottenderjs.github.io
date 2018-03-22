@@ -27,7 +27,7 @@ For platform specific events, please check out following links:
 | [Telegram](https://telegram.org/)       | [APIReference-TelegramEvent](https://bottender.js.org/docs/APIReference-TelegramEvent)   |
 | [Viber](https://www.viber.com/)         | [APIReference-ViberEvent](https://bottender.js.org/docs/APIReference-ViberEvent)         |
 
-## `rawEvent`
+#### `rawEvent`
 
 Underlying raw event.
 
@@ -40,7 +40,7 @@ event.rawEvent;
 // }
 ```
 
-## `isMessage`
+#### `isMessage`
 
 Determine if the event is a message event.
 
@@ -50,7 +50,7 @@ Example:
 event.isMessage; // true
 ```
 
-## `message`
+#### `message`
 
 The message object from Messenger raw event.
 
@@ -64,7 +64,7 @@ event.message;
 // }
 ```
 
-## `isText`
+#### `isText`
 
 Determine if the event is a message event which includes text.
 
@@ -74,7 +74,7 @@ Example:
 event.isText; // true
 ```
 
-## `text`
+#### `text`
 
 The text string from Messenger raw event.
 

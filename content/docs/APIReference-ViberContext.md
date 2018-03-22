@@ -10,7 +10,7 @@ date: "2018-03-16"
 
 ### Send API
 
-## `sendMessage(message)` - [Official Docs](https://developers.viber.com/docs/api/rest-bot-api/#send-message)
+#### `sendMessage(message)` - [Official Docs](https://developers.viber.com/docs/api/rest-bot-api/#send-message)
 
 Sending a message to the user.
 
@@ -31,7 +31,7 @@ context.sendMessage({
 
 <br />
 
-## `sendText(text [, options])` - [Official Docs](https://developers.viber.com/docs/api/rest-bot-api/#text-message)
+#### `sendText(text [, options])` - [Official Docs](https://developers.viber.com/docs/api/rest-bot-api/#text-message)
 
 Sending a text message to the user.
 
@@ -50,7 +50,7 @@ context.sendText('Hello');
 
 <br />
 
-## `sendPicture(picture [, options])` - [Official Docs](https://developers.viber.com/docs/api/rest-bot-api/#picture-message)
+#### `sendPicture(picture [, options])` - [Official Docs](https://developers.viber.com/docs/api/rest-bot-api/#picture-message)
 
 Sending a picture message to the user.
 
@@ -76,7 +76,7 @@ context.sendPicture({
 
 <br />
 
-## `sendVideo(video [, options])` - [Official Docs](https://developers.viber.com/docs/api/rest-bot-api/#video-message)
+#### `sendVideo(video [, options])` - [Official Docs](https://developers.viber.com/docs/api/rest-bot-api/#video-message)
 
 Sending a video message to the user.
 
@@ -104,7 +104,7 @@ context.sendVideo({
 
 <br />
 
-## `sendFile(file [, options])` - [Official Docs](https://developers.viber.com/docs/api/rest-bot-api/#file-message)
+#### `sendFile(file [, options])` - [Official Docs](https://developers.viber.com/docs/api/rest-bot-api/#file-message)
 
 Sending a file message to the user.
 
@@ -130,7 +130,7 @@ context.sendFile({
 
 <br />
 
-## `sendContact(contact [, options])` - [Official Docs](https://developers.viber.com/docs/api/rest-bot-api/#contact-message)
+#### `sendContact(contact [, options])` - [Official Docs](https://developers.viber.com/docs/api/rest-bot-api/#contact-message)
 
 Sending a contact message to the user.
 
@@ -154,7 +154,7 @@ context.sendContact({
 
 <br />
 
-## `sendLocation(location [, options])` - [Official Docs](https://developers.viber.com/docs/api/rest-bot-api/#location-message)
+#### `sendLocation(location [, options])` - [Official Docs](https://developers.viber.com/docs/api/rest-bot-api/#location-message)
 
 Sending a location message to the user.
 
@@ -178,7 +178,7 @@ context.sendLocation({
 
 <br />
 
-## `sendURL(url [, options])` - [Official Docs](https://developers.viber.com/docs/api/rest-bot-api/#url-message)
+#### `sendURL(url [, options])` - [Official Docs](https://developers.viber.com/docs/api/rest-bot-api/#url-message)
 
 Sending an URL message to the user.
 
@@ -197,7 +197,7 @@ context.sendURL('http://developers.viber.com');
 
 <br />
 
-## `sendSticker(stickerId [, options])` - [Official Docs](https://developers.viber.com/docs/api/rest-bot-api/#sticker-message)
+#### `sendSticker(stickerId [, options])` - [Official Docs](https://developers.viber.com/docs/api/rest-bot-api/#sticker-message)
 
 Sending a sticker message to the user.
 
@@ -216,7 +216,7 @@ context.sendSticker(46105);
 
 <br />
 
-## `sendCarouselContent(richMedia [, options])` - [Official Docs](https://developers.viber.com/docs/api/rest-bot-api/#carousel-content-message)
+#### `sendCarouselContent(richMedia [, options])` - [Official Docs](https://developers.viber.com/docs/api/rest-bot-api/#carousel-content-message)
 
 Sending a carousel content message to the user.
 
@@ -363,7 +363,7 @@ Which in turn will look like this:
 
 ### Get User Details
 
-## `getUserDetails()` - [Official Docs](https://developers.viber.com/docs/api/rest-bot-api/#get-user-details)
+#### `getUserDetails()` - [Official Docs](https://developers.viber.com/docs/api/rest-bot-api/#get-user-details)
 
 It will fetch the details of the user.
 
@@ -394,7 +394,7 @@ context.getUserDetails().then(user => {
 
 ### Get Online
 
-## `getOnlineStatus()` - [Official Docs](https://developers.viber.com/docs/api/rest-bot-api/#get-online)
+#### `getOnlineStatus()` - [Official Docs](https://developers.viber.com/docs/api/rest-bot-api/#get-online)
 
 It will fetch the online status of the user.
 

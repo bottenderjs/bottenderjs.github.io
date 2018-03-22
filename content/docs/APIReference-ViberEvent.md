@@ -3,7 +3,7 @@ title: ViberEvent
 date: "2018-03-20"
 ---
 
-## `rawEvent`
+#### `rawEvent`
 
 Underlying raw event from Viber.
 
@@ -31,7 +31,7 @@ event.rawEvent;
 // }
 ```
 
-## `isMessage`
+#### `isMessage`
 
 Determine if the event is a message event.
 
@@ -41,7 +41,7 @@ Example:
 event.isMessage; // true
 ```
 
-## `message`
+#### `message`
 
 The message object from Viber raw event.
 
@@ -56,7 +56,7 @@ event.message;
 // }
 ```
 
-## `isText`
+#### `isText`
 
 Determine if the event is a message event which includes text.
 
@@ -66,7 +66,7 @@ Example:
 event.isText; // true
 ```
 
-## `text`
+#### `text`
 
 The text string from Viber raw event.
 
@@ -76,7 +76,7 @@ Example:
 event.text; // 'a message to the service'
 ```
 
-## `isPicture`
+#### `isPicture`
 
 Determine if the event is a message event which includes picture.
 
@@ -86,7 +86,7 @@ Example:
 event.isPicture; // true
 ```
 
-## `picture`
+#### `picture`
 
 The picture URL from Viber raw event.
 
@@ -96,7 +96,7 @@ Example:
 event.picture; // 'http://example.com/img.jpg'
 ```
 
-## `isVideo`
+#### `isVideo`
 
 Determine if the event is a message event which includes video.
 
@@ -106,7 +106,7 @@ Example:
 event.isVideo; // true
 ```
 
-## `video`
+#### `video`
 
 The video URL from Viber raw event.
 
@@ -116,7 +116,7 @@ Example:
 event.video; // 'http://example.com/video.mp4'
 ```
 
-## `isFile`
+#### `isFile`
 
 Determine if the event is a message event which includes file.
 
@@ -126,7 +126,7 @@ Example:
 event.isFile; // true
 ```
 
-## `file`
+#### `file`
 
 The file URL from Viber raw event.
 
@@ -136,7 +136,7 @@ Example:
 event.file; // 'http://example.com/doc.pdf'
 ```
 
-## `isSticker`
+#### `isSticker`
 
 Determine if the event is a message event which includes sticker.
 
@@ -146,7 +146,7 @@ Example:
 event.isSticker; // true
 ```
 
-## `sticker`
+#### `sticker`
 
 The sticker id from Viber raw event.
 
@@ -156,7 +156,7 @@ Example:
 event.sticker; // 46105
 ```
 
-## `isContact`
+#### `isContact`
 
 Determine if the event is a message event which includes contact.
 
@@ -166,7 +166,7 @@ Example:
 event.isContact; // true
 ```
 
-## `contact`
+#### `contact`
 
 The contact object from Viber raw event.
 
@@ -180,7 +180,7 @@ event.contact;
 // }
 ```
 
-## `isURL`
+#### `isURL`
 
 Determine if the event is a message event which includes URL.
 
@@ -190,7 +190,7 @@ Example:
 event.isURL; // true
 ```
 
-## `url`
+#### `url`
 
 The URL from Viber raw event.
 
@@ -200,7 +200,7 @@ Example:
 event.url; // 'http://example.com'
 ```
 
-## `isLocation`
+#### `isLocation`
 
 Determine if the event is a message event which includes location.
 
@@ -210,7 +210,7 @@ Example:
 event.isLocation; // true
 ```
 
-## `location`
+#### `location`
 
 The location object from Viber raw event.
 
@@ -224,7 +224,7 @@ event.location;
 // }
 ```
 
-## `isSubscribed`
+#### `isSubscribed`
 
 Determine if the event is a subscribed event.
 
@@ -234,7 +234,7 @@ Example:
 event.isSubscribed; // true
 ```
 
-## `subscribed`
+#### `subscribed`
 
 The subscribed payload from Viber raw event.
 
@@ -257,7 +257,7 @@ event.subscribed;
 // }
 ```
 
-## `isUnsubscribed`
+#### `isUnsubscribed`
 
 Determine if the event is an unsubscribed event.
 
@@ -267,7 +267,7 @@ Example:
 event.isUnsubscribed; // true
 ```
 
-## `unsubscribed`
+#### `unsubscribed`
 
 The unsubscribed payload from Viber raw event.
 
@@ -283,7 +283,7 @@ event.unsubscribed;
 // }
 ```
 
-## `isConversationStarted`
+#### `isConversationStarted`
 
 Determine if the event is a conversation_started event.
 
@@ -293,7 +293,7 @@ Example:
 event.isConversationStarted; // true
 ```
 
-## `conversationStarted`
+#### `conversationStarted`
 
 The conversation started payload from Viber raw event.
 
@@ -319,7 +319,7 @@ event.conversationStarted;
 // }
 ```
 
-## `isDelivered`
+#### `isDelivered`
 
 The delivered payload from Viber raw event.
 
@@ -329,7 +329,7 @@ Example:
 event.isDelivered; // true
 ```
 
-## `delivered`
+#### `delivered`
 
 The delivered payload from Viber raw event.
 
@@ -345,7 +345,7 @@ event.delivered;
 // }
 ```
 
-## `isSeen`
+#### `isSeen`
 
 Determine if the event is a seen event.
 
@@ -355,7 +355,7 @@ Example:
 event.isSeen; // true
 ```
 
-## `seen`
+#### `seen`
 
 The seen payload from Viber raw event.
 
@@ -371,7 +371,7 @@ event.seen;
 // }
 ```
 
-## `isFailed`
+#### `isFailed`
 
 Determine if the event is a failed event.
 
@@ -381,7 +381,7 @@ Example:
 event.isFailed; // true
 ```
 
-## `failed`
+#### `failed`
 
 The failed payload from Viber raw event.
 

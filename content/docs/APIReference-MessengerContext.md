@@ -11,7 +11,7 @@ date: "2018-03-15"
 * [User Profile API](#user-profile-api)
 * [Handover Protocol API](#handover-protocol-api)
 
-## `sendMessage(message [, options])`
+#### `sendMessage(message [, options])`
 
 Send messages to the user using the [Send API](https://developers.facebook.com/docs/messenger-platform/reference/send-api#request).
 
@@ -55,7 +55,7 @@ Available messaging types:
 
 ### Message Content Types - [Official Docs](https://developers.facebook.com/docs/messenger-platform/send-messages#content_types)
 
-## `sendText(text [, options])`
+#### `sendText(text [, options])`
 
 Send plain text messages to the user using the [Send API](https://developers.facebook.com/docs/messenger-platform/reference/send-api#request).
 
@@ -78,7 +78,7 @@ context.sendText('Hello!', { tag: 'ISSUE_RESOLUTION' });
 
 <br />
 
-## `sendAttachment(attachment [, options])`
+#### `sendAttachment(attachment [, options])`
 
 Send attachment messages to the user using the [Send API](https://developers.facebook.com/docs/messenger-platform/reference/send-api#request).
 
@@ -100,7 +100,7 @@ context.sendAttachment({
 
 <br />
 
-## `sendAudio(audio [, options])`
+#### `sendAudio(audio [, options])`
 
 Send sounds to the user by uploading them or sharing a URL using the [Send API](https://developers.facebook.com/docs/messenger-platform/reference/send-api#request).
 
@@ -133,7 +133,7 @@ context.sendAudio(fs.createReadStream('audio.mp3'));
 
 <br />
 
-## `sendImage(image [, options])`
+#### `sendImage(image [, options])`
 
 Send images to the user by uploading them or sharing a URL using the [Send API](https://developers.facebook.com/docs/messenger-platform/reference/send-api#request). Supported formats are jpg, png and gif.
 
@@ -166,7 +166,7 @@ context.sendImage(fs.createReadStream('vr.jpg'));
 
 <br />
 
-## `sendVideo(video [, options])`
+#### `sendVideo(video [, options])`
 
 Send videos to the user by uploading them or sharing a URL using the [Send API](https://developers.facebook.com/docs/messenger-platform/reference/send-api#request).
 
@@ -199,7 +199,7 @@ context.sendVideo(fs.createReadStream('video.mp4'));
 
 <br />
 
-## `sendFile(file [, options])`
+#### `sendFile(file [, options])`
 
 Send files to the user by uploading them or sharing a URL using the [Send API](https://developers.facebook.com/docs/messenger-platform/reference/send-api#request).
 
@@ -236,7 +236,7 @@ context.sendFile(fs.createReadStream('receipt.pdf'));
 
 ### Templates - [Official Docs](https://developers.facebook.com/docs/messenger-platform/send-api-reference/templates)
 
-## `sendTemplate(template [, options])`
+#### `sendTemplate(template [, options])`
 
 Send structured message templates to the user using the [Send API](https://developers.facebook.com/docs/messenger-platform/reference/send-api#request).
 
@@ -263,7 +263,7 @@ context.sendTemplate({
 
 <br />
 
-## `sendButtonTemplate(title, buttons [, options])` - [Official Docs](https://developers.facebook.com/docs/messenger-platform/send-api-reference/button-template)
+#### `sendButtonTemplate(title, buttons [, options])` - [Official Docs](https://developers.facebook.com/docs/messenger-platform/send-api-reference/button-template)
 
 Send button message templates to the user using the [Send API](https://developers.facebook.com/docs/messenger-platform/reference/send-api#request).
 
@@ -294,7 +294,7 @@ context.sendButtonTemplate('What do you want to do next?', [
 
 <br />
 
-## `sendGenericTemplate(elements [, options])` - [Official Docs](https://developers.facebook.com/docs/messenger-platform/send-api-reference/generic-template)
+#### `sendGenericTemplate(elements [, options])` - [Official Docs](https://developers.facebook.com/docs/messenger-platform/send-api-reference/generic-template)
 
 Send generic message templates to the user using the [Send API](https://developers.facebook.com/docs/messenger-platform/reference/send-api#request).
 
@@ -370,7 +370,7 @@ Available tags:
 
 <br />
 
-## `sendListTemplate(items, buttons [, options])` - [Official Docs](https://developers.facebook.com/docs/messenger-platform/send-api-reference/list-template)
+#### `sendListTemplate(items, buttons [, options])` - [Official Docs](https://developers.facebook.com/docs/messenger-platform/send-api-reference/list-template)
 
 Send list message templates to the user using the [Send API](https://developers.facebook.com/docs/messenger-platform/reference/send-api#request).
 
@@ -423,7 +423,7 @@ context.sendListTemplate(
 
 <br />
 
-## `sendOpenGraphTemplate(elements [, options])` - [Official Docs](https://developers.facebook.com/docs/messenger-platform/open-graph-template)
+#### `sendOpenGraphTemplate(elements [, options])` - [Official Docs](https://developers.facebook.com/docs/messenger-platform/open-graph-template)
 
 Send open graph message templates to the user using the [Send API](https://developers.facebook.com/docs/messenger-platform/reference/send-api#request).
 
@@ -453,7 +453,7 @@ context.sendOpenGraphTemplate([
 
 <br />
 
-## `sendMediaTemplate(elements [, options])` - [Official Docs](https://developers.facebook.com/docs/messenger-platform/send-messages/template/media)
+#### `sendMediaTemplate(elements [, options])` - [Official Docs](https://developers.facebook.com/docs/messenger-platform/send-messages/template/media)
 
 Send media message templates to the user using the [Send API](https://developers.facebook.com/docs/messenger-platform/reference/send-api#request).
 
@@ -484,7 +484,7 @@ context.sendMediaTemplate([
 
 <br />
 
-## `sendReceiptTemplate(receipt [, options])` - [Official Docs](https://developers.facebook.com/docs/messenger-platform/send-api-reference/receipt-template)
+#### `sendReceiptTemplate(receipt [, options])` - [Official Docs](https://developers.facebook.com/docs/messenger-platform/send-api-reference/receipt-template)
 
 Send receipt message templates to the user using the [Send API](https://developers.facebook.com/docs/messenger-platform/reference/send-api#request).
 
@@ -552,7 +552,7 @@ context.sendReceiptTemplate({
 
 <br />
 
-## `sendAirlineBoardingPassTemplate(attributes [, options])` - [Official Docs](https://developers.facebook.com/docs/messenger-platform/send-api-reference/airline-boardingpass-template)
+#### `sendAirlineBoardingPassTemplate(attributes [, options])` - [Official Docs](https://developers.facebook.com/docs/messenger-platform/send-api-reference/airline-boardingpass-template)
 
 Send airline boarding pass message templates to the user using the [Send API](https://developers.facebook.com/docs/messenger-platform/reference/send-api#request).
 
@@ -686,7 +686,7 @@ context.sendAirlineBoardingPassTemplate({
 
 <br />
 
-## `sendAirlineCheckinTemplate(attributes [, options])` - [Official Docs](https://developers.facebook.com/docs/messenger-platform/send-api-reference/airline-checkin-template)
+#### `sendAirlineCheckinTemplate(attributes [, options])` - [Official Docs](https://developers.facebook.com/docs/messenger-platform/send-api-reference/airline-checkin-template)
 
 Send airline checkin message templates to the user using the [Send API](https://developers.facebook.com/docs/messenger-platform/reference/send-api#request).
 
@@ -732,7 +732,7 @@ context.sendAirlineCheckinTemplate({
 
 <br />
 
-## `sendAirlineItineraryTemplate(attributes [, options])` - [Official Docs](https://developers.facebook.com/docs/messenger-platform/send-api-reference/airline-itinerary-template)
+#### `sendAirlineItineraryTemplate(attributes [, options])` - [Official Docs](https://developers.facebook.com/docs/messenger-platform/send-api-reference/airline-itinerary-template)
 
 Send airline itinerary message templates to the user using the [Send API](https://developers.facebook.com/docs/messenger-platform/reference/send-api#request).
 
@@ -872,7 +872,7 @@ context.sendAirlineItineraryTemplate({
 
 <br />
 
-## `sendAirlineFlightUpdateTemplate(attributes [, options])` - [Official Docs](https://developers.facebook.com/docs/messenger-platform/send-api-reference/airline-update-template)
+#### `sendAirlineFlightUpdateTemplate(attributes [, options])` - [Official Docs](https://developers.facebook.com/docs/messenger-platform/send-api-reference/airline-update-template)
 
 Send airline flight update message templates to the user using the [Send API](https://developers.facebook.com/docs/messenger-platform/reference/send-api#request).
 
@@ -962,7 +962,7 @@ It works with all of send message methods.
 
 <br />
 
-## `sendSenderAction(action)`
+#### `sendSenderAction(action)`
 
 Send sender actions to the user using the [Send API](https://developers.facebook.com/docs/messenger-platform/reference/send-api#request), to let users know you are processing their request.
 
@@ -978,7 +978,7 @@ context.sendSenderAction('typing_on');
 
 <br />
 
-## `markSeen()`
+#### `markSeen()`
 
 Mark last message as read for the user.
 
@@ -990,7 +990,7 @@ context.markSeen();
 
 <br />
 
-## `typingOn()`
+#### `typingOn()`
 
 Turn typing indicators on for the user.
 
@@ -1002,7 +1002,7 @@ context.typingOn();
 
 <br />
 
-## `typingOff()`
+#### `typingOff()`
 
 Turn typing indicators off for the user.
 
@@ -1018,7 +1018,7 @@ context.typingOff();
 
 ### Targeting Broadcast Messages - [Official Docs](https://developers.facebook.com/docs/messenger-platform/send-messages/broadcast-messages/target-broadcasts)
 
-## `associateLabel(labelId)`
+#### `associateLabel(labelId)`
 
 Associating a Label to the user
 
@@ -1034,7 +1034,7 @@ context.associateLabel(LABEL_ID);
 
 <br />
 
-## `dissociateLabel(labelId)`
+#### `dissociateLabel(labelId)`
 
 Removing a Label from the user.
 
@@ -1050,7 +1050,7 @@ context.dissociateLabel(LABEL_ID);
 
 <br />
 
-## `getAssociatedLabels()`
+#### `getAssociatedLabels()`
 
 Retrieving Labels Associated with the user.
 
@@ -1088,7 +1088,7 @@ context.getAssociatedLabels().then(result => {
 
 ### User Profile API - [Official Docs](https://developers.facebook.com/docs/messenger-platform/user-profile)
 
-## `getUserProfile()`
+#### `getUserProfile()`
 
 Retrieving profile of the user.
 
@@ -1112,7 +1112,7 @@ context.getUserProfile().then(user => {
 
 ### Handover Protocol API
 
-## `passThreadControl(targetAppId [, metadata])` - [Official Docs](https://developers.facebook.com/docs/messenger-platform/pass-thread-control)
+#### `passThreadControl(targetAppId [, metadata])` - [Official Docs](https://developers.facebook.com/docs/messenger-platform/pass-thread-control)
 
 Passes control of the thread from your app to another app.
 
@@ -1129,7 +1129,7 @@ context.passThreadControl(APP_ID);
 
 <br />
 
-## `passThreadControlToPageInbox(metadata)` - [Official Docs](https://developers.facebook.com/docs/messenger-platform/handover-protocol/pass-thread-control#page_inbox)
+#### `passThreadControlToPageInbox(metadata)` - [Official Docs](https://developers.facebook.com/docs/messenger-platform/handover-protocol/pass-thread-control#page_inbox)
 
 Passes control of the thread from your app to "Page Inbox" app.
 
@@ -1145,7 +1145,7 @@ context.passThreadControlToPageInbox();
 
 <br />
 
-## `takeThreadControl(metadata)` - [Official Docs](https://developers.facebook.com/docs/messenger-platform/take-thread-control)
+#### `takeThreadControl(metadata)` - [Official Docs](https://developers.facebook.com/docs/messenger-platform/take-thread-control)
 
 Takes control of the thread from a Secondary Receiver app.
 
@@ -1161,7 +1161,7 @@ context.takeThreadControl();
 
 <br />
 
-## `requestThreadControl(metadata)` - [Official Docs](https://developers.facebook.com/docs/messenger-platform/handover-protocol/request-thread-control/)
+#### `requestThreadControl(metadata)` - [Official Docs](https://developers.facebook.com/docs/messenger-platform/handover-protocol/request-thread-control/)
 
 Requests control of the thread from a Primary Receiver app.
 

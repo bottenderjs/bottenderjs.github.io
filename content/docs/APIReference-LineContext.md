@@ -22,7 +22,7 @@ date: "2018-03-15"
 
 Responds to events from users, groups, and rooms.
 
-## `reply(messages)`
+#### `reply(messages)`
 
 Responds messages to the receiver using reply token.
 
@@ -58,7 +58,7 @@ context.reply([
 
 <br />
 
-## `replyText(text)`
+#### `replyText(text)`
 
 Responds text message to the receiver using reply token.
 
@@ -80,7 +80,7 @@ context.reply('Hello!');
 
 <br />
 
-## `replyImage(imageUrl, previewImageUrl)`
+#### `replyImage(imageUrl, previewImageUrl)`
 
 Responds image message to the receiver using reply token.
 
@@ -102,7 +102,7 @@ context.replyImage(
 
 <br />
 
-## `replyVideo(videoUrl, previewImageUrl)`
+#### `replyVideo(videoUrl, previewImageUrl)`
 
 Responds video message to the receiver using reply token.
 
@@ -124,7 +124,7 @@ context.replyVideo(
 
 <br />
 
-## `replyAudio(audioUrl, duration)`
+#### `replyAudio(audioUrl, duration)`
 
 Responds audio message to the receiver using reply token.
 
@@ -143,7 +143,7 @@ context.replyAudio('https://example.com/original.m4a', 240000);
 
 <br />
 
-## `replyLocation(location)`
+#### `replyLocation(location)`
 
 Responds location message to the receiver using reply token.
 
@@ -170,7 +170,7 @@ context.replyLocation({
 
 <br />
 
-## `replySticker(packageId, stickerId)`
+#### `replySticker(packageId, stickerId)`
 
 Responds sticker message to the receiver using reply token.  
 For a list of stickers that can be sent with the Messaging API, see the [sticker list](https://developers.line.me/media/messaging-api/messages/sticker_list.pdf).
@@ -192,7 +192,7 @@ context.replySticker('1', '1');
 
 ### Reply Imagemap Message
 
-## `replyImagemap(altText, imagemap)`
+#### `replyImagemap(altText, imagemap)`
 
 Responds imagemap message to the receiver using reply token.
 
@@ -246,7 +246,7 @@ context.replyImagemap('this is an imagemap', {
 
 ### Reply Template Messages
 
-## `replyTemplate(altText, template)`
+#### `replyTemplate(altText, template)`
 
 Responds template message to the receiver using reply token.
 
@@ -285,7 +285,7 @@ context.replyTemplate('this is a template', {
 
 <br />
 
-## `replyButtonTemplate(altText, buttonTemplate)`
+#### `replyButtonTemplate(altText, buttonTemplate)`
 
 Responds button template message to the receiver using reply token.
 
@@ -332,7 +332,7 @@ context.replyButtonTemplate('this is a template', {
 
 <br />
 
-## `replyConfirmTemplate(altText, confirmTemplate)`
+#### `replyConfirmTemplate(altText, confirmTemplate)`
 
 Responds confirm template message to the receiver using reply token.
 
@@ -367,7 +367,7 @@ context.replyConfirmTemplate('this is a confirm template', {
 
 <br />
 
-## `replyCarouselTemplate(altText, carouselItems, options)`
+#### `replyCarouselTemplate(altText, carouselItems, options)`
 
 Responds carousel template message to the receiver using reply token.
 
@@ -434,7 +434,7 @@ context.replyCarouselTemplate('this is a carousel template', [
 
 <br />
 
-## `replyImageCarouselTemplate(altText, carouselItems)`
+#### `replyImageCarouselTemplate(altText, carouselItems)`
 
 Responds image carousel template message to the receiver using reply token.
 
@@ -484,7 +484,7 @@ context.replyImageCarouselTemplate('this is an image carousel template', [
 
 Sends messages to the user, group, or room at any time.
 
-## `push(messages)`
+#### `push(messages)`
 
 Sends messages to the receiver using ID.
 
@@ -505,7 +505,7 @@ context.push([
 
 <br />
 
-## `pushText(text)`
+#### `pushText(text)`
 
 Alias: `sendText`.
 
@@ -529,7 +529,7 @@ context.pushText('Hello!');
 
 <br />
 
-## `pushImage(imageUrl, previewImageUrl)`
+#### `pushImage(imageUrl, previewImageUrl)`
 
 Alias: `sendImage`.
 
@@ -553,7 +553,7 @@ context.pushImage(
 
 <br />
 
-## `pushVideo(videoUrl, previewImageUrl)`
+#### `pushVideo(videoUrl, previewImageUrl)`
 
 Alias: `sendVideo`.
 
@@ -577,7 +577,7 @@ context.pushVideo(
 
 <br />
 
-## `pushAudio(audioUrl, duration)`
+#### `pushAudio(audioUrl, duration)`
 
 Alias: `sendAudio`.
 
@@ -598,7 +598,7 @@ context.pushAudio('https://example.com/original.m4a', 240000);
 
 <br />
 
-## `pushLocation(location)`
+#### `pushLocation(location)`
 
 Alias: `sendLocation`.
 
@@ -627,7 +627,7 @@ context.pushLocation({
 
 <br />
 
-## `pushSticker(packageId, stickerId)`
+#### `pushSticker(packageId, stickerId)`
 
 Alias: `sendSticker`.
 
@@ -651,7 +651,7 @@ context.pushSticker('1', '1');
 
 ### Push Imagemap Message
 
-## `pushImagemap(altText, imagemap)`
+#### `pushImagemap(altText, imagemap)`
 
 Alias: `sendImagemap`.
 
@@ -707,7 +707,7 @@ context.pushImagemap('this is an imagemap', {
 
 ### Push Template Messages
 
-## `pushTemplate(altText, template)`
+#### `pushTemplate(altText, template)`
 
 Alias: `sendTemplate`.
 
@@ -748,7 +748,7 @@ context.pushTemplate('this is a template', {
 
 <br />
 
-## `pushButtonTemplate(altText, buttonTemplate)`
+#### `pushButtonTemplate(altText, buttonTemplate)`
 
 Alias: `sendButtonTemplate`.
 
@@ -797,7 +797,7 @@ context.pushButtonTemplate('this is a template', {
 
 <br />
 
-## `pushConfirmTemplate(altText, confirmTemplate)`
+#### `pushConfirmTemplate(altText, confirmTemplate)`
 
 Alias: `sendConfirmTemplate`.
 
@@ -834,7 +834,7 @@ context.pushConfirmTemplate('this is a confirm template', {
 
 <br />
 
-## `pushCarouselTemplate(altText, carouselItems, options)`
+#### `pushCarouselTemplate(altText, carouselItems, options)`
 
 Alias: `sendCarouselTemplate`.
 
@@ -903,7 +903,7 @@ context.pushCarouselTemplate('this is a carousel template', [
 
 <br />
 
-## `pushImageCarouselTemplate(altText, carouselItems)`
+#### `pushImageCarouselTemplate(altText, carouselItems)`
 
 Alias: `sendImageCarouselTemplate`.
 
@@ -953,8 +953,7 @@ context.pushImageCarouselTemplate('this is an image carousel template', [
 
 ### Profile API - [Official Docs](https://devdocs.line.me/en/#bot-api-get-profile)
 
-
-## `getUserProfile()`
+#### `getUserProfile()`
 
 Gets user profile information.
 
@@ -978,7 +977,7 @@ context.getUserProfile().then(profile => {
 
 ### Group/Room Member Profile API - [Official Docs](https://devdocs.line.me/en/#get-group-room-member-profile)
 
-## `getMemberProfile(userId)`
+#### `getMemberProfile(userId)`
 
 Gets the user profile of a member of the group/room that the bot is in. This includes the user IDs of users who has not added the bot as a friend or has blocked the bot.
 
@@ -1005,7 +1004,7 @@ context.getMemberProfile(USER_ID).then(member => {
 
 ### Group/Room Member IDs API - [Official Docs](https://devdocs.line.me/en/#get-group-room-member-ids)
 
-## `getMemberIds(start)`
+#### `getMemberIds(start)`
 
 Gets the ID of the users of the members of the group/room that the bot is in. This includes the user IDs of users who have not added the bot as a friend or has blocked the bot.  
 This feature is only available for LINE@ Approved accounts or official accounts.
@@ -1032,7 +1031,7 @@ context.getMemberIds(CURSOR).then(res => {
 
 <br />
 
-## `getAllMemberIds()`
+#### `getAllMemberIds()`
 
 Recursively gets the ID of the users of the members of the group/room that the bot is in using cursors.  
 This feature is only available for LINE@ Approved accounts or official accounts.
@@ -1059,7 +1058,7 @@ context.getAllMemberIds().then(ids => {
 
 ### Leave API - [Official Docs](https://devdocs.line.me/en/#leave)
 
-## `leave()`
+#### `leave()`
 
 Leave from the group or room.
 
@@ -1077,7 +1076,7 @@ context.leave();
 
 <br />
 
-## `getLinkedRichMenu()`
+#### `getLinkedRichMenu()`
 
 Gets the ID of the rich menu linked to the user.
 
@@ -1094,7 +1093,7 @@ context.getLinkedRichMenu().then(richMenu => {
 
 <br />
 
-## `linkRichMenu(richMenuId)`
+#### `linkRichMenu(richMenuId)`
 
 Links a rich menu to the user.
 
@@ -1110,7 +1109,7 @@ context.linkRichMenu(RICH_MENU_ID);
 
 <br />
 
-## `unlinkRichMenu()`
+#### `unlinkRichMenu()`
 
 Unlinks a rich menu from the user.
 

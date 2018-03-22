@@ -3,7 +3,7 @@ title: SlackEvent
 date: "2018-03-20"
 ---
 
-## `rawEvent`
+#### `rawEvent`
 
 Underlying raw event from Slack.
 
@@ -20,7 +20,7 @@ event.rawEvent;
 // }
 ```
 
-## `isMessage`
+#### `isMessage`
 
 Determine if the event is a message event.
 
@@ -30,7 +30,7 @@ Example:
 event.isMessage; // true
 ```
 
-## `isChannelsMessage`
+#### `isChannelsMessage`
 
 Determine if the event is a message event sent from channels.
 
@@ -40,7 +40,7 @@ Example:
 event.isChannelsMessage; // true
 ```
 
-## `isGroupsMessage`
+#### `isGroupsMessage`
 
 Determine if the event is a message event sent from groups.
 
@@ -50,7 +50,7 @@ Example:
 event.isGroupsMessage; // true
 ```
 
-## `isImMessage`
+#### `isImMessage`
 
 Determine if the event is a message event sent from instant messaging.
 
@@ -60,7 +60,7 @@ Example:
 event.isImMessage; // true
 ```
 
-## `isMpimMessage`
+#### `isMpimMessage`
 
 Determine if the event is a message event sent from multiple people instant messaging.
 
@@ -70,7 +70,7 @@ Example:
 event.isMpimMessage; // true
 ```
 
-## `message`
+#### `message`
 
 The message object from Slack raw event.
 
@@ -87,7 +87,7 @@ event.message;
 // }
 ```
 
-## `isText`
+#### `isText`
 
 Determine if the event is a message event which includes text.
 
@@ -97,7 +97,7 @@ Example:
 event.isText; // true
 ```
 
-## `text`
+#### `text`
 
 The text string from Slack raw event.
 
@@ -107,7 +107,7 @@ Example:
 event.text; // 'Hello world'
 ```
 
-## `isInteractiveMessage`
+#### `isInteractiveMessage`
 
 Determine if the event is a interactive message (button/menu) event.
 
@@ -117,7 +117,7 @@ Example:
 event.isInteractiveMessage; // true
 ```
 
-## `callbackId`
+#### `callbackId`
 
 The callback_id from Slack interactive message.
 
@@ -127,7 +127,7 @@ Example:
 event.callbackId; // 'wopr_game'
 ```
 
-## `action`
+#### `action`
 
 The action from Slack interactive message.
 
@@ -142,7 +142,7 @@ event.action;
 // }
 ```
 
-## `isAppUninstalled`
+#### `isAppUninstalled`
 
 Determine if the event is an app_uninstalled event.
 
@@ -152,7 +152,7 @@ Example:
 event.isAppUninstalled; // true
 ```
 
-## `isChannelArchive`
+#### `isChannelArchive`
 
 Determine if the event is a channel_archive event.
 
@@ -162,7 +162,7 @@ Example:
 event.isChannelArchive; // true
 ```
 
-## `isChannelCreated`
+#### `isChannelCreated`
 
 Determine if the event is a channel_created event.
 
@@ -172,7 +172,7 @@ Example:
 event.isChannelCreated; // true
 ```
 
-## `isChannelDeleted`
+#### `isChannelDeleted`
 
 Determine if the event is a channel_deleted event.
 
@@ -182,7 +182,7 @@ Example:
 event.isChannelDeleted; // true
 ```
 
-## `isChannelHistoryChanged`
+#### `isChannelHistoryChanged`
 
 Determine if the event is a channel_history_changed event.
 
@@ -192,7 +192,7 @@ Example:
 event.isChannelHistoryChanged; // true
 ```
 
-## `isChannelRename`
+#### `isChannelRename`
 
 Determine if the event is a channel_rename event.
 
@@ -202,7 +202,7 @@ Example:
 event.isChannelRename; // true
 ```
 
-## `isChannelUnarchive`
+#### `isChannelUnarchive`
 
 Determine if the event is a channel_unarchive event.
 
@@ -212,7 +212,7 @@ Example:
 event.isChannelUnarchive; // true
 ```
 
-## `isDndUpdated`
+#### `isDndUpdated`
 
 Determine if the event is a dnd_updated event.
 
@@ -222,7 +222,7 @@ Example:
 event.isDndUpdated; // true
 ```
 
-## `isDndUpdatedUser`
+#### `isDndUpdatedUser`
 
 Determine if the event is a dnd_updated_user event.
 
@@ -232,7 +232,7 @@ Example:
 event.isDndUpdatedUser; // true
 ```
 
-## `isEmailDomainChanged`
+#### `isEmailDomainChanged`
 
 Determine if the event is an email_domain_changed event.
 
@@ -242,7 +242,7 @@ Example:
 event.isEmailDomainChanged; // true
 ```
 
-## `isEmojiChanged`
+#### `isEmojiChanged`
 
 Determine if the event is an emoji_changed event.
 
@@ -252,7 +252,7 @@ Example:
 event.isEmojiChanged; // true
 ```
 
-## `isFileChange`
+#### `isFileChange`
 
 Determine if the event is a file_change event.
 
@@ -262,7 +262,7 @@ Example:
 event.isFileChange; // true
 ```
 
-## `isFileCommentAdded`
+#### `isFileCommentAdded`
 
 Determine if the event is a file_comment_added event.
 
@@ -272,7 +272,7 @@ Example:
 event.isFileCommentAdded; // true
 ```
 
-## `isFileCommentDeleted`
+#### `isFileCommentDeleted`
 
 Determine if the event is a file_comment_deleted event.
 
@@ -282,7 +282,7 @@ Example:
 event.isFileCommentDeleted; // true
 ```
 
-## `isFileCommentEdited`
+#### `isFileCommentEdited`
 
 Determine if the event is a file_comment_edited event.
 
@@ -292,7 +292,7 @@ Example:
 event.isFileCommentEdited; // true
 ```
 
-## `isFileCreated`
+#### `isFileCreated`
 
 Determine if the event is a file_created event.
 
@@ -302,7 +302,7 @@ Example:
 event.isFileCreated; // true
 ```
 
-## `isFileDeleted`
+#### `isFileDeleted`
 
 Determine if the event is a file_deleted event.
 
@@ -312,7 +312,7 @@ Example:
 event.isFileDeleted; // true
 ```
 
-## `isFilePublic`
+#### `isFilePublic`
 
 Determine if the event is a file_public event.
 
@@ -322,7 +322,7 @@ Example:
 event.isFilePublic; // true
 ```
 
-## `isFileShared`
+#### `isFileShared`
 
 Determine if the event is a file_shared event.
 
@@ -332,7 +332,7 @@ Example:
 event.isFileShared; // true
 ```
 
-## `isFileUnshared`
+#### `isFileUnshared`
 
 Determine if the event is a file_unshared event.
 
@@ -342,7 +342,7 @@ Example:
 event.isFileUnshared; // true
 ```
 
-## `isGridMigrationFinished`
+#### `isGridMigrationFinished`
 
 Determine if the event is a grid_migration_finished event.
 
@@ -352,7 +352,7 @@ Example:
 event.isGridMigrationFinished; // true
 ```
 
-## `isGridMigrationStarted`
+#### `isGridMigrationStarted`
 
 Determine if the event is a grid_migration_started event.
 
@@ -362,7 +362,7 @@ Example:
 event.isGridMigrationStarted; // true
 ```
 
-## `isGroupArchive`
+#### `isGroupArchive`
 
 Determine if the event is a group_archive event.
 
@@ -372,7 +372,7 @@ Example:
 event.isGroupArchive; // true
 ```
 
-## `isGroupClose`
+#### `isGroupClose`
 
 Determine if the event is a group_close event.
 
@@ -382,7 +382,7 @@ Example:
 event.isGroupClose; // true
 ```
 
-## `isGroupHistoryChanged`
+#### `isGroupHistoryChanged`
 
 Determine if the event is a group_history_changed event.
 
@@ -392,7 +392,7 @@ Example:
 event.isGroupHistoryChanged; // true
 ```
 
-## `isGroupOpen`
+#### `isGroupOpen`
 
 Determine if the event is a group_open event.
 
@@ -402,7 +402,7 @@ Example:
 event.isGroupOpen; // true
 ```
 
-## `isGroupRename`
+#### `isGroupRename`
 
 Determine if the event is a group_rename event.
 
@@ -412,7 +412,7 @@ Example:
 event.isGroupRename; // true
 ```
 
-## `isGroupUnarchive`
+#### `isGroupUnarchive`
 
 Determine if the event is a group_unarchive event.
 
@@ -422,7 +422,7 @@ Example:
 event.isGroupUnarchive; // true
 ```
 
-## `isImClose`
+#### `isImClose`
 
 Determine if the event is a im_close event.
 
@@ -432,7 +432,7 @@ Example:
 event.isImClose; // true
 ```
 
-## `isImCreated`
+#### `isImCreated`
 
 Determine if the event is a im_created event.
 
@@ -442,7 +442,7 @@ Example:
 event.isImCreated; // true
 ```
 
-## `isImHistoryChanged`
+#### `isImHistoryChanged`
 
 Determine if the event is a im_history_changed event.
 
@@ -452,7 +452,7 @@ Example:
 event.isImHistoryChanged; // true
 ```
 
-## `isImOpen`
+#### `isImOpen`
 
 Determine if the event is a im_open event.
 
@@ -462,7 +462,7 @@ Example:
 event.isImOpen; // true
 ```
 
-## `isLinkShared`
+#### `isLinkShared`
 
 Determine if the event is a link_shared event.
 
@@ -472,7 +472,7 @@ Example:
 event.isLinkShared; // true
 ```
 
-## `isMemberJoinedChannel`
+#### `isMemberJoinedChannel`
 
 Determine if the event is a member_joined_channel event.
 
@@ -482,7 +482,7 @@ Example:
 event.isMemberJoinedChannel; // true
 ```
 
-## `isMemberLeftChannel`
+#### `isMemberLeftChannel`
 
 Determine if the event is a member_left_channel event.
 
@@ -492,7 +492,7 @@ Example:
 event.isMemberLeftChannel; // true
 ```
 
-## `isPinAdded`
+#### `isPinAdded`
 
 Determine if the event is a pin_added event.
 
@@ -502,7 +502,7 @@ Example:
 event.isPinAdded; // true
 ```
 
-## `isPinRemoved`
+#### `isPinRemoved`
 
 Determine if the event is a pin_removed event.
 
@@ -512,7 +512,7 @@ Example:
 event.isPinRemoved; // true
 ```
 
-## `isReactionAdded`
+#### `isReactionAdded`
 
 Determine if the event is a reaction_added event.
 
@@ -522,7 +522,7 @@ Example:
 event.isReactionAdded; // true
 ```
 
-## `isReactionRemoved`
+#### `isReactionRemoved`
 
 Determine if the event is a reaction_removed event.
 
@@ -532,7 +532,7 @@ Example:
 event.isReactionRemoved; // true
 ```
 
-## `isStarAdded`
+#### `isStarAdded`
 
 Determine if the event is a star_added event.
 
@@ -542,7 +542,7 @@ Example:
 event.isStarAdded; // true
 ```
 
-## `isStarRemoved`
+#### `isStarRemoved`
 
 Determine if the event is a star_removed event.
 
@@ -552,7 +552,7 @@ Example:
 event.isStarRemoved; // true
 ```
 
-## `isSubteamCreated`
+#### `isSubteamCreated`
 
 Determine if the event is a subteam_created event.
 
@@ -562,7 +562,7 @@ Example:
 event.isSubteamCreated; // true
 ```
 
-## `isSubteamMembersChanged`
+#### `isSubteamMembersChanged`
 
 Determine if the event is a subteam_members_changed event.
 
@@ -572,7 +572,7 @@ Example:
 event.isSubteamMembersChanged; // true
 ```
 
-## `isSubteamSelfAdded`
+#### `isSubteamSelfAdded`
 
 Determine if the event is a subteam_self_added event.
 
@@ -582,7 +582,7 @@ Example:
 event.isSubteamSelfAdded; // true
 ```
 
-## `isSubteamSelfRemoved`
+#### `isSubteamSelfRemoved`
 
 Determine if the event is a subteam_self_removed event.
 
@@ -592,7 +592,7 @@ Example:
 event.isSubteamSelfRemoved; // true
 ```
 
-## `isSubteamUpdated`
+#### `isSubteamUpdated`
 
 Determine if the event is a subteam_updated event.
 
@@ -602,7 +602,7 @@ Example:
 event.isSubteamUpdated; // true
 ```
 
-## `isTeamDomainChange`
+#### `isTeamDomainChange`
 
 Determine if the event is a team_domain_change event.
 
@@ -612,7 +612,7 @@ Example:
 event.isTeamDomainChange; // true
 ```
 
-## `isTeamJoin`
+#### `isTeamJoin`
 
 Determine if the event is a team_join event.
 
@@ -622,7 +622,7 @@ Example:
 event.isTeamJoin; // true
 ```
 
-## `isTeamRename`
+#### `isTeamRename`
 
 Determine if the event is a team_rename event.
 
@@ -632,7 +632,7 @@ Example:
 event.isTeamRename; // true
 ```
 
-## `isTokensRevoked`
+#### `isTokensRevoked`
 
 Determine if the event is a tokens_revoked event.
 
@@ -642,7 +642,7 @@ Example:
 event.isTokensRevoked; // true
 ```
 
-## `isUrlVerification`
+#### `isUrlVerification`
 
 Determine if the event is an url_verification event.
 
@@ -652,7 +652,7 @@ Example:
 event.isUrlVerification; // true
 ```
 
-## `isUserChange`
+#### `isUserChange`
 
 Determine if the event is an user_change event.
 
