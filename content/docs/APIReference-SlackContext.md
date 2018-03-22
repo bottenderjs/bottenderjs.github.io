@@ -28,7 +28,7 @@ context.postMessage('Hello!', { as_user: true });
 If you send message with `attachments`, `messaging-api-slack` will automatically stringify the `attachments` field for you.
 
 ```js
-client.postMessage(
+context.postMessage(
   {
     text: 'Hello!',
     attachments: [
