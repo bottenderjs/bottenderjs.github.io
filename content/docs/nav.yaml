@@ -40,6 +40,8 @@
   items:
     - id: docs/APIReference-Context
       title: Context
+    - id: docs/APIReference-ConsoleContext
+      title: ConsoleContext
     - id: docs/APIReference-MessengerContext
       title: MessengerContext
     - id: docs/APIReference-LineContext
@@ -52,6 +54,8 @@
       title: ViberContext
     - id: docs/APIReference-Event
       title: Event
+    - id: docs/APIReference-ConsoleEvent
+      title: ConsoleEvent
     - id: docs/APIReference-MessengerEvent
       title: MessengerEvent
     - id: docs/APIReference-LineEvent

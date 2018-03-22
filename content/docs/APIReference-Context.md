@@ -20,7 +20,7 @@ For platform specific methods, please check out following links:
 Example:
 
 ```js
-context.platform; // 'messenger', 'line', 'slack', 'telegram', 'viber'...
+context.platform; // 'console', 'messenger', 'line', 'slack', 'telegram', 'viber'...
 ```
 
 #### `client`
