@@ -15,7 +15,7 @@ For platform specific methods, please check out following links:
 | [Telegram](https://telegram.org/)       | [APIReference-TelegramContext](https://bottender.js.org/docs/APIReference-TelegramContext)   |
 | [Viber](https://www.viber.com/)         | [APIReference-ViberContext](https://bottender.js.org/docs/APIReference-ViberContext)         |
 
-## `platform`
+#### `platform`
 
 Example:
 
@@ -23,7 +23,7 @@ Example:
 context.platform; // 'messenger', 'line', 'slack', 'telegram', 'viber'...
 ```
 
-## `client`
+#### `client`
 
 The client instance. Client type depends on your platform.
 
@@ -35,7 +35,7 @@ Example:
 context.client; // client from [Messaging APIs](https://github.com/Yoctol/messaging-apis)
 ```
 
-## `event`
+#### `event`
 
 The event instance. Event type depends on your platform.
 
@@ -45,7 +45,7 @@ Example:
 context.event;
 ```
 
-## `session`
+#### `session`
 
 The session instance.
 
@@ -55,7 +55,7 @@ Example:
 context.session.user.id;
 ```
 
-## `state`
+#### `state`
 
 The state object.
 
@@ -65,7 +65,7 @@ Example:
 context.state;
 ```
 
-## `setState(state)`
+#### `setState(state)`
 
 Shallow merge changes to the state.
 
@@ -77,7 +77,7 @@ context.setState({
 });
 ```
 
-## `resetState()`
+#### `resetState()`
 
 Reset the state to the initial state.
 
@@ -87,7 +87,7 @@ Example:
 context.resetState();
 ```
 
-## `typing(milliseconds)`
+#### `typing(milliseconds)`
 
 Delay and show indicators for milliseconds.
 
@@ -104,7 +104,7 @@ bot.onEvent(async context => {
 });
 ```
 
-### `sendText(text, options)`
+#### `sendText(text, options)`
 
 Send text to the owner of the session.
 

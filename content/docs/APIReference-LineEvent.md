@@ -3,7 +3,7 @@ title: LineEvent
 date: "2018-03-20"
 ---
 
-## `rawEvent`
+#### `rawEvent`
 
 Underlying raw event from LINE.
 
@@ -27,7 +27,7 @@ event.rawEvent;
 // }
 ```
 
-## `replyToken`
+#### `replyToken`
 
 The reply token from LINE raw event. Only present on message, follow, join, postback, beacon events.
 
@@ -37,7 +37,7 @@ Example:
 event.replyToken; // 'nHuyWiB7yP5Zw52FIkcQobQuGDXCTA'
 ```
 
-## `source`
+#### `source`
 
 The source object from LINE raw event.
 
@@ -51,7 +51,7 @@ event.source;
 // }
 ```
 
-## `isMessage`
+#### `isMessage`
 
 Determine if the event is a message event.
 
@@ -61,7 +61,7 @@ Example:
 event.isMessage; // true
 ```
 
-## `message`
+#### `message`
 
 The message object from LINE raw event.
 
@@ -76,7 +76,7 @@ event.message;
 // }
 ```
 
-## `isText`
+#### `isText`
 
 Determine if the event is a message event which includes text.
 
@@ -86,7 +86,7 @@ Example:
 event.isText; // true
 ```
 
-## `text`
+#### `text`
 
 The text string from LINE raw event.
 
@@ -96,7 +96,7 @@ Example:
 event.text; // 'Hello, world'
 ```
 
-## `isImage`
+#### `isImage`
 
 Determine if the event is a message event which includes image.
 
@@ -106,7 +106,7 @@ Example:
 event.isImage; // true
 ```
 
-## `image`
+#### `image`
 
 The image object from LINE raw event.
 
@@ -120,7 +120,7 @@ event.image;
 // }
 ```
 
-## `isVideo`
+#### `isVideo`
 
 Determine if the event is a message event which includes video.
 
@@ -130,7 +130,7 @@ Example:
 event.isVideo; // true
 ```
 
-## `video`
+#### `video`
 
 The video object from LINE raw event.
 
@@ -144,7 +144,7 @@ event.video;
 // }
 ```
 
-## `isAudio`
+#### `isAudio`
 
 Determine if the event is a message event which includes audio.
 
@@ -154,7 +154,7 @@ Example:
 event.isAudio; // true
 ```
 
-## `audio`
+#### `audio`
 
 The audio object from LINE raw event.
 
@@ -168,7 +168,7 @@ event.audio;
 // }
 ```
 
-## `isLocation`
+#### `isLocation`
 
 Determine if the event is a message event which includes location.
 
@@ -178,7 +178,7 @@ Example:
 event.isLocation; // true
 ```
 
-## `location`
+#### `location`
 
 The location object from LINE raw event.
 
@@ -196,7 +196,7 @@ event.location;
 // }
 ```
 
-## `isSticker`
+#### `isSticker`
 
 Determine if the event is a message event which includes sticker.
 
@@ -206,7 +206,7 @@ Example:
 event.isSticker; // true
 ```
 
-## `sticker`
+#### `sticker`
 
 The sticker object from LINE raw event.
 
@@ -222,7 +222,7 @@ event.sticker;
 // }
 ```
 
-## `isFollow`
+#### `isFollow`
 
 Determine if the event is a follow event.
 
@@ -232,7 +232,7 @@ Example:
 event.isFollow; // true
 ```
 
-## `follow`
+#### `follow`
 
 The source object from LINE raw event.
 
@@ -246,7 +246,7 @@ event.follow;
 // }
 ```
 
-## `isUnfollow`
+#### `isUnfollow`
 
 Determine if the event is an unfollow event.
 
@@ -256,7 +256,7 @@ Example:
 event.isUnfollow; // true
 ```
 
-## `unfollow`
+#### `unfollow`
 
 The source object from LINE raw event.
 
@@ -270,7 +270,7 @@ event.unfollow;
 // }
 ```
 
-## `isJoin`
+#### `isJoin`
 
 Determine if the event is a join event.
 
@@ -280,7 +280,7 @@ Example:
 event.isJoin; // true
 ```
 
-## `join`
+#### `join`
 
 The source object from LINE raw event.
 
@@ -294,7 +294,7 @@ event.join;
 // }
 ```
 
-## `isLeave`
+#### `isLeave`
 
 Determine if the event is a leave event.
 
@@ -304,7 +304,7 @@ Example:
 event.isLeave; // true
 ```
 
-## `leave`
+#### `leave`
 
 The source object from LINE raw event.
 
@@ -318,7 +318,7 @@ event.leave;
 // }
 ```
 
-## `isPostback`
+#### `isPostback`
 
 Determine if the event is a postback event.
 
@@ -328,7 +328,7 @@ Example:
 event.isPostback; // true
 ```
 
-## `postback`
+#### `postback`
 
 The postback object from LINE raw event.
 
@@ -341,7 +341,7 @@ event.postback;
 // }
 ```
 
-## `isPayload`
+#### `isPayload`
 
 Determine if the event is a postback event.
 
@@ -351,7 +351,7 @@ Example:
 event.isPayload; // true
 ```
 
-## `payload`
+#### `payload`
 
 The payload string from LINE raw event.
 
@@ -361,7 +361,7 @@ Example:
 event.payload; // 'action=buyItem&itemId=123123&color=red'
 ```
 
-## `date`
+#### `date`
 
 The date string from LINE postback event.
 
@@ -371,7 +371,7 @@ Example:
 event.date; // '2017-09-06'
 ```
 
-## `time`
+#### `time`
 
 The time string from LINE postback event.
 
@@ -381,7 +381,7 @@ Example:
 event.time; // '12:30'
 ```
 
-## `datetime`
+#### `datetime`
 
 The datetime string from LINE postback event.
 
@@ -391,7 +391,7 @@ Example:
 event.datetime; // '2017-09-06T12:30'
 ```
 
-## `isBeacon`
+#### `isBeacon`
 
 Determine if the event is a beacon event.
 
@@ -401,7 +401,7 @@ Example:
 event.isBeacon; // true
 ```
 
-## `beacon`
+#### `beacon`
 
 The beacon object from LINE raw event.
 

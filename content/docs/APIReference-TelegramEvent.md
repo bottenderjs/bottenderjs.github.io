@@ -3,7 +3,7 @@ title: TelegramEvent
 date: "2018-03-20"
 ---
 
-## `rawEvent`
+#### `rawEvent`
 
 Underlying raw event from Telegram.
 
@@ -33,7 +33,7 @@ event.rawEvent;
 // }
 ```
 
-## `isMessage`
+#### `isMessage`
 
 Determine if the event is a message event.
 
@@ -43,7 +43,7 @@ Example:
 event.isMessage; // true
 ```
 
-## `message`
+#### `message`
 
 The message object from Telegram raw event.
 
@@ -71,7 +71,7 @@ event.message;
 // }
 ```
 
-## `isText`
+#### `isText`
 
 Determine if the event is a message event which includes text.
 
@@ -81,7 +81,7 @@ Example:
 event.isText; // true
 ```
 
-## `text`
+#### `text`
 
 The text string from Telegram raw event.
 
@@ -91,7 +91,7 @@ Example:
 event.text; // 'text'
 ```
 
-## `isAudio`
+#### `isAudio`
 
 Determine if the event is a message event which includes audio.
 
@@ -101,7 +101,7 @@ Example:
 event.isAudio; // true
 ```
 
-## `audio`
+#### `audio`
 
 The audio object from Telegram raw event.
 
@@ -116,7 +116,7 @@ event.audio;
 // }
 ```
 
-## `isDocument`
+#### `isDocument`
 
 Determine if the event is a message event which includes document.
 
@@ -126,7 +126,7 @@ Example:
 event.isDocument; // true
 ```
 
-## `document`
+#### `document`
 
 The document object from Telegram raw event.
 
@@ -140,7 +140,7 @@ event.document;
 // }
 ```
 
-## `isGame`
+#### `isGame`
 
 Determine if the event is a message event which includes game.
 
@@ -150,7 +150,7 @@ Example:
 event.isGame; // true
 ```
 
-## `game`
+#### `game`
 
 The game object from Telegram raw event.
 
@@ -176,7 +176,7 @@ event.game;
 // }
 ```
 
-## `isPhoto`
+#### `isPhoto`
 
 Determine if the event is a message event which includes photo.
 
@@ -186,7 +186,7 @@ Example:
 event.isPhoto; // true
 ```
 
-## `photo`
+#### `photo`
 
 The photo object from Telegram raw event.
 
@@ -208,7 +208,7 @@ event.photo;
 // ]
 ```
 
-## `isSticker`
+#### `isSticker`
 
 Determine if the event is a message event which includes sticker.
 
@@ -218,7 +218,7 @@ Example:
 event.isSticker; // true
 ```
 
-## `sticker`
+#### `sticker`
 
 The sticker object from Telegram raw event.
 
@@ -233,7 +233,7 @@ event.sticker;
 // }
 ```
 
-## `isVideo`
+#### `isVideo`
 
 Determine if the event is a message event which includes video.
 
@@ -243,7 +243,7 @@ Example:
 event.isVideo; // true
 ```
 
-## `video`
+#### `video`
 
 The video object from Telegram raw event.
 
@@ -259,7 +259,7 @@ event.video;
 // }
 ```
 
-## `isVoice`
+#### `isVoice`
 
 Determine if the event is a message event which includes voice.
 
@@ -269,7 +269,7 @@ Example:
 event.isVoice; // true
 ```
 
-## `voice`
+#### `voice`
 
 The voice object from Telegram raw event.
 
@@ -283,7 +283,7 @@ event.voice;
 // }
 ```
 
-## `isVideoNote`
+#### `isVideoNote`
 
 Determine if the event is a message event which includes video note.
 
@@ -293,7 +293,7 @@ Example:
 event.isVideoNote; // true
 ```
 
-## `videoNote`
+#### `videoNote`
 
 The video note object from Telegram raw event.
 
@@ -308,7 +308,7 @@ event.videoNote;
 // }
 ```
 
-## `isContact`
+#### `isContact`
 
 Determine if the event is a message event which includes contact.
 
@@ -318,7 +318,7 @@ Example:
 event.isContact; // true
 ```
 
-## `contact`
+#### `contact`
 
 The contact object from Telegram raw event.
 
@@ -332,7 +332,7 @@ event.contact;
 // }
 ```
 
-## `isLocation`
+#### `isLocation`
 
 Determine if the event is a message event which includes location.
 
@@ -342,7 +342,7 @@ Example:
 event.isLocation; // true
 ```
 
-## `location`
+#### `location`
 
 The location object from Telegram raw event.
 
@@ -356,7 +356,7 @@ event.location;
 // }
 ```
 
-## `isVenue`
+#### `isVenue`
 
 Determine if the event is a message event which includes venue.
 
@@ -366,7 +366,7 @@ Example:
 event.isVenue; // true
 ```
 
-## `venue`
+#### `venue`
 
 The venue object from Telegram raw event.
 
@@ -384,7 +384,7 @@ event.venue;
 // }
 ```
 
-## `isEditedMessage`
+#### `isEditedMessage`
 
 Determine if the event is an edited message event.
 
@@ -394,7 +394,7 @@ Example:
 event.isEditedMessage; // true
 ```
 
-## `editedMessage`
+#### `editedMessage`
 
 The edited message from Telegram raw event.
 
@@ -423,7 +423,7 @@ event.editedMessage;
 // }
 ```
 
-## `isChannelPost`
+#### `isChannelPost`
 
 Determine if the event is a channel post event.
 
@@ -433,7 +433,7 @@ Example:
 event.isChannelPost; // true
 ```
 
-## `channelPost`
+#### `channelPost`
 
 The channel post from Telegram raw event.
 
@@ -453,7 +453,7 @@ event.channelPost;
 // }
 ```
 
-## `isEditedChannelPost`
+#### `isEditedChannelPost`
 
 Determine if the event is an edited channel post event.
 
@@ -463,7 +463,7 @@ Example:
 event.isEditedChannelPost; // true
 ```
 
-## `editedChannelPost`
+#### `editedChannelPost`
 
 The edited channel post from Telegram raw event.
 
@@ -484,7 +484,7 @@ event.editedChannelPost;
 // }
 ```
 
-## `isInlineQuery`
+#### `isInlineQuery`
 
 Determine if the event is an inline query event.
 
@@ -494,7 +494,7 @@ Example:
 event.isInlineQuery; // true
 ```
 
-## `inlineQuery`
+#### `inlineQuery`
 
 The inline query from Telegram raw event.
 
@@ -516,7 +516,7 @@ event.inlineQuery;
 // }
 ```
 
-## `isChosenInlineResult`
+#### `isChosenInlineResult`
 
 Determine if the event is a chosen inline result event.
 
@@ -526,7 +526,7 @@ Example:
 event.isChosenInlineResult; // true
 ```
 
-## `chosenInlineResult`
+#### `chosenInlineResult`
 
 The chosen inline result from Telegram raw event.
 
@@ -548,7 +548,7 @@ event.chosenInlineResult;
 // }
 ```
 
-## `isCallbackQuery`
+#### `isCallbackQuery`
 
 Determine if the event is a callback query event.
 
@@ -558,7 +558,7 @@ Example:
 event.isCallbackQuery; // true
 ```
 
-## `callbackQuery`
+#### `callbackQuery`
 
 The callback query from Telegram raw event.
 
@@ -597,7 +597,7 @@ event.callbackQuery;
 // }
 ```
 
-## `isPayload`
+#### `isPayload`
 
 Determine if the event is a callback query event.
 
@@ -607,7 +607,7 @@ Example:
 event.isPayload; // true
 ```
 
-## `payload`
+#### `payload`
 
 The payload string from Telegram raw event.
 
@@ -617,7 +617,7 @@ Example:
 event.payload; // 'DEVELOPER_DEFINED_PAYLOAD'
 ```
 
-## `isShippingQuery`
+#### `isShippingQuery`
 
 Determine if the event is a shipping query event.
 
@@ -627,7 +627,7 @@ Example:
 event.isShippingQuery; // true
 ```
 
-## `shippingQuery`
+#### `shippingQuery`
 
 The shipping query from Telegram raw event.
 
@@ -656,7 +656,7 @@ event.shippingQuery;
 // }
 ```
 
-## `isPreCheckoutQuery`
+#### `isPreCheckoutQuery`
 
 Determine if the event is a pre checkout query event.
 
@@ -666,7 +666,7 @@ Example:
 event.isPreCheckoutQuery; // true
 ```
 
-## `preCheckoutQuery`
+#### `preCheckoutQuery`
 
 The pre checkout query from Telegram raw event.
 

@@ -16,7 +16,7 @@ date: "2018-03-16"
 
 ### Send API - [Official Docs](https://core.telegram.org/bots/api#available-methods)
 
-## `sendMessage(text [, options])` - [Official Docs](https://core.telegram.org/bots/api/#sendmessage)
+#### `sendMessage(text [, options])` - [Official Docs](https://core.telegram.org/bots/api/#sendmessage)
 
 Sends text messages.
 
@@ -36,7 +36,7 @@ context.sendMessage('hi', {
 
 <br />
 
-## `sendPhoto(photo [, options])` - [Official Docs](https://core.telegram.org/bots/api/#sendphoto)
+#### `sendPhoto(photo [, options])` - [Official Docs](https://core.telegram.org/bots/api/#sendphoto)
 
 Sends photos.
 
@@ -56,7 +56,7 @@ context.sendPhoto('https://example.com/image.png', {
 
 <br />
 
-## `sendAudio(audio [, options])` - [Official Docs](https://core.telegram.org/bots/api/#sendaudio)
+#### `sendAudio(audio [, options])` - [Official Docs](https://core.telegram.org/bots/api/#sendaudio)
 
 Sends audio files.
 
@@ -76,7 +76,7 @@ context.sendAudio('https://example.com/audio.mp3', {
 
 <br />
 
-## `sendDocument(document [, options])` - [Official Docs](https://core.telegram.org/bots/api/#senddocument)
+#### `sendDocument(document [, options])` - [Official Docs](https://core.telegram.org/bots/api/#senddocument)
 
 Sends general files.
 
@@ -96,7 +96,7 @@ context.sendDocument('https://example.com/doc.gif', {
 
 <br />
 
-## `sendSticker(sticker [, options])` - [Official Docs](https://core.telegram.org/bots/api/#sendsticker)
+#### `sendSticker(sticker [, options])` - [Official Docs](https://core.telegram.org/bots/api/#sendsticker)
 
 Sends `.webp` stickers.
 
@@ -115,7 +115,7 @@ context.sendSticker('CAADAgADQAADyIsGAAE7MpzFPFQX5QI', {
 
 <br />
 
-## `sendVideo(video [, options])` - [Official Docs](https://core.telegram.org/bots/api/#sendvideo)
+#### `sendVideo(video [, options])` - [Official Docs](https://core.telegram.org/bots/api/#sendvideo)
 
 Sends video files, Telegram clients support `mp4` videos (other formats may be sent as Document).
 
@@ -135,7 +135,7 @@ context.sendVideo('https://example.com/video.mp4', {
 
 <br />
 
-## `sendVoice(voice [, options])` - [Official Docs](https://core.telegram.org/bots/api/#sendvoice)
+#### `sendVoice(voice [, options])` - [Official Docs](https://core.telegram.org/bots/api/#sendvoice)
 
 Sends audio files.
 
@@ -155,7 +155,7 @@ context.sendVoice('https://example.com/voice.ogg', {
 
 <br />
 
-## `sendVideoNote(videoNote [, options])` - [Official Docs](https://core.telegram.org/bots/api/#sendvideonote)
+#### `sendVideoNote(videoNote [, options])` - [Official Docs](https://core.telegram.org/bots/api/#sendvideonote)
 
 Sends video messages. As of v.4.0, Telegram clients support rounded square mp4 videos of up to 1 minute long.
 
@@ -175,7 +175,7 @@ context.sendVideoNote('https://example.com/video_note.mp4', {
 
 <br />
 
-## `sendMediaGroup(media [, options])` - [Official Docs](https://core.telegram.org/bots/api/#sendmediagroup)
+#### `sendMediaGroup(media [, options])` - [Official Docs](https://core.telegram.org/bots/api/#sendmediagroup)
 
 send a group of photos or videos as an album.
 
@@ -194,7 +194,7 @@ context.sendMediaGroup([
 
 <br />
 
-## `sendLocation(location [, options])` - [Official Docs](https://core.telegram.org/bots/api/#sendlocation)
+#### `sendLocation(location [, options])` - [Official Docs](https://core.telegram.org/bots/api/#sendlocation)
 
 Sends point on the map.
 
@@ -221,7 +221,7 @@ context.sendLocation(
 
 <br />
 
-## `sendVenue(venue [, options])` - [Official Docs](https://core.telegram.org/bots/api/#sendvenue)
+#### `sendVenue(venue [, options])` - [Official Docs](https://core.telegram.org/bots/api/#sendvenue)
 
 Sends information about a venue.
 
@@ -252,7 +252,7 @@ context.sendVenue(
 
 <br />
 
-## `sendContact(contact [, options])` - [Official Docs](https://core.telegram.org/bots/api/#sendcontact)
+#### `sendContact(contact [, options])` - [Official Docs](https://core.telegram.org/bots/api/#sendcontact)
 
 Sends phone contacts.
 
@@ -277,7 +277,7 @@ context.sendContact(
 
 <br />
 
-## `sendChatAction(action)` - [Official Docs](https://core.telegram.org/bots/api/#sendchataction)
+#### `sendChatAction(action)` - [Official Docs](https://core.telegram.org/bots/api/#sendchataction)
 
 Tells the user that something is happening on the bot's side.
 
@@ -295,7 +295,7 @@ context.sendChatAction('typing');
 
 ### Get API
 
-## `getUserProfilePhotos(options)` - [Official Docs](https://core.telegram.org/bots/api/#getuserprofilephotos)
+#### `getUserProfilePhotos(options)` - [Official Docs](https://core.telegram.org/bots/api/#getuserprofilephotos)
 
 Gets a list of profile pictures for a user.
 
@@ -336,7 +336,7 @@ context.getUserProfilePhotos().then(result => {
 });
 ```
 
-## `getChat()` - [Official Docs](https://core.telegram.org/bots/api/#getchat)
+#### `getChat()` - [Official Docs](https://core.telegram.org/bots/api/#getchat)
 
 Gets up to date information about the chat (current name of the user for one-on-one conversations, current username of a user, group or channel, etc.)
 
@@ -357,7 +357,7 @@ context.getChat().then(result => {
 
 <br />
 
-## `getChatAdministrators()` - [Official Docs](https://core.telegram.org/bots/api/#getchatadministrators)
+#### `getChatAdministrators()` - [Official Docs](https://core.telegram.org/bots/api/#getchatadministrators)
 
 Gets a list of administrators in the chat.
 
@@ -383,7 +383,7 @@ context.getChatAdministrators().then(result => {
 
 <br />
 
-## `getChatMembersCount()` - [Official Docs](https://core.telegram.org/bots/api/#getchatmemberscount)
+#### `getChatMembersCount()` - [Official Docs](https://core.telegram.org/bots/api/#getchatmemberscount)
 
 Gets the number of members in the chat.
 
@@ -398,7 +398,7 @@ context.getChatMembersCount().then(result => {
 
 <br />
 
-## `getChatMember(userId)` - [Official Docs](https://core.telegram.org/bots/api/#getchatmember)
+#### `getChatMember(userId)` - [Official Docs](https://core.telegram.org/bots/api/#getchatmember)
 
 Gets information about a member of the chat.
 
@@ -428,7 +428,7 @@ context.getChatMember(USER_ID).then(result => {
 
 ### Updating API
 
-## `editMessageText(text [, options])` - [Official Docs](https://core.telegram.org/bots/api/#editmessagetext)
+#### `editMessageText(text [, options])` - [Official Docs](https://core.telegram.org/bots/api/#editmessagetext)
 
 Edits text and game messages sent by the bot or via the bot (for inline bots).
 
@@ -445,7 +445,7 @@ context.editMessageText('new_text');
 
 <br />
 
-## `editMessageCaption(caption [, options])` - [Official Docs](https://core.telegram.org/bots/api/#editmessagecaption)
+#### `editMessageCaption(caption [, options])` - [Official Docs](https://core.telegram.org/bots/api/#editmessagecaption)
 
 Edits captions of messages sent by the bot or via the bot (for inline bots).
 
@@ -462,7 +462,7 @@ context.editMessageCaption('new_caption');
 
 <br />
 
-## `editMessageReplyMarkup(replyMarkup [, options])` - [Official Docs](https://core.telegram.org/bots/api/#editmessagereplymarkup)
+#### `editMessageReplyMarkup(replyMarkup [, options])` - [Official Docs](https://core.telegram.org/bots/api/#editmessagereplymarkup)
 
 Edits only the reply markup of messages sent by the bot or via the bot (for inline bots).
 
@@ -483,7 +483,7 @@ context.editMessageReplyMarkup({
 
 <br />
 
-## `deleteMessage(messageId)` - [Official Docs](https://core.telegram.org/bots/api/#deletemessage)
+#### `deleteMessage(messageId)` - [Official Docs](https://core.telegram.org/bots/api/#deletemessage)
 
 Deletes a message, including service messages.
 
@@ -499,7 +499,7 @@ context.deleteMessage(MESSAGE_ID);
 
 <br />
 
-## `editMessageLiveLocation(location [, options])` - [Official Docs](https://core.telegram.org/bots/api/#editmessagelivelocation)
+#### `editMessageLiveLocation(location [, options])` - [Official Docs](https://core.telegram.org/bots/api/#editmessagelivelocation)
 
 Edit live location messages sent by the bot or via the bot (for inline bots).
 
@@ -521,7 +521,7 @@ context.editMessageLiveLocation({
 
 <br />
 
-## `stopMessageLiveLocation(options)` - [Official Docs](https://core.telegram.org/bots/api/#stopmessagelivelocation)
+#### `stopMessageLiveLocation(options)` - [Official Docs](https://core.telegram.org/bots/api/#stopmessagelivelocation)
 
 Stop updating a live location message sent by the bot or via the bot (for inline bots) before _live_period_ expires.
 
@@ -537,7 +537,7 @@ context.stopMessageLiveLocation();
 
 ### Group API
 
-## `kickChatMember(userId [, options])` - [Official Docs](https://core.telegram.org/bots/api/#kickchatmember)
+#### `kickChatMember(userId [, options])` - [Official Docs](https://core.telegram.org/bots/api/#kickchatmember)
 
 Kicks a user from the group, the supergroup or the channel.
 
@@ -554,7 +554,7 @@ context.kickChatMember(USER_ID, { until_date: UNIX_TIME });
 
 <br />
 
-## `unbanChatMember(userId)` - [Official Docs](https://core.telegram.org/bots/api/#unbanchatmember)
+#### `unbanChatMember(userId)` - [Official Docs](https://core.telegram.org/bots/api/#unbanchatmember)
 
 Unbans a previously kicked user in the supergroup or channel.
 
@@ -570,7 +570,7 @@ context.unbanChatMember(USER_ID);
 
 <br />
 
-## `restrictChatMember(userId [, options])` - [Official Docs](https://core.telegram.org/bots/api/#restrictchatmember)
+#### `restrictChatMember(userId [, options])` - [Official Docs](https://core.telegram.org/bots/api/#restrictchatmember)
 
 Restricts a user in the supergroup
 
@@ -587,7 +587,7 @@ context.restrictChatMember(USER_ID, { can_send_messages: true });
 
 <br />
 
-## `promoteChatMember(userId [, options])` - [Official Docs](https://core.telegram.org/bots/api/#promotechatmember)
+#### `promoteChatMember(userId [, options])` - [Official Docs](https://core.telegram.org/bots/api/#promotechatmember)
 
 Promotes or demotes a user in the supergroup or the channel.
 
@@ -607,7 +607,7 @@ context.promoteChatMember(USER_ID, {
 
 <br />
 
-## `exportChatInviteLink()` - [Official Docs](https://core.telegram.org/bots/api/#exportchatinvitelink)
+#### `exportChatInviteLink()` - [Official Docs](https://core.telegram.org/bots/api/#exportchatinvitelink)
 
 Exports an invite link to the supergroup or the channel.
 
@@ -619,7 +619,7 @@ context.exportChatInviteLink();
 
 <br />
 
-## `setChatPhoto(photo)` - [Official Docs](https://core.telegram.org/bots/api/#setchatphoto)
+#### `setChatPhoto(photo)` - [Official Docs](https://core.telegram.org/bots/api/#setchatphoto)
 
 Sets a new profile photo for the chat.
 
@@ -635,7 +635,7 @@ context.setChatPhoto('https://example.com/image.png');
 
 <br />
 
-## `deleteChatPhoto()` - [Official Docs](https://core.telegram.org/bots/api/#deletechatphoto)
+#### `deleteChatPhoto()` - [Official Docs](https://core.telegram.org/bots/api/#deletechatphoto)
 
 Deletes the chat photo.
 
@@ -647,7 +647,7 @@ context.deleteChatPhoto();
 
 <br />
 
-## `setChatTitle(title)` - [Official Docs](https://core.telegram.org/bots/api/#setchattitle)
+#### `setChatTitle(title)` - [Official Docs](https://core.telegram.org/bots/api/#setchattitle)
 
 Changes the title of the chat.
 
@@ -663,7 +663,7 @@ context.setChatTitle('New Title');
 
 <br />
 
-## `setChatDescription(description)` - [Official Docs](https://core.telegram.org/bots/api/#setchatdescription)
+#### `setChatDescription(description)` - [Official Docs](https://core.telegram.org/bots/api/#setchatdescription)
 
 Changes the description of the supergroup or the channel.
 
@@ -679,7 +679,7 @@ context.setChatDescription('New Description');
 
 <br />
 
-## `setChatStickerSet(stickerSetName)` - [Official Docs](https://core.telegram.org/bots/api/#setchatstickerset)
+#### `setChatStickerSet(stickerSetName)` - [Official Docs](https://core.telegram.org/bots/api/#setchatstickerset)
 
 Set a new group sticker set for the supergroup.
 
@@ -695,7 +695,7 @@ context.setChatStickerSet('Sticker Set Name');
 
 <br />
 
-## `deleteChatStickerSet()` - [Official Docs](https://core.telegram.org/bots/api/#deletechatstickerset)
+#### `deleteChatStickerSet()` - [Official Docs](https://core.telegram.org/bots/api/#deletechatstickerset)
 
 Delete a group sticker set from the supergroup.
 
@@ -707,7 +707,7 @@ context.deleteChatStickerSet();
 
 <br />
 
-## `pinChatMessage(messageId [, options])` - [Official Docs](https://core.telegram.org/bots/api/#pinChatMessage)
+#### `pinChatMessage(messageId [, options])` - [Official Docs](https://core.telegram.org/bots/api/#pinChatMessage)
 
 Pins a message in the supergroup.
 
@@ -724,7 +724,7 @@ context.pinChatMessage(MESSAGE_ID, { disable_notification: true });
 
 <br />
 
-## `unpinChatMessage()` - [Official Docs](https://core.telegram.org/bots/api/#unpinchatmessage)
+#### `unpinChatMessage()` - [Official Docs](https://core.telegram.org/bots/api/#unpinchatmessage)
 
 Unpins a message in the supergroup chat.
 
@@ -736,7 +736,7 @@ context.unpinChatMessage();
 
 <br />
 
-## `leaveChat()` - [Official Docs](https://core.telegram.org/bots/api/#leavechat)
+#### `leaveChat()` - [Official Docs](https://core.telegram.org/bots/api/#leavechat)
 
 Leaves the group, supergroup or channel.
 
@@ -750,7 +750,7 @@ context.leaveChat();
 
 ### Payments API
 
-## `sendInvoice(product [, options])` - [Official Docs](https://core.telegram.org/bots/api/#sendinvoice)
+#### `sendInvoice(product [, options])` - [Official Docs](https://core.telegram.org/bots/api/#sendinvoice)
 
 Sends invoice.
 
@@ -785,7 +785,7 @@ context.sendInvoice({
 
 <br />
 
-## `answerShippingQuery(ok [, options])` - [Official Docs](https://core.telegram.org/bots/api/#answershippingquery)
+#### `answerShippingQuery(ok [, options])` - [Official Docs](https://core.telegram.org/bots/api/#answershippingquery)
 
 Reply to the shipping query.
 
@@ -802,7 +802,7 @@ context.answerShippingQuery(true);
 
 <br />
 
-## `answerPreCheckoutQuery(ok [, options])` - [Official Docs](https://core.telegram.org/bots/api/#answerprecheckoutquery)
+#### `answerPreCheckoutQuery(ok [, options])` - [Official Docs](https://core.telegram.org/bots/api/#answerprecheckoutquery)
 
 Respond to the pre-checkout query.
 
@@ -821,7 +821,7 @@ context.answerPreCheckoutQuery(true);
 
 ### Inline mode API
 
-## `answerInlineQuery(results [, options])` - [Official Docs](https://core.telegram.org/bots/api/#answerinlinequery)
+#### `answerInlineQuery(results [, options])` - [Official Docs](https://core.telegram.org/bots/api/#answerinlinequery)
 
 Send answers to the inline query.
 
@@ -858,7 +858,7 @@ context.answerInlineQuery(
 
 ### Game API
 
-## `sendGame(gameShortName [, options])` - [Official Docs](https://core.telegram.org/bots/api#sendgame)
+#### `sendGame(gameShortName [, options])` - [Official Docs](https://core.telegram.org/bots/api#sendgame)
 
 Sends a game.
 
@@ -877,7 +877,7 @@ context.sendGame('Mario Bros.', {
 
 <br />
 
-## `setGameScore(score [, options])` - [Official Docs](https://core.telegram.org/bots/api#setgamescore)
+#### `setGameScore(score [, options])` - [Official Docs](https://core.telegram.org/bots/api#setgamescore)
 
 Sets the score of the specified user in a game.
 
@@ -894,7 +894,7 @@ context.setGameScore(999);
 
 <br />
 
-## `getGameHighScores()` - [Official Docs](https://core.telegram.org/bots/api#getgamehighscores)
+#### `getGameHighScores()` - [Official Docs](https://core.telegram.org/bots/api#getgamehighscores)
 
 Gets data for high score tables.
 
@@ -912,7 +912,7 @@ context.getGameHighScores();
 
 ### Others
 
-## `forwardMessageFrom(fromChatId, messageId [, options])` - [Official Docs](https://core.telegram.org/bots/api/#forwardmessage)
+#### `forwardMessageFrom(fromChatId, messageId [, options])` - [Official Docs](https://core.telegram.org/bots/api/#forwardmessage)
 
 Forwards messages of any kind.
 
@@ -930,7 +930,7 @@ context.forwardMessageFrom(CHAT_ID, MESSAGE_ID, {
 });
 ```
 
-## `forwardMessageTo(toChatId, messageId [, options])` - [Official Docs](https://core.telegram.org/bots/api/#forwardmessage)
+#### `forwardMessageTo(toChatId, messageId [, options])` - [Official Docs](https://core.telegram.org/bots/api/#forwardmessage)
 
 Forwards messages of any kind.
 

@@ -5,7 +5,7 @@ date: "2018-03-16"
 
 #### Chat API
 
-## `postMessage(message [, options])` - [Official docs](https://api.slack.com/methods/chat.postMessage)
+#### `postMessage(message [, options])` - [Official docs](https://api.slack.com/methods/chat.postMessage)
 
 Alias: `sendText`.
 
@@ -57,7 +57,7 @@ context.postMessage(
 
 <br />
 
-## `postEphemeral(message [, options])` - [Official docs](https://api.slack.com/methods/chat.postEphemeral)
+#### `postEphemeral(message [, options])` - [Official docs](https://api.slack.com/methods/chat.postEphemeral)
 
 Sends an ephemeral message to the user.
 

@@ -3,7 +3,7 @@ title: MessengerEvent
 date: "2018-03-20"
 ---
 
-## `rawEvent`
+#### `rawEvent`
 
 Underlying raw event from Messenger.
 
@@ -23,7 +23,7 @@ event.rawEvent;
 // }
 ```
 
-## `isMessage`
+#### `isMessage`
 
 Determine if the event is a message event.
 
@@ -33,7 +33,7 @@ Example:
 event.isMessage; // true
 ```
 
-## `message`
+#### `message`
 
 The message object from Messenger raw event.
 
@@ -48,7 +48,7 @@ event.message;
 // }
 ```
 
-## `isText`
+#### `isText`
 
 Determine if the event is a message event which includes text.
 
@@ -58,7 +58,7 @@ Example:
 event.isText; // true
 ```
 
-## `text`
+#### `text`
 
 The text string from Messenger raw event.
 
@@ -68,7 +68,7 @@ Example:
 event.text; // 'Awesome.'
 ```
 
-## `hasAttachment`
+#### `hasAttachment`
 
 Determine if the event has any attachments.
 
@@ -78,7 +78,7 @@ Example:
 event.hasAttachment; // true
 ```
 
-## `attachments`
+#### `attachments`
 
 The attachments array from Messenger raw event.
 
@@ -96,7 +96,7 @@ event.attachments;
 // ]
 ```
 
-## `isImage`
+#### `isImage`
 
 Determine if the event is a message event which includes image attachment.
 
@@ -106,7 +106,7 @@ Example:
 event.isImage; // true
 ```
 
-## `image`
+#### `image`
 
 The image attachment from Messenger raw event.
 
@@ -119,7 +119,7 @@ event.image;
 // }
 ```
 
-## `isAudio`
+#### `isAudio`
 
 Determine if the event is a message event which includes audio attachment.
 
@@ -129,7 +129,7 @@ Example:
 event.isAudio; // true
 ```
 
-## `audio`
+#### `audio`
 
 The audio attachment from Messenger raw event.
 
@@ -142,7 +142,7 @@ event.audio;
 // }
 ```
 
-## `isVideo`
+#### `isVideo`
 
 Determine if the event is a message event which includes video attachment.
 
@@ -152,7 +152,7 @@ Example:
 event.isVideo; // true
 ```
 
-## `video`
+#### `video`
 
 The video attachment from Messenger raw event.
 
@@ -165,7 +165,7 @@ event.video;
 // }
 ```
 
-## `isLocation`
+#### `isLocation`
 
 Determine if the event is a message event which includes location attachment.
 
@@ -175,7 +175,7 @@ Example:
 event.isLocation; // true
 ```
 
-## `location`
+#### `location`
 
 The location attachment from Messenger raw event.
 
@@ -188,7 +188,7 @@ event.location;
 // }
 ```
 
-## `isFile`
+#### `isFile`
 
 Determine if the event is a message event which includes file attachment.
 
@@ -198,7 +198,7 @@ Example:
 event.isFile; // true
 ```
 
-## `file`
+#### `file`
 
 The file attachment from Messenger raw event.
 
@@ -211,7 +211,7 @@ event.file;
 // }
 ```
 
-## `isFallback`
+#### `isFallback`
 
 Determine if the event is a message event which includes fallback attachment.
 
@@ -221,7 +221,7 @@ Example:
 event.isFallback; // true
 ```
 
-## `fallback`
+#### `fallback`
 
 The fallback attachment from Messenger raw event.
 
@@ -237,7 +237,7 @@ event.fallback;
 // }
 ```
 
-## `isSticker`
+#### `isSticker`
 
 Determine if the event is a message event which includes sticker.
 
@@ -247,7 +247,7 @@ Example:
 event.isSticker; // true
 ```
 
-## `sticker`
+#### `sticker`
 
 The sticker_id from Messenger raw event.
 
@@ -257,7 +257,7 @@ Example:
 event.sticker; // 369239263222822
 ```
 
-## `isLikeSticker`
+#### `isLikeSticker`
 
 Determine if the event is a message event which includes 'like' sticker.
 
@@ -267,7 +267,7 @@ Example:
 event.isLikeSticker; // true
 ```
 
-## `isQuickReply`
+#### `isQuickReply`
 
 Determine if the event is a message event triggered from quick reply.
 
@@ -277,7 +277,7 @@ Example:
 event.isQuickReply; // true
 ```
 
-## `quickReply`
+#### `quickReply`
 
 The quick reply object from Messenger raw event.
 
@@ -290,7 +290,7 @@ event.quickReply;
 // }
 ```
 
-## `isEcho`
+#### `isEcho`
 
 Determine if the event is a message event sent from our side.
 
@@ -300,7 +300,7 @@ Example:
 event.isEcho; // true
 ```
 
-## `isPostback`
+#### `isPostback`
 
 Determine if the event is a postback event.
 
@@ -310,7 +310,7 @@ Example:
 event.isPostback; // true
 ```
 
-## `postback`
+#### `postback`
 
 The postback object from Messenger raw event.
 
@@ -323,7 +323,7 @@ event.postback;
 // }
 ```
 
-## `isOptin`
+#### `isOptin`
 
 Determine if the event is an opt-in event.
 
@@ -333,7 +333,7 @@ Example:
 event.isOptin; // true
 ```
 
-## `optin`
+#### `optin`
 
 The optin object from Messenger raw event.
 
@@ -346,7 +346,7 @@ event.optin;
 // }
 ```
 
-## `isPayment`
+#### `isPayment`
 
 Determine if the event is a payment event.
 
@@ -356,7 +356,7 @@ Example:
 event.isPayment; // true
 ```
 
-## `payment`
+#### `payment`
 
 The payment object from Messenger raw event.
 
@@ -385,7 +385,7 @@ event.payment;
 // }
 ```
 
-## `isCheckoutUpdate`
+#### `isCheckoutUpdate`
 
 Determine if the event is a checkout update event.
 
@@ -395,7 +395,7 @@ Example:
 event.isCheckoutUpdate; // true
 ```
 
-## `checkoutUpdate`
+#### `checkoutUpdate`
 
 The checkout_update object from Messenger raw event.
 
@@ -417,7 +417,7 @@ event.checkoutUpdate;
 // }
 ```
 
-## `isPreCheckout`
+#### `isPreCheckout`
 
 Determine if the event is a pre-checkout event.
 
@@ -427,7 +427,7 @@ Example:
 event.isPreCheckout; // true
 ```
 
-## `preCheckout`
+#### `preCheckout`
 
 The pre_checkout object from Messenger raw event.
 
@@ -456,7 +456,7 @@ event.preCheckout;
 // }
 ```
 
-## `isRead`
+#### `isRead`
 
 Determine if the event is a message read event.
 
@@ -466,7 +466,7 @@ Example:
 event.isRead; // true
 ```
 
-## `read`
+#### `read`
 
 The read object from Messenger raw event.
 
@@ -480,7 +480,7 @@ event.read;
 // }
 ```
 
-## `isDelivery`
+#### `isDelivery`
 
 Determine if the event is a message delivery event.
 
@@ -490,7 +490,7 @@ Example:
 event.isDelivery; // true
 ```
 
-## `delivery`
+#### `delivery`
 
 The delivery object from Messenger raw event.
 
@@ -505,7 +505,7 @@ event.delivery;
 // }
 ```
 
-## `isPayload`
+#### `isPayload`
 
 Determine if the event is a postback or quick reply which includes payload.
 
@@ -515,7 +515,7 @@ Example:
 event.isPayload; // true
 ```
 
-## `payload`
+#### `payload`
 
 The payload received from postback or quick reply.
 
@@ -525,7 +525,7 @@ Example:
 event.payload; // 'USER_DEFINED_PAYLOAD'
 ```
 
-## `isPolicyEnforcement`
+#### `isPolicyEnforcement`
 
 Determine if the event is a policy enforcement event.
 
@@ -535,7 +535,7 @@ Example:
 event.isPolicyEnforcement; // true
 ```
 
-## `policyEnforcement`
+#### `policyEnforcement`
 
 The policy enforcement object from Messenger raw event.
 
@@ -550,7 +550,7 @@ event.policyEnforcement;
 // }
 ```
 
-## `isAppRoles`
+#### `isAppRoles`
 
 Determine if the event is an app roles event.
 
@@ -560,7 +560,7 @@ Example:
 event.isAppRoles; // true
 ```
 
-## `appRoles`
+#### `appRoles`
 
 The app roles object from Messenger raw event.
 
@@ -573,7 +573,7 @@ event.appRoles;
 // }
 ```
 
-## `isStandby`
+#### `isStandby`
 
 Determine if the event is a standby event.
 
@@ -583,7 +583,7 @@ Example:
 event.isStandby; // true
 ```
 
-## `isPassThreadControl`
+#### `isPassThreadControl`
 
 Determine if the event is a pass thread control event.
 
@@ -593,7 +593,7 @@ Example:
 event.isPassThreadControl; // true
 ```
 
-## `passThreadControl`
+#### `passThreadControl`
 
 The pass thread control object from Messenger raw event.
 
@@ -607,7 +607,7 @@ event.passThreadControl;
 // }
 ```
 
-## `isTakeThreadControl`
+#### `isTakeThreadControl`
 
 Determine if the event is a take thread control event.
 
@@ -617,7 +617,7 @@ Example:
 event.isTakeThreadControl; // true
 ```
 
-## `takeThreadControl`
+#### `takeThreadControl`
 
 The take thread control object from Messenger raw event.
 
@@ -631,7 +631,7 @@ event.takeThreadControl;
 // }
 ```
 
-## `isRequestThreadControl`
+#### `isRequestThreadControl`
 
 Determine if the event is a request thread control event.
 
@@ -641,7 +641,7 @@ Example:
 event.isRequestThreadControl; // true
 ```
 
-## `requestThreadControl`
+#### `requestThreadControl`
 
 The take thread control object from Messenger raw event.
 
@@ -655,7 +655,7 @@ event.requestThreadControl;
 // }
 ```
 
-## `isReferral`
+#### `isReferral`
 
 Determine if the event is a referral event.
 
@@ -665,7 +665,7 @@ Example:
 event.isReferral; // true
 ```
 
-## `referral`
+#### `referral`
 
 The referral object from Messenger event.
 
@@ -680,7 +680,7 @@ event.referral;
 // }
 ```
 
-## `ref`
+#### `ref`
 
 The ref string from Messenger event.
 
@@ -690,7 +690,7 @@ Example:
 event.ref; // 'PASS_THROUGH_PARAM'
 ```
 
-## `isFromCustomerChatPlugin`
+#### `isFromCustomerChatPlugin`
 
 Determine if the event is from customer chat plugin.
 
