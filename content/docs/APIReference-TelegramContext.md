@@ -428,18 +428,14 @@ context.getChatMember(USER_ID).then(result => {
 
 ### Updating API
 
-Coming soon.
-
-<!--
-
 ## `editMessageText(text [, options])` - [Official Docs](https://core.telegram.org/bots/api/#editmessagetext)
 
 Edits text and game messages sent by the bot or via the bot (for inline bots).
 
-| Param   | Type     | Description                                                  |
-| ------- | -------- | ------------------------------------------------------------ |
-| text    | `String` | New text of the message.                                     |
-| options | `Object` | One of chat_id, message_id or inline_message_id is required. |
+| Param   | Type     | Description                |
+| ------- | -------- | -------------------------- |
+| text    | `String` | New text of the message.   |
+| options | `Object` | Other optional parameters. |
 
 Example:
 
@@ -453,10 +449,10 @@ context.editMessageText('new_text');
 
 Edits captions of messages sent by the bot or via the bot (for inline bots).
 
-| Param   | Type     | Description                                                  |
-| ------- | -------- | ------------------------------------------------------------ |
-| caption | `String` | New caption of the message.                                  |
-| options | `Object` | One of chat_id, message_id or inline_message_id is required. |
+| Param   | Type     | Description                 |
+| ------- | -------- | --------------------------- |
+| caption | `String` | New caption of the message. |
+| options | `Object` | Other optional parameters.  |
 
 Example:
 
@@ -470,10 +466,10 @@ context.editMessageCaption('new_caption');
 
 Edits only the reply markup of messages sent by the bot or via the bot (for inline bots).
 
-| Param       | Type     | Description                                                  |
-| ----------- | -------- | ------------------------------------------------------------ |
-| replyMarkup | `Object` | New replyMarkup of the message.                              |
-| options     | `Object` | One of chat_id, message_id or inline_message_id is required. |
+| Param       | Type     | Description                     |
+| ----------- | -------- | ------------------------------- |
+| replyMarkup | `Object` | New replyMarkup of the message. |
+| options     | `Object` | Other optional parameters.      |
 
 Example:
 
@@ -487,21 +483,37 @@ context.editMessageReplyMarkup({
 
 <br />
 
-## `editMessageLiveLocation(location [, options])` - [Official Docs](https://core.telegram.org/bots/api/#editmessagelivelocation)
+## `deleteMessage(messageId)` - [Official Docs](https://core.telegram.org/bots/api/#deletemessage)
 
-Edit live location messages sent by the bot or via the bot (for inline bots).
+Deletes a message, including service messages.
 
-| Param              | Type     | Description                                                  |
-| ------------------ | -------- | ------------------------------------------------------------ |
-| location           | `Object` | Object contains new latitude and longitude.                  |
-| location.latitude  | `Number` | Latitude of new location.                                    |
-| location.longitude | `Number` | Longitude of new location.                                   |
-| options            | `Object` | One of chat_id, message_id or inline_message_id is required. |
+| Param     | Type     | Description                          |
+| --------- | -------- | ------------------------------------ |
+| messageId | `Number` | Identifier of the message to delete. |
 
 Example:
 
 ```js
-client.editMessageLiveLocation({
+context.deleteMessage(MESSAGE_ID);
+```
+
+<br />
+
+## `editMessageLiveLocation(location [, options])` - [Official Docs](https://core.telegram.org/bots/api/#editmessagelivelocation)
+
+Edit live location messages sent by the bot or via the bot (for inline bots).
+
+| Param              | Type     | Description                                 |
+| ------------------ | -------- | ------------------------------------------- |
+| location           | `Object` | Object contains new latitude and longitude. |
+| location.latitude  | `Number` | Latitude of new location.                   |
+| location.longitude | `Number` | Longitude of new location.                  |
+| options            | `Object` | Other optional parameters.                  |
+
+Example:
+
+```js
+context.editMessageLiveLocation({
   latitude: 30,
   longitude: 45,
 });
@@ -513,13 +525,15 @@ client.editMessageLiveLocation({
 
 Stop updating a live location message sent by the bot or via the bot (for inline bots) before _live_period_ expires.
 
+| Param   | Type     | Description                |
+| ------- | -------- | -------------------------- |
+| options | `Object` | Other optional parameters. |
+
 Example:
 
 ```js
 context.stopMessageLiveLocation();
 ```
-
--->
 
 ### Group API
 
@@ -681,7 +695,7 @@ context.setChatStickerSet('Sticker Set Name');
 
 <br />
 
-## `deleteChatStickerSet(chatId)` - [Official Docs](https://core.telegram.org/bots/api/#deletechatstickerset)
+## `deleteChatStickerSet()` - [Official Docs](https://core.telegram.org/bots/api/#deletechatstickerset)
 
 Delete a group sticker set from the supergroup.
 
@@ -729,7 +743,7 @@ Leaves the group, supergroup or channel.
 Example:
 
 ```js
-client.leaveChat();
+context.leaveChat();
 ```
 
 <br />
@@ -844,7 +858,7 @@ context.answerInlineQuery(
 
 ### Game API
 
-## `sendGame(gameShortName [, optionss])` - [Official Docs](https://core.telegram.org/bots/api#sendgame)
+## `sendGame(gameShortName [, options])` - [Official Docs](https://core.telegram.org/bots/api#sendgame)
 
 Sends a game.
 
@@ -875,7 +889,7 @@ Sets the score of the specified user in a game.
 Example:
 
 ```js
-client.setGameScore(USER_ID, 999);
+context.setGameScore(999);
 ```
 
 <br />
@@ -898,11 +912,7 @@ context.getGameHighScores();
 
 ### Others
 
-Coming soon.
-
-<!--
-
-## `forwardMessage(fromChatId, messageId [, options])` - [Official Docs](https://core.telegram.org/bots/api/#forwardmessage)
+## `forwardMessageFrom(fromChatId, messageId [, options])` - [Official Docs](https://core.telegram.org/bots/api/#forwardmessage)
 
 Forwards messages of any kind.
 
@@ -915,9 +925,25 @@ Forwards messages of any kind.
 Example:
 
 ```js
-context.forwardMessage(USER_ID, MESSAGE_ID, {
+context.forwardMessageFrom(CHAT_ID, MESSAGE_ID, {
   disable_notification: true,
 });
 ```
 
--->
+## `forwardMessageTo(toChatId, messageId [, options])` - [Official Docs](https://core.telegram.org/bots/api/#forwardmessage)
+
+Forwards messages of any kind.
+
+| Param     | Type                              | Description                                                              |
+| --------- | --------------------------------- | ------------------------------------------------------------------------ |
+| toChatId  | <code>Number &#124; String</code> | Unique identifier for the target chat or username of the target channel. |
+| messageId | `Number`                          | Message identifier in the chat specified in from_chat_id.                |
+| options   | `Object`                          | Other optional parameters.                                               |
+
+Example:
+
+```js
+context.forwardMessageTo(CHAT_ID, MESSAGE_ID, {
+  disable_notification: true,
+});
+```
