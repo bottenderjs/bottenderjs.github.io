@@ -21,6 +21,7 @@ For platform specific events, please check out following links:
 
 | Platform                                | Doc                                                                                      |
 | --------------------------------------- | ---------------------------------------------------------------------------------------- |
+| Console                                 | [APIReference-ConsoleEvent](https://bottender.js.org/docs/APIReference-ConsoleEvent)     |
 | [Messenger](https://www.messenger.com/) | [APIReference-MessengerEvent](https://bottender.js.org/docs/APIReference-MessengerEvent) |
 | [LINE](https://line.me/)                | [APIReference-LineEvent](https://bottender.js.org/docs/APIReference-LineEvent)           |
 | [Slack](https://slack.com/)             | [APIReference-SlackEvent](https://bottender.js.org/docs/APIReference-SlackEvent)         |

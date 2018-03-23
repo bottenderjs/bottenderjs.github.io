@@ -9,6 +9,7 @@ For platform specific methods, please check out following links:
 
 | Platform                                | Doc                                                                                          |
 | --------------------------------------- | -------------------------------------------------------------------------------------------- |
+| Console                                 | [APIReference-ConsoleContext](https://bottender.js.org/docs/APIReference-ConsoleContext)     |
 | [Messenger](https://www.messenger.com/) | [APIReference-MessengerContext](https://bottender.js.org/docs/APIReference-MessengerContext) |
 | [LINE](https://line.me/)                | [APIReference-LineContext](https://bottender.js.org/docs/APIReference-LineContext)           |
 | [Slack](https://slack.com/)             | [APIReference-SlackContext](https://bottender.js.org/docs/APIReference-SlackContext)         |
@@ -20,7 +21,7 @@ For platform specific methods, please check out following links:
 Example:
 
 ```js
-context.platform; // 'messenger', 'line', 'slack', 'telegram', 'viber'...
+context.platform; // 'console', 'messenger', 'line', 'slack', 'telegram', 'viber'...
 ```
 
 #### `client`
