@@ -18,7 +18,7 @@ date: "2018-03-15"
 
 <a id="reply-api" />
 
-### Reply API - [Official Docs](https://devdocs.line.me/en/#reply-message)
+### Reply API - [Official Docs](https://developers.line.me/en/docs/messaging-api/reference/#send-reply-message)
 
 Responds to events from users, groups, and rooms.
 
@@ -58,7 +58,7 @@ context.reply([
 
 <br />
 
-#### `replyText(text)`
+#### `replyText(text)` - [Official Docs](https://developers.line.me/en/docs/messaging-api/reference/#text-message)
 
 Responds text message to the receiver using reply token.
 
@@ -80,7 +80,7 @@ context.reply('Hello!');
 
 <br />
 
-#### `replyImage(imageUrl, previewImageUrl)`
+#### `replyImage(imageUrl, previewImageUrl)` - [Official Docs](https://developers.line.me/en/docs/messaging-api/reference/#image-message)
 
 Responds image message to the receiver using reply token.
 
@@ -102,7 +102,7 @@ context.replyImage(
 
 <br />
 
-#### `replyVideo(videoUrl, previewImageUrl)`
+#### `replyVideo(videoUrl, previewImageUrl)` - [Official Docs](https://developers.line.me/en/docs/messaging-api/reference/#video-message)
 
 Responds video message to the receiver using reply token.
 
@@ -124,7 +124,7 @@ context.replyVideo(
 
 <br />
 
-#### `replyAudio(audioUrl, duration)`
+#### `replyAudio(audioUrl, duration)` - [Official Docs](https://developers.line.me/en/docs/messaging-api/reference/#audio-message)
 
 Responds audio message to the receiver using reply token.
 
@@ -143,7 +143,7 @@ context.replyAudio('https://example.com/original.m4a', 240000);
 
 <br />
 
-#### `replyLocation(location)`
+#### `replyLocation(location)` - [Official Docs](https://developers.line.me/en/docs/messaging-api/reference/#location-message)
 
 Responds location message to the receiver using reply token.
 
@@ -170,7 +170,7 @@ context.replyLocation({
 
 <br />
 
-#### `replySticker(packageId, stickerId)`
+#### `replySticker(packageId, stickerId)` - [Official Docs](https://developers.line.me/en/docs/messaging-api/reference/#sticker-message)
 
 Responds sticker message to the receiver using reply token.  
 For a list of stickers that can be sent with the Messaging API, see the [sticker list](https://developers.line.me/media/messaging-api/messages/sticker_list.pdf).
@@ -192,7 +192,7 @@ context.replySticker('1', '1');
 
 ### Reply Imagemap Message
 
-#### `replyImagemap(altText, imagemap)`
+#### `replyImagemap(altText, imagemap)` - [Official Docs](https://developers.line.me/en/docs/messaging-api/reference/#imagemap-message)
 
 Responds imagemap message to the receiver using reply token.
 
@@ -246,7 +246,7 @@ context.replyImagemap('this is an imagemap', {
 
 ### Reply Template Messages
 
-#### `replyTemplate(altText, template)`
+#### `replyTemplate(altText, template)` - [Official Docs](https://developers.line.me/en/docs/messaging-api/reference/#template-messages)
 
 Responds template message to the receiver using reply token.
 
@@ -285,7 +285,7 @@ context.replyTemplate('this is a template', {
 
 <br />
 
-#### `replyButtonTemplate(altText, buttonTemplate)`
+#### `replyButtonTemplate(altText, buttonTemplate)` - [Official Docs](https://developers.line.me/en/docs/messaging-api/reference/#buttons)
 
 Responds button template message to the receiver using reply token.
 
@@ -332,7 +332,7 @@ context.replyButtonTemplate('this is a template', {
 
 <br />
 
-#### `replyConfirmTemplate(altText, confirmTemplate)`
+#### `replyConfirmTemplate(altText, confirmTemplate)` - [Official Docs](https://developers.line.me/en/docs/messaging-api/reference/#confirm)
 
 Responds confirm template message to the receiver using reply token.
 
@@ -367,7 +367,7 @@ context.replyConfirmTemplate('this is a confirm template', {
 
 <br />
 
-#### `replyCarouselTemplate(altText, carouselItems, options)`
+#### `replyCarouselTemplate(altText, carouselItems, options)` - [Official Docs](https://developers.line.me/en/docs/messaging-api/reference/#carousel)
 
 Responds carousel template message to the receiver using reply token.
 
@@ -434,7 +434,7 @@ context.replyCarouselTemplate('this is a carousel template', [
 
 <br />
 
-#### `replyImageCarouselTemplate(altText, carouselItems)`
+#### `replyImageCarouselTemplate(altText, carouselItems)` - [Official Docs](https://developers.line.me/en/docs/messaging-api/reference/#image-carousel)
 
 Responds image carousel template message to the receiver using reply token.
 
@@ -480,7 +480,7 @@ context.replyImageCarouselTemplate('this is an image carousel template', [
 
 <a id="push-api" />
 
-### Push API - [Official Docs](https://devdocs.line.me/en/#push-message)
+### Push API - [Official Docs](https://developers.line.me/en/docs/messaging-api/reference/#send-push-message)
 
 Sends messages to the user, group, or room at any time.
 
@@ -505,7 +505,7 @@ context.push([
 
 <br />
 
-#### `pushText(text)`
+#### `pushText(text)` - [Official Docs](https://developers.line.me/en/docs/messaging-api/reference/#text-message)
 
 Alias: `sendText`.
 
@@ -529,7 +529,7 @@ context.pushText('Hello!');
 
 <br />
 
-#### `pushImage(imageUrl, previewImageUrl)`
+#### `pushImage(imageUrl, previewImageUrl)` - [Official Docs](https://developers.line.me/en/docs/messaging-api/reference/#image-message)
 
 Alias: `sendImage`.
 
@@ -553,7 +553,7 @@ context.pushImage(
 
 <br />
 
-#### `pushVideo(videoUrl, previewImageUrl)`
+#### `pushVideo(videoUrl, previewImageUrl)` - [Official Docs](https://developers.line.me/en/docs/messaging-api/reference/#video-message)
 
 Alias: `sendVideo`.
 
@@ -577,7 +577,7 @@ context.pushVideo(
 
 <br />
 
-#### `pushAudio(audioUrl, duration)`
+#### `pushAudio(audioUrl, duration)` - [Official Docs](https://developers.line.me/en/docs/messaging-api/reference/#audio-message)
 
 Alias: `sendAudio`.
 
@@ -598,7 +598,7 @@ context.pushAudio('https://example.com/original.m4a', 240000);
 
 <br />
 
-#### `pushLocation(location)`
+#### `pushLocation(location)` - [Official Docs](https://developers.line.me/en/docs/messaging-api/reference/#location-message)
 
 Alias: `sendLocation`.
 
@@ -627,7 +627,7 @@ context.pushLocation({
 
 <br />
 
-#### `pushSticker(packageId, stickerId)`
+#### `pushSticker(packageId, stickerId)` - [Official Docs](https://developers.line.me/en/docs/messaging-api/reference/#sticker-message)
 
 Alias: `sendSticker`.
 
@@ -651,7 +651,7 @@ context.pushSticker('1', '1');
 
 ### Push Imagemap Message
 
-#### `pushImagemap(altText, imagemap)`
+#### `pushImagemap(altText, imagemap)` - [Official Docs](https://developers.line.me/en/docs/messaging-api/reference/#imagemap-message)
 
 Alias: `sendImagemap`.
 
@@ -707,7 +707,7 @@ context.pushImagemap('this is an imagemap', {
 
 ### Push Template Messages
 
-#### `pushTemplate(altText, template)`
+#### `pushTemplate(altText, template)` - [Official Docs](https://developers.line.me/en/docs/messaging-api/reference/#template-messages)
 
 Alias: `sendTemplate`.
 
@@ -748,7 +748,7 @@ context.pushTemplate('this is a template', {
 
 <br />
 
-#### `pushButtonTemplate(altText, buttonTemplate)`
+#### `pushButtonTemplate(altText, buttonTemplate)` - [Official Docs](https://developers.line.me/en/docs/messaging-api/reference/#buttons)
 
 Alias: `sendButtonTemplate`.
 
@@ -797,7 +797,7 @@ context.pushButtonTemplate('this is a template', {
 
 <br />
 
-#### `pushConfirmTemplate(altText, confirmTemplate)`
+#### `pushConfirmTemplate(altText, confirmTemplate)` - [Official Docs](https://developers.line.me/en/docs/messaging-api/reference/#confirm)
 
 Alias: `sendConfirmTemplate`.
 
@@ -834,7 +834,7 @@ context.pushConfirmTemplate('this is a confirm template', {
 
 <br />
 
-#### `pushCarouselTemplate(altText, carouselItems, options)`
+#### `pushCarouselTemplate(altText, carouselItems, options)` - [Official Docs](https://developers.line.me/en/docs/messaging-api/reference/#carousel)
 
 Alias: `sendCarouselTemplate`.
 
@@ -903,7 +903,7 @@ context.pushCarouselTemplate('this is a carousel template', [
 
 <br />
 
-#### `pushImageCarouselTemplate(altText, carouselItems)`
+#### `pushImageCarouselTemplate(altText, carouselItems)` - [Official Docs](https://developers.line.me/en/docs/messaging-api/reference/#image-carousel)
 
 Alias: `sendImageCarouselTemplate`.
 
@@ -951,7 +951,7 @@ context.pushImageCarouselTemplate('this is an image carousel template', [
 
 <a id="profile-api" />
 
-### Profile API - [Official Docs](https://devdocs.line.me/en/#bot-api-get-profile)
+### Profile API - [Official Docs](https://developers.line.me/en/docs/messaging-api/reference/#get-profile)
 
 #### `getUserProfile()`
 
@@ -975,7 +975,7 @@ context.getUserProfile().then(profile => {
 
 <a id="grouproom-member-profile-api" />
 
-### Group/Room Member Profile API - [Official Docs](https://devdocs.line.me/en/#get-group-room-member-profile)
+### Group/Room Member Profile API - [Official Docs](https://developers.line.me/en/docs/messaging-api/group-chats/#getting-a-user-profile-of-a-member-of-a-group-or-room)
 
 #### `getMemberProfile(userId)`
 
@@ -1002,7 +1002,7 @@ context.getMemberProfile(USER_ID).then(member => {
 
 <a id="grouproom-member-ids-api" />
 
-### Group/Room Member IDs API - [Official Docs](https://devdocs.line.me/en/#get-group-room-member-ids)
+### Group/Room Member IDs API - [Official Docs](https://developers.line.me/en/docs/messaging-api/group-chats/#getting-user-ids-of-the-members-of-a-group-or-room)
 
 #### `getMemberIds(start)`
 
@@ -1056,7 +1056,7 @@ context.getAllMemberIds().then(ids => {
 
 <a id="leave-api" />
 
-### Leave API - [Official Docs](https://devdocs.line.me/en/#leave)
+### Leave API - [Official Docs](https://developers.line.me/en/docs/messaging-api/group-chats/#leaving-a-group-or-room)
 
 #### `leave()`
 
@@ -1076,7 +1076,7 @@ context.leave();
 
 <br />
 
-#### `getLinkedRichMenu()`
+#### `getLinkedRichMenu()` - [Official Docs](https://developers.line.me/en/docs/messaging-api/reference/#get-rich-menu-id-of-user)
 
 Gets the ID of the rich menu linked to the user.
 
@@ -1093,7 +1093,7 @@ context.getLinkedRichMenu().then(richMenu => {
 
 <br />
 
-#### `linkRichMenu(richMenuId)`
+#### `linkRichMenu(richMenuId)` - [Official Docs](https://developers.line.me/en/docs/messaging-api/reference/#link-rich-menu-to-user)
 
 Links a rich menu to the user.
 
@@ -1109,7 +1109,7 @@ context.linkRichMenu(RICH_MENU_ID);
 
 <br />
 
-#### `unlinkRichMenu()`
+#### `unlinkRichMenu()` - [Official Docs](https://developers.line.me/en/docs/messaging-api/reference/#unlink-rich-menu-from-user)
 
 Unlinks a rich menu from the user.
 
