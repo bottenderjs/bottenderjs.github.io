@@ -12,7 +12,7 @@ const Wrapper = styled.header`
   left: 0;
   display: flex;
   width: 100%;
-  height: 80px;
+  height: 60px;
   border-bottom: 1px solid #d2d2d2;
   justify-content: center;
   background-color: #fff;

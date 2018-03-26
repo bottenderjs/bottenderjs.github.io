@@ -5,15 +5,11 @@ import Link from 'gatsby-link';
 import media from '../css/media';
 
 const Item = styled.p`
-  margin: 0 0 0 50px;
+  margin: 0 0 0 25px;
   padding-top: 5px;
   border-top: 5px transparent solid;
   color: #2d2d2d;
-  font-family: Lato, sans-serif;
   font-size: 18px;
-  font-weight: bold;
-  letter-spacing: 1px;
-  text-transform: uppercase;
   transition: border-top 0.3s;
 
   @media (${media.tablet}) {
