@@ -6,11 +6,12 @@ import media from '../css/media';
 
 const Item = styled.p`
   margin: 0 0 0 25px;
-  padding-top: 5px;
-  border-top: 5px transparent solid;
+  padding-top: 10px;
+  padding-bottom: 3px;
+  border-bottom: 3px solid transparent;
   color: #2d2d2d;
   font-size: 18px;
-  transition: border-top 0.3s;
+  transition: border-bottom 0.2s;
 
   @media (${media.tablet}) {
     margin: 0 0 20px;
