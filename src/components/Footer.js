@@ -7,7 +7,7 @@ import media from '../css/media';
 
 const Wrapper = styled.footer`
   display: flex;
-  height: 129px;
+  height: 80px;
   justify-content: center;
   background: #101010;
   opacity: 1;
@@ -16,7 +16,7 @@ const Wrapper = styled.footer`
 
 const Container = styled.div`
   display: flex;
-  width: calc(1024px + ${rhythm(0.5)});
+  width: calc(1200px + ${rhythm(0.5)});
   height: 100%;
   margin: 0 ${rhythm(0.5)};
   justify-content: space-between;
@@ -27,10 +27,10 @@ const Container = styled.div`
   }
 `;
 
-const Copyright = styled.h4`
+const Copyright = styled.p`
   margin: 0;
   color: #fff;
-  font-size: 16px;
+  font-size: 14px;
   -webkit-font-smoothing: antialiased;
   letter-spacing: 1px;
 
@@ -39,14 +39,14 @@ const Copyright = styled.h4`
   }
 `;
 
-const MobileCopyright = styled.h4`
+const MobileCopyright = styled.p`
   display: none;
 
   @media (${media.tablet}) {
     display: block;
     margin: 0;
     color: #fff;
-    font-size: 16px;
+    font-size: 14px;
     text-align: center;
     -webkit-font-smoothing: antialiased;
     letter-spacing: 1px;
@@ -72,10 +72,10 @@ class Footer extends Component {
       <Wrapper id="footer" role="contentinfo">
         <Container>
           <Copyright>
-            © 2017 - PRESENT YOCTOL INFO INC. ALL RIGHTS RESERVED
+            © 2017-Present YOCTOL INFO INC. All Rights Reserved
           </Copyright>
           <MobileCopyright>
-            © 2017 - PRESENT YOCTOL INFO INC. <br />ALL RIGHTS RESERVED
+            © 2017-Present YOCTOL INFO INC. <br />All Rights Reserved
           </MobileCopyright>
           <Link href="https://github.com/Yoctol/bottender" target="_blank">
             <GitHubLogo src={github} alt="Bottender github link" />
