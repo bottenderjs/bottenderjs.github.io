@@ -287,6 +287,8 @@ context.replyTemplate('this is a template', {
 
 #### `replyButtonTemplate(altText, buttonTemplate)` - [Official Docs](https://developers.line.me/en/docs/messaging-api/reference/#buttons)
 
+Alias: `replyButtonsTemplate`.
+
 Responds button template message to the receiver using reply token.
 
 <img src="https://developers.line.me/media/messaging-api/messages/buttons-86e14165.png" width="250px" />
@@ -750,7 +752,7 @@ context.pushTemplate('this is a template', {
 
 #### `pushButtonTemplate(altText, buttonTemplate)` - [Official Docs](https://developers.line.me/en/docs/messaging-api/reference/#buttons)
 
-Alias: `sendButtonTemplate`.
+Alias: `pushButtonsTemplate`, `sendButtonTemplate`, `sendButtonsTemplate`.
 
 Sends button template message to the receiver using ID.
 
