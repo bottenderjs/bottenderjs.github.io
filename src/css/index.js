@@ -13,18 +13,6 @@ export default () => injectGlobal`
     text-rendering: unset;
   }
 
-  h1::before,
-  h2::before,
-  h3::before,
-  h4::before,
-  h5::before,
-  h6::before {
-    display: block;
-    height: 90px;
-    margin: -90px 0 0;
-    content: "";
-  }
-
   h1,
   h2,
   h3,
@@ -41,6 +29,11 @@ export default () => injectGlobal`
 
   p code {
     background-color: #f5f2f0;
+  }
+
+  code[class*="language-"] {
+    font-family: "source-code-pro", Menlo, Monaco, Consolas, "Courier New", monospace;
+    font-size: 0.85em;
   }
 
   .token.operator,

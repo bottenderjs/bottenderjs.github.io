@@ -12,61 +12,45 @@ import authors from '../../content/authors.yaml';
 
 const globalStyle = `
   h1 {
-    margin-top: 1em;
-    margin-bottom: 0;
-    color: #2d2d2d;
-    font-size: 60px;
+    margin-top: ${rhythm(1.5)};
+    margin-bottom: ${rhythm(0.5)};
+    color: #000;
+    font-size: 42px;
     font-weight: bold;
-
-    @media (${media.tablet}) {
-      font-size: ${60 * 0.8}px;
-    }
   }
 
-  h2 {
-    margin-top: 1.5em;
-    margin-bottom: 0.5em;
-    color: #3c3c3c;
-    font-size: 37px;
+  h2, h2 > code {
+    margin-top: ${rhythm(2)};
+    margin-bottom: ${rhythm(0.75)};
+    color: #000;
+    font-size: 34px;
     font-weight: bold;
-
-    @media (${media.tablet}) {
-      font-size: ${37 * 0.8}px;
-    }
   }
 
   h2:first-child {
     margin-top: 0;
   }
 
-  h3 {
+  h3, h3 > code {
     margin-top: 1.5em;
     margin-bottom: 0.5em;
-    color: #3c3c3c;
-    font-size: 30px;
-    font-weight: bold;
-
-    @media (${media.tablet}) {
-      font-size: ${30 * 0.8}px;
-    }
-  }
-
-  h4 {
-    margin-top: 1.5em;
-    margin-bottom: 0.5em;
-    color: #505050;
+    color: #000;
     font-size: 26px;
     font-weight: bold;
+  }
 
-    @media (${media.tablet}) {
-      font-size: ${26 * 0.8}px;
-    }
+  h4, h4 > code {
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
   }
 
   p {
     color: #000;
-    font-size: 20px;
-    line-height: 1.7;
+    font-size: 18px;
+    line-height: 1.5;
   }
 
   a {
@@ -120,7 +104,7 @@ const Container = styled.div`
 const Left = styled.main`
   display: flex;
   width: 75%;
-  padding: 32px 40px 100px 0;
+  padding: 0 30px 100px 0;
   flex-direction: column;
 
   @media (${media.desktop}) {
@@ -138,9 +122,7 @@ const Left = styled.main`
 const Right = styled.aside`
   display: flex;
   width: 25%;
-
-  /* add half of H1 font-size for alignment */
-  padding-top: calc(32px + 30px);
+  padding-top: 20px;
   padding-left: 40px;
   background-color: #fafafa;
 
@@ -159,12 +141,13 @@ const Title = styled.h1`
 `;
 
 const TitleSection = styled.section`
-  margin-bottom: 2.5em;
+  margin-bottom: ${rhythm(1)};
 `;
 
 const Meta = styled.div`
-  margin-top: 0.5em;
+  margin-top: 0.25em;
   color: rgb(109, 109, 109);
+  font-size: 14px;
 `;
 
 const renderAuthor = author => {

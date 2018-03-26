@@ -17,7 +17,7 @@ const ListTitle = styled.div`
   /* stylelint-disable */
   ${props =>
     props.selected === true
-      ? 'border-color: #2b9ac8; font-weight: bold;'
+      ? 'border-color: #2b9ac8;'
       : `&:hover {
     border-color: #2b9ac8;
   }`};
