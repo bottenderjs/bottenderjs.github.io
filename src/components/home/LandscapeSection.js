@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 import logo from '../../assets/logo.svg';
@@ -69,19 +69,15 @@ const Slogan = styled.h2`
   }
 `;
 
-class LandscapeSection extends Component {
-  render() {
-    return (
-      <Wrapper>
-        <img src={logo} alt="logo" />
-        <Title>BOTTENDER</Title>
-        <Slogan>
-          MAKE BOTS IN YOUR WAY,<br />FAST AND FLEXIBLY
-        </Slogan>
-        <GetStartedLink to="/docs/GettingStarted">Get Started!</GetStartedLink>
-      </Wrapper>
-    );
-  }
-}
+const LandscapeSection = () => (
+  <Wrapper>
+    <img src={logo} alt="logo" />
+    <Title>BOTTENDER</Title>
+    <Slogan>
+      MAKE BOTS IN YOUR WAY,<br />FAST AND FLEXIBLY
+    </Slogan>
+    <GetStartedLink to="/docs/GettingStarted">Get Started!</GetStartedLink>
+  </Wrapper>
+);
 
 export default LandscapeSection;

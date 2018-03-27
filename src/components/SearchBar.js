@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 import media from '../css/media';
@@ -47,15 +47,11 @@ const SearchIcon = styled.img`
   }
 `;
 
-class SearchBar extends Component {
-  render() {
-    return (
-      <Wrapper>
-        <SearchIcon src={icon} />
-        <Input placeholder="Search Docs" />
-      </Wrapper>
-    );
-  }
-}
+const SearchBar = () => (
+  <Wrapper>
+    <SearchIcon src={icon} />
+    <Input placeholder="Search Docs" />
+  </Wrapper>
+);
 
 export default SearchBar;

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 import { rhythm } from '../utils/typography';
@@ -66,24 +66,20 @@ const GitHubLogo = styled.img`
   }
 `;
 
-class Footer extends Component {
-  render() {
-    return (
-      <Wrapper id="footer" role="contentinfo">
-        <Container>
-          <Copyright>
-            © 2017-Present Yoctol Info., Inc. All Rights Reserved.
-          </Copyright>
-          <MobileCopyright>
-            © 2017-Present Yoctol Info., Inc. <br />All Rights Reserved.
-          </MobileCopyright>
-          <Link href="https://github.com/Yoctol/bottender" target="_blank">
-            <GitHubLogo src={github} alt="Bottender github link" />
-          </Link>
-        </Container>
-      </Wrapper>
-    );
-  }
-}
+const Footer = () => (
+  <Wrapper id="footer" role="contentinfo">
+    <Container>
+      <Copyright>
+        © 2017-Present Yoctol Info., Inc. All Rights Reserved.
+      </Copyright>
+      <MobileCopyright>
+        © 2017-Present Yoctol Info., Inc. <br />All Rights Reserved.
+      </MobileCopyright>
+      <Link href="https://github.com/Yoctol/bottender" target="_blank">
+        <GitHubLogo src={github} alt="Bottender github link" />
+      </Link>
+    </Container>
+  </Wrapper>
+);
 
 export default Footer;

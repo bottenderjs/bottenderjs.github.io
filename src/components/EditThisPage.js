@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
@@ -18,16 +18,14 @@ const Btn = styled.a`
   }
 `;
 
-class EditThisPage extends Component {
-  render() {
-    const { pathname } = this.props;
-    const href = `https://github.com/bottenderjs/bottenderjs.github.io/blob/source/content/${pathname}`;
-    return (
-      <Wrapper>
-        <Btn href={href}>Edit This Page</Btn>
-      </Wrapper>
-    );
-  }
-}
+const EditThisPage = ({ pathname }) => (
+  <Wrapper>
+    <Btn
+      href={`https://github.com/bottenderjs/bottenderjs.github.io/blob/source/content/${pathname}`}
+    >
+      Edit This Page
+    </Btn>
+  </Wrapper>
+);
 
 export default EditThisPage;

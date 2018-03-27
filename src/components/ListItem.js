@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import Link from 'gatsby-link';
 
@@ -24,18 +24,12 @@ const ListTitle = styled.div`
   /* stylelint-enable */
 `;
 
-class ListItem extends Component {
-  render() {
-    const { item, selected, toggleMenu } = this.props;
-
-    return (
-      <Wrapper to={`/${item.id}`}>
-        <ListTitle selected={selected} onClick={toggleMenu}>
-          {item.title}
-        </ListTitle>
-      </Wrapper>
-    );
-  }
-}
+const ListItem = ({ item, selected, toggleMenu }) => (
+  <Wrapper to={`/${item.id}`}>
+    <ListTitle selected={selected} onClick={toggleMenu}>
+      {item.title}
+    </ListTitle>
+  </Wrapper>
+);
 
 export default ListItem;

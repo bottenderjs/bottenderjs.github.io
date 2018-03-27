@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 import media from '../../css/media';
@@ -37,16 +37,11 @@ const SubTitle = styled.p`
   }
 `;
 
-class IntroductionItem extends Component {
-  render() {
-    const { title, subTitle } = this.props;
-    return (
-      <Wrapper>
-        <Title>{title}</Title>
-        <SubTitle>{subTitle}</SubTitle>
-      </Wrapper>
-    );
-  }
-}
+const IntroductionItem = ({ title, subTitle }) => (
+  <Wrapper>
+    <Title>{title}</Title>
+    <SubTitle>{subTitle}</SubTitle>
+  </Wrapper>
+);
 
 export default IntroductionItem;

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import Link from 'gatsby-link';
 
@@ -64,55 +64,51 @@ const Row = styled.div`
   }
 `;
 
-class ExhibitionSection extends Component {
-  render() {
-    return (
-      <Wrapper>
-        <Container>
-          <Title>Exhibition</Title>
-          <SubTitle>
-            The following projects are made with Bottender. <br />
-            If you are interested in sharing your project, please feel free to{' '}
-            <SubmitLink>submit</SubmitLink> your project.
-          </SubTitle>
-          <Row>
-            <ExhibitionItem
-              url="https://via.placeholder.com/320x180"
-              title="Bot Name"
-              subTitle="by Developers Name"
-            />
-            <ExhibitionItem
-              url="https://via.placeholder.com/320x180"
-              title="Bot Name"
-              subTitle="by Developers Name"
-            />
-            <ExhibitionItem
-              url="https://via.placeholder.com/320x180"
-              title="Bot Name"
-              subTitle="by Developers Name"
-            />
-          </Row>
-          <Row>
-            <ExhibitionItem
-              url="https://via.placeholder.com/320x180"
-              title="Bot Name"
-              subTitle="by Developers Name"
-            />
-            <ExhibitionItem
-              url="https://via.placeholder.com/320x180"
-              title="Bot Name"
-              subTitle="by Developers Name"
-            />
-            <ExhibitionItem
-              url="https://via.placeholder.com/320x180"
-              title="Bot Name"
-              subTitle="by Developers Name"
-            />
-          </Row>
-        </Container>
-      </Wrapper>
-    );
-  }
-}
+const ExhibitionSection = () => (
+  <Wrapper>
+    <Container>
+      <Title>Exhibition</Title>
+      <SubTitle>
+        The following projects are made with Bottender. <br />
+        If you are interested in sharing your project, please feel free to{' '}
+        <SubmitLink>submit</SubmitLink> your project.
+      </SubTitle>
+      <Row>
+        <ExhibitionItem
+          url="https://via.placeholder.com/320x180"
+          title="Bot Name"
+          subTitle="by Developers Name"
+        />
+        <ExhibitionItem
+          url="https://via.placeholder.com/320x180"
+          title="Bot Name"
+          subTitle="by Developers Name"
+        />
+        <ExhibitionItem
+          url="https://via.placeholder.com/320x180"
+          title="Bot Name"
+          subTitle="by Developers Name"
+        />
+      </Row>
+      <Row>
+        <ExhibitionItem
+          url="https://via.placeholder.com/320x180"
+          title="Bot Name"
+          subTitle="by Developers Name"
+        />
+        <ExhibitionItem
+          url="https://via.placeholder.com/320x180"
+          title="Bot Name"
+          subTitle="by Developers Name"
+        />
+        <ExhibitionItem
+          url="https://via.placeholder.com/320x180"
+          title="Bot Name"
+          subTitle="by Developers Name"
+        />
+      </Row>
+    </Container>
+  </Wrapper>
+);
 
 export default ExhibitionSection;

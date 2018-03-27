@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 import media from '../css/media';
@@ -19,42 +19,31 @@ const DesktopMenu = styled.div`
   }
 `;
 
-class Nav extends Component {
-  render() {
-    const { pathname, newestBlogPath } = this.props;
-
-    return (
-      <Container role="navigation">
-        <DesktopMenu>
-          <NavItem
-            title="Docs"
-            to="/docs/GettingStarted"
-            hasHover
-            pathname={pathname}
-          />
-          <NavItem
-            title="Blog"
-            to={newestBlogPath}
-            hasHover
-            pathname={pathname}
-          />
-          <NavItem
-            title="Examples"
-            to="https://github.com/Yoctol/bottender/tree/master/examples"
-            hasHover
-            pathname={pathname}
-          />
-          <NavItem
-            title="GitHub"
-            to="https://github.com/Yoctol/bottender"
-            hasHover
-            pathname={pathname}
-          />
-        </DesktopMenu>
-        <MobileMenu {...this.props} />
-      </Container>
-    );
-  }
-}
+const Nav = ({ pathname, newestBlogPath }) => (
+  <Container role="navigation">
+    <DesktopMenu>
+      <NavItem
+        title="Docs"
+        to="/docs/GettingStarted"
+        hasHover
+        pathname={pathname}
+      />
+      <NavItem title="Blog" to={newestBlogPath} hasHover pathname={pathname} />
+      <NavItem
+        title="Examples"
+        to="https://github.com/Yoctol/bottender/tree/master/examples"
+        hasHover
+        pathname={pathname}
+      />
+      <NavItem
+        title="GitHub"
+        to="https://github.com/Yoctol/bottender"
+        hasHover
+        pathname={pathname}
+      />
+    </DesktopMenu>
+    <MobileMenu pathname={pathname} newestBlogPath={newestBlogPath} />
+  </Container>
+);
 
 export default Nav;
