@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import Link from 'gatsby-link';
 
@@ -40,19 +40,14 @@ const SubTitle = styled.h5`
   line-height: 1.33;
 `;
 
-class ExhibitionItem extends Component {
-  render() {
-    const { url, title, subTitle } = this.props;
-    return (
-      <Wrapper>
-        <Link to="/">
-          <ShowcaseImage src={url} alt={title} />
-        </Link>
-        <Title>{title}</Title>
-        <SubTitle>{subTitle}</SubTitle>
-      </Wrapper>
-    );
-  }
-}
+const ExhibitionItem = ({ url, title, subTitle }) => (
+  <Wrapper>
+    <Link to="/">
+      <ShowcaseImage src={url} alt={title} />
+    </Link>
+    <Title>{title}</Title>
+    <SubTitle>{subTitle}</SubTitle>
+  </Wrapper>
+);
 
 export default ExhibitionItem;

@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 import { rhythm } from '../../utils/typography';
@@ -28,15 +28,11 @@ const Title = styled.h2`
   }
 `;
 
-class CTASection extends Component {
-  render() {
-    return (
-      <Wrapper>
-        <Title>Build Your Bot Today!</Title>
-        <GetStartedLink to="/docs/GettingStarted">Get Started!</GetStartedLink>
-      </Wrapper>
-    );
-  }
-}
+const CTASection = () => (
+  <Wrapper>
+    <Title>Build Your Bot Today!</Title>
+    <GetStartedLink to="/docs/GettingStarted">Get Started!</GetStartedLink>
+  </Wrapper>
+);
 
 export default CTASection;
