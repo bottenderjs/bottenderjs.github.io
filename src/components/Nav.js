@@ -26,20 +26,20 @@ class Nav extends Component {
       <Container role="navigation">
         <DesktopMenu>
           <NavItem
-            title="docs"
+            title="Docs"
             to="/docs/GettingStarted"
             hasHover
             pathname={pathname}
           />
-          <NavItem title="blog" to="/blog" hasHover pathname={pathname} />
+          <NavItem title="Blog" to="/blog" hasHover pathname={pathname} />
           <NavItem
-            title="examples"
+            title="Examples"
             to="https://github.com/Yoctol/bottender/tree/master/examples"
             hasHover
             pathname={pathname}
           />
           <NavItem
-            title="github"
+            title="GitHub"
             to="https://github.com/Yoctol/bottender"
             hasHover
             pathname={pathname}

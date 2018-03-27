@@ -13,11 +13,10 @@ const Wrapper = styled.section`
 
 const SectionTitle = styled.h2`
   display: flex;
-  margin-top: 32px;
-  margin-bottom: 12px;
+  margin-top: 6px;
+  margin-bottom: 18px;
   color: #2b9ac8;
-  font-family: Lato, sans-serif;
-  font-size: 21px;
+  font-size: 22px;
   cursor: pointer;
   letter-spacing: 1px;
 `;
@@ -31,7 +30,8 @@ const Accordion = styled.div`
 
 const Arrow = styled.span`
   height: 21px;
-  margin-left: 7px;
+  margin-top: 3px;
+  margin-left: 3px;
   ${props => (props.show === true ? '' : 'display: none')};
   transform: rotateX(${props => (props.expended === true ? '180' : '0')}deg);
   transition: transform 0.2s ease;
@@ -40,7 +40,7 @@ const Arrow = styled.span`
 const ArrowImage = styled.img`
   width: 21px;
   height: 21px;
-  margin: 2px 0 0;
+  margin: 0;
 `;
 
 class ListSection extends Component {

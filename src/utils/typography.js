@@ -3,8 +3,33 @@ import kirkhamTheme from 'typography-theme-kirkham';
 
 const typography = new Typography(
   Object.assign(kirkhamTheme, {
-    headerFontFamily: ['Helvetica', 'Lato', 'sans-serif'],
-    bodyFontFamily: ['Roboto', 'sans-serif'],
+    baseFontSize: '18px',
+    headerFontFamily: [
+      '-apple-system',
+      'BlinkMacSystemFont',
+      'Segoe UI',
+      'Roboto',
+      'Oxygen',
+      'Ubuntu',
+      'Cantarell',
+      'Fira Sans',
+      'Droid Sans',
+      'Helvetica Neue',
+      'sans-serif',
+    ],
+    bodyFontFamily: [
+      '-apple-system',
+      'BlinkMacSystemFont',
+      'Segoe UI',
+      'Roboto',
+      'Oxygen',
+      'Ubuntu',
+      'Cantarell',
+      'Fira Sans',
+      'Droid Sans',
+      'Helvetica Neue',
+      'sans-serif',
+    ],
   })
 );
 

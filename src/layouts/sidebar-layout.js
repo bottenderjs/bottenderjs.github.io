@@ -11,7 +11,7 @@ import { link, meta } from './head';
 
 const Wrapper = styled.div`
   margin: 0 auto;
-  padding-top: 80px;
+  padding-top: 60px;
 `;
 
 function addTargetBlank() {

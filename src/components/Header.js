@@ -12,7 +12,7 @@ const Wrapper = styled.header`
   left: 0;
   display: flex;
   width: 100%;
-  height: 80px;
+  height: 60px;
   border-bottom: 1px solid #d2d2d2;
   justify-content: center;
   background-color: #fff;
@@ -20,7 +20,7 @@ const Wrapper = styled.header`
 
 const Container = styled.div`
   display: flex;
-  width: calc(1024px + ${rhythm(0.5)});
+  width: calc(1200px + ${rhythm(0.5)});
   height: 100%;
   margin: 0 ${rhythm(0.5)};
   justify-content: space-between;

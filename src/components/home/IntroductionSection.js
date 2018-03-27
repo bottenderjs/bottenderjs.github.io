@@ -19,7 +19,7 @@ const Wrapper = styled.section`
 
 const Container = styled.div`
   display: flex;
-  width: calc(1024px + ${rhythm(0.5)});
+  width: calc(1200px + ${rhythm(0.5)});
   height: 100%;
   margin: 0 ${rhythm(0.5)};
   flex-wrap: wrap;
