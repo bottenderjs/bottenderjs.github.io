@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 import logo from '../assets/bottender.svg';
@@ -36,19 +36,15 @@ const LogoLink = styled.a`
   width: 229px;
 `;
 
-class Header extends Component {
-  render() {
-    return (
-      <Wrapper role="banner">
-        <Container>
-          <LogoLink href={`${__PATH_PREFIX__}/`}>
-            <Logo src={logo} alt={this.props.title} />
-          </LogoLink>
-          <Nav pathname={this.props.pathname} />
-        </Container>
-      </Wrapper>
-    );
-  }
-}
+const Header = ({ title, pathname, newestBlogPath }) => (
+  <Wrapper role="banner">
+    <Container>
+      <LogoLink href={`${__PATH_PREFIX__}/`}>
+        <Logo src={logo} alt={title} />
+      </LogoLink>
+      <Nav pathname={pathname} newestBlogPath={newestBlogPath} />
+    </Container>
+  </Wrapper>
+);
 
 export default Header;
