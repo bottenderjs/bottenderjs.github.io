@@ -1,35 +1,35 @@
 module.exports = {
   siteMetadata: {
-    title: 'Bottender',
-    siteUrl: 'https://bottender.js.org',
+    title: `Bottender`,
+    siteUrl: `https://bottender.js.org`,
   },
   plugins: [
-    'gatsby-plugin-react-next',
+    `gatsby-plugin-react-next`,
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: `gatsby-source-filesystem`,
       options: {
-        name: 'src',
+        name: `src`,
         path: `${__dirname}/src/`,
       },
     },
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: `gatsby-source-filesystem`,
       options: {
-        name: 'content',
+        name: `content`,
         path: `${__dirname}/content/`,
       },
     },
-    'gatsby-plugin-styled-components',
+    `gatsby-plugin-styled-components`,
     {
-      resolve: 'gatsby-plugin-typography',
+      resolve: `gatsby-plugin-typography`,
       options: {
-        pathToConfigModule: 'src/utils/typography',
+        pathToConfigModule: `src/utils/typography`,
       },
     },
     {
-      resolve: 'gatsby-plugin-google-analytics',
+      resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: 'UA-108095811-1',
+        trackingId: `UA-108095811-1`,
       },
     },
     {
@@ -39,12 +39,12 @@ module.exports = {
           {
             resolve: `gatsby-remark-prismjs`,
             options: {
-              classPrefix: 'language-',
+              classPrefix: `language-`,
             },
           },
-          'gatsby-remark-autolink-headers',
+          `gatsby-remark-autolink-headers`,
           {
-            resolve: 'gatsby-remark-images',
+            resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 720,
             },
@@ -53,9 +53,10 @@ module.exports = {
       },
     },
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-catch-links`,
     {
       resolve: `gatsby-plugin-sitemap`,
     },
-    'gatsby-plugin-offline',
+    `gatsby-plugin-offline`,
   ],
 };

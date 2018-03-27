@@ -22,6 +22,7 @@
   "dependencies": {
     "gatsby": "^1.9.238",
     "gatsby-link": "^1.6.39",
+    "gatsby-plugin-catch-links": "^1.0.19",
     "gatsby-plugin-glamor": "^1.6.13",
     "gatsby-plugin-google-analytics": "^1.0.24",
     "gatsby-plugin-offline": "^1.0.15",
