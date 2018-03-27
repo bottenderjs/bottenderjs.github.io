@@ -40,6 +40,8 @@ export default class DocLayout extends Component {
     const title = `${
       data.site.siteMetadata.title
     } | Make Bots in Your Way, Fast and Flexibly`;
+    const newestBlogPath = data.allMarkdownRemark.edges[0].node.fields.slug;
+
     return (
       <Wrapper>
         <Helmet
@@ -55,7 +57,11 @@ export default class DocLayout extends Component {
         >
           <html lang="en" dir="ltr" />
         </Helmet>
-        <Header title={data.site.siteMetadata.title} pathname={pathname} />
+        <Header
+          title={data.site.siteMetadata.title}
+          pathname={pathname}
+          newestBlogPath={newestBlogPath}
+        />
         {children()}
         <Footer />
       </Wrapper>
@@ -68,6 +74,19 @@ export const query = graphql`
     site {
       siteMetadata {
         title
+      }
+    }
+    allMarkdownRemark(
+      limit: 1
+      filter: { id: { regex: "/blog/" } }
+      sort: { fields: [frontmatter___date], order: DESC }
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+        }
       }
     }
   }

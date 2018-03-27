@@ -17,7 +17,7 @@ exports.onCreateNode = ({ node, getNode, boundActionCreators }) => {
       const day = match[3];
       const filename = match[4];
 
-      const slug = `/blog/${year}/${month}/${day}/${filename}/`;
+      const slug = `/blog/${year}/${month}/${day}/${filename}`;
       const date = new Date(year, month - 1, day);
 
       // Blog posts are sorted by date and display the date in their header.
@@ -114,6 +114,7 @@ exports.createPages = async ({ graphql, boundActionCreators }) => {
       }
     }
   `);
+
   const newestBlogNode = newestBlogEntry.data.allMarkdownRemark.edges[0].node;
   // Blog landing page should always show the most recent blog entry.
   createRedirect({

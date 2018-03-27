@@ -21,7 +21,8 @@ const DesktopMenu = styled.div`
 
 class Nav extends Component {
   render() {
-    const { pathname } = this.props;
+    const { pathname, newestBlogPath } = this.props;
+
     return (
       <Container role="navigation">
         <DesktopMenu>
@@ -31,7 +32,12 @@ class Nav extends Component {
             hasHover
             pathname={pathname}
           />
-          <NavItem title="Blog" to="/blog" hasHover pathname={pathname} />
+          <NavItem
+            title="Blog"
+            to={newestBlogPath}
+            hasHover
+            pathname={pathname}
+          />
           <NavItem
             title="Examples"
             to="https://github.com/Yoctol/bottender/tree/master/examples"

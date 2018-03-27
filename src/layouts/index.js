@@ -25,6 +25,7 @@ export default ({ children, data, location }) => {
     data.site.siteMetadata.title
   } | Make Bots in Your Way, Fast and Flexibly`;
   const { pathname } = location;
+  const newestBlogPath = data.allMarkdownRemark.edges[0].node.fields.slug;
 
   return (
     <Wrapper>
@@ -41,7 +42,11 @@ export default ({ children, data, location }) => {
       >
         <html lang="en" dir="ltr" />
       </Helmet>
-      <Header title={data.site.siteMetadata.title} pathname={pathname} />
+      <Header
+        title={data.site.siteMetadata.title}
+        pathname={pathname}
+        newestBlogPath={newestBlogPath}
+      />
       <Container id="content" role="main">
         {children()}
       </Container>
@@ -55,6 +60,19 @@ export const query = graphql`
     site {
       siteMetadata {
         title
+      }
+    }
+    allMarkdownRemark(
+      limit: 1
+      filter: { id: { regex: "/blog/" } }
+      sort: { fields: [frontmatter___date], order: DESC }
+    ) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+        }
       }
     }
   }
