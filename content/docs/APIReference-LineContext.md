@@ -15,6 +15,7 @@ date: "2018-03-15"
 * [Group/Room Member IDs API](#grouproom-member-ids-api)
 * [Leave API](#leave-api)
 * [Rich Menu API](#rich-menu-api)
+* [Account Link API](#account-link-api)
 
 <a id="reply-api" />
 
@@ -1119,4 +1120,25 @@ Example:
 
 ```js
 context.unlinkRichMenu();
+```
+
+<br />
+
+<a id="account-link-api" />
+
+### Account Link API - [Official Docs](https://developers.line.me/en/docs/messaging-api/reference/#account-link)
+
+#### `issueLinkToken()` - [Official Docs](https://developers.line.me/en/docs/messaging-api/reference/#issue-link-token)
+
+Issues a link token used for the [account link](https://developers.line.me/en/docs/messaging-api/linking-accounts/) feature.
+
+Example:
+
+```js
+context.issueLinkToken().then(result => {
+  console.log(result);
+  // {
+  //   linkToken: 'NMZTNuVrPTqlr2IF8Bnymkb7rXfYv5EY',
+  // }
+});
 ```

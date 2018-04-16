@@ -414,3 +414,27 @@ event.beacon;
 //   type: 'enter',
 // }
 ```
+
+#### `isAccountLink`
+
+Determine if the event is an accountLink event.
+
+Example:
+
+```js
+event.isAccountLink; // true
+```
+
+#### `accountLink`
+
+The link object from LINE raw event.
+
+Example:
+
+```js
+event.accountLink;
+// {
+//   result: 'ok',
+//   nonce: 'xxxxxxxxxxxxxxx',
+// }
+```
