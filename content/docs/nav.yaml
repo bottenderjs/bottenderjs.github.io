@@ -36,6 +36,8 @@
       title: State
     - id: docs/Guides-Testing
       title: Testing
+    - id: docs/Guides-CustomConnector
+      title: Custom Connector
     - id: docs/Guides-Troubleshooting
       title: Troubleshooting
 - title: API Reference
