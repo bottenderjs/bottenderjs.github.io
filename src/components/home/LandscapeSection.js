@@ -74,7 +74,7 @@ const LandscapeSection = () => (
     <img src={logo} alt="logo" />
     <Title>BOTTENDER</Title>
     <Slogan>
-      MAKE BOTS IN YOUR WAY,<br />FAST AND FLEXIBLY
+      MAKE BOTS YOUR WAY,<br />FAST AND FLEXIBLE
     </Slogan>
     <GetStartedLink to="/docs/GettingStarted">Get Started!</GetStartedLink>
   </Wrapper>

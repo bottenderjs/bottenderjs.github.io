@@ -27,7 +27,7 @@ export const meta = [
   { property: 'og:url', content: 'https://bottender.js.org/' },
   {
     property: 'og:title',
-    content: 'Bottender | Make Bots in Your Way, Fast and Flexibly',
+    content: 'Bottender | Make Bots Your Way, Fast and Flexible',
   },
   {
     property: 'og:image',
@@ -35,7 +35,7 @@ export const meta = [
   },
   {
     property: 'og:description',
-    content: 'Bottender | Make Bots in Your Way, Fast and Flexibly',
+    content: 'Bottender | Make Bots Your Way, Fast and Flexible',
   },
   { property: 'og:site_name', content: 'Bottender' },
   { property: 'og:locale', content: 'en_US' },

@@ -39,7 +39,7 @@ export default class DocLayout extends Component {
     const { pathname } = location;
     const title = `${
       data.site.siteMetadata.title
-    } | Make Bots in Your Way, Fast and Flexibly`;
+    } | Make Bots Your Way, Fast and Flexible`;
     const newestBlogPath = data.allMarkdownRemark.edges[0].node.fields.slug;
 
     return (
