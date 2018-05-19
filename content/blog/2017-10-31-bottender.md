@@ -14,7 +14,7 @@ To begin with, install `bottender` globally from the npm registry:
 npm install -g bottender
 ```
 
-And enter interactive bot creation process with: 
+And enter interactive bot creation process with:
 
 ```sh
 bottender init
@@ -40,13 +40,13 @@ Here comes Bottender, our proposal of modern and friendly bot development.
 
 ## Only JavaScript. Handler is a function
 
-The advantages of this approach over similar models is that you can do whatever you want in your function. And because of that, your entire system remains highly composable and testable. 
+The advantages of this approach over similar models is that you can do whatever you want in your function. And because of that, your entire system remains highly composable and testable.
 
 ```js
 bot.onEvent(context => {
   if (context.event.isText) {
     console.log('Cool. You sent a text to me.');
-  } 
+  }
 });
 ```
 
@@ -63,7 +63,7 @@ bot.onEvent(async context => {
   if (context.event.text === 'you shoull call api') {
     const result = await callSomeAsyncAPI(context.event.text);
     await context.sendText(result);
-  } 
+  }
 });
 ```
 
@@ -81,9 +81,7 @@ bot.setInitialState({
 bot.onEvent(context => {
   if (context.event.isText) {
     context.setState({
-      todos: context.state.todos.concat(
-        context.event.text
-      ),
+      todos: context.state.todos.concat(context.event.text),
     });
   }
 });
@@ -134,4 +132,3 @@ const createServer = require('bottender/restify');
 ```
 
 Since Bottender works as a Node.js HTTP server, you can easily deploy your bots to PaaS like [Heroku](https://www.heroku.com/) or [Now](https://zeit.co/now). For more details, check out the [Deployment](https://bottender.js.org/docs/Guides-Deployment) guide.
-
