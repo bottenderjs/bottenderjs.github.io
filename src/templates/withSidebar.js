@@ -73,12 +73,12 @@ const globalStyle = `
 const Main = styled.div`
   display: flex;
   justify-content: center;
+  opacity: 1;
   background-image: linear-gradient(0deg, #fafafa, #fafafa);
-  background-position-x: right;
   background-repeat: no-repeat;
   background-size: 25% 100%;
-  opacity: 1;
   transition: opacity 0.5s;
+  background-position-x: right;
 
   @media (${media.desktop}) {
     background-size: 25% 100%;
@@ -91,21 +91,21 @@ const Main = styled.div`
 
 const Container = styled.div`
   display: flex;
+  justify-content: space-between;
   width: calc(1200px + ${rhythm(0.5)});
   margin: 0 ${rhythm(0.5)};
-  justify-content: space-between;
 
   @media (${media.giant}) {
-    width: calc(100% - ${rhythm(1)});
     justify-content: center;
+    width: calc(100% - ${rhythm(1)});
   }
 `;
 
 const Left = styled.main`
   display: flex;
+  flex-direction: column;
   width: 75%;
   padding: 0 30px 100px 0;
-  flex-direction: column;
 
   @media (${media.desktop}) {
     width: 75%;
@@ -156,7 +156,7 @@ const renderAuthor = author => {
   const name = get(meta, 'name');
   if (url) {
     return (
-      <a href={url} target="_blank" key={name}>
+      <a href={url} target="_blank" rel="noopener noreferrer" key={name}>
         {name}
       </a>
     );

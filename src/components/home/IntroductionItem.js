@@ -5,13 +5,13 @@ import media from '../../css/media';
 
 const Wrapper = styled.div`
   display: flex;
-  padding-right: 2em;
-  flex-direction: column;
   flex-basis: 50%;
+  flex-direction: column;
+  padding-right: 2em;
 
   @media (${media.tablet}) {
-    padding-right: 0;
     flex-basis: 100%;
+    padding-right: 0;
   }
 `;
 

@@ -7,20 +7,20 @@ import media from '../css/media';
 
 const Wrapper = styled.footer`
   display: flex;
-  height: 80px;
   justify-content: center;
-  background: #101010;
+  height: 80px;
   opacity: 1;
+  background: #101010;
   transition: opacity 0.5s;
 `;
 
 const Container = styled.div`
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   width: calc(1200px + ${rhythm(0.5)});
   height: 100%;
   margin: 0 ${rhythm(0.5)};
-  justify-content: space-between;
-  align-items: center;
 
   @media (${media.tablet}) {
     justify-content: center;
@@ -47,9 +47,9 @@ const MobileCopyright = styled.p`
     margin: 0;
     color: #fff;
     font-size: 14px;
-    text-align: center;
     -webkit-font-smoothing: antialiased;
     letter-spacing: 1px;
+    text-align: center;
   }
 `;
 

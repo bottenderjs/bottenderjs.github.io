@@ -7,8 +7,8 @@ import CTASection from '../components/home/CTASection';
 
 const Wrapper = styled.div`
   display: flex;
-  width: 100%;
   flex-direction: column;
+  width: 100%;
 `;
 
 export default () => (

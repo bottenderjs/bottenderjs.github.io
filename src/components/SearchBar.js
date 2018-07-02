@@ -5,8 +5,8 @@ import media from '../css/media';
 import icon from '../assets/search.svg';
 
 const Wrapper = styled.div`
-  position: relative;
   display: flex;
+  position: relative;
   width: 100%;
 `;
 

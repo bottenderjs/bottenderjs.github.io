@@ -7,13 +7,13 @@ import { rhythm } from '../../utils/typography';
 
 const Wrapper = styled.div`
   display: flex;
-  margin: 0 32px;
-  flex-direction: column;
   flex-basis: 30%;
+  flex-direction: column;
+  margin: 0 32px;
 
   @media (${media.tablet}) {
-    margin: 10px 0;
     flex-basis: 100%;
+    margin: 10px 0;
   }
 `;
 
@@ -30,8 +30,8 @@ const Title = styled.h4`
   margin-bottom: 0;
   color: #2d2d2d;
   font-size: 21px;
-  line-height: 1.14;
   font-weight: 500;
+  line-height: 1.14;
 `;
 
 const SubTitle = styled.h5`

@@ -9,20 +9,20 @@ import ExhibitionItem from './ExhibitionItem';
 
 const Wrapper = styled.section`
   display: flex;
-  height: auto;
   justify-content: center;
+  height: auto;
   background-color: #fafafa;
 `;
 
 const Container = styled.div`
   display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
   width: calc(1200px + ${rhythm(0.5)});
   height: 100%;
   margin: 0 ${rhythm(0.5)};
   padding: ${rhythm(2)} 0;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
 `;
 
 const Title = styled.h2`
@@ -38,9 +38,9 @@ const Title = styled.h2`
 const SubTitle = styled.h3`
   color: #767676;
   font-size: 24px;
+  font-weight: 500;
   line-height: 1.5;
   text-align: center;
-  font-weight: 500;
 
   @media (${media.tablet}) {
     font-size: 16px;
@@ -59,8 +59,8 @@ const Row = styled.div`
   margin: ${rhythm(0.5)} 0;
 
   @media (${media.tablet}) {
-    margin: 0;
     flex-wrap: wrap;
+    margin: 0;
   }
 `;
 

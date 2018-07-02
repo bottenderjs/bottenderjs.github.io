@@ -3,6 +3,5 @@
   "extends": [
     "stylelint-config-yoctol",
     "stylelint-config-styled-components"
-  ],
-  "syntax": "scss"
+  ]
 }

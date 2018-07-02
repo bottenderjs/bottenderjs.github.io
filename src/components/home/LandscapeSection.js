@@ -10,14 +10,14 @@ import GetStartedLink from './GetStartedLink';
 
 const Wrapper = styled.section`
   display: flex;
-  height: 40vw;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  background-image: url(${landscape});
+  justify-content: center;
+  height: 40vw;
   background-color: #000;
-  background-position: center;
+  background-image: url(${landscape});
   background-repeat: no-repeat;
+  background-position: center;
   background-size: contain;
 
   @media (${media.tablet}) {
@@ -29,10 +29,10 @@ const Wrapper = styled.section`
 const Title = styled.h1`
   margin: 0;
   color: #fff;
-  font-family: BebasNeue;
+  font-family: BebasNeue; /* stylelint-disable-line font-family-no-missing-generic-family-keyword */
   font-size: 81px;
-  text-align: center;
   letter-spacing: 8.2px;
+  text-align: center;
 
   @media (${media.giant}) {
     font-size: ${81 * 0.8}px;
@@ -50,11 +50,11 @@ const Title = styled.h1`
 const Slogan = styled.h2`
   margin: 0 1vw 4vw;
   color: #fff;
-  font-family: SFUIDisplay;
+  font-family: SFUIDisplay; /* stylelint-disable-line font-family-no-missing-generic-family-keyword */
   font-size: 22px;
-  text-align: center;
   font-weight: 300;
   letter-spacing: 3.5px;
+  text-align: center;
 
   @media (${media.giant}) {
     font-size: ${22 * 0.8}px;

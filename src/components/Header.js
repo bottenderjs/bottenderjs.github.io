@@ -6,25 +6,25 @@ import { rhythm } from '../utils/typography';
 import Nav from '../components/Nav';
 
 const Wrapper = styled.header`
+  display: flex;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
-  display: flex;
+  justify-content: center;
   width: 100%;
   height: 60px;
   border-bottom: 1px solid #d2d2d2;
-  justify-content: center;
   background-color: #fff;
 `;
 
 const Container = styled.div`
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   width: calc(1200px + ${rhythm(0.5)});
   height: 100%;
   margin: 0 ${rhythm(0.5)};
-  justify-content: space-between;
-  align-items: center;
 `;
 
 const Logo = styled.img`

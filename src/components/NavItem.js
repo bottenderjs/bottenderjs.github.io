@@ -42,7 +42,7 @@ class NavItem extends Component {
 
     if (isOutsideLink) {
       return (
-        <a href={link} target="_blank">
+        <a href={link} target="_blank" rel="noopener noreferrer">
           <Item hasHover={hasHover} selected={selected}>
             {title}
           </Item>
