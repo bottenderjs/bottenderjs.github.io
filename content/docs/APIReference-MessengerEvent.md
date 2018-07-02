@@ -323,6 +323,36 @@ event.postback;
 // }
 ```
 
+#### `isGamePlay`
+
+Determine if the event is an game_play event.
+
+Example:
+
+```js
+event.isGamePlay; // true
+```
+
+#### `gamePlay`
+
+The game_play object from Messenger raw event.
+
+Example:
+
+```js
+event.gamePlay;
+// {
+//   game_id: 'GAME_ID',
+//   player_id: 'PLAYER_ID',
+//   context_type: 'SOLO',
+//   context_id: 'CONTEXT_ID',
+//   score: 99,
+//   payload: {
+//     SOME_KEY: 'SOME_VALUE'
+//   },
+// }
+```
+
 #### `isOptin`
 
 Determine if the event is an opt-in event.
