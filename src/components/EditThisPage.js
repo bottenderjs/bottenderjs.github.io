@@ -3,9 +3,9 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
   display: flex;
+  flex-direction: row-reverse;
   height: 20px;
   margin-top: 40px;
-  flex-direction: row-reverse;
 `;
 
 const Btn = styled.a`

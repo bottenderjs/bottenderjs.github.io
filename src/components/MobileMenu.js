@@ -22,8 +22,8 @@ const MobileMenuButton = styled.a`
   width: 26px;
   height: 26px;
   background-image: url(${prop => prop.image});
-  background-position: center;
   background-repeat: no-repeat;
+  background-position: center;
 `;
 
 const NavItemWrapper = styled.div`

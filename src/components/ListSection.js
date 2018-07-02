@@ -17,24 +17,24 @@ const SectionTitle = styled.h2`
   margin-bottom: 18px;
   color: #2b9ac8;
   font-size: 22px;
-  cursor: pointer;
   letter-spacing: 1px;
+  cursor: pointer;
 `;
 
 const Accordion = styled.div`
   display: flex;
-  overflow: hidden;
-  max-height: ${props => (props.expended === true ? 'auto' : 0)};
   flex-direction: column;
+  max-height: ${props => (props.expended === true ? 'auto' : 0)};
+  overflow: hidden;
 `;
 
 const Arrow = styled.span`
   height: 21px;
   margin-top: 3px;
   margin-left: 3px;
-  ${props => (props.show === true ? '' : 'display: none')};
   transform: rotateX(${props => (props.expended === true ? '180' : '0')}deg);
   transition: transform 0.2s ease;
+  ${props => (props.show === true ? '' : 'display: none')};
 `;
 
 const ArrowImage = styled.img`

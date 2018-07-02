@@ -8,10 +8,10 @@ import GetStartedLink from './GetStartedLink';
 
 const Wrapper = styled.section`
   display: flex;
-  height: calc(100vh - 209px);
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  height: calc(100vh - 209px);
   background-color: #101010;
 `;
 
@@ -19,9 +19,9 @@ const Title = styled.h2`
   margin: ${rhythm(1)} ${rhythm(0.5)};
   color: #fff;
   font-size: 37px;
-  text-align: center;
   font-weight: bold;
   letter-spacing: -1px;
+  text-align: center;
 
   @media (${media.tablet}) {
     font-size: 26px;

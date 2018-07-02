@@ -8,9 +8,9 @@ import IntroductionItem from './IntroductionItem';
 
 const Wrapper = styled.section`
   display: flex;
+  justify-content: center;
   height: auto;
   padding: 50px 0;
-  justify-content: center;
 
   @media (${media.tablet}) {
     padding: 20px 0;
@@ -19,12 +19,12 @@ const Wrapper = styled.section`
 
 const Container = styled.div`
   display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
   width: calc(1200px + ${rhythm(0.5)});
   height: 100%;
   margin: 0 ${rhythm(0.5)};
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
 `;
 
 const Row = styled.div`
@@ -33,8 +33,8 @@ const Row = styled.div`
   margin: ${rhythm(0.5)} 0;
 
   @media (${media.tablet}) {
-    margin: 0;
     flex-wrap: wrap;
+    margin: 0;
   }
 `;
 

@@ -9,8 +9,8 @@ export default () => injectGlobal`
   body {
     color: #000;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    font-feature-settings: unset;
     text-rendering: unset;
+    font-feature-settings: unset;
   }
 
   h1,
