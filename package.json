@@ -69,17 +69,16 @@
       "stylelint",
       "git add"
     ],
-    "*.{json,md}": [
+    "*.md": [
       "prettier --write",
       "git add"
     ],
-    ".babelrc": [
-      "prettier --write",
+    "*.{babelrc,json}": [
+      "prettier --parser json-stringify --write",
       "git add"
     ],
     "package.json": [
       "prettier-package-json --write",
-      "prettier --write",
       "git add"
     ]
   }
