@@ -7,41 +7,48 @@ date: "2018-01-16"
 
 ### I want to know if there're incoming requests to my bot.
 
-To show every incoming request, simply set your `DEBUG` environment variable to `bottender/bot/Bot` when you start the bot server. You will get something like below when new requests come.
+To show every incoming request, simply set your `DEBUG` environment variable to `bottender:request` when you start the bot server. You will get something like below when new requests come.
 
 ```
-$ DEBUG=bottender/bot/Bot npm start
+$ DEBUG=bottender:request npm start
 server is running on 5000 port...
 
-  bottender/bot/Bot {
-  bottender/bot/Bot   "object": "page",
-  bottender/bot/Bot   "entry": [
-  bottender/bot/Bot     {
-  bottender/bot/Bot       "id": "000000000000000",
-  bottender/bot/Bot       "time": 1516089458463,
-  bottender/bot/Bot       "messaging": [
-  bottender/bot/Bot         {
-  bottender/bot/Bot           "sender": {
-  bottender/bot/Bot             "id": "0000000000000000"
-  bottender/bot/Bot           },
-  bottender/bot/Bot           "recipient": {
-  bottender/bot/Bot             "id": "000000000000000"
-  bottender/bot/Bot           },
-  bottender/bot/Bot           "timestamp": 1516089458006,
-  bottender/bot/Bot           "message": {
-  bottender/bot/Bot             "mid": "mid.$cAALZpXYlSS1nLz6FVlg_00000000",
-  bottender/bot/Bot             "seq": 119080,
-  bottender/bot/Bot             "text": "Hi",
-  bottender/bot/Bot             "nlp": {
-  bottender/bot/Bot               "entities": {}
-  bottender/bot/Bot             }
-  bottender/bot/Bot           }
-  bottender/bot/Bot         }
-  bottender/bot/Bot       ]
-  bottender/bot/Bot     }
-  bottender/bot/Bot   ]
-  bottender/bot/Bot } +0ms
+  bottender:request {
+  bottender:request   "object": "page",
+  bottender:request   "entry": [
+  bottender:request     {
+  bottender:request       "id": "000000000000000",
+  bottender:request       "time": 1516089458463,
+  bottender:request       "messaging": [
+  bottender:request         {
+  bottender:request           "sender": {
+  bottender:request             "id": "0000000000000000"
+  bottender:request           },
+  bottender:request           "recipient": {
+  bottender:request             "id": "000000000000000"
+  bottender:request           },
+  bottender:request           "timestamp": 1516089458006,
+  bottender:request           "message": {
+  bottender:request             "mid": "mid.$cAALZpXYlSS1nLz6FVlg_00000000",
+  bottender:request             "seq": 119080,
+  bottender:request             "text": "Hi",
+  bottender:request             "nlp": {
+  bottender:request               "entities": {}
+  bottender:request             }
+  bottender:request           }
+  bottender:request         }
+  bottender:request       ]
+  bottender:request     }
+  bottender:request   ]
+  bottender:request } +0ms
 ```
+
+### All possible DEBUG keys
+
+* `bottender:request`
+* `bottender:session:read`
+* `bottender:session:write`
+* `bottender:context`
 
 ## Messenger
 
