@@ -699,3 +699,27 @@ Example:
 ```js
 event.isFromCustomerChatPlugin; // true
 ```
+
+#### `isBrandedCamera`
+
+Determine if the event is a branded_camera event.
+
+Example:
+
+```js
+event.isBrandedCamera; // true
+```
+
+#### `brandedCamera`
+
+The branded_camera object from Messenger event.
+
+Example:
+
+```js
+event.brandedCamera;
+// {
+//   content_ids: ['<CAMERA-EFFECT-ID>', '<CAMERA-EFFECT-ID>'],
+//   event: 'dismiss',
+// }
+```
