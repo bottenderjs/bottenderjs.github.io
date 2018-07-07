@@ -3,19 +3,18 @@ title: LineContext
 date: "2018-03-15"
 ---
 
-* [Reply API](#reply-api)
-  * [Imagemap Message](#reply-imagemap-message)
-  * [Template Messages](#reply-template-messages)
-* [Push API](#push-api)
-  * [Imagemap Message](#push-imagemap-message)
-  * [Template Messages](#push-template-messages)
-* [Content API](#content-api)
-* [Profile API](#profile-api)
-* [Group/Room Member Profile API](#grouproom-member-profile-api)
-* [Group/Room Member IDs API](#grouproom-member-ids-api)
-* [Leave API](#leave-api)
-* [Rich Menu API](#rich-menu-api)
-* [Account Link API](#account-link-api)
+- [Reply API](#reply-api)
+  - [Imagemap Message](#reply-imagemap-message)
+  - [Template Messages](#reply-template-messages)
+- [Push API](#push-api)
+  - [Imagemap Message](#push-imagemap-message)
+  - [Template Messages](#push-template-messages)
+- [Profile API](#profile-api)
+- [Group/Room Member Profile API](#grouproom-member-profile-api)
+- [Group/Room Member IDs API](#grouproom-member-ids-api)
+- [Leave API](#leave-api)
+- [Rich Menu API](#rich-menu-api)
+- [Account Link API](#account-link-api)
 
 <a id="reply-api" />
 
@@ -76,7 +75,7 @@ You can include LINE original emoji in text messages using character codes. For 
 Example:
 
 ```js
-context.reply('Hello!');
+context.replyText('Hello!');
 ```
 
 <br />
