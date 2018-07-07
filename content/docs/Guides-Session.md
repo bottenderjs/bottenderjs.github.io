@@ -33,12 +33,12 @@ Session store is a place where session data is being stored on server.
 
 We implement following kinds of session store. All kinds of bots will use memory session store as default.
 
-* **memory** - sessions are stored in memory with [LRU cache](https://github.com/isaacs/node-lru-cache) and will not be persisted. See [example](https://github.com/Yoctol/bottender/tree/master/examples/session-memory)
-* **file** - sessions are stored in `.sessions` by default. See
+- **memory** - sessions are stored in memory with [LRU cache](https://github.com/isaacs/node-lru-cache) and will not be persisted. See [example](https://github.com/Yoctol/bottender/tree/master/examples/session-memory)
+- **file** - sessions are stored in `.sessions` by default. See
   [example](https://github.com/Yoctol/bottender/tree/master/examples/session-file)
-* **mongo** - sessions are stored in a mongo database. See
+- **mongo** - sessions are stored in a mongo database. See
   [example](https://github.com/Yoctol/bottender/tree/master/examples/session-mongo)
-* **redis** - sessions are stored in redis based stores. See
+- **redis** - sessions are stored in redis based stores. See
   [example](https://github.com/Yoctol/bottender/tree/master/examples/session-redis)
 
 ## Session Store Configuration

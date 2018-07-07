@@ -5,17 +5,17 @@ date: "2017-11-22"
 
 Bottender supports the following HTTP servers. You can choose one of them to develop your own bots.
 
-* [Express](#express)
-* [Koa](#koa)
-* [Micro](#micro)
-* [Restify](#restify)
+- [Express](#express)
+- [Koa](#koa)
+- [Micro](#micro)
+- [Restify](#restify)
 
 ## Parameters
 
 The `createServer` function accepts two parameters:
 
-* [Bot Instance](#bot-instance) (required)
-* [Options](#options)
+- [Bot Instance](#bot-instance) (required)
+- [Options](#options)
 
 ### Bot Instance
 

@@ -3,14 +3,14 @@ title: TelegramContext
 date: "2018-03-16"
 ---
 
-* [Send API](#send-api)
-* [Get API](#get-api)
-* [Updating API](#updating-api)
-* [Group API](#group-api)
-* [Payments API](#payments-api)
-* [Inline Mode API](#inline-mode-api)
-* [Game API](#game-api)
-* [Others](#others)
+- [Send API](#send-api)
+- [Get API](#get-api)
+- [Updating API](#updating-api)
+- [Group API](#group-api)
+- [Payments API](#payments-api)
+- [Inline Mode API](#inline-mode-api)
+- [Game API](#game-api)
+- [Others](#others)
 
 <a id="send-api" />
 

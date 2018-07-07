@@ -7,10 +7,10 @@ This guide will give you some basic concepts of LINE bots. For more information,
 
 ## Requirements
 
-* LINE@ account
-* LINE Messaging API channel
-  * access token
-  * channel secret
+- LINE@ account
+- LINE Messaging API channel
+  - access token
+  - channel secret
 
 You need a [LINE@](http://at.line.me/) account and a **channel** connected to that account to develop a LINE bot. You need the channel's **access token** and **channel secret** when you start.
 
@@ -43,20 +43,20 @@ Then run your server and try it out by talking to your LINE@ account!
 
 There are 7 types of events your bot may receive from LINE. In Bottender, you can access them via `context.event`. For more information, check [LineEvent Reference](./APIReference-LineEvent) and [official docs](https://developers.line.me/en/docs/messaging-api/reference/#webhook-event-objects).
 
-* Message event
-  * Text
-  * Image
-  * Video
-  * Audio
-  * File
-  * Location
-  * Sticker
-* Follow event
-* Unfollow event
-* Join event
-* Leave event
-* Postback event
-* Beacon event
+- Message event
+  - Text
+  - Image
+  - Video
+  - Audio
+  - File
+  - Location
+  - Sticker
+- Follow event
+- Unfollow event
+- Join event
+- Leave event
+- Postback event
+- Beacon event
 
 For example:
 
@@ -76,18 +76,18 @@ bot.onEvent(async context => {
 
 There are 8 types of messages you can send from your bot. In Bottender, you can use functions like `context.sendText()`, `context.sendButtonTemplate()` to send messages. For more information, check [LineContext Reference](./APIReference-LineContext) and [official docs](https://developers.line.me/en/docs/messaging-api/message-types/).
 
-* Text
-* Sticker
-* Image
-* Video
-* Audio
-* Location
-* Imagemap
-* Template
-  * Buttons
-  * Confirm
-  * Carousel
-  * Image carousel
+- Text
+- Sticker
+- Image
+- Video
+- Audio
+- Location
+- Imagemap
+- Template
+  - Buttons
+  - Confirm
+  - Carousel
+  - Image carousel
 
 ## LINE Specific
 
@@ -109,8 +109,8 @@ To ensure that the request is sent from the LINE Platform, you should provide yo
 
 ## References
 
-* [official docs](https://developers.line.me/en/docs/messaging-api/overview/): official docs of LINE messaging API.
-* [LINE@ MANAGER](https://admin-official.line.me/)
-* [LINE developers](https://developers.line.me)
-* [messaging-api-line](https://github.com/Yoctol/messaging-apis/tree/master/packages/messaging-api-line)
-* [line-hello-world](https://github.com/Yoctol/bottender/blob/master/examples/line-hello-world/index.js) example.
+- [official docs](https://developers.line.me/en/docs/messaging-api/overview/): official docs of LINE messaging API.
+- [LINE@ MANAGER](https://admin-official.line.me/)
+- [LINE developers](https://developers.line.me)
+- [messaging-api-line](https://github.com/Yoctol/messaging-apis/tree/master/packages/messaging-api-line)
+- [line-hello-world](https://github.com/Yoctol/bottender/blob/master/examples/line-hello-world/index.js) example.

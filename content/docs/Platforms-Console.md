@@ -92,4 +92,4 @@ To exit console runtime, just type `/exit` or `/quit` as message.
 
 ## References
 
-* [console-hello-world](https://github.com/Yoctol/bottender/blob/master/examples/console-hello-world/index.js) example.
+- [console-hello-world](https://github.com/Yoctol/bottender/blob/master/examples/console-hello-world/index.js) example.

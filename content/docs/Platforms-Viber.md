@@ -47,23 +47,23 @@ For more information, check [Event Reference](./APIReference-Event).
 
 ### Viber-Specific Context Event
 
-* isMessage
-* isText
-* isPicture
-* isVideo
-* isFile
-* isSticker
-* isContact
-* isLocation
-* isSubscribed
-* isUnsubscribed
-* isConversationStarted
-* isDelivered
-* isSeen
-* isFailed
-* text
-* picture
-* ...
+- isMessage
+- isText
+- isPicture
+- isVideo
+- isFile
+- isSticker
+- isContact
+- isLocation
+- isSubscribed
+- isUnsubscribed
+- isConversationStarted
+- isDelivered
+- isSeen
+- isFailed
+- text
+- picture
+- ...
 
 more on [ViberEvent Reference](./APIReference-ViberEvent).
 
@@ -87,16 +87,16 @@ After your bot receives the request from Viber, you can use context send APIs to
 
 ### Viber-Specific Context Send API
 
-* sendMessage
-* sendText
-* sendPicture
-* sendVideo
-* sendFile
-* sendContact
-* sendLocation
-* sendURL
-* sendSticker
-* sendCarouselContent
+- sendMessage
+- sendText
+- sendPicture
+- sendVideo
+- sendFile
+- sendContact
+- sendLocation
+- sendURL
+- sendSticker
+- sendCarouselContent
 
 more on [ViberContext Reference](./APIReference-ViberContext).
 
@@ -121,6 +121,6 @@ bot.onEvent(async context => {
 
 ## References
 
-* [Messaging-apis-viber](https://github.com/Yoctol/messaging-apis/tree/master/packages/messaging-api-viber)
-* [Official Viber Page](https://www.viber.com/)
-* [Official Viber Bot API](https://developers.viber.com/docs/api/rest-bot-api/)
+- [Messaging-apis-viber](https://github.com/Yoctol/messaging-apis/tree/master/packages/messaging-api-viber)
+- [Official Viber Page](https://www.viber.com/)
+- [Official Viber Bot API](https://developers.viber.com/docs/api/rest-bot-api/)

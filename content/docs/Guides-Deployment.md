@@ -7,8 +7,8 @@ Deploying a Bottender server is as easy as deploying a regular Node server.
 
 In this section, following fast and simple ways of deployment are introduced:
 
-* [Now](https://zeit.co/now)
-* [Heroku](https://www.heroku.com/home)
+- [Now](https://zeit.co/now)
+- [Heroku](https://www.heroku.com/home)
 
 Note that these services have limited free dynos. If your bots need to be up 24/7, you should consider paid plans or other services.
 

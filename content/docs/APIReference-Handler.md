@@ -14,7 +14,7 @@ See more details about [event](./APIReference-Event) and [context](./APIReferenc
 
 #### `onXXX(handler)`
 
-* not includes `onEvent`, `onUnhandled`, `onError`
+- not includes `onEvent`, `onUnhandled`, `onError`
 
 It will always trigger handler function if `event.isXXX` is true and **just have one parameter**.
 
@@ -24,7 +24,7 @@ It will always trigger handler function if `event.isXXX` is true and **just have
 
 #### `onXXX(predicate, handler)`
 
-* not includes `onEvent`, `onUnhandled`, `onError`
+- not includes `onEvent`, `onUnhandled`, `onError`
 
 It will trigger handler function if `event.isXXX` is true and predicate function return true.
 
@@ -33,7 +33,7 @@ It will trigger handler function if `event.isXXX` is true and predicate function
 | predicate | `function` | This is a callback function receiving two parameters. Handler function will be triggered if it **returns true**. <br> `function predicate(XXX, context) { /* ... */ }` |
 |  handler  | `function` |               This is a callback function receiving [context](./APIReference-Context) as first parameter. <br> `function handler(context) { /* ... */ }`               |
 
-* Notices: `onText`, `onPayload` also support first parameter to be **string** type or **RegExp**. See more details from [example](#ontext) below.
+- Notices: `onText`, `onPayload` also support first parameter to be **string** type or **RegExp**. See more details from [example](#ontext) below.
 
 #### `onEvent(handler)`
 
@@ -102,11 +102,11 @@ It will trigger handler function if any Error is thrown.
 
 ## Example
 
-* [MessengerHandler](https://github.com/Yoctol/bottender/tree/master/examples/messenger-builder/index.js)
-* [LineHandler](https://github.com/Yoctol/bottender/tree/master/examples/line-builder/index.js)
-* [SlackHandler](https://github.com/Yoctol/bottender/tree/master/examples/slack-builder/index.js)
-* [TelegramHandler](https://github.com/Yoctol/bottender/tree/master/examples/telegram-builder/index.js)
-* [ViberHandler](https://github.com/Yoctol/bottender/tree/master/examples/viber-builder/index.js)
+- [MessengerHandler](https://github.com/Yoctol/bottender/tree/master/examples/messenger-builder/index.js)
+- [LineHandler](https://github.com/Yoctol/bottender/tree/master/examples/line-builder/index.js)
+- [SlackHandler](https://github.com/Yoctol/bottender/tree/master/examples/slack-builder/index.js)
+- [TelegramHandler](https://github.com/Yoctol/bottender/tree/master/examples/telegram-builder/index.js)
+- [ViberHandler](https://github.com/Yoctol/bottender/tree/master/examples/viber-builder/index.js)
 
 Let's use `MessengerHandler` as an example.
 
