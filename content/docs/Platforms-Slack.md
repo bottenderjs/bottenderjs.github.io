@@ -7,21 +7,21 @@ This guide will give you some basic concepts of developing a Slack bot. For more
 
 ## Requirements
 
-* Slack App with following features:
-  * Event Subscriptions
-  * Permissions
-  * Bots
+- Slack App with following features:
+  - Event Subscriptions
+  - Permissions
+  - Bots
 
 First, create an app on [Slack API](https://api.slack.com/apps?new_app=1) site. Then setup its features:
 
-* Event Subscriptions:
-  * Subscribe to `message.channels` event, so your bot can receive message events.
-  * Setup webhook URL after your bot server is up.
-* Permissions:
-  * Add **bot** [scope](https://api.slack.com/bot-users#api_usage) to your app
-  * Copy **Bot User OAuth Access Token** (access token) for later use.
-* Bots:
-  * Setup your bot's display name.
+- Event Subscriptions:
+  - Subscribe to `message.channels` event, so your bot can receive message events.
+  - Setup webhook URL after your bot server is up.
+- Permissions:
+  - Add **bot** [scope](https://api.slack.com/bot-users#api_usage) to your app
+  - Copy **Bot User OAuth Access Token** (access token) for later use.
+- Bots:
+  - Setup your bot's display name.
 
 ## Build Your First Slack Bot
 
@@ -43,14 +43,14 @@ There are many types of events your bot may receive from Slack, but it's up to y
 
 For the **message** related events, Bottender supports some helpers:
 
-* isMessage
-* isChannelsMessage
-* isGroupsMessage
-* isImMessage
-* isMpimMessage
-* isText
-* message
-* text
+- isMessage
+- isChannelsMessage
+- isGroupsMessage
+- isImMessage
+- isMpimMessage
+- isText
+- message
+- text
 
 For example:
 
@@ -92,6 +92,6 @@ function getNameFromId(id, session) {
 
 ## References
 
-* [official docs](https://api.slack.com/): official docs of Slack API.
-* [messaging-api-slack](https://github.com/Yoctol/messaging-apis/tree/master/packages/messaging-api-slack)
-* [slack-hello-world](https://github.com/Yoctol/bottender/blob/master/examples/slack-hello-world/index.js) example.
+- [official docs](https://api.slack.com/): official docs of Slack API.
+- [messaging-api-slack](https://github.com/Yoctol/messaging-apis/tree/master/packages/messaging-api-slack)
+- [slack-hello-world](https://github.com/Yoctol/bottender/blob/master/examples/slack-hello-world/index.js) example.

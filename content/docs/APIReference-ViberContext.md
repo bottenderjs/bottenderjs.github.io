@@ -3,10 +3,10 @@ title: ViberContext
 date: "2018-03-16"
 ---
 
-* [Send API](#send-api)
-* [Keyboards](#keyboards)
-* [Get User Details](#get-user-details)
-* [Get Online](#get-online)
+- [Send API](#send-api)
+- [Keyboards](#keyboards)
+- [Get User Details](#get-user-details)
+- [Get Online](#get-online)
 
 ### Send API
 

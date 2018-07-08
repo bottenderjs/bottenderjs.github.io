@@ -45,10 +45,10 @@ server is running on 5000 port...
 
 ### All possible DEBUG keys
 
-* `bottender:request`
-* `bottender:session:read`
-* `bottender:session:write`
-* `bottender:context`
+- `bottender:request`
+- `bottender:session:read`
+- `bottender:session:write`
+- `bottender:context`
 
 ## Messenger
 

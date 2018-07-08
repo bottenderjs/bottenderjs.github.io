@@ -16,7 +16,8 @@
     "lint:js": "eslint src",
     "lint:staged": "lint-staged",
     "reset": "rimraf ./.cache",
-    "serve": "gatsby serve"
+    "serve": "gatsby serve",
+    "prettier:content": "prettier content/**/*.md --write"
   },
   "dependencies": {
     "gatsby": "^1.9.273",

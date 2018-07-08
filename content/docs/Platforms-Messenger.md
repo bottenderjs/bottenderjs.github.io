@@ -9,21 +9,21 @@ This guide will give you some basic concepts of developing a Messenger bot. For 
 
 To develop a Messenger bot, you need the following requirements:
 
-* A Page Access Token
-* An App Secret
+- A Page Access Token
+- An App Secret
 
 In order to get Page Access Token and App secret, you need:
 
-* [A Facebook Page](https://www.facebook.com/pages/create/)
-* [A Facebook App](https://developers.facebook.com/)
+- [A Facebook Page](https://www.facebook.com/pages/create/)
+- [A Facebook App](https://developers.facebook.com/)
 
 After you get a Facebook Page and a Facebook App, you can get the `Page Access Token`. Check the [official docs](https://developers.facebook.com/docs/messenger-platform/getting-started/app-setup).  
 Also remember to copy the `App Secret` on app dashboard. Click `Show` button on the dashboard and type your password to get the App Secret.
 
 Before leaving this section, make sure you have the following requirements:
 
-* A Page Access Token
-* An App Secret
+- A Page Access Token
+- An App Secret
 
 We will use them to develop our messenger bot later.
 
@@ -87,15 +87,15 @@ For more information, check [Event Reference](./APIReference-Event).
 
 ### Messenger Event Properties
 
-* isText
-* isImage
-* isQuickReply
-* isPostback
-* isEcho
-* quickReply
-* postback
-* payload
-* ...
+- isText
+- isImage
+- isQuickReply
+- isPostback
+- isEcho
+- quickReply
+- postback
+- payload
+- ...
 
 more on [MessengerEvent Reference](./APIReference-MessengerEvent).
 
@@ -125,10 +125,10 @@ When using Bottender, we automatically set `messaging_type` to `RESPONSE` when u
 
 ### Messenger-Specific Context Send API
 
-* sendText
-* sendImage
-* sendGenericTemplate
-* ...
+- sendText
+- sendImage
+- sendGenericTemplate
+- ...
 
 more on [MessengerContext Reference](./APIReference-MessengerContext).
 
@@ -164,5 +164,5 @@ bot.onEvent(async context => {
 
 ## References
 
-* [Messaging-api-messenger](https://github.com/Yoctol/messaging-apis/tree/master/packages/messaging-api-messenger): Our open source Messenger API client project.
-* [Messenger Platform](https://developers.facebook.com/docs/messenger-platform): The Messenger Platform docs.
+- [Messaging-api-messenger](https://github.com/Yoctol/messaging-apis/tree/master/packages/messaging-api-messenger): Our open source Messenger API client project.
+- [Messenger Platform](https://developers.facebook.com/docs/messenger-platform): The Messenger Platform docs.

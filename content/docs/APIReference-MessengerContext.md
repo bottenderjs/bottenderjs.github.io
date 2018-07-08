@@ -3,13 +3,13 @@ title: MessengerContext
 date: "2018-03-15"
 ---
 
-* [Message Content Types](#message-content-types)
-* [Templates](#templates)
-* [Quick Replies](#quick-replies)
-* [Sender Actions](#sender-actions)
-* [Targeting Broadcast Messages](#targeting-broadcast-messages)
-* [User Profile API](#user-profile-api)
-* [Handover Protocol API](#handover-protocol-api)
+- [Message Content Types](#message-content-types)
+- [Templates](#templates)
+- [Quick Replies](#quick-replies)
+- [Sender Actions](#sender-actions)
+- [Targeting Broadcast Messages](#targeting-broadcast-messages)
+- [User Profile API](#user-profile-api)
+- [Handover Protocol API](#handover-protocol-api)
 
 #### `sendMessage(message [, options])`
 
@@ -45,9 +45,9 @@ context.sendMessage(
 
 Available messaging types:
 
-* `UPDATE` as default
-* `RESPONSE` using `{ messaging_type: 'RESPONSE' }` options
-* `MESSAGE_TAG` using `{ tag: 'ANY_TAG' }` options
+- `UPDATE` as default
+- `RESPONSE` using `{ messaging_type: 'RESPONSE' }` options
+- `MESSAGE_TAG` using `{ tag: 'ANY_TAG' }` options
 
 <br />
 
@@ -111,19 +111,19 @@ Send sounds to the user by uploading them or sharing a URL using the [Send API](
 
 Example:
 
-* Send audio using url string:
+- Send audio using url string:
 
 ```js
 context.sendAudio('https://example.com/audio.mp3');
 ```
 
-* Use `AttachmentPayload` to send cached attachment:
+- Use `AttachmentPayload` to send cached attachment:
 
 ```js
 context.sendAudio({ attachment_id: '55688' });
 ```
 
-* Use `ReadStream` created from local file:
+- Use `ReadStream` created from local file:
 
 ```js
 const fs = require('fs');
@@ -144,19 +144,19 @@ Send images to the user by uploading them or sharing a URL using the [Send API](
 
 Example:
 
-* Send image using url string:
+- Send image using url string:
 
 ```js
 context.sendImage('https://example.com/vr.jpg');
 ```
 
-* Use `AttachmentPayload` to send cached attachment:
+- Use `AttachmentPayload` to send cached attachment:
 
 ```js
 context.sendImage({ attachment_id: '55688' });
 ```
 
-* Use `ReadStream` created from local file:
+- Use `ReadStream` created from local file:
 
 ```js
 const fs = require('fs');
@@ -177,19 +177,19 @@ Send videos to the user by uploading them or sharing a URL using the [Send API](
 
 Example:
 
-* Send video using url string:
+- Send video using url string:
 
 ```js
 context.sendVideo('https://example.com/video.mp4');
 ```
 
-* Use `AttachmentPayload` to send cached attachment:
+- Use `AttachmentPayload` to send cached attachment:
 
 ```js
 context.sendVideo({ attachment_id: '55688' });
 ```
 
-* Use `ReadStream` created from local file:
+- Use `ReadStream` created from local file:
 
 ```js
 const fs = require('fs');
@@ -210,19 +210,19 @@ Send files to the user by uploading them or sharing a URL using the [Send API](h
 
 Example:
 
-* Send file using url string:
+- Send file using url string:
 
 ```js
 context.sendFile('https://example.com/receipt.pdf');
 ```
 
-* Use `AttachmentPayload` to send cached attachment:
+- Use `AttachmentPayload` to send cached attachment:
 
 ```js
 context.sendFile({ attachment_id: '55688' });
 ```
 
-* Use `ReadStream` created from local file:
+- Use `ReadStream` created from local file:
 
 ```js
 const fs = require('fs');
@@ -351,22 +351,22 @@ context.sendGenericTemplate(
 
 Available tags:
 
-* `COMMUNITY_ALERT`
-* `CONFIRMED_EVENT_REMINDER`
-* `NON_PROMOTIONAL_SUBSCRIPTION`
-* `PAIRING_UPDATE`
-* `APPLICATION_UPDATE`
-* `ACCOUNT_UPDATE`
-* `PAYMENT_UPDATE`
-* `PERSONAL_FINANCE_UPDATE`
-* `SHIPPING_UPDATE`
-* `RESERVATION_UPDATE`
-* `ISSUE_RESOLUTION`
-* `APPOINTMENT_UPDATE`
-* `GAME_EVENT`
-* `TRANSPORTATION_UPDATE`
-* `FEATURE_FUNCTIONALITY_UPDATE`
-* `TICKET_UPDATE`
+- `COMMUNITY_ALERT`
+- `CONFIRMED_EVENT_REMINDER`
+- `NON_PROMOTIONAL_SUBSCRIPTION`
+- `PAIRING_UPDATE`
+- `APPLICATION_UPDATE`
+- `ACCOUNT_UPDATE`
+- `PAYMENT_UPDATE`
+- `PERSONAL_FINANCE_UPDATE`
+- `SHIPPING_UPDATE`
+- `RESERVATION_UPDATE`
+- `ISSUE_RESOLUTION`
+- `APPOINTMENT_UPDATE`
+- `GAME_EVENT`
+- `TRANSPORTATION_UPDATE`
+- `FEATURE_FUNCTIONALITY_UPDATE`
+- `TICKET_UPDATE`
 
 <br />
 
