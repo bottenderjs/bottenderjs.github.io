@@ -60,7 +60,7 @@ Following getters are commonly cross-platform implemented:
 - `isPayload`
 - `payload`
 
-Free free to implement platform only getter on it.
+Feel free to implement platform only getter on it.
 
 ```js
 class CustomEvent {
