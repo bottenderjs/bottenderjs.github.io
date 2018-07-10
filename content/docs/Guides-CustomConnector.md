@@ -127,7 +127,7 @@ If you need to prefetch something data or do some check for the session, you can
 
 ### mapRequestToEvents
 
-One request may have one or more than one raw events. For example, Messenger and LINE batch events into one request in some situation.  
+One request may have one or more than one raw events. For example, Messenger and LINE batch events into one request in some situation. Accordingly, you must return array of event instances in this method.  
 
 ### createContext
 
