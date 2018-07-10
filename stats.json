@@ -12,6 +12,10 @@
       "path---docs-guides-intents-38123beea8ea50f44a2b.js",
       "path---docs-guides-intents-38123beea8ea50f44a2b.js.map"
     ],
+    "path---docs-guides-custom-connector": [
+      "path---docs-guides-custom-connector-4c43def00c49b5e7c0ab.js",
+      "path---docs-guides-custom-connector-4c43def00c49b5e7c0ab.js.map"
+    ],
     "path---docs-platforms-line": [
       "path---docs-platforms-line-949c80408678e5f9b387.js",
       "path---docs-platforms-line-949c80408678e5f9b387.js.map"
@@ -93,8 +97,8 @@
       "path---docs-api-reference-slack-event-5e43bca326f75a09682e.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-1e2f49ad8c1a8bdd777e.js",
-      "component---src-layouts-index-js-1e2f49ad8c1a8bdd777e.js.map"
+      "component---src-layouts-index-js-1352117f1c9bfe3b028c.js",
+      "component---src-layouts-index-js-1352117f1c9bfe3b028c.js.map"
     ],
     "path---docs-guides-server": [
       "path---docs-guides-server-0ee28a1cdfa134dda79f.js",
@@ -117,16 +121,16 @@
       "path---docs-api-reference-telegram-event-8edc2b522cfe98b8a8cd.js.map"
     ],
     "component---src-layouts-sidebar-layout-js": [
-      "component---src-layouts-sidebar-layout-js-9f6c18c243f0e45ae363.js",
-      "component---src-layouts-sidebar-layout-js-9f6c18c243f0e45ae363.js.map"
+      "component---src-layouts-sidebar-layout-js-9770900b5ac5e0a24499.js",
+      "component---src-layouts-sidebar-layout-js-9770900b5ac5e0a24499.js.map"
     ],
     "commons": [
       "commons-e136353b970c36a9451f.js",
       "commons-e136353b970c36a9451f.js.map"
     ],
     "component---src-templates-with-sidebar-js": [
-      "component---src-templates-with-sidebar-js-b130c9c609f9e3e1518d.js",
-      "component---src-templates-with-sidebar-js-b130c9c609f9e3e1518d.js.map"
+      "component---src-templates-with-sidebar-js-c4edc1a9a77be8b6cfe4.js",
+      "component---src-templates-with-sidebar-js-c4edc1a9a77be8b6cfe4.js.map"
     ],
     "path---docs-api-reference-line-context": [
       "path---docs-api-reference-line-context-557f80fab22ae73d8cdf.js",
@@ -161,9 +165,9 @@
       "path---docs-api-reference-event-bb13d01d255aa604e8b4.js.map"
     ],
     "app": [
-      "app-cc180f3998e54dcf52a6.js",
+      "app-be63bd2be7a6d09913ca.js",
       "build-js-styles.css",
-      "app-cc180f3998e54dcf52a6.js.map",
+      "app-be63bd2be7a6d09913ca.js.map",
       "build-js-styles.css.map"
     ],
     "path---docs-api-reference-viber-event": [
