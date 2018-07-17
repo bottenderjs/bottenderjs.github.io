@@ -27,7 +27,7 @@ yarn global add bottender
 
 After installed, we can start to create new bot with `bottender init` command:
 
-![](https://user-images.githubusercontent.com/3382565/32279006-6a537d14-bee5-11e7-9b23-48289bd29641.png)
+![](https://user-images.githubusercontent.com/3382565/42831197-41b3f436-8a20-11e8-80a9-d2cd4895e0f5.png)
 
 This will create a folder with a `bottender.config.js` file within:
 
@@ -49,7 +49,7 @@ We can skip over this file and jump to see the result of the execution:
 npm run dev
 ```
 
-![](https://user-images.githubusercontent.com/3382565/31601791-abf0746a-b220-11e7-893a-fba68923920e.png)
+![](https://user-images.githubusercontent.com/3382565/42831198-41e68f86-8a20-11e8-8b22-3378c37c4ed4.png)
 
 As you can see, we just got a bot that always reply "Hello World" in the console.
 
@@ -68,7 +68,7 @@ bot.handle(async context => {
 
 And the server will be restarted automatically.
 
-![](https://user-images.githubusercontent.com/3382565/31601795-ac3f1f02-b220-11e7-99d0-513accf40460.png)
+![](https://user-images.githubusercontent.com/3382565/42831200-4215364c-8a20-11e8-9e19-cd0709bc1b13.png)
 
 That's it!
 
