@@ -57,8 +57,8 @@
       "path---docs-platforms-viber-6e8d0dd05490db20f5d1.js.map"
     ],
     "path---docs-getting-started": [
-      "path---docs-getting-started-6f93f9a6d74e8bf92dd6.js",
-      "path---docs-getting-started-6f93f9a6d74e8bf92dd6.js.map"
+      "path---docs-getting-started-421afb844b25a13cf06e.js",
+      "path---docs-getting-started-421afb844b25a13cf06e.js.map"
     ],
     "path---docs-platforms-telegram": [
       "path---docs-platforms-telegram-31ed8959115417cf5baf.js",
@@ -165,9 +165,9 @@
       "path---docs-api-reference-event-bb13d01d255aa604e8b4.js.map"
     ],
     "app": [
-      "app-be63bd2be7a6d09913ca.js",
+      "app-1a1f43e4569f73f3b6cf.js",
       "build-js-styles.css",
-      "app-be63bd2be7a6d09913ca.js.map",
+      "app-1a1f43e4569f73f3b6cf.js.map",
       "build-js-styles.css.map"
     ],
     "path---docs-api-reference-viber-event": [
