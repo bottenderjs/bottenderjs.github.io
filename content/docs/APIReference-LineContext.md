@@ -498,7 +498,7 @@ Responds flex message using specified reply token.
 Example:
 
 ```js
-client.replyFlex('this is a flex', {
+context.replyFlex('this is a flex', {
   type: 'bubble',
   header: {
     type: 'box',
@@ -1029,7 +1029,7 @@ Sends flex message using ID of the receiver.
 Example:
 
 ```js
-client.pushFlex('this is a flex', {
+context.pushFlex('this is a flex', {
   type: 'bubble',
   header: {
     type: 'box',
