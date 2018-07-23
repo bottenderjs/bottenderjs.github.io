@@ -484,7 +484,7 @@ context.replyImageCarouselTemplate('this is an image carousel template', [
 
 ### Reply Flex Messages
 
-## `replyFlex(altText, contents)` - [Official Docs](https://developers.line.me/en/docs/messaging-api/reference/#flex-message)
+#### `replyFlex(altText, contents)` - [Official Docs](https://developers.line.me/en/docs/messaging-api/reference/#flex-message)
 
 Responds flex message using specified reply token.
 
@@ -1015,7 +1015,7 @@ context.pushImageCarouselTemplate('this is an image carousel template', [
 
 ### Push Flex Messages
 
-## `pushFlex(altText, contents)` - [Official Docs](https://developers.line.me/en/docs/messaging-api/reference/#flex-message)
+#### `pushFlex(altText, contents)` - [Official Docs](https://developers.line.me/en/docs/messaging-api/reference/#flex-message)
 
 Sends flex message using ID of the receiver.
 
