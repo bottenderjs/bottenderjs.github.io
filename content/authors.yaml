@@ -3,10 +3,15 @@
 # will be a link to the provided url.
 yoctol:
   name: Yoctol Info
+  image: https://avatars3.githubusercontent.com/u/10671553?s=200&v=4
   url: https://www.yoctol.com/
 chentsulin:
   name: C.T. Lin
+  image: https://avatars1.githubusercontent.com/u/3382565?s=460&v=4
+  account: chentsulin
   url: https://github.com/chentsulin
 tw0517tw:
   name: Dung-Ie Wu
+  image: https://avatars1.githubusercontent.com/u/1003146?s=460&v=4
+  account: tw0517tw
   url: https://github.com/tw0517tw
