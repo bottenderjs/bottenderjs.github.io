@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import Helmet from 'react-helmet';
+import TimeAgo from 'react-timeago';
 import get from 'lodash/get';
 
 import { rhythm } from '../utils/typography';
-import toCommaSeparatedList from '../utils/toCommaSeparatedList';
 import media from '../css/media';
 import EditThisPage from '../components/EditThisPage';
 import Sidebar from '../components/Sidebar';
@@ -150,19 +150,53 @@ const Meta = styled.div`
   font-size: 14px;
 `;
 
-const renderAuthor = author => {
-  const meta = get(authors, author);
-  const url = get(meta, 'url');
-  const name = get(meta, 'name');
-  if (url) {
-    return (
-      <a href={url} target="_blank" rel="noopener noreferrer" key={name}>
-        {name}
-      </a>
-    );
-  }
-  return <span>{name}</span>;
+const ProfilePic = styled.img`
+  width: 30px;
+  height: 30px;
+  margin: 0 10px 0 0;
+  border-radius: 100%;
+`;
+
+const AuthorWrapper = styled.div`
+  display: inline-block;
+  height: 30px;
+  margin: 0 30px 10px 0;
+  line-height: 30px;
+`;
+
+const AuthorDisplayName = styled.span`
+  display: inline-block;
+  vertical-align: top;
+`;
+
+const Author = ({ name }) => {
+  const meta = get(authors, name);
+  const authorUrl = get(meta, 'url');
+  const authorName = get(meta, 'name');
+  const authorImage = get(meta, 'image');
+  const authorAccount = get(meta, 'account');
+  return (
+    <AuthorWrapper>
+      <ProfilePic src={authorImage} alt="" />
+      <AuthorDisplayName>
+        {authorName}{' '}
+        <a
+          href={authorUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          key={authorName}
+        >
+          (@{authorAccount})
+        </a>
+      </AuthorDisplayName>
+    </AuthorWrapper>
+  );
 };
+
+const PublishDate = styled.div`
+  margin-bottom: 15px;
+  color: #999;
+`;
 
 export default ({ data, location }) => {
   const post = data.markdownRemark;
@@ -177,8 +211,10 @@ export default ({ data, location }) => {
             <Title>{title}</Title>
             {author && (
               <Meta>
-                {`${date} by `}
-                {toCommaSeparatedList(author, renderAuthor)}
+                <PublishDate>
+                  {`${date}`} (<TimeAgo date={date} />)
+                </PublishDate>
+                {author.map(name => <Author name={name} />)}
               </Meta>
             )}
           </TitleSection>
