@@ -6,9 +6,11 @@ date: "2018-03-15"
 - [Reply API](#reply-api)
   - [Imagemap Message](#reply-imagemap-message)
   - [Template Messages](#reply-template-messages)
+  - [Flex Messages](#reply-flex-messages)
 - [Push API](#push-api)
   - [Imagemap Message](#push-imagemap-message)
   - [Template Messages](#push-template-messages)
+  - [Flex Messages](#push-flex-messages)
 - [Profile API](#profile-api)
 - [Group/Room Member Profile API](#grouproom-member-profile-api)
 - [Group/Room Member IDs API](#grouproom-member-ids-api)
@@ -480,6 +482,66 @@ context.replyImageCarouselTemplate('this is an image carousel template', [
 
 <br />
 
+### Reply Flex Messages
+
+## `replyFlex(altText, contents)` - [Official Docs](https://developers.line.me/en/docs/messaging-api/reference/#flex-message)
+
+Responds flex message using specified reply token.
+
+<img src="https://developers.line.me/media/messaging-api/using-flex-messages/bubbleSample-77d825e6.png" />
+
+| Param    | Type     | Description                                                                                             |
+| -------- | -------- | ------------------------------------------------------------------------------------------------------- |
+| altText  | `String` | Alternative text.                                                                                       |
+| contents | `Object` | Flex Message [container](https://developers.line.me/en/docs/messaging-api/reference/#container) object. |
+
+Example:
+
+```js
+client.replyFlex('this is a flex', {
+  type: 'bubble',
+  header: {
+    type: 'box',
+    layout: 'vertical',
+    contents: [
+      {
+        type: 'text',
+        text: 'Header text',
+      },
+    ],
+  },
+  hero: {
+    type: 'image',
+    url: 'https://example.com/flex/images/image.jpg',
+  },
+  body: {
+    type: 'box',
+    layout: 'vertical',
+    contents: [
+      {
+        type: 'text',
+        text: 'Body text',
+      },
+    ],
+  },
+  footer: {
+    type: 'box',
+    layout: 'vertical',
+    contents: [
+      {
+        type: 'text',
+        text: 'Footer text',
+      },
+    ],
+  },
+  styles: {
+    comment: 'See the example of a bubble style object',
+  },
+});
+```
+
+<br />
+
 <a id="push-api" />
 
 ### Push API - [Official Docs](https://developers.line.me/en/docs/messaging-api/reference/#send-push-message)
@@ -947,6 +1009,66 @@ context.pushImageCarouselTemplate('this is an image carousel template', [
     },
   },
 ]);
+```
+
+<br />
+
+### Push Flex Messages
+
+## `pushFlex(altText, contents)` - [Official Docs](https://developers.line.me/en/docs/messaging-api/reference/#flex-message)
+
+Sends flex message using ID of the receiver.
+
+<img src="https://developers.line.me/media/messaging-api/using-flex-messages/bubbleSample-77d825e6.png" />
+
+| Param    | Type     | Description                                                                                             |
+| -------- | -------- | ------------------------------------------------------------------------------------------------------- |
+| altText  | `String` | Alternative text.                                                                                       |
+| contents | `Object` | Flex Message [container](https://developers.line.me/en/docs/messaging-api/reference/#container) object. |
+
+Example:
+
+```js
+client.pushFlex('this is a flex', {
+  type: 'bubble',
+  header: {
+    type: 'box',
+    layout: 'vertical',
+    contents: [
+      {
+        type: 'text',
+        text: 'Header text',
+      },
+    ],
+  },
+  hero: {
+    type: 'image',
+    url: 'https://example.com/flex/images/image.jpg',
+  },
+  body: {
+    type: 'box',
+    layout: 'vertical',
+    contents: [
+      {
+        type: 'text',
+        text: 'Body text',
+      },
+    ],
+  },
+  footer: {
+    type: 'box',
+    layout: 'vertical',
+    contents: [
+      {
+        type: 'text',
+        text: 'Footer text',
+      },
+    ],
+  },
+  styles: {
+    comment: 'See the example of a bubble style object',
+  },
+});
 ```
 
 <br />
