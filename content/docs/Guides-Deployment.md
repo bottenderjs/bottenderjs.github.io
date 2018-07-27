@@ -76,6 +76,19 @@ $ git init
 $ heroku git:remote -a your-app-name // for existing repositories, simply add heroku remote
 ```
 
+### Setting Server Port
+
+[Heroku](https://devcenter.heroku.com/articles/runtime-principles#web-servers) use `$PORT` environment variable to tell apps which port should their server listen. You should make sure your bot server is listening on `process.env.PORT` instead of any other hard-coded ports.
+
+For example,
+
+```js
+const port = process.env.PORT || 5000;
+server.listen(port, () => {
+  console.log(`server is running on ${port} port...`);
+});
+```
+
 ### Setting Node Version
 
 Make sure your Node version on Heroku is higher than 7.6.0. These lines can be added in `package.json` to specify the Node version.
