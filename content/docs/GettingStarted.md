@@ -36,7 +36,7 @@ const { ConsoleBot } = require('bottender');
 
 const bot = new ConsoleBot();
 
-bot.handle(async context => {
+bot.onEvent(async context => {
   await context.sendText('Hello World');
 });
 
@@ -58,7 +58,7 @@ As you can see, we just got a bot that always reply "Hello World" in the console
 Open the file and edit the following lines of code:
 
 ```diff
-bot.handle(async context => {
+bot.onEvent(async context => {
 - await context.sendText('Hello World');
 + if (context.event.isText) {
 +   await context.sendText(context.event.text);
