@@ -180,14 +180,18 @@ const Author = ({ name }) => {
       <ProfilePic src={authorImage} alt="" />
       <AuthorDisplayName>
         {authorName}{' '}
-        <a
-          href={authorUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          key={authorName}
-        >
-          (@{authorAccount})
-        </a>
+        {authorUrl ? (
+          <a
+            href={authorUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            key={authorName}
+          >
+            (@{authorAccount})
+          </a>
+        ) : (
+          <span>(@{authorAccount})</span>
+        )}
       </AuthorDisplayName>
     </AuthorWrapper>
   );
