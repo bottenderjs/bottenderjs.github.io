@@ -50,10 +50,10 @@ const { Line } = require('messaging-api-line');
 
 context.reply([
   Line.createText('Hello'),
-  Line.createImage(
-    'https://example.com/original.jpg',
-    'https://example.com/preview.jpg'
-  ),
+  Line.createImage({
+    originalContentUrl: 'https://example.com/original.jpg',
+    previewImageUrl: 'https://example.com/preview.jpg',
+  }),
   Line.createText('End'),
 ]);
 ```
@@ -96,10 +96,10 @@ Responds image message to the receiver using reply token.
 Example:
 
 ```js
-context.replyImage(
-  'https://example.com/original.jpg',
-  'https://example.com/preview.jpg'
-);
+context.replyImage({
+  originalContentUrl: 'https://example.com/original.jpg',
+  previewImageUrl: 'https://example.com/preview.jpg',
+});
 ```
 
 <br />
@@ -118,10 +118,10 @@ Responds video message to the receiver using reply token.
 Example:
 
 ```js
-context.replyVideo(
-  'https://example.com/original.mp4',
-  'https://example.com/preview.jpg'
-);
+context.replyVideo({
+  originalContentUrl: 'https://example.com/original.mp4',
+  previewImageUrl: 'https://example.com/preview.jpg',
+});
 ```
 
 <br />
@@ -140,7 +140,10 @@ Responds audio message to the receiver using reply token.
 Example:
 
 ```js
-context.replyAudio('https://example.com/original.m4a', 240000);
+context.replyAudio({
+  originalContentUrl: 'https://example.com/original.m4a',
+  duration: 240000,
+});
 ```
 
 <br />
@@ -187,7 +190,7 @@ For a list of stickers that can be sent with the Messaging API, see the [sticker
 Example:
 
 ```js
-context.replySticker('1', '1');
+context.replySticker({ packageId: '1', stickerId: '1' });
 ```
 
 <br />
@@ -609,10 +612,10 @@ Sends image message to the receiver using ID.
 Example:
 
 ```js
-context.pushImage(
-  'https://example.com/original.jpg',
-  'https://example.com/preview.jpg'
-);
+context.pushImage({
+  originalContentUrl: 'https://example.com/original.jpg',
+  previewImageUrl: 'https://example.com/preview.jpg',
+});
 ```
 
 <br />
@@ -633,10 +636,10 @@ Sends video message to the receiver using ID.
 Example:
 
 ```js
-context.pushVideo(
-  'https://example.com/original.mp4',
-  'https://example.com/preview.jpg'
-);
+context.pushVideo({
+  originalContentUrl: 'https://example.com/original.mp4',
+  previewImageUrl: 'https://example.com/preview.jpg',
+});
 ```
 
 <br />
@@ -657,7 +660,10 @@ Sends audio message to the receiver using ID.
 Example:
 
 ```js
-context.pushAudio('https://example.com/original.m4a', 240000);
+context.pushAudio({
+  originalContentUrl: 'https://example.com/original.m4a',
+  duration: 240000,
+});
 ```
 
 <br />
@@ -708,7 +714,7 @@ For a list of stickers that can be sent with the Messaging API, see the [sticker
 Example:
 
 ```js
-context.pushSticker('1', '1');
+context.pushSticker({ packageId: '1', stickerId: '1' });
 ```
 
 <br />
