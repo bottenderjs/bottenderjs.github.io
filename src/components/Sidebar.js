@@ -15,7 +15,8 @@ const Wrapper = styled.div`
 class Sidebar extends Component {
   render() {
     const { pathname } = this.props;
-    const List = pathname.includes('/blog') ? BlogList : DocsList;
+    const isBlog = pathname.includes('/blog');
+    const List = isBlog ? BlogList : DocsList;
     return (
       <Wrapper>
         {List.map(list => {
@@ -38,6 +39,7 @@ class Sidebar extends Component {
               key={list.title}
               list={list}
               selectedItem={selectedItem}
+              reverse={isBlog}
               {...this.props}
             />
           );
