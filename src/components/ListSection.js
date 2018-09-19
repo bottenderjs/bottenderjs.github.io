@@ -73,8 +73,13 @@ class ListSection extends Component {
   }
 
   render() {
-    const { list, toggleMenu, selectedItem } = this.props;
+    const { list, toggleMenu, selectedItem, reverse } = this.props;
     const { isExpended } = this.state;
+
+    let items = [...list.items];
+    if (reverse) {
+      items = [...list.items].reverse();
+    }
 
     return (
       <Wrapper>
@@ -85,7 +90,7 @@ class ListSection extends Component {
           </Arrow>
         </SectionTitle>
         <Accordion expended={isExpended}>
-          {list.items.map(item => (
+          {items.map(item => (
             <ListItem
               key={item.title}
               item={item}
