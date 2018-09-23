@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Helmet from 'react-helmet';
 import TimeAgo from 'react-timeago';
 import get from 'lodash/get';
+import { graphql } from 'gatsby';
 
 import { rhythm } from '../utils/typography';
 import media from '../css/media';
@@ -187,10 +188,14 @@ const Author = ({ name }) => {
             rel="noopener noreferrer"
             key={authorName}
           >
-            (@{authorAccount})
+            (@
+            {authorAccount})
           </a>
         ) : (
-          <span>(@{authorAccount})</span>
+          <span>
+            (@
+            {authorAccount})
+          </span>
         )}
       </AuthorDisplayName>
     </AuthorWrapper>
@@ -218,7 +223,9 @@ export default ({ data, location }) => {
                 <PublishDate>
                   {`${date}`} (<TimeAgo date={date} />)
                 </PublishDate>
-                {author.map(name => <Author name={name} />)}
+                {author.map(name => (
+                  <Author name={name} />
+                ))}
               </Meta>
             )}
           </TitleSection>

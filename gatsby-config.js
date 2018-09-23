@@ -4,7 +4,6 @@ module.exports = {
     siteUrl: 'https://bottender.js.org',
   },
   plugins: [
-    'gatsby-plugin-react-next',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -57,5 +56,6 @@ module.exports = {
       resolve: `gatsby-plugin-sitemap`,
     },
     'gatsby-plugin-offline',
+    'gatsby-plugin-layout',
   ],
 };
