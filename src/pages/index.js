@@ -1,9 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import LandscapeSection from '../components/home/LandscapeSection';
-import IntroductionSection from '../components/home/IntroductionSection';
 import CTASection from '../components/home/CTASection';
+import IntroductionSection from '../components/home/IntroductionSection';
+import LandscapeSection from '../components/home/LandscapeSection';
+import Layout from '../components/layout';
 
 const Wrapper = styled.div`
   display: flex;
@@ -11,10 +12,12 @@ const Wrapper = styled.div`
   width: 100%;
 `;
 
-export default () => (
-  <Wrapper>
-    <LandscapeSection />
-    <IntroductionSection />
-    <CTASection />
-  </Wrapper>
+export default ({ location }) => (
+  <Layout location={location}>
+    <Wrapper>
+      <LandscapeSection />
+      <IntroductionSection />
+      <CTASection />
+    </Wrapper>
+  </Layout>
 );

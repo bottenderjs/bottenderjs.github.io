@@ -1,9 +1,0 @@
-{
-  "presets": [
-    "@babel/react",
-    "@babel/env"
-  ],
-  "plugins": [
-    "add-module-exports"
-  ]
-}

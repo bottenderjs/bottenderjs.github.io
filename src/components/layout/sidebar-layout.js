@@ -1,12 +1,12 @@
+import Helmet from 'react-helmet';
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import Helmet from 'react-helmet';
 import { graphql } from 'gatsby';
 import 'prismjs/themes/prism.css'; // eslint-disable-line
 
-import baseStyles from '../css';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+import Footer from '../Footer';
+import Header from '../Header';
+import baseStyles from '../../css';
 
 import { link, meta } from './head';
 

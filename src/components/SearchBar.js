@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import media from '../css/media';
 import icon from '../assets/search.svg';
+import media from '../css/media';
 
 const Wrapper = styled.div`
   display: flex;

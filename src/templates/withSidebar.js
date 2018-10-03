@@ -1,15 +1,15 @@
-import React from 'react';
-import styled from 'styled-components';
 import Helmet from 'react-helmet';
+import React from 'react';
 import TimeAgo from 'react-timeago';
 import get from 'lodash/get';
+import styled from 'styled-components';
 import { graphql } from 'gatsby';
 
-import { rhythm } from '../utils/typography';
-import media from '../css/media';
 import EditThisPage from '../components/EditThisPage';
 import Sidebar from '../components/Sidebar';
 import authors from '../../content/authors.yaml';
+import media from '../css/media';
+import { rhythm } from '../utils/typography';
 
 const globalStyle = `
   h1 {

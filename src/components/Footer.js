@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { rhythm } from '../utils/typography';
 import github from '../assets/github.svg';
 import media from '../css/media';
+import { rhythm } from '../utils/typography';
 
 const Wrapper = styled.footer`
   display: flex;
@@ -73,7 +73,8 @@ const Footer = () => (
         © 2017-Present Yoctol Info., Inc. All Rights Reserved.
       </Copyright>
       <MobileCopyright>
-        © 2017-Present Yoctol Info., Inc. <br />All Rights Reserved.
+        © 2017-Present Yoctol Info., Inc. <br />
+        All Rights Reserved.
       </MobileCopyright>
       <Link href="https://github.com/Yoctol/bottender" target="_blank">
         <GitHubLogo src={github} alt="Bottender github link" />

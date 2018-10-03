@@ -3,7 +3,8 @@ import styled from 'styled-components';
 
 import logo from '../assets/bottender.svg';
 import { rhythm } from '../utils/typography';
-import Nav from '../components/Nav';
+
+import Nav from './Nav';
 
 const Wrapper = styled.header`
   display: flex;

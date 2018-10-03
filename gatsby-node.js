@@ -75,7 +75,7 @@ exports.createPages = async ({ graphql, boundActionCreators }) => {
     throw Error(allMarkdown.errors);
   }
 
-  allMarkdown.data.allMarkdownRemark.edges.map(({ node }) => {
+  allMarkdown.data.allMarkdownRemark.edges.forEach(({ node }) => {
     const { slug } = node.fields;
     const slugWithoutSlash = slug.replace(/\/$/, ``);
     createPage({
