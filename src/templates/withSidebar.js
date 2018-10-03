@@ -6,6 +6,7 @@ import styled from 'styled-components';
 import { graphql } from 'gatsby';
 
 import EditThisPage from '../components/EditThisPage';
+import Layout from '../components/layout';
 import Sidebar from '../components/Sidebar';
 import authors from '../../content/authors.yaml';
 import media from '../css/media';
@@ -212,31 +213,33 @@ export default ({ data, location }) => {
   const { title, author, date } = post.frontmatter;
   const { pathname } = location;
   return (
-    <Main id="content">
-      <Helmet title={`${title} | ${data.site.siteMetadata.title}`} />
-      <Container>
-        <Left role="main">
-          <TitleSection>
-            <Title>{title}</Title>
-            {author && (
-              <Meta>
-                <PublishDate>
-                  {`${date}`} (<TimeAgo date={date} />)
-                </PublishDate>
-                {author.map(name => (
-                  <Author name={name} />
-                ))}
-              </Meta>
-            )}
-          </TitleSection>
-          <div dangerouslySetInnerHTML={{ __html: post.html }} />
-          <EditThisPage pathname={post.fields.path} />
-        </Left>
-        <Right>
-          <Sidebar pathname={pathname} />
-        </Right>
-      </Container>
-    </Main>
+    <Layout location={location}>
+      <Main id="content">
+        <Helmet title={`${title} | ${data.site.siteMetadata.title}`} />
+        <Container>
+          <Left role="main">
+            <TitleSection>
+              <Title>{title}</Title>
+              {author && (
+                <Meta>
+                  <PublishDate>
+                    {`${date}`} (<TimeAgo date={date} />)
+                  </PublishDate>
+                  {author.map(name => (
+                    <Author name={name} />
+                  ))}
+                </Meta>
+              )}
+            </TitleSection>
+            <div dangerouslySetInnerHTML={{ __html: post.html }} />
+            <EditThisPage pathname={post.fields.path} />
+          </Left>
+          <Right>
+            <Sidebar pathname={pathname} />
+          </Right>
+        </Container>
+      </Main>
+    </Layout>
   );
 };
 

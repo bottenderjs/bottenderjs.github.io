@@ -14,12 +14,6 @@ const Wrapper = styled.div`
   padding-top: 60px;
 `;
 
-const Container = styled.main`
-  display: flex;
-  opacity: 1;
-  transition: opacity 0.5s;
-`;
-
 export const query = graphql`
   query LayoutQuery {
     site {
@@ -74,9 +68,9 @@ export default ({ children, location }) => (
             pathname={pathname}
             newestBlogPath={newestBlogPath}
           />
-          <Container id="content" role="main">
-            {children}
-          </Container>
+
+          {children}
+
           <Footer />
         </Wrapper>
       );
