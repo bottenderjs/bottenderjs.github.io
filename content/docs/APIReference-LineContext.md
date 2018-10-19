@@ -308,6 +308,7 @@ Responds button template message to the receiver using reply token.
 | buttonTemplate.imageBackgroundColor | `String`        | Background color of image. Specify a RGB color value. The default value is `#FFFFFF` (white). |
 | buttonTemplate.title                | `String`        | Title of buttonTemplate.                                                                      |
 | buttonTemplate.text                 | `String`        | Message text of buttonTemplate.                                                               |
+| buttonTemplate.defaultAction        | `Object`        | Action when image is tapped; set for the entire image, title, and text area.   
 | buttonTemplate.actions              | `Array<Object>` | Action when tapped.                                                                           |
 
 Example:
@@ -836,6 +837,7 @@ Sends button template message to the receiver using ID.
 | buttonTemplate.imageBackgroundColor | `String`        | Background color of image. Specify a RGB color value. The default value is `#FFFFFF` (white). |
 | buttonTemplate.title                | `String`        | Title of buttonTemplate.                                                                      |
 | buttonTemplate.text                 | `String`        | Message text of buttonTemplate.                                                               |
+| buttonTemplate.defaultAction        | `Object`        | Action when image is tapped; set for the entire image, title, and text area.   
 | buttonTemplate.actions              | `Array<Object>` | Action when tapped.                                                                           |
 
 Example:
