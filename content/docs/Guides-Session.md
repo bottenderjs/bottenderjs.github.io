@@ -146,16 +146,19 @@ Your custom session driver should implement the `SessionStore` interface. This i
 
 class Store implements SessionStore {
   init(): Promise<SessionStore> {
-    /* ... */
+    /* Initializes the session store */
   }
   read(sessionId: string): Promise<Session | null> {
-    /* ... */
+    /* Reads single session from the session store  */
   }
   write(sessionId: string, data): Promise<void> {
-    /* ... */
+    /* Writes single session to the session store  */
   }
   destroy(sessionId: string): Promise<void> {
-    /* ... */
+    /* Deletes single session from the session store  */
+  }
+  all(): Promise<Array<Session>> {
+    /* Reads all sessions from the session store  */
   }
 }
 ```
