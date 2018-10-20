@@ -38,13 +38,13 @@ const Row = styled.div`
   }
 `;
 
-const TitleSection = () => (
+const IntroductionSection = () => (
   <Wrapper>
     <Container>
       <Row>
         <IntroductionItem
           title="Flexible"
-          subTitle="Build encapsulated handlers that manage your business logic, then compose them to make complex Bots. Handlers are just JavaScript function which can achieve whatever you want."
+          subTitle="Build encapsulated handlers that manage your business logic, then compose them to make complex Bots. Handlers are just JavaScript functions which can achieve whatever you want."
         />
         <IntroductionItem
           title="Modern"
@@ -54,15 +54,15 @@ const TitleSection = () => (
       <Row>
         <IntroductionItem
           title="Modular"
-          subTitle="There is a set of interface that defines the core modules provided by Bottender. You can use your own implement of session store, your HTTP server framework or even connect your bot to any platform."
+          subTitle="There is a set of interface that defines the core modules provided by Bottender. You can use your own implementation of session store, your HTTP server framework or even connect your bot to any platform."
         />
         <IntroductionItem
           title="Learn Once, Write Anywhere"
-          subTitle="Handle multiple platforms with consistent development experience. You can develop bots for different platforms including Messenger, LINE, Slack and Telegram comfortably, with similar mindset."
+          subTitle="Handle multiple platforms with consistent development experience. You can develop bots for different platforms including Messenger, LINE, Slack and Telegram comfortably, with a similar mindset."
         />
       </Row>
     </Container>
   </Wrapper>
 );
 
-export default TitleSection;
+export default IntroductionSection;
