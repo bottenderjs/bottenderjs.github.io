@@ -17,7 +17,7 @@ To start using it, install `bottender` globally from the npm registry:
 npm install -g bottender
 ```
 
-or install by yarn:
+Or install it by yarn:
 
 ```sh
 yarn global add bottender
@@ -25,7 +25,7 @@ yarn global add bottender
 
 ## Initialize
 
-After installed, we can start to create new bot with `bottender init` command:
+After installed, we can start to create a new bot with `bottender init` command:
 
 ![](https://user-images.githubusercontent.com/3382565/42831197-41b3f436-8a20-11e8-80a9-d2cd4895e0f5.png)
 
@@ -51,7 +51,7 @@ npm run dev
 
 ![](https://user-images.githubusercontent.com/3382565/42831198-41e68f86-8a20-11e8-8b22-3378c37c4ed4.png)
 
-As you can see, we just got a bot that always reply "Hello World" in the console.
+As you can see, we just got a bot that always replies "Hello World" in the console.
 
 ## Teach Bot to Echo
 
@@ -74,4 +74,4 @@ That's it!
 
 ## Next Steps
 
-You just created your first bot with Bottender! To dive deeper into bot development, you may want to determine the intents behind the user saying. For more information on intent understanding, [check out its documentation](./Guides-Intents).
+You just created your first bot with Bottender! To dive deeper into bot development, you may want to determine the intents behind what the user says. For more information on intent understanding, [check out its documentation](./Guides-Intents).
