@@ -7,7 +7,7 @@ Bottender is built with testing in mind. Your tests could be run with any JavaSc
 
 ## Unit Test
 
-Unit tests are tests that focus on isolated portion of your code, and you can find bugs efficiently when the complexity of code grows as time goes on.
+Unit tests are tests that focus on the isolated portion of your code, and you can find bugs efficiently when the complexity of code grows as time goes on.
 
 When creating bots using Bottender, the primary logic of bot is inside your event handler.
 
@@ -29,7 +29,7 @@ module.exports = async context => {
 };
 ```
 
-Then, we can start to test it with mock context.
+Then, we can start to test it with a mock context.
 
 ### Context Mocking
 
@@ -72,7 +72,7 @@ We provide some test utils in the package for convenience purpose. It's worth me
 const { ContextSimulator } = require('bottender/test-utils');
 ```
 
-After simulator instantiated with specific platform, you can create mocking context with several helper methods:
+After simulator instantiated with a specific platform, you can create a mocking context with several helper methods:
 
 ```js
 const simulator = new ContextSimulator({

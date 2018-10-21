@@ -9,7 +9,7 @@ A state is an object inside [session](./Guides-Session). You can manipulate the 
 
 ### bot.setInitialState(Object)
 
-To set the initial state of conversation.
+To set the initial state of the conversation.
 
 ### context.state
 
@@ -17,13 +17,13 @@ To get session data.
 
 ### context.setState(Object)
 
-To store data into session which is (generally) serialized as JSON by the store, so nested objects are typically fine.
+To store data into the session which is (generally) serialized as JSON by the store, so nested objects are typically fine.
 
 ### context.resetState()
 
-To reset all data in session to initial state.
+To reset all data in the session to initial state.
 
-For example, we can put user's nickname in session and call it later:
+For example, we can put the user's nickname in the session and call it later:
 
 ```
 User > Hi
@@ -33,7 +33,7 @@ Bot  > Hello Tim
 ```
 
 ```js
-// Bot will use memory session store as default if you don't assign sessionStore.
+// Bot will use memory session store as default if you don't assign a session store.
 bot.setInitialState({
   asking: false,
   nickname: null,

@@ -22,7 +22,7 @@ You can set vars in `bottender.config.js` as environment vars and secrets.
 $ now secret add my_verify_token 1qaz2wsx
 ```
 
-You can list, rename and remove your secrets by following commands:
+You can list, rename and remove your secrets by the following commands:
 
 ```sh
 $ now secret ls
@@ -91,7 +91,7 @@ server.listen(port, () => {
 
 ### Setting Node Version
 
-Make sure your Node version on Heroku is higher than 7.6.0. These lines can be added in `package.json` to specify the Node version.
+Make sure your Node version on Heroku is higher than 7.6.0. These lines can be added to `package.json` to specify the Node version.
 
 ```json
 "engines": {

@@ -3,7 +3,7 @@ title: CustomConnector
 date: "2018-07-09"
 ---
 
-To create a custom connector, you must implement following classes: 
+To create a custom connector, you must implement the following classes: 
 
 - `CustomConnector` 
 - `CustomContext` 
@@ -12,7 +12,7 @@ To create a custom connector, you must implement following classes:
 
 ## CustomEvent
 
-Event is a parser for the platform raw event. For example, if text messages have following format on the custom platform:
+The event is a parser for the platform raw event. For example, if text messages have the following format on the custom platform:
 
 ```js
 {
@@ -71,7 +71,7 @@ class CustomEvent {
 
 ## CustomContext
 
-Context is an abstraction of current conversation context. Every context instance includes event, session, state, and all available context methods:
+The context is an abstraction of the current conversation context. Every context instance includes event, session, state, and all available context methods:
 
 ```js
 {
@@ -115,11 +115,11 @@ Following methods are commonly cross-platform implemented:
 
 ## CustomConnector
 
-Connector is a bridge between bot and platform. You need to implement following methods to tell bot how to find session key from request and create conversation context.
+The connector is a bridge between bot and platform. You need to implement the following methods to tell bot how to find session key from the request and create conversation context.
 
 ### getUniqueSessionKey
 
-Find unique session identifier, for example, user id, group id, channel id...and so on.
+Find a unique session identifier, for example, user id, group id, channel id...and so on.
 
 ### updateSession
 
@@ -127,7 +127,7 @@ If you need to prefetch something data or do some check for the session, you can
 
 ### mapRequestToEvents
 
-One request may have one or more than one raw events. For example, Messenger and LINE batch events into one request in some situation. Accordingly, you must return array of event instances in this method.  
+One request may have one or more than one raw events. For example, Messenger and LINE batch events into one request in some situation. Accordingly, you must return an array of event instances in this method.  
 
 ### createContext
 
@@ -167,7 +167,7 @@ class CustomConnector {
 }
 ```
 
-Finally you can use `CustomConnector` as connector to create your bot:
+Finally, you can use `CustomConnector` as a connector to create your bot:
 
 ```js
 const { Bot } = require('bottender');
