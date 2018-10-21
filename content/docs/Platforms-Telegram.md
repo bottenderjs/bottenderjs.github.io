@@ -4,7 +4,7 @@ date: "2017-12-25"
 ---
 
 Telegram is a multi-platform instant messaging system. It treasures the security and privacy of the users. Furthermore, as a flexible platform, Telegram allows developers to create bots. Telegram launches lots of [bot APIs](https://core.telegram.org/bots/api) for third-party developers to build Telegram bots to serve their own needs in no time.  
-This guide will focus on major concept of building a Telegram bot by Bottender. For more detail about Telegram bot, please check [Official Telegram Bot Introduction](https://core.telegram.org/bots).
+This guide will focus on the major concept of building a Telegram bot by Bottender. For more detail about Telegram bot, please check [Official Telegram Bot Introduction](https://core.telegram.org/bots).
 
 ## Requirements
 

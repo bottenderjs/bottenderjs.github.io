@@ -39,7 +39,7 @@ Then run your server and try it out by invite the **Bot User** to a channel and 
 
 ## Events
 
-There are many types of events your bot may receive from Slack, but it's up to you whether to subscribe each of them. In Bottender, you can access them via `context.event`. For more information, check [SlackEvent Reference](./APIReference-SlackEvent) and [official docs](https://api.slack.com/events).
+There are many types of events your bot may receive from Slack, but it's up to you whether to subscribe to each of them. In Bottender, you can access them via `context.event`. For more information, check [SlackEvent Reference](./APIReference-SlackEvent) and [official docs](https://api.slack.com/events).
 
 For the **message** related events, Bottender supports some helpers:
 
@@ -82,7 +82,7 @@ You can access the channel and team members in `context.session.channel` and `co
 
 ### Get User Info from ID
 
-If you want to get user info from user ID, you can find it with `session.team` info. For example, getting an user's name can be:
+If you want to get user info from user ID, you can find it with `session.team` info. For example, getting a user's name can be:
 
 ```js
 function getNameFromId(id, session) {
