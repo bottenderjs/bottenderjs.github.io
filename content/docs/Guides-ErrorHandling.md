@@ -10,7 +10,7 @@ When you develop a bot using Bottender, you can use the following approaches for
 
 ### Try Catch
 
-Bottender leverages one of the JS features `async/await`. It means that you can use [`try...catch`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch) to handle error.
+Bottender leverages one of the JS features `async/await`. It means that you can use [`try...catch`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch) to handle errors.
 
 Put the `try block` inside the handler function, and the error will be caught.
 
@@ -27,9 +27,9 @@ bot.onEvent(async context => {
 });
 ```
 
-## onError
+## builder.onError
 
-Bottender also supports builder approaches to handle error. Use `builder.onError` and pass the error handler function. You will get the error at the second parameter in the handler function.
+Bottender also supports builder approaches to handle errors. Use `builder.onError` and pass the error handler function. You will get the error at the second parameter in the handler function.
 
 For example:
 
