@@ -16,7 +16,7 @@ You need a [LINE@](http://at.line.me/) account and a **channel** connected to th
 
 ### LINE@
 
-You need an [LINE@](http://at.line.me/) account for your bot to connect to. You can register a **standard account** or an **approved account** [here](https://entry-at.line.me/).
+You need a [LINE@](http://at.line.me/) account for your bot to connect to. You can register a **standard account** or an **approved account** [here](https://entry-at.line.me/).
 
 After that, you can manage your LINE@ accounts at [LINE@ MANAGER](https://admin-official.line.me/) and set them up to use **Messaging API** for bots to connect to.
 
@@ -41,7 +41,7 @@ Then run your server and try it out by talking to your LINE@ account!
 
 ## Event Types
 
-There are 7 types of events your bot may receive from LINE. In Bottender, you can access them via `context.event`. For more information, check [LineEvent Reference](./APIReference-LineEvent) and [official docs](https://developers.line.me/en/docs/messaging-api/reference/#webhook-event-objects).
+There are many different types of events your bot may receive from LINE. In Bottender, you can access them via `context.event`. For more information, check [LineEvent Reference](./APIReference-LineEvent) and [official docs](https://developers.line.me/en/docs/messaging-api/reference/#webhook-event-objects).
 
 - Message event
   - Text
@@ -74,7 +74,7 @@ bot.onEvent(async context => {
 
 ## Message Types
 
-There are 8 types of messages you can send from your bot. In Bottender, you can use functions like `context.sendText()`, `context.sendButtonTemplate()` to send messages. For more information, check [LineContext Reference](./APIReference-LineContext) and [official docs](https://developers.line.me/en/docs/messaging-api/message-types/).
+There are many different types of messages you can send from your bot. In Bottender, you can use functions like `context.sendText()`, `context.sendButtonTemplate()` to send messages. For more information, check [LineContext Reference](./APIReference-LineContext) and [official docs](https://developers.line.me/en/docs/messaging-api/message-types/).
 
 - Text
 - Sticker
@@ -83,6 +83,7 @@ There are 8 types of messages you can send from your bot. In Bottender, you can 
 - Audio
 - Location
 - Imagemap
+- Flex
 - Template
   - Buttons
   - Confirm
@@ -95,7 +96,7 @@ There are 8 types of messages you can send from your bot. In Bottender, you can 
 
 LINE has 2 types of group chats, **groups** and **rooms**. For more information, check [official docs](https://developers.line.me/en/docs/messaging-api/group-chats/).
 
-You can invite your bot account into a group or a room. By doing so, the events will create **group/room sessions**. Send methods like `context.sendText()` will send to the group/room rather than to the private message to the sender in these context. You can still get the sender's profile with `context.session.user`.
+You can invite your bot account into a group or a room. By doing so, the events will create **group/room sessions**. Send methods like `context.sendText()` will send to the group/room rather than to the private message to the sender in these contexts. You can still get the sender's profile with `context.session.user`.
 
 If your LINE bot is connected to a **LINE@ Approved account** or an **official account**, you can access the group/room member IDs in `context.session.group` or `context.session.room`. If not, these properties will return an empty array `[]`.
 

@@ -25,7 +25,7 @@ bot.onEvent(async context => {
 });
 ```
 
-call `createRuntime` to start the interactive mode:
+Call `createRuntime` to start the interactive mode:
 
 ```js
 bot.createRuntime();
@@ -51,7 +51,7 @@ Send payload to the bot. For example:
 
 ## Fallback Unsupported Methods
 
-`ConsoleBot` only has native support for `sendText`. After setting `fallbackMethods` to `true`, bot can call any methods on the context and fallback all of response to text:
+`ConsoleBot` only has native support for `sendText`. After setting `fallbackMethods` to `true`, you can call any methods on the context and display all of the response as text:
 
 ```js
 const bot = new ConsoleBot({

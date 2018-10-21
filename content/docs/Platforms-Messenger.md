@@ -17,8 +17,8 @@ In order to get Page Access Token and App secret, you need:
 - [A Facebook Page](https://www.facebook.com/pages/create/)
 - [A Facebook App](https://developers.facebook.com/)
 
-After you get a Facebook Page and a Facebook App, you can get the `Page Access Token`. Check the [official docs](https://developers.facebook.com/docs/messenger-platform/getting-started/app-setup).  
-Also remember to copy the `App Secret` on app dashboard. Click `Show` button on the dashboard and type your password to get the App Secret.
+After you get a Facebook Page and a Facebook App, you can get the `Page Access Token`. Check the [official docs](https://developers.facebook.com/docs/messenger-platform/getting-started/app-setup).
+Also, remember to copy the `App Secret` on app dashboard. Click `Show` button on the dashboard and type your password to get the App Secret.
 
 Before leaving this section, make sure you have the following requirements:
 
