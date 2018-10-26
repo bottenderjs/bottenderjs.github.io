@@ -75,7 +75,7 @@ exports.createPages = async ({ graphql, boundActionCreators }) => {
     throw Error(allMarkdown.errors);
   }
 
-  allMarkdown.data.allMarkdownRemark.edges.map(({ node }) => {
+  allMarkdown.data.allMarkdownRemark.edges.forEach(({ node }) => {
     const { slug } = node.fields;
     const slugWithoutSlash = slug.replace(/\/$/, ``);
     createPage({
@@ -101,7 +101,7 @@ exports.createPages = async ({ graphql, boundActionCreators }) => {
     {
       allMarkdownRemark(
         limit: 1
-        filter: { id: { regex: "/blog/" } }
+        filter: { fileAbsolutePath: { regex: "/blog/" } }
         sort: { fields: [frontmatter___date], order: DESC }
       ) {
         edges {

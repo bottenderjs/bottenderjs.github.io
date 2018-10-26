@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import styled from 'styled-components';
 import get from 'lodash/get';
+import styled from 'styled-components';
 
 import arrow from '../assets/iconArrow.svg';
 
@@ -47,34 +47,38 @@ class ListSection extends Component {
   constructor() {
     super();
     this.state = {
-      isExpended: false,
+      isExpanded: false,
     };
     this.toggleAccordion = this.toggleAccordion.bind(this);
   }
 
   componentWillMount() {
+    const { selectedItem, list } = this.props;
+
     this.setState(() => ({
-      isExpended:
-        this.props.selectedItem !== undefined || this.props.list.title === ' ',
+      isExpanded: selectedItem !== undefined || list.title === ' ',
     }));
   }
 
   componentWillReceiveProps() {
+    const { selectedItem, list } = this.props;
+
     this.setState(() => ({
-      isExpended:
-        this.props.selectedItem !== undefined || this.props.list.title === ' ',
+      isExpanded: selectedItem !== undefined || list.title === ' ',
     }));
   }
 
   toggleAccordion() {
+    const { list } = this.props;
+
     this.setState(state => ({
-      isExpended: !state.isExpended || this.props.list.title === ' ',
+      isExpanded: !state.isExpanded || list.title === ' ',
     }));
   }
 
   render() {
     const { list, toggleMenu, selectedItem, reverse } = this.props;
-    const { isExpended } = this.state;
+    const { isExpanded } = this.state;
 
     let items = [...list.items];
     if (reverse) {
@@ -85,11 +89,11 @@ class ListSection extends Component {
       <Wrapper>
         <SectionTitle onClick={this.toggleAccordion}>
           {list.title}
-          <Arrow show={list.title !== ' '} expended={isExpended}>
+          <Arrow show={list.title !== ' '} expended={isExpanded}>
             <ArrowImage src={arrow} alt="arrow" />
           </Arrow>
         </SectionTitle>
-        <Accordion expended={isExpended}>
+        <Accordion expended={isExpanded}>
           {items.map(item => (
             <ListItem
               key={item.title}

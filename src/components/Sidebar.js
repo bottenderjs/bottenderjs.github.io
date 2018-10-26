@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-import DocsList from '../../content/docs/nav.yaml';
 import BlogList from '../../content/blog/nav.yaml';
+import DocsList from '../../content/docs/nav.yaml';
 
 import ListSection from './ListSection';
 

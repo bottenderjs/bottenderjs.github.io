@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import { slide as Menu } from 'react-burger-menu';
 import styled from 'styled-components';
+import { slide as Menu } from 'react-burger-menu';
 
-import media from '../css/media';
-import MobileMenuOpenIcon from '../assets/mobile-menu-open.svg';
 import MobileMenuCloseIcon from '../assets/mobile-menu-close.svg';
+import MobileMenuOpenIcon from '../assets/mobile-menu-open.svg';
+import media from '../css/media';
 
 import NavItem from './NavItem';
 import Sidebar from './Sidebar';
@@ -68,13 +68,11 @@ class MobileMenu extends Component {
   }
 
   toggleMenu() {
-    document.getElementById('content').style.opacity = this.state.isOpen
-      ? 1
-      : 0;
-    document.getElementById('footer').style.opacity = this.state.isOpen ? 1 : 0;
-    document.body.style.backgroundColor = this.state.isOpen
-      ? '#fff'
-      : '#fafafa';
+    const { isOpen } = this.state;
+
+    document.getElementById('content').style.opacity = isOpen ? 1 : 0;
+    document.getElementById('footer').style.opacity = isOpen ? 1 : 0;
+    document.body.style.backgroundColor = isOpen ? '#fff' : '#fafafa';
     this.setState(state => ({
       isOpen: !state.isOpen,
     }));

@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { rhythm } from '../../utils/typography';
 import media from '../../css/media';
+import { rhythm } from '../../utils/typography';
 
 import GetStartedLink from './GetStartedLink';
 

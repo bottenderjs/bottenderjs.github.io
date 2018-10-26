@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import Link from 'gatsby-link';
+import { Link } from 'gatsby';
 
-import { rhythm } from '../../utils/typography';
 import media from '../../css/media';
+import { rhythm } from '../../utils/typography';
 
 import ExhibitionItem from './ExhibitionItem';
 

@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import logo from '../../assets/logo.svg';
 import landscape from '../../assets/landscape.svg';
 import landscapeMobile from '../../assets/landscape-mobile.svg';
+import logo from '../../assets/logo.svg';
 import media from '../../css/media';
 
 import GetStartedLink from './GetStartedLink';
@@ -74,7 +74,9 @@ const LandscapeSection = () => (
     <img src={logo} alt="logo" />
     <Title>BOTTENDER</Title>
     <Slogan>
-      MAKE BOTS YOUR WAY,<br />FAST AND FLEXIBLE
+      MAKE BOTS YOUR WAY,
+      <br />
+      FAST AND FLEXIBLE
     </Slogan>
     <GetStartedLink to="/docs/GettingStarted">Get Started!</GetStartedLink>
   </Wrapper>

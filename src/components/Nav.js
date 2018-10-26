@@ -3,8 +3,8 @@ import styled from 'styled-components';
 
 import media from '../css/media';
 
-import NavItem from './NavItem';
 import MobileMenu from './MobileMenu';
+import NavItem from './NavItem';
 
 const Container = styled.nav`
   display: flex;

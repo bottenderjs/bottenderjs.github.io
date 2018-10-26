@@ -1,14 +1,16 @@
-import React from 'react';
-import styled from 'styled-components';
 import Helmet from 'react-helmet';
+import React from 'react';
 import TimeAgo from 'react-timeago';
 import get from 'lodash/get';
+import styled from 'styled-components';
+import { graphql } from 'gatsby';
 
-import { rhythm } from '../utils/typography';
-import media from '../css/media';
 import EditThisPage from '../components/EditThisPage';
+import Layout from '../components/layout';
 import Sidebar from '../components/Sidebar';
 import authors from '../../content/authors.yaml';
+import media from '../css/media';
+import { rhythm } from '../utils/typography';
 
 const globalStyle = `
   h1 {
@@ -187,10 +189,14 @@ const Author = ({ name }) => {
             rel="noopener noreferrer"
             key={authorName}
           >
-            (@{authorAccount})
+            (@
+            {authorAccount})
           </a>
         ) : (
-          <span>(@{authorAccount})</span>
+          <span>
+            (@
+            {authorAccount})
+          </span>
         )}
       </AuthorDisplayName>
     </AuthorWrapper>
@@ -207,29 +213,33 @@ export default ({ data, location }) => {
   const { title, author, date } = post.frontmatter;
   const { pathname } = location;
   return (
-    <Main id="content">
-      <Helmet title={`${title} | ${data.site.siteMetadata.title}`} />
-      <Container>
-        <Left role="main">
-          <TitleSection>
-            <Title>{title}</Title>
-            {author && (
-              <Meta>
-                <PublishDate>
-                  {`${date}`} (<TimeAgo date={date} />)
-                </PublishDate>
-                {author.map(name => <Author name={name} />)}
-              </Meta>
-            )}
-          </TitleSection>
-          <div dangerouslySetInnerHTML={{ __html: post.html }} />
-          <EditThisPage pathname={post.fields.path} />
-        </Left>
-        <Right>
-          <Sidebar pathname={pathname} />
-        </Right>
-      </Container>
-    </Main>
+    <Layout location={location}>
+      <Main id="content">
+        <Helmet title={`${title} | ${data.site.siteMetadata.title}`} />
+        <Container>
+          <Left role="main">
+            <TitleSection>
+              <Title>{title}</Title>
+              {author && (
+                <Meta>
+                  <PublishDate>
+                    {`${date}`} (<TimeAgo date={date} />)
+                  </PublishDate>
+                  {author.map(name => (
+                    <Author name={name} />
+                  ))}
+                </Meta>
+              )}
+            </TitleSection>
+            <div dangerouslySetInnerHTML={{ __html: post.html }} />
+            <EditThisPage pathname={post.fields.path} />
+          </Left>
+          <Right>
+            <Sidebar pathname={pathname} />
+          </Right>
+        </Container>
+      </Main>
+    </Layout>
   );
 };
 

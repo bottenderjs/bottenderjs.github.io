@@ -4,7 +4,6 @@ module.exports = {
     siteUrl: 'https://bottender.js.org',
   },
   plugins: [
-    'gatsby-plugin-react-next',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
