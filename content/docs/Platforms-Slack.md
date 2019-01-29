@@ -63,7 +63,7 @@ bot.onEvent(async context => {
   } else if (context.event.isText && context.event.text === 'How are you?') {
     await context.sendText('I am fine.');
   } else {
-    await context.sentText('I do not understand.');
+    await context.sendText('I do not understand.');
   }
 });
 ```

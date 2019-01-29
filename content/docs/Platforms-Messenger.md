@@ -108,7 +108,7 @@ bot.onEvent(async context => {
   } else if (context.event.payload === 'A_DEVELOPER_DEFINED_PAYLOAD') {
     await context.sendText('Got you!');
   } else {
-    await context.sentText('I do not understand.');
+    await context.sendText('I do not understand.');
   }
 });
 ```
