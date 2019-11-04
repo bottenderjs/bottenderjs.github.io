@@ -25,8 +25,8 @@
       "path---docs-guides-session-4e81dfaf7dd5fb6ab365.js.map"
     ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-71fed03f0be8961ea9ba.js",
-      "component---src-pages-index-js-71fed03f0be8961ea9ba.js.map"
+      "component---src-pages-index-js-8e015548ca681315cd7b.js",
+      "component---src-pages-index-js-8e015548ca681315cd7b.js.map"
     ],
     "path---docs-api-reference-console-context": [
       "path---docs-api-reference-console-context-96f03d38a800a066953b.js",
@@ -71,10 +71,6 @@
     "path---docs-api-reference-telegram-context": [
       "path---docs-api-reference-telegram-context-6338f68fca6b8714f17e.js",
       "path---docs-api-reference-telegram-context-6338f68fca6b8714f17e.js.map"
-    ],
-    "component---node-modules-gatsby-plugin-offline-app-shell-js": [
-      "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js",
-      "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js.map"
     ],
     "path---blog-2017-10-31-bottender": [
       "path---blog-2017-10-31-bottender-dc935b30253b44a9ce6c.js",
@@ -125,12 +121,12 @@
       "component---src-layouts-sidebar-layout-js-340b7099fd891ded0cca.js.map"
     ],
     "commons": [
-      "commons-e136353b970c36a9451f.js",
-      "commons-e136353b970c36a9451f.js.map"
+      "commons-96f35f527a9fa5589b0a.js",
+      "commons-96f35f527a9fa5589b0a.js.map"
     ],
     "component---src-templates-with-sidebar-js": [
-      "component---src-templates-with-sidebar-js-6a78a6548f35f37e1ef4.js",
-      "component---src-templates-with-sidebar-js-6a78a6548f35f37e1ef4.js.map"
+      "component---src-templates-with-sidebar-js-bd3b8d57e282a22e3f17.js",
+      "component---src-templates-with-sidebar-js-bd3b8d57e282a22e3f17.js.map"
     ],
     "path---docs-api-reference-line-context": [
       "path---docs-api-reference-line-context-1c0cb36a57e6b2411897.js",
@@ -152,10 +148,6 @@
       "path---docs-guides-state-753260e08078c51e7dc5.js",
       "path---docs-guides-state-753260e08078c51e7dc5.js.map"
     ],
-    "path---offline-plugin-app-shell-fallback": [
-      "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js",
-      "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js.map"
-    ],
     "path---docs-guides-testing": [
       "path---docs-guides-testing-49e94c3616b5c31d9791.js",
       "path---docs-guides-testing-49e94c3616b5c31d9791.js.map"
@@ -165,9 +157,9 @@
       "path---docs-api-reference-event-bb13d01d255aa604e8b4.js.map"
     ],
     "app": [
-      "app-de6a7c0af18d71096e09.js",
+      "app-51f4ce696f27ce5ee7bf.js",
       "build-js-styles.css",
-      "app-de6a7c0af18d71096e09.js.map",
+      "app-51f4ce696f27ce5ee7bf.js.map",
       "build-js-styles.css.map"
     ],
     "path---blog-2018-08-03-bottender-0-15": [
