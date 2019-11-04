@@ -48,7 +48,7 @@ const IntroductionSection = () => (
         />
         <IntroductionItem
           title="Modern"
-          subTitle="Bottender is written with ES6/ES7 up syntax and it fully supports async await function. We can deal with complex async logic without losing the readability and maintainability of code."
+          subTitle="Bottender is written with ES6/ES7+ syntax and it fully supports async await function. We can deal with complex async logic without losing the readability and maintainability of code."
         />
       </Row>
       <Row>
