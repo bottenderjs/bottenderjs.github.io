@@ -35,7 +35,7 @@
     "gatsby-remark-images": "^1.5.67",
     "gatsby-remark-prismjs": "^1.2.20",
     "gatsby-source-filesystem": "^1.5.39",
-    "gatsby-transformer-remark": "^1.7.44",
+    "gatsby-transformer-remark": "^5.25.1",
     "glamorous": "^4.13.1",
     "lodash": "^4.17.10",
     "react": "^16.4.1",
